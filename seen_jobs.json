@@ -10574,6 +10574,11 @@
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer 2"
 },
+"717279b5-3392-4184-8ec5-92924c627291": {
+"company": "Canon",
+"first_seen": "2026-08-15",
+"title": "Service Technician 1"
+},
 "7185eeaf-ca13-448b-9914-08c197b45f81": {
 "company": "thyssenkrupp",
 "first_seen": "2026-08-15",
@@ -10933,6 +10938,11 @@
 "company": "Konrad Group",
 "first_seen": "2026-08-15",
 "title": "Software Developer - Entry Level"
+},
+"755afd21-51a6-4a39-994c-35c6a3c2b71d": {
+"company": "BJC HealthCare",
+"first_seen": "2026-08-15",
+"title": "EHR Application Analyst 1 - Epic Security"
 },
 "75793f35-9526-4aea-ab29-82d83486b9b9": {
 "company": "Jump Trading",
@@ -12423,6 +12433,11 @@
 "company": "Magna",
 "first_seen": "2026-08-15",
 "title": "Warranty Co-op"
+},
+"8695d3de-326d-44ff-976a-ba070dbbe750": {
+"company": "Canva",
+"first_seen": "2026-08-15",
+"title": "PhD Research Scientist Intern - Reinforcement Learning - Images"
 },
 "86bafca9-f202-4817-8184-32aabc6ac975": {
 "company": "Four Hands",
@@ -14764,7 +14779,10 @@
 "first_seen": "2026-08-15",
 "title": "Product Management Internship"
 },
-"_headers": {},
+"_headers": {
+"internship": "2026-08-06",
+"new_grad": "2026-08-15"
+},
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
 "first_seen": "2026-08-15",
