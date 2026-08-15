@@ -12,6 +12,13 @@ How it works:
   2. Diff against seen_jobs.json (committed back to this repo by the Action)
   3. Post anything new to Discord via webhook embeds
 
+Niceties:
+  • Big 📅 date header above the first jobs of each day (and at every day
+    boundary during a backfill, so the archive reads as day sections).
+  • Messages are sent @silent by default: no push notifications for members,
+    the channel just quietly fills up. A configured PING_ROLE_ID mention
+    still notifies (that first message is intentionally loud).
+
 Backfill mode: set BACKFILL_DAYS to a number (or "all") to post every
 currently-open listing from that window, even ones already marked seen.
 Trigger it from the Actions tab: Run workflow → fill in the backfill box.
@@ -21,6 +28,7 @@ Stdlib only — no pip installs required. Python 3.9+.
 
 from __future__ import annotations
 
+import itertools
 import json
 import math
 import os
@@ -56,6 +64,21 @@ BOOTSTRAP_POST_COUNT = int(os.environ.get("BOOTSTRAP_POST_COUNT", "5"))
 # Backfill: "" = off (normal run), "30" = last 30 days, "all" = everything open
 BACKFILL_DAYS = os.environ.get("BACKFILL_DAYS", "").strip().lower()
 
+# Silent messages: no push notifications for members (role pings still notify)
+SILENT = os.environ.get("SILENT", "1").lower() in ("1", "true", "yes")
+
+# Big 📅 header above the first postings of each new day
+DATE_HEADERS = os.environ.get("DATE_HEADERS", "1").lower() in ("1", "true", "yes")
+
+# Timezone used for the date headers
+TIMEZONE = os.environ.get("TIMEZONE", "America/New_York")
+try:
+    from zoneinfo import ZoneInfo
+
+    LOCAL_TZ = ZoneInfo(TIMEZONE)
+except Exception:
+    LOCAL_TZ = timezone.utc
+
 # Comma-separated category names to skip, e.g. "Quant,Product"
 CATEGORY_BLOCKLIST = {
     c.strip().lower()
@@ -78,6 +101,8 @@ LISTINGS_PATH = ".github/scripts/listings.json"
 
 EMBEDS_PER_MESSAGE = 5        # Discord allows 10, but 5 keeps us under char limits
 SLEEP_BETWEEN_MESSAGES = 2.0  # seconds; webhooks sustain ~30 req/min, this stays under
+
+SUPPRESS_NOTIFICATIONS = 1 << 12  # Discord message flag for @silent
 
 KIND_META = {
     "internship": {"label": "internship", "color": 0x57F287},   # green
@@ -177,7 +202,7 @@ def fetch_source(kind: str, repo: str) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Seen-state
+# Seen-state  (also stores "_headers": last date-header posted per channel)
 # ---------------------------------------------------------------------------
 
 
@@ -191,12 +216,12 @@ def load_seen() -> dict:
 
 def save_seen(seen: dict) -> None:
     if DRY_RUN and not DRY_RUN_SAVE:
-        print(f"[dry-run] skipped saving state ({len(seen)} ids)")
+        print(f"[dry-run] skipped saving state ({len(seen)} entries)")
         return
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
         json.dump(seen, f, indent=0, sort_keys=True)
         f.write("\n")
-    print(f"[state] saved {len(seen)} seen ids -> {SEEN_FILE}")
+    print(f"[state] saved {len(seen)} entries -> {SEEN_FILE}")
 
 
 def seen_entry(job: dict) -> dict:
@@ -210,6 +235,15 @@ def seen_entry(job: dict) -> dict:
 # ---------------------------------------------------------------------------
 # Discord
 # ---------------------------------------------------------------------------
+
+
+def local_day(ts: float):
+    return datetime.fromtimestamp(ts, tz=LOCAL_TZ).date()
+
+
+def header_text(day) -> str:
+    # "# " renders as a huge header in Discord messages
+    return f"# 📅 {day.strftime('%A, %B')} {day.day}, {day.year}"
 
 
 def make_embed(job: dict) -> dict:
@@ -266,8 +300,9 @@ def post_to_webhook(webhook: str, payload: dict) -> None:
     raise RuntimeError("Discord kept rate-limiting after 6 attempts")
 
 
-def send_jobs(kind: str, jobs: list[dict], backfill: bool = False) -> None:
-    """Post a batch of jobs of one kind to its channel, oldest first."""
+def send_jobs(kind: str, jobs: list[dict], headers_state: dict, backfill: bool = False) -> None:
+    """Post a batch of jobs of one kind to its channel, oldest first, with a
+    big date header above the first postings of each new day."""
     if not jobs:
         return
     meta = KIND_META[kind]
@@ -283,25 +318,58 @@ def send_jobs(kind: str, jobs: list[dict], backfill: bool = False) -> None:
         summary = f"<@&{PING_ROLE_ID}> {summary}"
 
     total_chunks = math.ceil(len(jobs) / EMBEDS_PER_MESSAGE)
-    for i in range(0, len(jobs), EMBEDS_PER_MESSAGE):
-        chunk = jobs[i : i + EMBEDS_PER_MESSAGE]
-        payload = {
-            "username": BOT_NAME,
-            "embeds": [make_embed(j) for j in chunk],
-            "allowed_mentions": {"parse": [], "roles": [PING_ROLE_ID] if PING_ROLE_ID else []},
-        }
-        if i == 0:
-            payload["content"] = summary
+    sent_chunks = 0
+    last_header = headers_state.get(kind, "")
+    first_message = True
 
-        if DRY_RUN:
-            print(f"[dry-run] would POST to {kind} webhook:")
-            for j in chunk:
-                print(f"    • {j['company']} — {j['title']}")
-        else:
-            post_to_webhook(webhook, payload)
-            chunk_no = i // EMBEDS_PER_MESSAGE + 1
-            print(f"[discord] {kind}: message {chunk_no}/{total_chunks} sent ({len(chunk)} jobs)")
-            time.sleep(SLEEP_BETWEEN_MESSAGES)
+    for day, group in itertools.groupby(jobs, key=lambda j: local_day(j["date_posted"])):
+        day_jobs = list(group)
+        day_iso = day.isoformat()
+        # Post a header only for days newer than the last one we announced,
+        # and never for the epoch bucket (jobs missing a date).
+        want_header = (
+            DATE_HEADERS and day_iso > last_header and day.year > 1971
+        )
+        if want_header:
+            last_header = day_iso
+
+        for i in range(0, len(day_jobs), EMBEDS_PER_MESSAGE):
+            chunk = day_jobs[i : i + EMBEDS_PER_MESSAGE]
+            content_parts = []
+            if first_message:
+                content_parts.append(summary)
+            if i == 0 and want_header:
+                content_parts.append(header_text(day))
+
+            loud = first_message and bool(PING_ROLE_ID)  # role ping should notify
+            payload = {
+                "username": BOT_NAME,
+                "embeds": [make_embed(j) for j in chunk],
+                "allowed_mentions": {
+                    "parse": [],
+                    "roles": [PING_ROLE_ID] if PING_ROLE_ID else [],
+                },
+            }
+            if content_parts:
+                payload["content"] = "\n".join(content_parts)
+            if SILENT and not loud:
+                payload["flags"] = SUPPRESS_NOTIFICATIONS
+
+            if DRY_RUN:
+                print(f"[dry-run] would POST to {kind} webhook:")
+                if payload.get("content"):
+                    print(f"    ┌ content: {payload['content'].replace(chr(10), ' ⏎ ')}")
+                for j in chunk:
+                    print(f"    • {j['company']} — {j['title']}")
+            else:
+                post_to_webhook(webhook, payload)
+                sent_chunks += 1
+                print(f"[discord] {kind}: message {sent_chunks}/{total_chunks} sent ({len(chunk)} jobs)")
+                time.sleep(SLEEP_BETWEEN_MESSAGES)
+
+            first_message = False
+
+    headers_state[kind] = max(last_header, headers_state.get(kind, ""))
 
 
 # ---------------------------------------------------------------------------
@@ -340,6 +408,7 @@ def main() -> int:
 
     bootstrap = not os.path.exists(SEEN_FILE)
     seen = load_seen()
+    headers_state = seen.setdefault("_headers", {})
     new_jobs = [j for j in all_jobs if j["id"] not in seen]
 
     if backfill_cutoff is not None:
@@ -383,6 +452,7 @@ def main() -> int:
         send_jobs(
             kind,
             [j for j in to_post if j["kind"] == kind],
+            headers_state,
             backfill=backfill_cutoff is not None,
         )
 
