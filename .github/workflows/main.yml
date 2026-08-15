@@ -1,0 +1,43 @@
+name: ACM Job Radar
+
+on:
+  schedule:
+    - cron: "*/30 * * * *" # every 30 minutes (UTC; GitHub may delay a few min)
+  workflow_dispatch: # adds a manual "Run workflow" button in the Actions tab
+
+# Never let two runs overlap (prevents duplicate posts / git push races)
+concurrency:
+  group: job-radar
+  cancel-in-progress: false
+
+permissions:
+  contents: write # needed to commit seen_jobs.json back to the repo
+
+jobs:
+  post-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Run job bot
+        env:
+          DISCORD_WEBHOOK_INTERNSHIPS: ${{ secrets.DISCORD_WEBHOOK_INTERNSHIPS }}
+          DISCORD_WEBHOOK_NEWGRAD: ${{ secrets.DISCORD_WEBHOOK_NEWGRAD }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          PING_ROLE_ID: ${{ vars.PING_ROLE_ID }}
+          GITHUB_TOKEN: ${{ github.token }} # lets repo auto-discovery avoid rate limits
+        run: python3 job_bot.py
+
+      - name: Save seen-jobs state
+        run: |
+          git config user.name "acm-job-radar[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seen_jobs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "🤖 update seen jobs"
+            git pull --rebase
+            git push
+          else
+            echo "No new jobs this run — nothing to commit."
+          fi
