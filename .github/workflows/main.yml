@@ -2,8 +2,13 @@ name: ACM Job Radar
 
 on:
   schedule:
-    - cron: "*/30 * * * *" # every 30 minutes (UTC; GitHub may delay a few min)
-  workflow_dispatch: # adds a manual "Run workflow" button in the Actions tab
+    - cron: "*/15 * * * *" # every 15 minutes (UTC; GitHub may delay a few min)
+  workflow_dispatch: # manual "Run workflow" button in the Actions tab
+    inputs:
+      backfill_days:
+        description: "Backfill: post ALL open jobs from the last N days (a number, or 'all'). Leave blank for a normal run."
+        required: false
+        default: ""
 
 # Never let two runs overlap (prevents duplicate posts / git push races)
 concurrency:
@@ -18,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Run job bot
         env:
@@ -26,6 +31,7 @@ jobs:
           DISCORD_WEBHOOK_NEWGRAD: ${{ secrets.DISCORD_WEBHOOK_NEWGRAD }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           PING_ROLE_ID: ${{ vars.PING_ROLE_ID }}
+          BACKFILL_DAYS: ${{ inputs.backfill_days }}
           GITHUB_TOKEN: ${{ github.token }} # lets repo auto-discovery avoid rate limits
         run: python3 job_bot.py
 
