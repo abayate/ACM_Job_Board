@@ -12,12 +12,17 @@ How it works:
   2. Diff against seen_jobs.json (committed back to this repo by the Action)
   3. Post anything new to Discord via webhook embeds
 
+Backfill mode: set BACKFILL_DAYS to a number (or "all") to post every
+currently-open listing from that window, even ones already marked seen.
+Trigger it from the Actions tab: Run workflow → fill in the backfill box.
+
 Stdlib only — no pip installs required. Python 3.9+.
 """
 
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import sys
@@ -48,6 +53,9 @@ PING_ROLE_ID = os.environ.get("PING_ROLE_ID", "").strip()  # optional role to @m
 MAX_POSTS_PER_RUN = int(os.environ.get("MAX_POSTS_PER_RUN", "15"))
 BOOTSTRAP_POST_COUNT = int(os.environ.get("BOOTSTRAP_POST_COUNT", "5"))
 
+# Backfill: "" = off (normal run), "30" = last 30 days, "all" = everything open
+BACKFILL_DAYS = os.environ.get("BACKFILL_DAYS", "").strip().lower()
+
 # Comma-separated category names to skip, e.g. "Quant,Product"
 CATEGORY_BLOCKLIST = {
     c.strip().lower()
@@ -68,8 +76,8 @@ FALLBACK_INTERNSHIP_REPO = "Summer2027-Internships"
 NEW_GRAD_REPO = "New-Grad-Positions"
 LISTINGS_PATH = ".github/scripts/listings.json"
 
-EMBEDS_PER_MESSAGE = 5          # Discord allows 10, but 5 keeps us under char limits
-SLEEP_BETWEEN_MESSAGES = 1.3    # seconds; stays well inside webhook rate limits
+EMBEDS_PER_MESSAGE = 5        # Discord allows 10, but 5 keeps us under char limits
+SLEEP_BETWEEN_MESSAGES = 2.0  # seconds; webhooks sustain ~30 req/min, this stays under
 
 KIND_META = {
     "internship": {"label": "internship", "color": 0x57F287},   # green
@@ -241,24 +249,24 @@ def post_to_webhook(webhook: str, payload: dict) -> None:
         headers={"Content-Type": "application/json", "User-Agent": "acm-job-radar"},
         method="POST",
     )
-    for attempt in range(4):
+    for attempt in range(6):
         try:
             with urllib.request.urlopen(req, timeout=30):
                 return
         except urllib.error.HTTPError as e:
             if e.code == 429:  # rate limited — Discord tells us how long to wait
                 try:
-                    retry_after = float(json.loads(e.read().decode()).get("retry_after", 2))
+                    retry_after = float(json.loads(e.read().decode()).get("retry_after", 3))
                 except Exception:
-                    retry_after = 2.0
+                    retry_after = 3.0
                 print(f"[discord] rate limited, retrying in {retry_after:.1f}s")
                 time.sleep(retry_after + 0.5)
                 continue
             raise
-    raise RuntimeError("Discord kept rate-limiting after 4 attempts")
+    raise RuntimeError("Discord kept rate-limiting after 6 attempts")
 
 
-def send_jobs(kind: str, jobs: list[dict]) -> None:
+def send_jobs(kind: str, jobs: list[dict], backfill: bool = False) -> None:
     """Post a batch of jobs of one kind to its channel, oldest first."""
     if not jobs:
         return
@@ -267,10 +275,14 @@ def send_jobs(kind: str, jobs: list[dict]) -> None:
     jobs = sorted(jobs, key=lambda j: j["date_posted"])
 
     plural = "s" if len(jobs) != 1 else ""
-    summary = f"🚀 **{len(jobs)} new {meta['label']}{plural} just dropped!**"
+    if backfill:
+        summary = f"📦 **Backfill: {len(jobs)} currently-open {meta['label']}{plural}** (oldest → newest)"
+    else:
+        summary = f"🚀 **{len(jobs)} new {meta['label']}{plural} just dropped!**"
     if PING_ROLE_ID:
         summary = f"<@&{PING_ROLE_ID}> {summary}"
 
+    total_chunks = math.ceil(len(jobs) / EMBEDS_PER_MESSAGE)
     for i in range(0, len(jobs), EMBEDS_PER_MESSAGE):
         chunk = jobs[i : i + EMBEDS_PER_MESSAGE]
         payload = {
@@ -284,10 +296,11 @@ def send_jobs(kind: str, jobs: list[dict]) -> None:
         if DRY_RUN:
             print(f"[dry-run] would POST to {kind} webhook:")
             for j in chunk:
-                print(f"    • {j['company']} — {j['title']}  ({j['url']})")
+                print(f"    • {j['company']} — {j['title']}")
         else:
             post_to_webhook(webhook, payload)
-            print(f"[discord] posted {len(chunk)} {meta['label']}(s)")
+            chunk_no = i // EMBEDS_PER_MESSAGE + 1
+            print(f"[discord] {kind}: message {chunk_no}/{total_chunks} sent ({len(chunk)} jobs)")
             time.sleep(SLEEP_BETWEEN_MESSAGES)
 
 
@@ -308,6 +321,18 @@ def main() -> int:
         )
         return 1
 
+    # Validate backfill input before doing any work
+    backfill_cutoff = None
+    if BACKFILL_DAYS:
+        if BACKFILL_DAYS == "all":
+            backfill_cutoff = 0.0
+        else:
+            try:
+                backfill_cutoff = time.time() - int(BACKFILL_DAYS) * 86400
+            except ValueError:
+                print(f"ERROR: backfill must be a number of days or 'all', got '{BACKFILL_DAYS}'")
+                return 1
+
     internship_repo = discover_internship_repo()
     all_jobs = fetch_source("internship", internship_repo) + fetch_source(
         "new_grad", NEW_GRAD_REPO
@@ -317,7 +342,18 @@ def main() -> int:
     seen = load_seen()
     new_jobs = [j for j in all_jobs if j["id"] not in seen]
 
-    if bootstrap:
+    if backfill_cutoff is not None:
+        # Backfill: post every currently-open listing in the window, even ones
+        # already marked seen. One-time catch-up; normal runs resume after.
+        to_post = [j for j in all_jobs if j["date_posted"] >= backfill_cutoff]
+        for j in all_jobs:
+            seen.setdefault(j["id"], seen_entry(j))
+        est_min = math.ceil(len(to_post) / EMBEDS_PER_MESSAGE) * SLEEP_BETWEEN_MESSAGES / 60
+        print(
+            f"[backfill] window={BACKFILL_DAYS} -> posting {len(to_post)} of "
+            f"{len(all_jobs)} open listings (~{est_min:.0f} min)"
+        )
+    elif bootstrap:
         # First ever run: don't flood the channel with 4,000 old posts.
         # Mark everything as seen, then post just the freshest few per kind
         # so the channel has something to show.
@@ -341,11 +377,14 @@ def main() -> int:
             seen[j["id"]] = seen_entry(j)
         if len(new_jobs) > len(to_post):
             print(f"[queue] {len(new_jobs) - len(to_post)} more queued for next run")
-
-    print(f"[run] {len(new_jobs)} new, posting {len(to_post)}")
+        print(f"[run] {len(new_jobs)} new, posting {len(to_post)}")
 
     for kind in KIND_META:
-        send_jobs(kind, [j for j in to_post if j["kind"] == kind])
+        send_jobs(
+            kind,
+            [j for j in to_post if j["kind"] == kind],
+            backfill=backfill_cutoff is not None,
+        )
 
     save_seen(seen)
     print("[done]")
