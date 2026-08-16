@@ -4034,6 +4034,11 @@
 "first_seen": "2026-08-15",
 "title": "Application Software Developer New Grad"
 },
+"2ab3ea47-41c1-46b3-8932-fedbbb55e1cd": {
+"company": "General Dynamics Mission Systems",
+"first_seen": "2026-08-16",
+"title": "Software Engineer - Entry Level"
+},
 "2ac6c189-0631-40b5-b0c0-41e3c0601cf0": {
 "company": "Apple",
 "first_seen": "2026-08-15",
@@ -14811,7 +14816,7 @@
 },
 "_headers": {
 "internship": "2026-08-15",
-"new_grad": "2026-08-15"
+"new_grad": "2026-08-16"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -18102,6 +18107,11 @@
 "company": "Astera Labs",
 "first_seen": "2026-08-15",
 "title": "Design Verification Engineer Intern"
+},
+"c46c59e7-80b8-4494-acf4-94ec39d2d300": {
+"company": "EXL",
+"first_seen": "2026-08-16",
+"title": "Data Engineer"
 },
 "c46d2cc8-7f2c-4f61-aecc-a772d5b62fe3": {
 "company": "Faros AI",
