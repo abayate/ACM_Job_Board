@@ -6974,6 +6974,11 @@
 "first_seen": "2026-08-15",
 "title": "Service Technician"
 },
+"4a623f52-ac3e-4809-bbff-79d93ef3ec63": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-17",
+"title": "Associate Software Engineer"
+},
 "4aa719b5-d2a2-4379-950b-53301335fcac": {
 "company": "IMC Trading",
 "first_seen": "2026-08-15",
@@ -7263,6 +7268,11 @@
 "company": "GlobalFoundries",
 "first_seen": "2026-08-15",
 "title": "Senior Design Engineer"
+},
+"4d762004-fbe7-46b2-bdcf-3c4e02d54b87": {
+"company": "TikTok",
+"first_seen": "2026-08-17",
+"title": "Machine Learning Engineer Graduate - E-Commerce Governance"
 },
 "4d781f95-810b-4e43-b520-0843d7ff02bd": {
 "company": "V2X",
@@ -9173,6 +9183,11 @@
 "company": "Southern States, LLC",
 "first_seen": "2026-08-15",
 "title": "Designer 1 - Application Engineering"
+},
+"61daacb8-5db1-4ec7-8473-706c85ee08f5": {
+"company": "TikTok",
+"first_seen": "2026-08-17",
+"title": "Data Scientist Graduate - E-Commerce Governance"
 },
 "61e3734b-7ee5-4569-a6d9-7a7c0ee36478": {
 "company": "Marvell",
@@ -14826,7 +14841,7 @@
 },
 "_headers": {
 "internship": "2026-08-16",
-"new_grad": "2026-08-16"
+"new_grad": "2026-08-17"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -15187,6 +15202,11 @@
 "company": "Tesla",
 "first_seen": "2026-08-15",
 "title": "Data Collection Operator - Optimus"
+},
+"a4647510-ce85-43c7-af8c-50d890fbd299": {
+"company": "TikTok",
+"first_seen": "2026-08-17",
+"title": "Machine Learning Engineer Graduate - E-Commerce Governance"
 },
 "a46d596b-c711-4444-99f7-3c846ae35bb6": {
 "company": "ByteDance",
@@ -15632,6 +15652,11 @@
 "company": "Vitalant",
 "first_seen": "2026-08-15",
 "title": "Data Analytics Intern"
+},
+"a8e9e244-d0b5-4ee1-a683-4b3d2d6ee8f6": {
+"company": "ASSYST",
+"first_seen": "2026-08-17",
+"title": "Junior .NET Developer"
 },
 "a8ff3976-75ef-4c6e-acde-b4aec7f1fd7e": {
 "company": "NVIDIA",
