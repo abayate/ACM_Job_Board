@@ -774,6 +774,11 @@
 "first_seen": "2026-08-15",
 "title": "Applied AI Intern"
 },
+"07ec54e8-42d0-458b-9614-e5871d799ff1": {
+"company": "10Beauty",
+"first_seen": "2026-08-17",
+"title": "Field Service Technician"
+},
 "07fc4738-d12f-4bb3-b8de-6b749a723716": {
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-08-15",
@@ -1633,6 +1638,11 @@
 "company": "Uline",
 "first_seen": "2026-08-15",
 "title": "Operations Analyst Intern"
+},
+"10b1f7da-cc7f-45ba-a157-7054596c9937": {
+"company": "Associated Bank",
+"first_seen": "2026-08-17",
+"title": "Full-Stack Developer Associate"
 },
 "10b464ec-dba9-420a-a5cb-08a22c048ba5": {
 "company": "McGill University",
@@ -3313,6 +3323,11 @@
 "company": "SpaceX",
 "first_seen": "2026-08-15",
 "title": "Software Engineer - Starshield"
+},
+"221f4f27-c95d-4fa4-98c1-bbb7b8aa79aa": {
+"company": "Veeva Systems",
+"first_seen": "2026-08-17",
+"title": "Associate Software Engineer"
 },
 "222309af-4985-4525-a1f9-8a183a6c64b0": {
 "company": "Prelim",
@@ -7489,6 +7504,11 @@
 "first_seen": "2026-08-15",
 "title": "Junior Software Engineer"
 },
+"4f0ce480-21ee-4bdb-a42b-efac41ad8e1a": {
+"company": "Veeva Systems",
+"first_seen": "2026-08-17",
+"title": "Associate Software Engineer - Engineering Development Program"
+},
 "4f13671d-ac3d-44b0-90ac-bffd5406ffdd": {
 "company": "Equinor",
 "first_seen": "2026-08-15",
@@ -8914,6 +8934,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Software Engineer"
 },
+"5de5f9a5-8bea-40c2-8121-4ed65352ed36": {
+"company": "Roku",
+"first_seen": "2026-08-17",
+"title": "Software Engineer"
+},
 "5de63ca7-6fec-48eb-84d5-706e1d8038be": {
 "company": "Northwestern Mutual",
 "first_seen": "2026-08-15",
@@ -9154,6 +9179,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer-Backend Intern"
 },
+"60c29635-73db-4567-898a-d5453ff55e02": {
+"company": "ADT",
+"first_seen": "2026-08-17",
+"title": "Service Technician"
+},
 "60d005ff-fe23-4fdd-9573-6188bca2a95f": {
 "company": "The Anywhere",
 "first_seen": "2026-08-15",
@@ -9373,6 +9403,11 @@
 "company": "Boom Supersonic",
 "first_seen": "2026-08-16",
 "title": "Software Engineer - Exceptional Talent"
+},
+"6323b048-4972-4a8b-820a-ad28bd5ab688": {
+"company": "Generac",
+"first_seen": "2026-08-17",
+"title": "Data Science Analyst"
 },
 "6326a4d5-8dd0-40ca-9d13-630ce1177617": {
 "company": "Carnegie Mellon University",
@@ -13634,6 +13669,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1 - QA"
 },
+"915da181-f192-4366-ab38-f6ed16d06d0c": {
+"company": "Nokia",
+"first_seen": "2026-08-17",
+"title": "Yield & Quality Systems Senior Engineer"
+},
 "91670e9d-aa18-421c-ade0-3c2518a800c5": {
 "company": "Systems Planning and Analysis (SPA)",
 "first_seen": "2026-08-15",
@@ -13908,6 +13948,11 @@
 "company": "Mass General Brigham",
 "first_seen": "2026-08-15",
 "title": "Data Innovation Research Data Analyst"
+},
+"940af5e9-b061-4e04-bb67-81fe75ec728a": {
+"company": "The Boeing Company",
+"first_seen": "2026-08-17",
+"title": "F-15 Mission Systems Software Engineer Senior - Associate"
 },
 "941207da-c567-4965-aca1-c135d3773bd4": {
 "company": "Marshall Wace",
@@ -17968,6 +18013,11 @@
 "first_seen": "2026-08-15",
 "title": "Backend Software Engineer Intern"
 },
+"bf41abd7-ed58-44e9-960f-21db25c77079": {
+"company": "The Boeing Company",
+"first_seen": "2026-08-17",
+"title": "Software Engineer-Developer - Phantom Works Weapons"
+},
 "bf43a447-72a6-4c3d-a02f-6c1f20c138ea": {
 "company": "Qualcomm",
 "first_seen": "2026-08-15",
@@ -19793,6 +19843,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Engineer"
 },
+"d3bdb070-74f3-4fe0-ad6a-508f9dc3d75a": {
+"company": "Veeva Systems",
+"first_seen": "2026-08-17",
+"title": "Associate Software Engineer - Engineering Development Program"
+},
 "d3c098a3-25fd-4752-926c-073c5ef98949": {
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
@@ -20217,6 +20272,11 @@
 "company": "Flow Engineering",
 "first_seen": "2026-08-15",
 "title": "Software Engineer - Early Career"
+},
+"d7d2d9a2-c865-47e5-9029-23b28fb08f05": {
+"company": "PIMCO",
+"first_seen": "2026-08-17",
+"title": "Client Solutions & Analytics Analyst Intern"
 },
 "d7f1b24a-b651-4239-81a5-05805190a745": {
 "company": "TikTok",
@@ -21042,6 +21102,11 @@
 "company": "Composio",
 "first_seen": "2026-08-15",
 "title": "Forward Deployed Engineer New Grad"
+},
+"e11d6b76-ac03-48af-b34e-a9c1933babfc": {
+"company": "Suncor",
+"first_seen": "2026-08-17",
+"title": "Data Science Student"
 },
 "e138a76e-524c-4f79-82cf-b35d43759ca1": {
 "company": "Nokia",
@@ -22357,6 +22422,11 @@
 "company": "CAE",
 "first_seen": "2026-08-15",
 "title": "Engineering Co-op"
+},
+"efac2095-406f-4054-9c6c-843eb79c6144": {
+"company": "Readystate Asset Management",
+"first_seen": "2026-08-17",
+"title": "Investment Intern - Summer 2027 & 2028"
 },
 "efb4aa2a-8102-4e84-acb1-ce2979c7fe2f": {
 "company": "Royal Bank of Canada",
@@ -23842,6 +23912,11 @@
 "company": "Canonical",
 "first_seen": "2026-08-15",
 "title": "Software Engineer \u2013 Graduate Level - Python - Cloud"
+},
+"ff10df50-35b8-47c4-8138-ff9083746abf": {
+"company": "Veeva Systems",
+"first_seen": "2026-08-17",
+"title": "Associate Software Engineer - Engineering Development Program"
 },
 "ff1e3da0-fc8d-455a-bed2-9e8912f2fb6f": {
 "company": "RTX",
