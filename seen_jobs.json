@@ -2119,6 +2119,11 @@
 "first_seen": "2026-08-15",
 "title": "SoC Performance Analysis Engineer"
 },
+"154ae79b-60c6-40a6-9be2-a48637bb96ff": {
+"company": "TikTok",
+"first_seen": "2026-08-17",
+"title": "Machine Learning Engineer Intern - E-Commerce Governance"
+},
 "154cf85d-ed07-4a20-9730-3f260ba95a0f": {
 "company": "KLA",
 "first_seen": "2026-08-16",
@@ -4259,6 +4264,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1"
 },
+"2d31a59a-d33d-49cb-be61-428d92dfb81f": {
+"company": "Levi Strauss & Co.",
+"first_seen": "2026-08-17",
+"title": "Analytics Intern - eCommerce"
+},
 "2d43ba23-b8e2-48fe-8cd1-0897dbcb430f": {
 "company": "Antares Nuclear",
 "first_seen": "2026-08-15",
@@ -4754,6 +4764,11 @@
 "first_seen": "2026-08-15",
 "title": "Bus Systems Analysis Associate"
 },
+"333d668e-a703-465a-adfe-71773ba80e9b": {
+"company": "General Dynamics Information Technology",
+"first_seen": "2026-08-17",
+"title": "Data Quality Monitoring Engineer"
+},
 "3341457c-dacb-42db-bb9e-af3db4702f0a": {
 "company": "John Deere",
 "first_seen": "2026-08-15",
@@ -5103,6 +5118,11 @@
 "company": "State Farm",
 "first_seen": "2026-08-15",
 "title": "Software Engineer - iOS"
+},
+"367919b2-9f9f-4104-a7e7-811ae0b98c01": {
+"company": "W.W. Grainger",
+"first_seen": "2026-08-17",
+"title": "Software Engineer Intern - Grainger Technology Group"
 },
 "367c3c12-3af1-4c46-b576-45899680c5c2": {
 "company": "Alpha FMC",
@@ -14109,6 +14129,11 @@
 "first_seen": "2026-08-15",
 "title": "Conflicts Database Administrator"
 },
+"9831795d-d949-4a7a-87dd-f11aad5dc0c8": {
+"company": "American Express",
+"first_seen": "2026-08-17",
+"title": "Software Engineer Intern - Enterprise Technology Services"
+},
 "983f8874-b9ed-43ca-9910-718e20bcac70": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -14484,6 +14509,11 @@
 "first_seen": "2026-08-15",
 "title": "Motion Automation Intelligence-Service Technician 1"
 },
+"9c12dcc7-3cb4-42ae-9f92-b25cd4e324c3": {
+"company": "Micron Technology",
+"first_seen": "2026-08-17",
+"title": "DRAM Design Engineer Intern"
+},
 "9c338480-379d-4ca7-b5c9-3cb606516e95": {
 "company": "Cylake",
 "first_seen": "2026-08-15",
@@ -14769,6 +14799,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Infrastructure"
 },
+"9f12aa49-d6c0-477e-a5c2-057f17231581": {
+"company": "Dmg Media",
+"first_seen": "2026-08-17",
+"title": "Editorial Innovation Intern - Innovation Team"
+},
 "9f197d2d-9e2c-4c85-96a0-2d38644a115e": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -14840,7 +14875,7 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-16",
+"internship": "2026-08-17",
 "new_grad": "2026-08-17"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
@@ -15483,6 +15518,11 @@
 "first_seen": "2026-08-15",
 "title": "Forward Deployed Engineer Intern - AI Implementation"
 },
+"a767a566-2d90-4918-92d4-af53aaa4a6a1": {
+"company": "Mass General Brigham",
+"first_seen": "2026-08-17",
+"title": "Data Analyst 1"
+},
 "a7801247-e97d-4b93-a90e-e5706b8a7c25": {
 "company": "Flow Traders",
 "first_seen": "2026-08-15",
@@ -16087,6 +16127,11 @@
 "company": "Jump Trading",
 "first_seen": "2026-08-15",
 "title": "AI Research Engineer - Research Automation"
+},
+"acf99652-adf2-4fff-8ef1-4e83760711e4": {
+"company": "NVIDIA",
+"first_seen": "2026-08-17",
+"title": "Verification Engineer"
 },
 "ad0c0ea3-6eff-409b-91d6-adcf6f76c26e": {
 "company": "ByteDance",
@@ -17408,10 +17453,20 @@
 "first_seen": "2026-08-15",
 "title": "Junior Systems Engineer"
 },
+"baec2182-f1a3-471d-b026-bb9c51afb325": {
+"company": "Dayshape",
+"first_seen": "2026-08-17",
+"title": "Software Engineer Placement"
+},
 "baeedb05-7415-43b1-a352-ff0efdc23b6b": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - E-Commerce Recommendation Mall"
+},
+"bb0509d1-41ed-4c91-ba8b-14fa499ce25c": {
+"company": "W.W. Grainger",
+"first_seen": "2026-08-17",
+"title": "Business Intelligence 1 Intern"
 },
 "bb2a6ad0-6c5b-4465-8000-4860902ca8ed": {
 "company": "Pennsylvania State University",
@@ -17898,6 +17953,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Hardware Engineer"
 },
+"c101d2aa-a5df-4f4b-b719-e88358c1f874": {
+"company": "W.W. Grainger",
+"first_seen": "2026-08-17",
+"title": "Business Systems Analyst Intern"
+},
 "c1093732-5407-4435-9788-6028cc7a03d4": {
 "company": "Goldman Sachs",
 "first_seen": "2026-08-15",
@@ -18052,6 +18112,11 @@
 "company": "Markem-Imaje",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
+},
+"c344d643-aa8d-4d64-a497-67a78ca63dc9": {
+"company": "American Express",
+"first_seen": "2026-08-17",
+"title": "Software Engineer Intern - Enterprise Technology Services"
 },
 "c34ca314-19b9-470e-9a50-e2bd7cc25d8e": {
 "company": "Palo Alto Networks",
@@ -19672,6 +19737,11 @@
 "company": "WTW",
 "first_seen": "2026-08-15",
 "title": "Software Developer Intern"
+},
+"d4e10f5f-fe79-4c2f-bee7-b413db703e65": {
+"company": "TikTok",
+"first_seen": "2026-08-17",
+"title": "Data Analyst Intern - LIVE"
 },
 "d4f9343e-d33a-4784-9ce5-bd26b3b3bd28": {
 "company": "TikTok",
@@ -21572,6 +21642,11 @@
 "company": "Nightwing Intelligence Solutions",
 "first_seen": "2026-08-15",
 "title": "Radio Frequency Engineering Intern"
+},
+"e95cee0e-a2ed-44d1-9017-9befd82e1561": {
+"company": "TikTok",
+"first_seen": "2026-08-17",
+"title": "Data Engineer Intern - Data Platform Global Live"
 },
 "e971a3e2-631b-4ad9-ab78-effc38c864ed": {
 "company": "Tenstorrent",
