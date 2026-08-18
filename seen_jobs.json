@@ -224,6 +224,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
 },
+"01f94fe8-2e33-469f-bcf0-042318fee140": {
+"company": "SteelEye",
+"first_seen": "2026-08-18",
+"title": "Financial Implementation Data Analyst"
+},
 "01fb5702-b0a0-461a-8f55-9947b864709a": {
 "company": "Babel Street",
 "first_seen": "2026-08-15",
@@ -1684,6 +1689,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer"
 },
+"108a96d8-0abd-4fba-a1ec-8a0c1c5f47cc": {
+"company": "Westinghouse Electric Company",
+"first_seen": "2026-08-18",
+"title": "Safety Software 1&C Engineer HMI Systems"
+},
 "10aab0a0-09f3-44a8-990e-a5b8db3c8da8": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -2388,6 +2398,11 @@
 "company": "Conduent",
 "first_seen": "2026-08-15",
 "title": "Java Developer \u2013 Entry Level"
+},
+"1684b5f7-9d7b-4b05-a2f1-4335f8426ec4": {
+"company": "Zoro",
+"first_seen": "2026-08-18",
+"title": "Full Stack Software Developer"
 },
 "168be0d0-eff5-4b46-acaf-353e65e445b0": {
 "company": "Terranova",
@@ -3954,6 +3969,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Software Engineer - Mobile - iOS"
 },
+"27212d63-826e-42d8-8e6a-63d26743404c": {
+"company": "ByteDance",
+"first_seen": "2026-08-18",
+"title": "Research Scientist - DPU & AI Infrastructure"
+},
 "272a8a12-a059-4b95-8352-e8d3fa58f498": {
 "company": "Cigna Group",
 "first_seen": "2026-08-15",
@@ -4509,6 +4529,11 @@
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer 1 - Electron Microscopy"
 },
+"2d8cdf9d-b9eb-4ced-ac4c-3a895bc5ec3e": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Data Collector"
+},
 "2d8fe16e-0d23-496c-9f2a-a5a1dd0f386a": {
 "company": "Intel",
 "first_seen": "2026-08-18",
@@ -5013,6 +5038,11 @@
 "company": "Northwestern Mutual",
 "first_seen": "2026-08-15",
 "title": "Investment Analyst - Private Debt & Equity"
+},
+"3386d541-3330-4821-95b1-d73fc055bdb2": {
+"company": "Fannie Mae",
+"first_seen": "2026-08-18",
+"title": "Access Management Associate - Business Analysis"
 },
 "339d95bb-c9b2-4376-9613-4e3f90631143": {
 "company": "Amazon",
@@ -11109,6 +11139,11 @@
 "first_seen": "2026-08-15",
 "title": "Algorithm Researcher - Multiple Teams"
 },
+"70360c1f-0b61-408f-a791-83eec1e97173": {
+"company": "AeroVect",
+"first_seen": "2026-08-18",
+"title": "Autonomy Intern"
+},
 "703ca800-7739-4af0-ac22-fe5aa240bd03": {
 "company": "Citadel",
 "first_seen": "2026-08-15",
@@ -11973,6 +12008,11 @@
 "company": "Cummins",
 "first_seen": "2026-08-15",
 "title": "Product Engineer - Turbo Platform Product Engineering"
+},
+"79543c3a-5362-4db7-9aa3-96795e7c8871": {
+"company": "ByteDance",
+"first_seen": "2026-08-18",
+"title": "Research Scientist Graduate - DPU & AI Infra - PhD"
 },
 "795ce1f8-b4b1-4f7b-a7f3-f02c7d6715a9": {
 "company": "Coherent",
@@ -13644,6 +13684,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist in Generative AI - Intelligent Creation"
 },
+"8b15cf88-1dc7-4e50-9279-545c21772f6c": {
+"company": "CACI",
+"first_seen": "2026-08-18",
+"title": "Entry Level Software Engineer"
+},
 "8b1eac44-14e3-4cc2-9fb1-f3d49d245ed4": {
 "company": "Relativity Space",
 "first_seen": "2026-08-15",
@@ -13973,6 +14018,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Graduate - Inference Infrastructure"
+},
+"8e68fbca-ccd3-4270-a340-5f5b7ed8be5d": {
+"company": "Fannie Mae",
+"first_seen": "2026-08-18",
+"title": "Analytics Associate - Analytics-Test"
 },
 "8e8910ff-d27c-4f3c-871e-d348e505c0c5": {
 "company": "Motorola",
@@ -18388,6 +18438,11 @@
 "first_seen": "2026-08-18",
 "title": "Embedded Software Engineer"
 },
+"bb4fc784-122f-40c9-b307-d226b91c5659": {
+"company": "Fannie Mae",
+"first_seen": "2026-08-18",
+"title": "Access Management"
+},
 "bb606683-d0a7-4560-b7cd-e9d06048c78a": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -20718,6 +20773,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Software Engineer - Aht"
 },
+"d3cc9f4e-f348-4058-8346-84218a410692": {
+"company": "Denso",
+"first_seen": "2026-08-18",
+"title": "Tester Design Engineer 2"
+},
 "d3e00d4e-daa5-4c01-aa27-5b0a91260ab5": {
 "company": "Atos",
 "first_seen": "2026-08-15",
@@ -22402,6 +22462,11 @@
 "company": "University of Arkansas",
 "first_seen": "2026-08-15",
 "title": "Graduate Research Assistant Intern"
+},
+"e4f7c9df-3c11-4887-8760-503c65a43b13": {
+"company": "Fannie Mae",
+"first_seen": "2026-08-18",
+"title": "Business Analyst Associate - Access Management"
 },
 "e4f90f60-0ef3-4d02-97a2-ee3aa0c21d26": {
 "company": "TikTok",
@@ -24483,10 +24548,20 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Foundation Platform"
 },
+"fa5285eb-f846-4ade-8c5e-09dc59f59cd9": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Data Collection Associate"
+},
 "fa5f9365-4100-48b9-a209-20b0abd1211d": {
 "company": "EAi Technologies",
 "first_seen": "2026-08-15",
 "title": "Physics/Math Graduate Software Developer"
+},
+"fa77fbd2-2a59-472a-906e-22028f34469a": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Data Collector"
 },
 "fa7fbaf4-50b2-4148-af69-22df652b6fd5": {
 "company": "Palantir",
