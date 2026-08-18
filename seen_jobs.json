@@ -2794,6 +2794,11 @@
 "first_seen": "2026-08-15",
 "title": "Friedman Frontier Technical Expert"
 },
+"1b19f544-bada-4297-8147-46d2ae6afe4d": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Data Collection Associate"
+},
 "1b21bdff-92f5-48ff-9546-d0a0dbd75a5c": {
 "company": "Hewlett Packard Enterprise",
 "first_seen": "2026-08-15",
@@ -3898,6 +3903,11 @@
 "company": "Radiance Technologies",
 "first_seen": "2026-08-15",
 "title": "Entry Level Microelectronics Research and Development Engineer"
+},
+"262b8bd2-850c-44ef-906d-9dcf0a271e1c": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Data Collection Associate"
 },
 "262de8fa-292e-4d47-9bd2-bbf3befe8b30": {
 "company": "TikTok",
@@ -5063,6 +5073,11 @@
 "company": "Jane Street",
 "first_seen": "2026-08-15",
 "title": "Quantitative Trader"
+},
+"33cae2c3-6523-484a-bfe4-bb075af5f1eb": {
+"company": "ISAAC Instruments",
+"first_seen": "2026-08-18",
+"title": "Electronics Technician"
 },
 "33cc8535-c719-4dbe-bb40-dd257deb0ae1": {
 "company": "Texas Instruments",
@@ -7354,6 +7369,11 @@
 "first_seen": "2026-08-15",
 "title": "Hunyuan Multimodal Reinforcement Learning Research Intern"
 },
+"4a0ac2bd-9aed-42eb-88de-3663340e79b5": {
+"company": "Nexthop.ai",
+"first_seen": "2026-08-18",
+"title": "Software Engineer New Grad"
+},
 "4a0eb1dc-86d2-4a53-bb34-06a44fd94c52": {
 "company": "Oracle",
 "first_seen": "2026-08-15",
@@ -7819,6 +7839,11 @@
 "first_seen": "2026-08-15",
 "title": "Sales Data Analytics Analyst"
 },
+"4eefe483-e13a-4b05-9d66-ce2b858677b1": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Retail Data Collector"
+},
 "4ef18c97-61e7-45fb-96b5-55d9163a1786": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -7928,6 +7953,11 @@
 "company": "Ohio State University",
 "first_seen": "2026-08-15",
 "title": "Student Assistant"
+},
+"501d19ec-b828-4eaf-8c4c-fe4412b621b9": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Product Event Demonstrator"
 },
 "50302205-471f-44ae-b50c-6d339917d72f": {
 "company": "PNC Financial Services",
@@ -9139,6 +9169,11 @@
 "first_seen": "2026-08-15",
 "title": "Platform Applications Engineer Intern Co-op"
 },
+"5ba3104e-e08a-431a-8c27-c619b7294974": {
+"company": "John Deere",
+"first_seen": "2026-08-18",
+"title": "Part-Time Student - IT - Technology"
+},
 "5ba6e23d-6e0c-406a-9f67-e88da7202998": {
 "company": "Lawrence Livermore National Laboratory (LLNL)",
 "first_seen": "2026-08-15",
@@ -9473,6 +9508,11 @@
 "company": "Blue River Technology",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Intern - Autonomy"
+},
+"5fc86d18-cd9e-4d79-9edc-a162318dd4fb": {
+"company": "National Reconnaissance Office",
+"first_seen": "2026-08-18",
+"title": "Summer Internship - Dr. Chris Scolese"
 },
 "5fd099ae-f924-4d7f-80a4-5e08eb4977df": {
 "company": "Pennsylvania State University",
@@ -9848,6 +9888,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - Search"
+},
+"6359c80a-9d69-4dcc-9607-0b4506269693": {
+"company": "Riveron",
+"first_seen": "2026-08-18",
+"title": "Technology & Innovation Intern"
 },
 "63807ddc-301f-4d78-ac5c-193a82587f30": {
 "company": "M.C. Dean",
@@ -10973,6 +11018,11 @@
 "company": "Generac",
 "first_seen": "2026-08-15",
 "title": "Application Engineer 1"
+},
+"6e9f8ba6-6c48-4605-b6d4-6f4605120a80": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Associate Software Engineer"
 },
 "6eab1924-cfad-4106-b8c6-162292dcc659": {
 "company": "SoloPulse",
@@ -15710,8 +15760,8 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-17",
-"new_grad": "2026-08-17"
+"internship": "2026-08-18",
+"new_grad": "2026-08-18"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -18073,6 +18123,11 @@
 "first_seen": "2026-08-15",
 "title": "Frontend Engineer Intern - Open Platform"
 },
+"b82acf7c-02f2-46ef-b14e-93b2633586b1": {
+"company": "Domino's",
+"first_seen": "2026-08-18",
+"title": "Delivery Driver"
+},
 "b82ebee3-b9ea-4a22-b498-9b803e53e092": {
 "company": "AIR Control Concepts",
 "first_seen": "2026-08-15",
@@ -20003,6 +20058,11 @@
 "first_seen": "2026-08-15",
 "title": "Technical Specialist 1"
 },
+"cc182431-1899-4ccb-8933-d71659e7c501": {
+"company": "John Deere",
+"first_seen": "2026-08-18",
+"title": "Product Engineering Student - Product Engineering"
+},
 "cc2206be-95ef-48b1-9bc1-902a0346a077": {
 "company": "Astreya",
 "first_seen": "2026-08-15",
@@ -21062,6 +21122,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - Ads Measurement Signal Technology"
+},
+"d69a556d-0348-41df-bdf2-68733f86cc5d": {
+"company": "John Deere",
+"first_seen": "2026-08-18",
+"title": "Part-Time Student - Technical Data & Analytics"
 },
 "d6a885d5-70a3-4a02-b14c-21a96a940211": {
 "company": "Worldwide TechServices",
@@ -23823,6 +23888,11 @@
 "first_seen": "2026-08-15",
 "title": "Triage Student Worker - ASTE"
 },
+"f32f3cd2-e5b0-43b7-8c9c-327a571a048c": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Product"
+},
 "f33af6f6-2b08-4c2b-ab44-07fd91623f67": {
 "company": "RWS",
 "first_seen": "2026-08-15",
@@ -24272,6 +24342,11 @@
 "company": "Gensyn",
 "first_seen": "2026-08-15",
 "title": "Research Intern"
+},
+"f78b46cf-27f5-4f97-ba4d-9490efeee843": {
+"company": "CROSSMARK",
+"first_seen": "2026-08-18",
+"title": "Product Event Demonstrator"
 },
 "f7acfe22-a7e9-419e-85db-b6ead678d5e8": {
 "company": "International Rescue Committee (IRC)",
