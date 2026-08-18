@@ -3679,6 +3679,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Co-op - Multiple Teams"
 },
+"243aba20-fbdd-4b8c-8c22-6c1d32b68ea0": {
+"company": "Electronic Systems",
+"first_seen": "2026-08-18",
+"title": "Printer Deployment Technician"
+},
 "2446865e-7ba5-4adc-9e7b-8d0a9a5fc6ed": {
 "company": "LiveScore Group",
 "first_seen": "2026-08-15",
@@ -4203,6 +4208,11 @@
 "company": "JP Morgan Chase",
 "first_seen": "2026-08-15",
 "title": "Equities Trading Analyst - Cash Equities Trading"
+},
+"295719ba-3f4a-4fe6-b6fe-bd9f5d3d8aba": {
+"company": "iomart",
+"first_seen": "2026-08-18",
+"title": "Data Centre Engineer"
 },
 "29572b77-0c6f-4521-84e8-0931fe20e8e4": {
 "company": "Spacial AI",
@@ -8519,6 +8529,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Trust and Safety Engineering"
 },
+"5548bd24-84df-4da1-abbf-61bb879712e0": {
+"company": "Electro Rent",
+"first_seen": "2026-08-18",
+"title": "Electronic Technician 1"
+},
 "554f3e1a-4eb2-4aaf-96be-6aef77c84495": {
 "company": "Rivian and Volkswagen Group Technologies",
 "first_seen": "2026-08-15",
@@ -9584,6 +9599,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Analyst Associate"
 },
+"5fef5ebc-9956-4edd-8a29-1eee01522d58": {
+"company": "TikTok",
+"first_seen": "2026-08-18",
+"title": "Software Engineer Intern - TikTok Search Data Infrastructure"
+},
 "600d65ac-5918-4d2c-80ed-c6a5ba2a90d4": {
 "company": "Kastle AI",
 "first_seen": "2026-08-15",
@@ -10078,6 +10098,11 @@
 "company": "McKesson",
 "first_seen": "2026-08-15",
 "title": "Associate Business Systems Analyst Intern - Data Hub Canada"
+},
+"646cf1c0-bcf5-41a2-a815-50713458b691": {
+"company": "Kaukahi",
+"first_seen": "2026-08-18",
+"title": "Geospatial Analyst"
 },
 "6470fc04-154d-4d53-9a4c-9f69aaba3aaf": {
 "company": "Susquehanna International Group (SIG)",
@@ -11453,6 +11478,11 @@
 "company": "Deutsche Bank",
 "first_seen": "2026-08-18",
 "title": "Technology Graduate Program - Technology, Data and Innovation"
+},
+"72c7ed62-452e-450a-bdd8-b07d15e87d15": {
+"company": "Wood",
+"first_seen": "2026-08-18",
+"title": "Radiation Protection Technician"
 },
 "72d01bcf-1d1c-4454-97e2-d5db19cce4d1": {
 "company": "Allstate Insurance Company",
@@ -13184,6 +13214,11 @@
 "first_seen": "2026-08-15",
 "title": "Upgrade Install and Relocation Engineer - Duv"
 },
+"8473c813-9988-4e76-a914-5a950ee18399": {
+"company": "Version 1",
+"first_seen": "2026-08-18",
+"title": "Oracle Cloud Consultant Trainee"
+},
 "84788597-6972-41c6-975b-e614c4c72909": {
 "company": "DellFor Technologies",
 "first_seen": "2026-08-15",
@@ -13483,6 +13518,11 @@
 "company": "Applied Intuition",
 "first_seen": "2026-08-15",
 "title": "Embedded Software Engineer New Grad"
+},
+"8814a8ab-306b-46c1-a490-71c3d9d7063f": {
+"company": "Duluth Trading Company",
+"first_seen": "2026-08-18",
+"title": "Seasonal Retail Associate"
 },
 "8824740b-a32e-404b-842c-660710e68dab": {
 "company": "PennState University",
@@ -13953,6 +13993,11 @@
 "company": "Retell AI",
 "first_seen": "2026-08-15",
 "title": "Software Engineer - Founders Initiatives"
+},
+"8c190f84-7c21-4a30-a956-f5a480ccdec6": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Software Engineer Intern"
 },
 "8c2dd64a-e3b1-4a40-a38f-718fcba4f293": {
 "company": "Together AI",
@@ -14763,6 +14808,11 @@
 "company": "DellFor Technologies",
 "first_seen": "2026-08-15",
 "title": "Entry Level .NET Developer"
+},
+"946bf1c8-b423-4c84-8be5-1ef8d82475ab": {
+"company": "Publicis Groupe",
+"first_seen": "2026-08-18",
+"title": "Search Analyst - SEM"
 },
 "946e941e-4bfd-49cd-8d25-ae19e6b1066e": {
 "company": "Enova",
@@ -16092,6 +16142,11 @@
 "company": "GlobalFoundries",
 "first_seen": "2026-08-15",
 "title": "Tapeout Engineer New Grad"
+},
+"a2b482d1-0a95-4518-ae61-f372a6170842": {
+"company": "Sciemo",
+"first_seen": "2026-08-18",
+"title": "Data Scientist"
 },
 "a2b9bd58-76d2-4518-8aa2-3328919a2073": {
 "company": "University of Pikeville",
@@ -17602,6 +17657,11 @@
 "company": "Titan",
 "first_seen": "2026-08-15",
 "title": "New Grad Product Engineer"
+},
+"b0e4e7d4-eba7-44f7-aaad-4e6f88670701": {
+"company": "Metal Exchange",
+"first_seen": "2026-08-18",
+"title": "Recycled Metals Buyer - Non Ferrous Trading Division"
 },
 "b0e4f405-60ec-4f76-bad9-511dd698c08d": {
 "company": "InterImage",
@@ -19722,6 +19782,11 @@
 "company": "Innodata",
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
+},
+"c8239540-af84-491d-8907-13b4bb623874": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Software Engineer Intern"
 },
 "c82946ef-cdc6-4316-90ee-083d296759f4": {
 "company": "Ciena",
@@ -23223,10 +23288,20 @@
 "first_seen": "2026-08-15",
 "title": "Research Assistant - FAIR Lab"
 },
+"eae0ef21-1871-450c-8a88-45c56de6f0a2": {
+"company": "i2G Systems",
+"first_seen": "2026-08-18",
+"title": "Electronic Security Installer - Special Projects"
+},
 "eae9fa9e-6d4b-4889-abae-c7a7f99d23be": {
 "company": "Royal Bank of Canada",
 "first_seen": "2026-08-18",
 "title": "Machine Learning Software Engineer Co-op - RBC Borealis"
+},
+"eaef6238-c317-4dda-953d-35f05f4fd670": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Software Engineer Intern"
 },
 "eb00327c-de5a-46e4-85b1-6ac7acb377a1": {
 "company": "Susquehanna International Group (SIG)",
