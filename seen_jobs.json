@@ -2014,6 +2014,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer - Machine Learning Engineering"
 },
+"135dd828-d886-4d9d-b74f-87c7e0c988cb": {
+"company": "eBay",
+"first_seen": "2026-08-18",
+"title": "Electronics Specialist"
+},
 "136acc19-04d4-4587-ac2a-23f2cd4c8ba3": {
 "company": "DRW",
 "first_seen": "2026-08-15",
@@ -10924,6 +10929,11 @@
 "first_seen": "2026-08-15",
 "title": "AI R&D Engineer Co-op"
 },
+"6ccda946-6b9f-4679-811c-1926a34bdcee": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-18",
+"title": "AI Applications Intern - Group Risk Management"
+},
 "6cd649ed-1841-4c85-a1ae-1f2c5e2d51cb": {
 "company": "CornerStone Partners",
 "first_seen": "2026-08-15",
@@ -11233,6 +11243,11 @@
 "company": "Northwestern Mutual",
 "first_seen": "2026-08-15",
 "title": "Application Development Intern"
+},
+"6fc7e4af-87e1-4ae0-9903-2066010754a3": {
+"company": "Micron Technology",
+"first_seen": "2026-08-18",
+"title": "Digital Design Engineer New Grad - Mixed Signal Design Engineer - HBM"
 },
 "6fcc37f1-f667-4483-a39c-eea9d0bbc924": {
 "company": "ConnectPrep",
@@ -16293,6 +16308,11 @@
 "first_seen": "2026-08-15",
 "title": "Intern - PhD Research Scientist"
 },
+"a424b4b3-571e-4a67-a90c-6c2f388a61a1": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Associate Integration/Test Engineer"
+},
 "a43641ff-3abd-46fe-ab19-0315be4a14ac": {
 "company": "United Parcel Service (UPS)",
 "first_seen": "2026-08-15",
@@ -17312,6 +17332,11 @@
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-08-15",
 "title": "Navigation Systems Analyst/Engineer"
+},
+"ad91f84d-90ea-4295-ad64-7fc45756c54f": {
+"company": "Sherwin-Williams",
+"first_seen": "2026-08-18",
+"title": "IT Database Engineer Co-op"
 },
 "ad93c397-dbd2-49a1-9506-3b3f67b410a7": {
 "company": "IXL Learning",
@@ -19793,6 +19818,11 @@
 "first_seen": "2026-08-15",
 "title": "Analyst"
 },
+"c7f1c784-ada4-411c-85aa-060cd89e52c6": {
+"company": "Squarepoint Capital",
+"first_seen": "2026-08-18",
+"title": "Software Developer Intern"
+},
 "c7f2b025-9cd7-46ef-82d2-99e8977a1a9b": {
 "company": "Innodata",
 "first_seen": "2026-08-15",
@@ -20147,6 +20177,11 @@
 "company": "Fannie Mae",
 "first_seen": "2026-08-18",
 "title": "Access Management Associate - Business Analysis"
+},
+"cb122163-3252-40e0-b9f9-639e44b43bbb": {
+"company": "Incora",
+"first_seen": "2026-08-18",
+"title": "Data Coordinator"
 },
 "cb1b4088-7336-49cb-9256-5f2f746a9ca9": {
 "company": "Texas Sports Academy",
@@ -21113,6 +21148,11 @@
 "first_seen": "2026-08-15",
 "title": "Website Designer/Front End Developer"
 },
+"d477274f-b6e9-4cd5-a6d6-1bc88d730ff9": {
+"company": "Northrop Grumman",
+"first_seen": "2026-08-18",
+"title": "Associate Cyber Software Engineer"
+},
 "d482b9f8-9e51-4e4d-9a3b-fe95a6fcddb8": {
 "company": "RTX",
 "first_seen": "2026-08-18",
@@ -21167,6 +21207,11 @@
 "company": "WTW",
 "first_seen": "2026-08-15",
 "title": "Software Developer Intern"
+},
+"d4e082c8-3281-4af2-923d-bbf1d427be5a": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-18",
+"title": "Business Markets Relationship Manager Intern"
 },
 "d4e10f5f-fe79-4c2f-bee7-b413db703e65": {
 "company": "TikTok",
@@ -23348,6 +23393,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Quantitative Trader"
 },
+"eb09190f-823e-42bc-bf52-4ddcaab011b0": {
+"company": "State Street",
+"first_seen": "2026-08-18",
+"title": "Software Engineer New Grad"
+},
 "eb14174f-2e4d-4c27-90c6-67df2ddef557": {
 "company": "Tencent",
 "first_seen": "2026-08-15",
@@ -23703,6 +23753,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Software Engineer - DV Commodities"
 },
+"eec96d34-d4a6-4af6-9f82-2effad6f2f33": {
+"company": "Northrop Grumman",
+"first_seen": "2026-08-18",
+"title": "Associate Cable Engineer Technical Services"
+},
 "eed44008-bc56-4a68-9f65-0b98b4876804": {
 "company": "Palantir",
 "first_seen": "2026-08-15",
@@ -23752,6 +23807,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Research Scientist - Technologies of Data Management - LLM and AI Agents"
+},
+"ef8b36d6-9967-4457-8ad8-2f8b9a8c9c91": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Application Developer Associate"
 },
 "ef8ff4de-0225-4866-aab7-d882cd3fb6c6": {
 "company": "Circet USA",
