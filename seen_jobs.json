@@ -84,6 +84,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1"
 },
+"00b35da0-c4cc-49e0-8c0c-81457f3767d9": {
+"company": "Dexis Consulting Group",
+"first_seen": "2026-08-18",
+"title": "Data Collector - Testing and Data Collection"
+},
 "00b962ad-7300-4a69-b5ea-dc0b7bad5669": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -2574,6 +2579,11 @@
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Researcher - Statistical Learning and Modeling"
 },
+"1970a20b-652d-4272-8755-26ad35432a5b": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Associate Integration and Test Engineering"
+},
 "198e2cb8-c60f-44d8-8d09-b3faf89aea9d": {
 "company": "Sika",
 "first_seen": "2026-08-15",
@@ -2988,6 +2998,11 @@
 "company": "Jump Trading",
 "first_seen": "2026-08-15",
 "title": "Campus Quantitative Trader Intern"
+},
+"1e1ccc4f-abdd-407e-9184-e7722acd51eb": {
+"company": "Dexis Consulting Group",
+"first_seen": "2026-08-18",
+"title": "Computer Operator 1 - Testing and Data Collection"
 },
 "1e24ca64-daad-4e93-b51b-88f86f72518a": {
 "company": "SHEIN",
@@ -5533,6 +5548,11 @@
 "company": "Voltus",
 "first_seen": "2026-08-15",
 "title": "Software Engineer"
+},
+"38cb13d9-2536-4cc1-8074-ce01aa58bae0": {
+"company": "Cambridge Investment Research",
+"first_seen": "2026-08-18",
+"title": "Data Integrity Specialist - Specialized Services"
 },
 "38cf633c-ab48-4592-895d-a0e4b02c4ad7": {
 "company": "Finning",
@@ -10924,6 +10944,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Ads Interface"
 },
+"6fb6a0cd-4a04-46c6-aec0-7982cb8e577b": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Associate Software Engineer"
+},
 "6fbf8dd3-35d5-4fce-9037-e31a83a37aca": {
 "company": "RTX",
 "first_seen": "2026-08-15",
@@ -11173,6 +11198,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Research Intern - AI/LLM Network"
+},
+"72be61ef-dcd0-488c-8602-c8e035e5e45e": {
+"company": "Deutsche Bank",
+"first_seen": "2026-08-18",
+"title": "Technology Graduate Program - Technology, Data and Innovation"
 },
 "72d01bcf-1d1c-4454-97e2-d5db19cce4d1": {
 "company": "Allstate Insurance Company",
@@ -11994,6 +12024,11 @@
 "first_seen": "2026-08-15",
 "title": "RTL Tools & Methodology Engineer"
 },
+"7b61382c-2d24-4cce-bcb3-2ce178d025d6": {
+"company": "City of Greeley",
+"first_seen": "2026-08-18",
+"title": "Asset Technician - Multiple Teams"
+},
 "7b62fd92-1a4c-4e20-8df2-7461128a1481": {
 "company": "ADT",
 "first_seen": "2026-08-15",
@@ -12103,6 +12138,11 @@
 "company": "Cenovus Energy",
 "first_seen": "2026-08-15",
 "title": "Geophysicist-in-Training New Grad"
+},
+"7ccbcea2-9321-45fd-ae7b-1880c2950dff": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Associate Software Engineer"
 },
 "7cd1e33f-21cb-46a0-9c15-b8392e204d63": {
 "company": "GuideWell Mutual",
@@ -14134,6 +14174,11 @@
 "first_seen": "2026-08-15",
 "title": "Intern AI Engineering"
 },
+"91977cf9-3eaa-4e42-91b6-31d3e06c2688": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Software Engineer - Software Engineering"
+},
 "919e3428-c805-4f21-9770-29a36d2ce524": {
 "company": "Dunn Solutions Group",
 "first_seen": "2026-08-15",
@@ -14988,6 +15033,11 @@
 "company": "Worldwide TechServices",
 "first_seen": "2026-08-15",
 "title": "PC Support - Dynamic"
+},
+"9b28f741-a7e8-4acb-8697-fb44335ee538": {
+"company": "Repligen",
+"first_seen": "2026-08-18",
+"title": "Software Developer 1"
 },
 "9b2c8392-e286-400e-95e9-809d118e367e": {
 "company": "ByteDance",
@@ -18558,6 +18608,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Application Engineer"
 },
+"bf6b0f3e-26ba-4217-917a-74df5f06b050": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Associate Software Engineer - Software Engineering"
+},
 "bf6edc85-9e93-4c7d-9432-acf222e05f2e": {
 "company": "Serve Robotics",
 "first_seen": "2026-08-15",
@@ -21583,6 +21638,11 @@
 "first_seen": "2026-08-15",
 "title": "AI/ML Scientist Intern - AIMS AI Foundations"
 },
+"dee54f4b-9624-4a3e-bda6-8f39d6b81920": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Associate Software Engineer"
+},
 "deed4f00-40b1-4e15-a318-5e848adf52e6": {
 "company": "Kanshe Infotech",
 "first_seen": "2026-08-15",
@@ -23143,10 +23203,20 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist - LLM"
 },
+"efd4ba04-1e6b-4ae8-8da1-68788a3be0e8": {
+"company": "Deutsche Bank",
+"first_seen": "2026-08-18",
+"title": "Technology Graduate Program - Technology, Data and Innovation"
+},
 "efdc29ac-3896-4cea-8dfa-2a4eb0e9929d": {
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Associate"
+},
+"efe1e516-6ed6-4f82-80cb-e93d640efb8d": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Software Engineer"
 },
 "eff78df6-63f3-44c3-a44c-8c05d0eebf15": {
 "company": "Semtech",
@@ -23527,6 +23597,11 @@
 "company": "Bio-Techne",
 "first_seen": "2026-08-15",
 "title": "Hardware Engineering Intern"
+},
+"f3e59677-5514-4b20-94b5-e6729edf6fd5": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-18",
+"title": "Software Engineering Intern"
 },
 "f3e5daf4-604e-43d1-9fbc-8dc1c33b4ec5": {
 "company": "TikTok",
