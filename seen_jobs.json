@@ -2159,6 +2159,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate AI Builder"
 },
+"1449024f-7d03-4430-a356-5c1ca206ed29": {
+"company": "Cole Engineering Services",
+"first_seen": "2026-08-19",
+"title": "Software Engineer Intern"
+},
 "145cba92-b894-4834-b67b-334347a2ba4f": {
 "company": "Innodata",
 "first_seen": "2026-08-15",
@@ -5079,6 +5084,11 @@
 "first_seen": "2026-08-15",
 "title": "Design Engineer"
 },
+"322089aa-4fda-40e6-a5e4-53f699d99830": {
+"company": "Wabtec",
+"first_seen": "2026-08-19",
+"title": "Engineering Intern"
+},
 "3233bc5d-9026-42f2-acc6-1cbf5cd4e5f2": {
 "company": "Zipline",
 "first_seen": "2026-08-15",
@@ -5113,6 +5123,11 @@
 "company": "Amazon",
 "first_seen": "2026-08-15",
 "title": "Programmer Analyst 1"
+},
+"32970bf2-a278-4f2c-bf75-8f5eaab44ed1": {
+"company": "Wabtec",
+"first_seen": "2026-08-19",
+"title": "Digital Intern"
 },
 "329c34b0-2085-4389-8916-e5acd0bdb164": {
 "company": "KAYAK",
@@ -6834,6 +6849,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Sports Researcher"
 },
+"42fd1db9-f60e-4e19-9ba2-5ee6a6c2c4b4": {
+"company": "Crown Innovations",
+"first_seen": "2026-08-19",
+"title": "R&D Engineer 1 - II - III"
+},
 "42fecf75-6f31-494b-92cf-fa1cc189bf04": {
 "company": "AllianceBernstein",
 "first_seen": "2026-08-15",
@@ -8319,6 +8339,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Trader New Grad"
 },
+"51fe32fd-f8f8-4aa8-aa29-d1a0b213bed5": {
+"company": "SAM",
+"first_seen": "2026-08-19",
+"title": "Survey Technician/Instrument Operator"
+},
 "52313b30-cb01-42d0-9c7e-e101d5417aa5": {
 "company": "Microsoft",
 "first_seen": "2026-08-15",
@@ -8748,6 +8773,11 @@
 "company": "Hewlett Packard (HP)",
 "first_seen": "2026-08-15",
 "title": "Graduate Software Developer"
+},
+"560db1fb-22f5-4680-b792-9bf27494b76e": {
+"company": "SAM",
+"first_seen": "2026-08-19",
+"title": "Lidar Technician 1"
 },
 "56196707-1bc1-44de-9e0e-a32456792771": {
 "company": "Melius",
@@ -9408,6 +9438,11 @@
 "company": "Phonely",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Multiple Teams"
+},
+"5c6a7acc-7059-4cd2-b311-ad9527733e79": {
+"company": "Huntington Ingalls Industries",
+"first_seen": "2026-08-19",
+"title": "Software Development Analyst 1"
 },
 "5c8636dd-9a87-4f4e-b8d5-4feb37823af0": {
 "company": "Proximate Technologies",
@@ -11748,6 +11783,11 @@
 "company": "Sinclair",
 "first_seen": "2026-08-15",
 "title": "Meteorologist"
+},
+"7362efe9-2c7f-47d3-813c-cf6ae32377c0": {
+"company": "Cole Engineering Services",
+"first_seen": "2026-08-19",
+"title": "AI Intern"
 },
 "73694032-23cd-4ce0-8193-0aa5188a23c9": {
 "company": "Johns Hopkins Applied Physics Laboratory",
@@ -16373,6 +16413,11 @@
 "first_seen": "2026-08-15",
 "title": "Atomistic and Data-Driven Modeling of Materials for Energy Applications - Postdoctoral Researcher"
 },
+"a1f766f8-d702-4a0a-a09a-f533438de5ab": {
+"company": "Avery Dennison",
+"first_seen": "2026-08-19",
+"title": "RFID Applications Engineer Co-op - Summer 2027 - Plus one semester"
+},
 "a20a7312-6f49-4e8d-8853-80f920510fd0": {
 "company": "V2X",
 "first_seen": "2026-08-15",
@@ -18128,6 +18173,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist New Grad - Distributed NoSQL Database Systems"
 },
+"b2f3978d-c756-4403-b415-41f4b1a5826b": {
+"company": "Eurofins",
+"first_seen": "2026-08-19",
+"title": "Field Service Engineer 1/2"
+},
 "b2ffbf79-12f6-4a0d-a44f-81db7e09aaaf": {
 "company": "Susquehanna International Group (SIG)",
 "first_seen": "2026-08-15",
@@ -18407,6 +18457,11 @@
 "company": "University of Chicago",
 "first_seen": "2026-08-15",
 "title": "Predoctoral Scholar"
+},
+"b5dd6a2d-3026-4da9-b437-55198d305aa3": {
+"company": "RTX",
+"first_seen": "2026-08-19",
+"title": "Software Engineer 1 - Secure Communications"
 },
 "b5e78c49-7404-4a09-97c7-67befba7da2f": {
 "company": "Argonne National Laboratory",
@@ -19412,6 +19467,11 @@
 "company": "Serve Robotics",
 "first_seen": "2026-08-15",
 "title": "Robotics Field Development Test Associate"
+},
+"bf6ee548-1e1b-4bf9-a87d-9fe5caa564fa": {
+"company": "Augsburg University",
+"first_seen": "2026-08-19",
+"title": "Career Peer Advisor - Data & Analytics"
 },
 "bf81e231-61f0-481a-9930-6a924fda265a": {
 "company": "pony.ai",
@@ -22073,6 +22133,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Engineer Intern"
 },
+"d97d15b1-1e5d-4fcf-8640-1261f9169aea": {
+"company": "Renesas Electronics",
+"first_seen": "2026-08-19",
+"title": "Systems Design Engineer New Grad"
+},
 "d98d37e6-2528-4278-ac21-97f42db9f4eb": {
 "company": "JP Morgan Chase",
 "first_seen": "2026-08-15",
@@ -23017,6 +23082,11 @@
 "company": "Apple",
 "first_seen": "2026-08-15",
 "title": "Software Engineering Masters Intern"
+},
+"e388f3ae-1f83-414c-aa91-7073a448bb2e": {
+"company": "AMD",
+"first_seen": "2026-08-19",
+"title": "Field Application Engineer Graduate Rotational Program"
 },
 "e38bc325-348a-4c2d-83db-ea52520367fc": {
 "company": "Domino's",
@@ -25892,6 +25962,11 @@
 "company": "American Express",
 "first_seen": "2026-08-18",
 "title": "Software Engineer Intern - Enterprise Technology Services"
+},
+"ffbf2ca8-9b8e-4aa7-8227-9a11f77abc90": {
+"company": "Foundation Finance",
+"first_seen": "2026-08-19",
+"title": "Full Stack Developer Intern"
 },
 "ffc1f08c-7dd5-4fce-986e-2e3b824aabb4": {
 "company": "Palantir",
