@@ -1729,6 +1729,11 @@
 "first_seen": "2026-08-17",
 "title": "Python Developer Predoctoral Appointee - Vehicle and Mobility Systems"
 },
+"1005bf9b-20cc-4e7e-a770-9c2ce6ed1a37": {
+"company": "Normal Computing",
+"first_seen": "2026-08-19",
+"title": "Thermodynamic Hardware Resident"
+},
 "101c0a59-cfc7-4ef9-bcf8-d70d2a67c4f7": {
 "company": "Susquehanna International Group (SIG)",
 "first_seen": "2026-08-15",
@@ -2769,6 +2774,11 @@
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Researcher - Statistical Learning and Modeling"
 },
+"19652a32-abb6-4c77-8971-0c6514ed8034": {
+"company": "ByteDance",
+"first_seen": "2026-08-19",
+"title": "Machine Learning Engineer Intern - E-Commerce Risk Control - PhD"
+},
 "1970a20b-652d-4272-8755-26ad35432a5b": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-18",
@@ -3518,6 +3528,11 @@
 "company": "Quantbot Technologies",
 "first_seen": "2026-08-15",
 "title": "Quantitative Researcher Intern"
+},
+"20db6da0-8e69-4119-8287-080208c765ec": {
+"company": "ByteDance",
+"first_seen": "2026-08-19",
+"title": "Machine Learning Engineer Intern - E-Commerce Risk Control - PhD"
 },
 "210479d3-03b2-4a63-87ed-9c2f0d783379": {
 "company": "DRW",
@@ -5129,6 +5144,11 @@
 "first_seen": "2026-08-15",
 "title": "Nuclear Analysis Tech C / Engineering Techs / Physics Techs"
 },
+"3163c14a-7b55-40a3-b21d-2696e2c37cd5": {
+"company": "Normal Computing",
+"first_seen": "2026-08-19",
+"title": "AI Research Resident"
+},
 "31ab487e-bda7-4337-94b7-bda1786f13f2": {
 "company": "Epic Games",
 "first_seen": "2026-08-15",
@@ -5423,6 +5443,11 @@
 "company": "Palantir",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - Defense"
+},
+"346d8f19-1d85-4b8c-86d6-ff97f475fa36": {
+"company": "Pinnacle Live",
+"first_seen": "2026-08-19",
+"title": "Event Services Technician - Audio Visual - Event Technology"
 },
 "347ad34c-98ce-4245-9703-f274852392e9": {
 "company": "Innodata",
@@ -6408,6 +6433,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Graduate AI Model Optimization Engineer - Data Speech Product R&D Engineering"
+},
+"3d4bb444-d328-44a8-9c50-2a5c0e35d574": {
+"company": "NAV CANADA",
+"first_seen": "2026-08-19",
+"title": "Entry Level Developer"
 },
 "3d5a1762-f363-481e-8f1a-fe8b490d1e8e": {
 "company": "JP Morgan Chase",
@@ -16495,8 +16525,8 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-18",
-"new_grad": "2026-08-18"
+"internship": "2026-08-19",
+"new_grad": "2026-08-19"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -18748,6 +18778,11 @@
 "first_seen": "2026-08-18",
 "title": "Trading Intern - Summer 2027 - DV Commodities"
 },
+"b5b15050-2287-4ebf-8a26-f0745c794fd3": {
+"company": "Microsoft",
+"first_seen": "2026-08-19",
+"title": "AI Software Engineer Intern"
+},
 "b5b8fd8d-bfe1-4bc0-a902-6285c6270a00": {
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
@@ -20337,6 +20372,11 @@
 "company": "PDF Solutions",
 "first_seen": "2026-08-15",
 "title": "Senior R&D Engineer"
+},
+"c5c96698-e25e-4209-8af4-5886495e5a80": {
+"company": "Deeter Analytics",
+"first_seen": "2026-08-19",
+"title": "Machine Learning Engineer"
 },
 "c5d7115a-0381-48fe-937d-74497a7da062": {
 "company": "NVIDIA",
