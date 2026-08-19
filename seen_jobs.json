@@ -224,6 +224,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
 },
+"01e96f8b-3039-4c34-807c-eb95ca76fd52": {
+"company": "Point72",
+"first_seen": "2026-08-19",
+"title": "Software Developer - Developers"
+},
 "01f94fe8-2e33-469f-bcf0-042318fee140": {
 "company": "SteelEye",
 "first_seen": "2026-08-18",
@@ -2284,6 +2289,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist New Grad - Efficient Deep Learning"
 },
+"14a90f50-6be6-4afd-8fb8-e8de804afe10": {
+"company": "DRW",
+"first_seen": "2026-08-19",
+"title": "Software Developer"
+},
 "14af9b4a-6b3e-473b-844f-542a89afb184": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -3009,6 +3019,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
 },
+"1b2916de-7e46-4f2e-b790-241b1fd38a82": {
+"company": "Microsoft",
+"first_seen": "2026-08-19",
+"title": "AI for Science Resident - Machine Learning"
+},
 "1b2d5e3a-9ab3-42a9-ab25-8ade9c457825": {
 "company": "Pariveda Solutions",
 "first_seen": "2026-08-15",
@@ -3598,6 +3613,11 @@
 "company": "Quantbot Technologies",
 "first_seen": "2026-08-15",
 "title": "Quantitative Researcher Intern"
+},
+"20d13b00-29e6-46f7-a36c-1b045a33bc61": {
+"company": "SpaceX",
+"first_seen": "2026-08-19",
+"title": "Software Engineer New Grad - Software - Application Software"
 },
 "20db6da0-8e69-4119-8287-080208c765ec": {
 "company": "ByteDance",
@@ -8014,6 +8034,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Developer Intern"
 },
+"4bf977f7-8855-4cc1-8aac-d9c577e1687d": {
+"company": "General Dynamics Mission Systems",
+"first_seen": "2026-08-19",
+"title": "Entry Level Software Engineer"
+},
 "4c028e78-d6cf-428b-bf6c-595531425a7a": {
 "company": "FAST Enterprises",
 "first_seen": "2026-08-15",
@@ -9128,6 +9153,11 @@
 "company": "Leidos",
 "first_seen": "2026-08-15",
 "title": "Software Engineer"
+},
+"5646d793-dc8c-4ff6-82d3-e8d00aa58389": {
+"company": "Willkie Farr & Gallagher",
+"first_seen": "2026-08-19",
+"title": "Financial Data Analyst Intern"
 },
 "565376c9-9f43-421c-aee2-1c09b5461f85": {
 "company": "CACI",
@@ -14549,6 +14579,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate FPGA Engineer"
 },
+"8a4649b2-64d5-4bd5-863d-3476b0bb1592": {
+"company": "Clean Harbors",
+"first_seen": "2026-08-19",
+"title": "LDAR Technician 1"
+},
 "8a481e6a-db2a-4dc1-9a20-f2b9ee132929": {
 "company": "Amsive",
 "first_seen": "2026-08-15",
@@ -15699,6 +15734,11 @@
 "first_seen": "2026-08-19",
 "title": "Field Service Technician 1"
 },
+"95645a1a-37b5-46b8-82dc-51c06ded8cbd": {
+"company": "WOOD Consulting Services",
+"first_seen": "2026-08-19",
+"title": "Software Engineer"
+},
 "9565cf4f-99e7-4693-a5c0-4e0d6f8e10dc": {
 "company": "Palo Alto Networks",
 "first_seen": "2026-08-15",
@@ -16793,6 +16833,11 @@
 "first_seen": "2026-08-15",
 "title": "GPU Verification Engineer New Grad"
 },
+"a01f39f0-6c22-4f5e-87f9-13b586605264": {
+"company": "RTX",
+"first_seen": "2026-08-19",
+"title": "Electrical Assembler 1"
+},
 "a022cf03-5310-44a2-a95e-6ede66e9dba8": {
 "company": "Valeo",
 "first_seen": "2026-08-15",
@@ -17698,6 +17743,11 @@
 "first_seen": "2026-08-15",
 "title": "iOS Engineer"
 },
+"a94991ee-70e0-44d8-a55a-cb34f951f096": {
+"company": "GenScript",
+"first_seen": "2026-08-19",
+"title": "Associate Technical Integration Specialist"
+},
 "a94fc300-8fc2-4984-9a37-b49c6a6daa9c": {
 "company": "Berkshire Hathaway Energy",
 "first_seen": "2026-08-15",
@@ -18382,6 +18432,11 @@
 "company": "National Laboratory of the Rockies",
 "first_seen": "2026-08-15",
 "title": "Associate/Undergraduate Intern"
+},
+"af0078da-4418-4e04-afb5-17ec87e8381a": {
+"company": "TikTok",
+"first_seen": "2026-08-19",
+"title": "Machine Learning MLOps Intern - Global Site Reliability Engineering"
 },
 "af0b4450-4017-4871-afd4-113b34d094e4": {
 "company": "Morgan Stanley",
@@ -26688,6 +26743,11 @@
 "first_seen": "2026-08-15",
 "title": "Analog and Power Electronics Hardware Engineer - High Voltage"
 },
+"fec46c2b-cf8e-4226-8293-73d3380e239d": {
+"company": "Kepler Communications",
+"first_seen": "2026-08-19",
+"title": "Embedded Software Engineer Intern - January 2027 - 4 months"
+},
 "fec6fb73-1803-46db-9cba-34474df3c382": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -26767,6 +26827,11 @@
 "company": "Saxon Global",
 "first_seen": "2026-08-15",
 "title": "PHP Developer"
+},
+"ff6a64ad-4278-4b87-bd22-42fb9df0c074": {
+"company": "ADT",
+"first_seen": "2026-08-19",
+"title": "Installation Technician"
 },
 "ff6e43c3-bc97-4b08-84ad-0e0b9943e092": {
 "company": "Trace Systems",
