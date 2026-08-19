@@ -254,6 +254,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Software Developer"
 },
+"02243e49-7e4c-44aa-9dd1-0ba4a235d93d": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Developer and Performance Technology Intern"
+},
 "02295591-882e-4a5b-a71f-dd90219ec024": {
 "company": "Jane Street",
 "first_seen": "2026-08-15",
@@ -403,6 +408,11 @@
 "company": "Options Technology",
 "first_seen": "2026-08-15",
 "title": "PHP/SQL Web Developer - Options Market Data Team"
+},
+"03f5f454-515c-41f5-b670-e30a0e59a27e": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Hardware ASIC Design Intern - Hardware"
 },
 "03f6dca1-a185-4cea-9fdc-a7804e7ad3fc": {
 "company": "International Motors, LLC",
@@ -2403,6 +2413,11 @@
 "company": "Aquatic Capital Management",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
+},
+"156eeaae-e8ce-4c0c-a47f-6027e39a664c": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Large Language Models Intern - Research"
 },
 "15935af2-c0f0-407b-8c8c-eb831b6401e9": {
 "company": "Arlo",
@@ -5144,6 +5159,11 @@
 "first_seen": "2026-08-17",
 "title": "Product Management Intern"
 },
+"31523bd0-3228-448d-b0ce-f99812c17fca": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Generative AI Ph.D. Research Intern"
+},
 "315c6fae-a358-463d-b03c-942573ef4064": {
 "company": "Westinghouse Electric Company",
 "first_seen": "2026-08-15",
@@ -6679,6 +6699,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Development Consultant - Technology Consulting"
 },
+"3fa23531-820c-41f3-8581-8e155a6a3bd0": {
+"company": "Brunswick",
+"first_seen": "2026-08-19",
+"title": "Electrical Assembler 1"
+},
 "3fa36818-1341-4b1d-bad4-ca0b28c68379": {
 "company": "Equifax",
 "first_seen": "2026-08-18",
@@ -8204,6 +8229,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Effects Performance"
 },
+"4ef3c3eb-baad-42c0-8e30-0a1ff84931c0": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Ph.D. Research Autonomous Vehicles Intern"
+},
 "4f002917-8cdb-4ef9-a66c-02d05d0d220e": {
 "company": "Peterson Technologies",
 "first_seen": "2026-08-15",
@@ -8478,6 +8508,11 @@
 "company": "Spotify",
 "first_seen": "2026-08-15",
 "title": "Android Engineer"
+},
+"51c5fbe9-afa5-4063-804a-a290a1fed0ca": {
+"company": "SunSource",
+"first_seen": "2026-08-19",
+"title": "Fabrication Technician"
 },
 "51ca28a3-5501-448a-a399-6a1d14a4fcda": {
 "company": "Applied Systems, Inc.",
@@ -9018,6 +9053,11 @@
 "company": "Realm",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
+},
+"567cfc2d-c141-4f57-b4f2-d3426034ba5d": {
+"company": "Micron Technology",
+"first_seen": "2026-08-19",
+"title": "Design Engineer New Grad"
 },
 "568d0223-8a99-430c-88c6-7b7dead047e0": {
 "company": "Emory Healthcare",
@@ -9668,6 +9708,11 @@
 "company": "Autodesk",
 "first_seen": "2026-08-15",
 "title": "Software Developer"
+},
+"5c963361-407c-460e-b8be-87eeff139db5": {
+"company": "EBSCO",
+"first_seen": "2026-08-19",
+"title": "Product Manager - AI Exchange"
 },
 "5ca64b1d-da84-4768-a279-1f3101c07ac8": {
 "company": "SpaceX",
@@ -10533,6 +10578,11 @@
 "company": "Semtech",
 "first_seen": "2026-08-15",
 "title": "Field Application Engineer - Semiconductor"
+},
+"64878c33-4a70-42ab-ae45-00f9e436e82b": {
+"company": "Expleo",
+"first_seen": "2026-08-19",
+"title": "Automotive Integration Engineer"
 },
 "64902580-c49d-4221-8f19-a1e00d5b2f02": {
 "company": "Arizona State University",
@@ -12639,6 +12689,11 @@
 "first_seen": "2026-08-15",
 "title": "Partner Portal Proxy Product Owner \u2013 Graduate Trainee"
 },
+"790a9545-abe4-4bd0-af4b-55b368673465": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Computer Architecture and Systems Intern - Research"
+},
 "794a6e37-b706-4b81-b622-a436e5852cad": {
 "company": "CAE",
 "first_seen": "2026-08-15",
@@ -12703,6 +12758,11 @@
 "company": "Citadel",
 "first_seen": "2026-08-15",
 "title": "Trader: Fixed Income & Macro Intern"
+},
+"79fa5677-0cf7-4393-b826-2aa0806bbcd9": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Ph.D. Research Graphics and Simulation Intern - Graphics and Simulation"
 },
 "7a155542-8f46-4f7b-8366-966fcea9c221": {
 "company": "Jane Street",
@@ -13593,6 +13653,11 @@
 "company": "Oxford Quantum Circuits (OQC)",
 "first_seen": "2026-08-15",
 "title": "Associate Scientific Software Engineer"
+},
+"832f302a-8bc2-45f2-8ada-37a23bf080a7": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Hardware Engineering Intern"
 },
 "83359773-2582-43b6-86d8-4e7f3a4d5e70": {
 "company": "Cadence Design Systems",
@@ -19423,6 +19488,11 @@
 "first_seen": "2026-08-18",
 "title": "Embedded Software Engineer"
 },
+"bb48b7b8-29e9-4f8f-8817-54e325180735": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Deep Learning Intern - Deep Learning Applications and Algorithms - Deep Learning Frameworks and Libraries"
+},
 "bb4fc784-122f-40c9-b307-d226b91c5659": {
 "company": "Fannie Mae",
 "first_seen": "2026-08-18",
@@ -24202,6 +24272,11 @@
 "company": "Honeywell",
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1"
+},
+"ea8c5ebd-a6c4-49ff-9dac-f3532c41737a": {
+"company": "NVIDIA",
+"first_seen": "2026-08-19",
+"title": "Systems Software Engineering Intern"
 },
 "ea8ff237-6cb5-424b-917e-9ce08abf23a1": {
 "company": "Medpace, Inc.",
