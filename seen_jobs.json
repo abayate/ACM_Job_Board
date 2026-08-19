@@ -1369,6 +1369,11 @@
 "first_seen": "2026-08-15",
 "title": "Field Service Technician 1"
 },
+"0c632253-880e-4a3d-91a5-14a7641c4161": {
+"company": "Invesco",
+"first_seen": "2026-08-19",
+"title": "ETF Quantitative Developer"
+},
 "0c670f1e-4360-480d-9023-b1bfad85c99f": {
 "company": "Pacific Northwest National Laboratory",
 "first_seen": "2026-08-15",
@@ -3574,6 +3579,11 @@
 "first_seen": "2026-08-18",
 "title": "Corporate Sustainability Analyst"
 },
+"204f35ea-a6c1-4cdc-8376-0e521de06a89": {
+"company": "Bank of Montreal",
+"first_seen": "2026-08-19",
+"title": "Personal & Business Banking Development Program New Grad - Multiple Teams"
+},
 "20565db4-0f8e-456e-b6e3-4c484757c633": {
 "company": "T-Rex Solutions",
 "first_seen": "2026-08-15",
@@ -5183,6 +5193,11 @@
 "company": "NVIDIA",
 "first_seen": "2026-08-15",
 "title": "Developer Technology Engineer New Grad - Public Sector"
+},
+"3061cfda-4fbe-4cb7-ba26-605a5106006f": {
+"company": "CACI",
+"first_seen": "2026-08-19",
+"title": "Software Engineer - Engineering"
 },
 "3061f63a-c31f-410b-ac47-d6eb5e6299b1": {
 "company": "TikTok",
@@ -7924,6 +7939,11 @@
 "first_seen": "2026-08-17",
 "title": "Associate Software Engineer"
 },
+"4a93bf05-87b2-41ca-8213-e05a08887f08": {
+"company": "Capital One",
+"first_seen": "2026-08-19",
+"title": "Software Engineer New Grad - Software Engineer"
+},
 "4aa719b5-d2a2-4379-950b-53301335fcac": {
 "company": "IMC Trading",
 "first_seen": "2026-08-15",
@@ -8478,6 +8498,11 @@
 "company": "Sentry",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
+},
+"4fe03bf3-4c12-4115-b009-2020faa2de23": {
+"company": "CACI",
+"first_seen": "2026-08-19",
+"title": "AI Prompt Engineer"
 },
 "4ff4ed6a-dc28-48f6-a2db-ebf1cdbab9c2": {
 "company": "Altom Transport",
@@ -11274,6 +11299,11 @@
 "first_seen": "2026-08-19",
 "title": "Investment Analyst - MBA"
 },
+"696bd826-6011-43cc-920a-c36cd7661a43": {
+"company": "PNC Financial Services",
+"first_seen": "2026-08-19",
+"title": "Software Developer Associate"
+},
 "69729365-7318-4429-8374-8d91cea81e29": {
 "company": "Tesla",
 "first_seen": "2026-08-15",
@@ -11563,6 +11593,11 @@
 "company": "American Express",
 "first_seen": "2026-08-18",
 "title": "AI Engineer Intern - Enterprise Technology Services"
+},
+"6ca9570d-0985-4c61-86f8-3b50dcf74438": {
+"company": "Centene",
+"first_seen": "2026-08-19",
+"title": "Business Solutions Developer 1"
 },
 "6cacfd31-0d85-4040-9e38-d29125f75b63": {
 "company": "TRIMEDX",
@@ -12169,6 +12204,11 @@
 "first_seen": "2026-08-15",
 "title": "Product Engineer 1"
 },
+"72985476-1779-4c98-b2ad-be7924937896": {
+"company": "CACI",
+"first_seen": "2026-08-19",
+"title": "Cyber Software Engineer - Cyber Science & Technology"
+},
 "729f884e-638b-4dcb-aac8-3d44f316cac9": {
 "company": "Advanced Energy",
 "first_seen": "2026-08-15",
@@ -12263,6 +12303,11 @@
 "company": "Sinclair",
 "first_seen": "2026-08-15",
 "title": "Meteorologist"
+},
+"73598b4d-3993-4121-856f-56624bff87b9": {
+"company": "Autodesk",
+"first_seen": "2026-08-19",
+"title": "AI Developer Intern - Creative Technology"
 },
 "7362efe9-2c7f-47d3-813c-cf6ae32377c0": {
 "company": "Cole Engineering Services",
@@ -14679,6 +14724,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
 },
+"8aca3483-fc22-4d0e-9904-70c3dfa63766": {
+"company": "Procter & Gamble",
+"first_seen": "2026-08-19",
+"title": "Digital Product Manager"
+},
 "8adf8a0f-8e62-4272-a4ac-197b91e8bb67": {
 "company": "BlinqLABS",
 "first_seen": "2026-08-15",
@@ -16958,6 +17008,11 @@
 "first_seen": "2026-08-15",
 "title": "Undergraduate Cartographer"
 },
+"a0b5f209-6e43-46af-9d7f-459315a7b21d": {
+"company": "Techtronic Industries (TTI)",
+"first_seen": "2026-08-19",
+"title": "Software Engineer 1"
+},
 "a0d7a974-5252-4602-b152-60c7f1945452": {
 "company": "EPRI",
 "first_seen": "2026-08-15",
@@ -17742,6 +17797,11 @@
 "company": "Subsea Craft",
 "first_seen": "2026-08-19",
 "title": "Associate Product Manager"
+},
+"a8814763-abf2-4ca5-ad40-518545962599": {
+"company": "Centific",
+"first_seen": "2026-08-19",
+"title": "Technical Intern"
 },
 "a8a20ee3-a64f-4803-bb5e-5d77bfb50ff2": {
 "company": "Valeo Foods",
@@ -19873,10 +19933,20 @@
 "first_seen": "2026-08-15",
 "title": "AI Product Management Intern"
 },
+"bc1097bc-5039-41d0-bbc0-ee9db2bfe56d": {
+"company": "General Dynamics Information Technology",
+"first_seen": "2026-08-19",
+"title": "Data Scientist Associate"
+},
 "bc20d842-e120-4ce2-8864-e9a16796b72c": {
 "company": "Ohio State University",
 "first_seen": "2026-08-15",
 "title": "Student Assistant"
+},
+"bc28e628-1535-4830-b129-b2e298a255f5": {
+"company": "Dave & Busters",
+"first_seen": "2026-08-19",
+"title": "Games Support Technician"
 },
 "bc2e9762-a592-48ef-9e42-21dfdec88ec4": {
 "company": "Goldman Sachs",
@@ -21927,6 +21997,11 @@
 "company": "Palantir",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
+},
+"d03ac761-2dfa-4cd7-bd7c-797b6ff89c19": {
+"company": "Capital One",
+"first_seen": "2026-08-19",
+"title": "Software Engineer New Grad - Software Engineer"
 },
 "d040d1d4-282a-4cff-b957-693e4360bc82": {
 "company": "Intel",
