@@ -3119,6 +3119,11 @@
 "first_seen": "2026-08-18",
 "title": "Cloud, Data and AI Intern"
 },
+"1bd50634-5114-480f-8a35-3a592f0fe763": {
+"company": "E-Space",
+"first_seen": "2026-08-20",
+"title": "Embedded Software Engineer Intern"
+},
 "1bd6de3a-14ad-41a7-8735-bc978a982b66": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -3153,6 +3158,11 @@
 "company": "Micron Technology",
 "first_seen": "2026-08-15",
 "title": "New Grad Design Engineer - Design Engineer - DRAM Technology and Products"
+},
+"1c385c6d-d388-465d-9ccb-4051032c9a09": {
+"company": "Sysco",
+"first_seen": "2026-08-20",
+"title": "Software Engineer Intern"
 },
 "1c46b945-3a24-4c37-b029-66008dc23b63": {
 "company": "ByteDance",
@@ -10994,6 +11004,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Engineer Co-op - Operational Support"
 },
+"65808ab5-729a-4821-a768-dcd4991bd9f6": {
+"company": "Wells Fargo",
+"first_seen": "2026-08-20",
+"title": "Quantitative Analytics Intern - Risk Analytics and Decision Sciences"
+},
 "65836b5e-2053-4c95-8748-b0029eb146c2": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -17090,8 +17105,8 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-19",
-"new_grad": "2026-08-19"
+"internship": "2026-08-20",
+"new_grad": "2026-08-20"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -26027,6 +26042,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - Performance Monetization"
+},
+"f3e7ea1f-fd8f-4fcc-b0ad-a9fa301dd0a5": {
+"company": "Huntington Ingalls Industries",
+"first_seen": "2026-08-20",
+"title": "Test Engineer 1 - Test Operations"
 },
 "f3f1dfd5-ec84-4fe2-9885-dcef338051c9": {
 "company": "KLA Corporation",
