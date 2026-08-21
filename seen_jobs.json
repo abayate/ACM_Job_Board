@@ -1959,6 +1959,11 @@
 "first_seen": "2026-08-19",
 "title": "Instrument Test Technician 1"
 },
+"1117caa7-3295-43c8-a83c-b44e449d40eb": {
+"company": "Micron Technology",
+"first_seen": "2026-08-21",
+"title": "Physical Failure Analysis Engineer Intern - Yield Enhancement"
+},
 "111dac09-feff-4585-9cde-69f369a37990": {
 "company": "Tesla",
 "first_seen": "2026-08-15",
@@ -2243,6 +2248,11 @@
 "company": "DRW",
 "first_seen": "2026-08-15",
 "title": "Quantitative Research Intern"
+},
+"136bc4e8-f085-4b75-989c-c73b7f7de779": {
+"company": "Sezzle",
+"first_seen": "2026-08-21",
+"title": "Product Intern"
 },
 "13719d38-34eb-47e9-93f0-7b6571a6375e": {
 "company": "9to9 Software Solutions",
@@ -3509,6 +3519,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Trading Associate"
 },
+"1ea9cb14-dc89-4e72-ab24-6a1177e5d302": {
+"company": "Northrop Grumman",
+"first_seen": "2026-08-21",
+"title": "Associate Computer Systems Analyst - Linux - Pathways Program"
+},
 "1ed38264-654d-4366-b1fc-9e0df58b47a0": {
 "company": "Analytical Mechanics Associates",
 "first_seen": "2026-08-15",
@@ -3518,6 +3533,11 @@
 "company": "QuEra Computing",
 "first_seen": "2026-08-15",
 "title": "Optical Engineer"
+},
+"1ee352d1-8fd4-4ca2-aae0-f1701f85df51": {
+"company": "Pennsylvania State University",
+"first_seen": "2026-08-21",
+"title": "Graduate Assistant"
 },
 "1eeacbc8-6f20-4cf6-b5a2-0a2578151236": {
 "company": "Susquehanna International Group (SIG)",
@@ -10314,6 +10334,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Software Engineer"
 },
+"5de3980e-8b11-479f-b78e-cce6b70957b5": {
+"company": "Vanguard",
+"first_seen": "2026-08-21",
+"title": "Data Analyst Intern - College to Corporate IT"
+},
 "5de5f9a5-8bea-40c2-8121-4ed65352ed36": {
 "company": "Roku",
 "first_seen": "2026-08-17",
@@ -10538,6 +10563,11 @@
 "company": "Rainmaker",
 "first_seen": "2026-08-15",
 "title": "Software Engineering Intern"
+},
+"60394e05-1104-433e-9a04-12cd027c2475": {
+"company": "Northrop Grumman",
+"first_seen": "2026-08-21",
+"title": "Associate Software Engineer - Aht"
 },
 "6039a320-d48c-4651-98a5-3f0566350069": {
 "company": "Equifax",
@@ -11088,6 +11118,11 @@
 "company": "Expleo",
 "first_seen": "2026-08-19",
 "title": "Automotive Integration Engineer"
+},
+"64888f69-080f-4916-afc2-abddf031f6f9": {
+"company": "Comcast",
+"first_seen": "2026-08-21",
+"title": "Residential Installation & Service Technician"
 },
 "64902580-c49d-4221-8f19-a1e00d5b2f02": {
 "company": "Arizona State University",
@@ -12234,6 +12269,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Software Engineer"
 },
+"6eff9788-f38e-4357-8646-cd6f5984f3cb": {
+"company": "Axon",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern"
+},
 "6f000f35-4e43-4364-980a-4ac4b0c04d52": {
 "company": "PNC Financial Services",
 "first_seen": "2026-08-18",
@@ -12843,6 +12883,11 @@
 "company": "Medical Informatics Engineering",
 "first_seen": "2026-08-15",
 "title": "Development Intern"
+},
+"74a4f228-ddb1-4953-9597-1c278c491082": {
+"company": "Vanguard",
+"first_seen": "2026-08-21",
+"title": "Data Science Intern - College to Corporate IT"
 },
 "74b2d4ff-f0ec-41d4-bc51-c06875faa9b7": {
 "company": "AeroVironment",
@@ -13723,6 +13768,11 @@
 "company": "EagleView",
 "first_seen": "2026-08-15",
 "title": "Image Correction Technician - Photogrammetric Image Corrections"
+},
+"7d2611c5-9dae-488a-bb64-954a43229bc8": {
+"company": "Northrop Grumman",
+"first_seen": "2026-08-21",
+"title": "Associate Embedded Software Engineer - Manufacturing"
 },
 "7d28754d-98f1-4b89-a78e-ecb4f103ce8b": {
 "company": "Cloudflare",
@@ -18428,6 +18478,11 @@
 "first_seen": "2026-08-17",
 "title": "Junior .NET Developer"
 },
+"a8fce259-7cd2-44ea-a7ab-787260c1308e": {
+"company": "Vanguard",
+"first_seen": "2026-08-21",
+"title": "Data Science Intern - Information Technology"
+},
 "a8ff3976-75ef-4c6e-acde-b4aec7f1fd7e": {
 "company": "NVIDIA",
 "first_seen": "2026-08-15",
@@ -19232,6 +19287,11 @@
 "company": "3S Business Corporation",
 "first_seen": "2026-08-15",
 "title": "Java Training - Sales force - Cognos"
+},
+"afa64b8c-e29c-4c0b-bc7d-fbca02771094": {
+"company": "Micron Technology",
+"first_seen": "2026-08-21",
+"title": "SoC RTL Design Engineer Intern - HBM"
 },
 "afb0eadc-fa15-4ff5-85c8-1aa9777ed90c": {
 "company": "ADT",
@@ -22182,6 +22242,11 @@
 "company": "ManTech",
 "first_seen": "2026-08-15",
 "title": "Associate Computer Network Operations Developer"
+},
+"cb46e6d8-d6c3-45c2-b159-57a52ab9cf10": {
+"company": "IMEG",
+"first_seen": "2026-08-21",
+"title": "Innovation Services Intern"
 },
 "cb485390-acac-4351-bbb4-60be1ca27578": {
 "company": "Diesel Laptops",
@@ -25513,6 +25578,11 @@
 "first_seen": "2026-08-15",
 "title": "Web Developer/Programmer Intern"
 },
+"e9cc1694-7911-45ac-988b-ff64e77ff9af": {
+"company": "Mosaic",
+"first_seen": "2026-08-21",
+"title": "Artificial Intelligence Co-op Intern"
+},
 "e9f917dc-c9d2-46e9-a114-d3b7a9fb74b9": {
 "company": "Northrop Grumman",
 "first_seen": "2026-08-18",
@@ -26622,6 +26692,11 @@
 "company": "Invisible Technologies AI",
 "first_seen": "2026-08-15",
 "title": "English - Language Specialist - Freelance AI Trainer Project"
+},
+"f432a8a9-9285-46de-a3f7-3cc4dc1c5e27": {
+"company": "Analog Devices",
+"first_seen": "2026-08-21",
+"title": "Mixed Signal Engineer Intern"
 },
 "f43a357d-9678-4c33-9100-fa8921cd3682": {
 "company": "Pennsylvania State University",
