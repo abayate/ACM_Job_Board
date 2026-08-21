@@ -529,6 +529,11 @@
 "first_seen": "2026-08-15",
 "title": "Linux Engineer"
 },
+"0446e9d0-fc91-4c78-970a-fe7b5809cd30": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Firmware Engineer Co-op/Intern"
+},
 "04471955-54a1-4da0-8036-fc2b9f5c143a": {
 "company": "Dunn Solutions Group",
 "first_seen": "2026-08-15",
@@ -1994,6 +1999,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Linux Update Systems"
 },
+"1125c69f-65e1-4147-8a75-a88ddc41e3b2": {
+"company": "Nucleus Biologics",
+"first_seen": "2026-08-21",
+"title": "Full Stack Engineer"
+},
 "112e1e85-ad6a-40b6-ab73-cbc1622e77d5": {
 "company": "GlobalFoundries",
 "first_seen": "2026-08-15",
@@ -2764,6 +2774,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Computer Systems Analyst - Linux"
 },
+"16ab9e56-fd38-43a4-a048-7cca73f13c2d": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Hardware Design Verification Engineering Intern/Co-op"
+},
 "16ea84eb-a274-433b-93d2-346ca4ef4e56": {
 "company": "Polymath",
 "first_seen": "2026-08-15",
@@ -3103,6 +3118,11 @@
 "company": "Nokia",
 "first_seen": "2026-08-15",
 "title": "Assembly and Test Manufacturing Technician"
+},
+"1a0df397-2083-456f-9ecb-137eec7603ef": {
+"company": "Databricks",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern"
 },
 "1a22f6de-6cee-4fe0-a021-eeef9cdb81ea": {
 "company": "General Dynamics Information Technology",
@@ -3779,6 +3799,11 @@
 "first_seen": "2026-08-15",
 "title": "Radio Frequency Silicon Software Engineer - Radio Frequency Integrated Circuit Engineering"
 },
+"2019cb04-1f7e-44e2-b190-7cfbd53661c1": {
+"company": "Texas Instruments",
+"first_seen": "2026-08-21",
+"title": "Layout Design Intern"
+},
 "2021aa17-8822-4c74-939f-91201835be7e": {
 "company": "Western Digital",
 "first_seen": "2026-08-15",
@@ -3873,6 +3898,11 @@
 "company": "Palo Alto Networks",
 "first_seen": "2026-08-15",
 "title": "Software Engineer"
+},
+"212a153a-1fd0-4d17-a022-c1db71569fd9": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Machine Learning Intern/Co-op - Machine Learning - Artificial Intelligence"
 },
 "213bc9ef-3bbc-4045-9691-800365cf327e": {
 "company": "PaperCut",
@@ -4949,6 +4979,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
 },
+"2b9774d4-2b94-4dc3-9aca-7b5dc857eaa2": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Firmware Engineer Intern/Co-op"
+},
 "2ba8103c-3beb-4f2f-af97-f3d927bfa508": {
 "company": "Innodata",
 "first_seen": "2026-08-15",
@@ -5323,6 +5358,11 @@
 "company": "Sonepar",
 "first_seen": "2026-08-15",
 "title": "Application Engineer"
+},
+"2f20ddf7-c228-470e-9c1f-f35d8a1bfc0a": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Hardware Engineer Intern/Co-op"
 },
 "2f40cd6e-8384-4c3f-8dee-e8ef4a5fa827": {
 "company": "Procter & Gamble",
@@ -6493,6 +6533,11 @@
 "company": "Urban Science",
 "first_seen": "2026-08-18",
 "title": "Analyst"
+},
+"398ad114-ce64-44a1-8f22-d7b212a16093": {
+"company": "Hunter Strategy",
+"first_seen": "2026-08-21",
+"title": "Data Analyst"
 },
 "39ac8ee1-4714-4c09-984d-d8ca05fca666": {
 "company": "ByteDance",
@@ -8914,6 +8959,11 @@
 "first_seen": "2026-08-18",
 "title": "Product Event Demonstrator"
 },
+"501d315c-b9a3-47c7-b07e-24c99ed76f46": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Hardware Design Verification Engineer Intern/Co-op"
+},
 "50302205-471f-44ae-b50c-6d339917d72f": {
 "company": "PNC Financial Services",
 "first_seen": "2026-08-15",
@@ -11263,6 +11313,11 @@
 "company": "McKesson",
 "first_seen": "2026-08-15",
 "title": "Associate Business Systems Analyst Intern - Data Hub Canada"
+},
+"646c1eeb-a6b8-40f6-95c7-581780504d2e": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Machine Learning Intern/Co-op - Artificial Intelligence"
 },
 "646cf1c0-bcf5-41a2-a815-50713458b691": {
 "company": "Kaukahi",
@@ -17494,6 +17549,11 @@
 "first_seen": "2026-08-15",
 "title": "Data and Analytics Analyst - Data & Analytics Team"
 },
+"9d6edf98-2a6c-44ed-8384-9c264b930e20": {
+"company": "Oracle",
+"first_seen": "2026-08-21",
+"title": "Support Engineer 1"
+},
 "9d731ae5-fb1f-4c2f-8c67-8627ba75d49c": {
 "company": "DaVita",
 "first_seen": "2026-08-15",
@@ -17741,7 +17801,7 @@
 },
 "_headers": {
 "internship": "2026-08-21",
-"new_grad": "2026-08-20"
+"new_grad": "2026-08-21"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
