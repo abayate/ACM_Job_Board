@@ -239,6 +239,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
 },
+"01d8233d-2aa0-4e40-9c48-0069512ee4ae": {
+"company": "Mackenzie Investments",
+"first_seen": "2026-08-21",
+"title": "Data Science Intern"
+},
 "01e84074-5874-4e15-ab81-c3ef832f1fb8": {
 "company": "Zoox",
 "first_seen": "2026-08-21",
@@ -948,6 +953,11 @@
 "company": "Eragon",
 "first_seen": "2026-08-15",
 "title": "Applied AI Intern"
+},
+"07e0a94c-0d80-429e-9cfe-7110e975f66c": {
+"company": "Focus Group",
+"first_seen": "2026-08-21",
+"title": "Business Intelligence Analyst"
 },
 "07ec54e8-42d0-458b-9614-e5871d799ff1": {
 "company": "10Beauty",
@@ -1989,6 +1999,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Product Manager Intern"
 },
+"10c0f3d2-b3b5-448c-b33a-9dfbbfbe255c": {
+"company": "DTCC",
+"first_seen": "2026-08-21",
+"title": "Business Systems Analyst - Oracle Billing Systems"
+},
 "10d96e7a-3541-4fba-b9e4-02bc40feaea7": {
 "company": "CALSTART",
 "first_seen": "2026-08-15",
@@ -2828,6 +2843,11 @@
 "company": "AMD",
 "first_seen": "2026-08-21",
 "title": "Hardware Design Verification Engineering Intern/Co-op"
+},
+"16d31201-b650-445a-bd1c-acf6b02d80b7": {
+"company": "Capacity",
+"first_seen": "2026-08-21",
+"title": "Speech Technology Intern"
 },
 "16ea84eb-a274-433b-93d2-346ca4ef4e56": {
 "company": "Polymath",
@@ -6238,6 +6258,11 @@
 "company": "American Express",
 "first_seen": "2026-08-18",
 "title": "AI Engineer Intern - Enterprise Technology Services"
+},
+"360847fa-a110-475d-aa7e-121fcba41e78": {
+"company": "BAE Systems OneArc USA, Inc",
+"first_seen": "2026-08-21",
+"title": "Software Developer - Distributed Simulation Technology"
 },
 "36105160-307d-40ce-b0bd-e200d768a5fd": {
 "company": "Teleskope",
@@ -11304,6 +11329,11 @@
 "first_seen": "2026-08-15",
 "title": "Physics Engine Development Intern - Physics Engine Development Engineer - Optimus"
 },
+"631bbbfe-8d2d-4b49-8e16-c60d7eebde34": {
+"company": "Syska Hennessy Group",
+"first_seen": "2026-08-21",
+"title": "Innovations Intern - Full Stack/Front End Engineering"
+},
 "63216d89-2b2c-4885-82f0-086dfd9dac5b": {
 "company": "HSSSoft",
 "first_seen": "2026-08-15",
@@ -14734,6 +14764,11 @@
 "first_seen": "2026-08-15",
 "title": "Junior AI Engineer"
 },
+"814cf296-5310-444e-b97a-2fb78d33e53e": {
+"company": "Atominvest",
+"first_seen": "2026-08-21",
+"title": "Graduate Technical Product Analyst"
+},
 "8158e219-cde8-43aa-bd43-7e3aaa9a48c4": {
 "company": "City of Mission",
 "first_seen": "2026-08-18",
@@ -16494,6 +16529,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Scientist"
 },
+"90f9f1b5-758f-40b8-b6dd-9a555735a261": {
+"company": "Lawrence Berkeley National Laboratory",
+"first_seen": "2026-08-21",
+"title": "Machine Learning Materials Science Postdoctoral Researcher - Molecular Foundry"
+},
 "910e7e49-a071-4879-8cad-e0639702b45f": {
 "company": "Squarepoint Capital",
 "first_seen": "2026-08-15",
@@ -16728,6 +16768,11 @@
 "company": "SpaceX",
 "first_seen": "2026-08-15",
 "title": "Supplier Development Engineer - Reliability - Starlink"
+},
+"92a85969-0d2c-40f0-aad8-3531a7cde8e9": {
+"company": "John Deere",
+"first_seen": "2026-08-21",
+"title": "Product Engineering Student - Product Engineering"
 },
 "92aff0db-bdf5-4675-a4ba-1989b1181a74": {
 "company": "Kastle AI",
@@ -17938,6 +17983,11 @@
 "company": "The Federal Reserve System",
 "first_seen": "2026-08-15",
 "title": "Research Assistant - Center for Indian Country Development"
+},
+"9e276b36-0027-450c-b77d-ba9d4664b668": {
+"company": "Avalore",
+"first_seen": "2026-08-21",
+"title": "AI/ML Engineer"
 },
 "9e297b16-0d19-47d0-8b0f-d0fe1e5b9ed0": {
 "company": "Domino's",
@@ -21337,6 +21387,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "CV/NLP/Multimodal Large Language Models Machine Learning Engineer Graduate - Tiktok-Trust and Safety"
+},
+"bb7c0aac-5534-4988-b2eb-f17b650f5c9c": {
+"company": "H3X Technologies",
+"first_seen": "2026-08-21",
+"title": "Embedded Controls Intern"
 },
 "bbb87d56-02a4-4398-aa6c-977aa803e751": {
 "company": "Equifax",
@@ -25902,6 +25957,11 @@
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
 "title": "Electrical Engineer - Power Systems Design"
+},
+"e4dd1ece-36bc-4785-88a7-beb7bdfb4414": {
+"company": "Fullbay",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern"
 },
 "e4ec4b12-71e5-44a2-9874-b52d28e6006a": {
 "company": "ByteDance",
