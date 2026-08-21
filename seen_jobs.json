@@ -879,6 +879,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist Intern - TikTok Search / Generative AI - LLM"
 },
+"077623be-fd6b-4225-a9ec-9d56b4c17a64": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Product Development Engineering Intern/Co-op"
+},
 "077e08ad-dab8-4e0d-8ec1-e28191221246": {
 "company": "Oracle",
 "first_seen": "2026-08-15",
@@ -2789,6 +2794,11 @@
 "first_seen": "2026-08-15",
 "title": "Service Technician Coordinator"
 },
+"17156e64-71de-4381-bb2e-56629af78b66": {
+"company": "Lawrence Livermore National Laboratory (LLNL)",
+"first_seen": "2026-08-21",
+"title": "Energy Systems Analyst Graduate Intern - Fall 2026"
+},
 "171df98e-6146-40e8-a69b-36b0da737aef": {
 "company": "Fifty-Five",
 "first_seen": "2026-08-15",
@@ -3799,6 +3809,11 @@
 "first_seen": "2026-08-15",
 "title": "Full Stack Developer"
 },
+"2057d1a3-289b-49ae-8328-fa3527c533c5": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern/Co-op - Masters"
+},
 "208b5435-9c9d-4ee0-becd-6a2fb1192865": {
 "company": "Cole Engineering Services",
 "first_seen": "2026-08-15",
@@ -4213,6 +4228,11 @@
 "company": "Barrios",
 "first_seen": "2026-08-15",
 "title": "Software Developer"
+},
+"248f48dc-5e0c-4ba6-ab3a-ec74aa0582f0": {
+"company": "Scientific Games",
+"first_seen": "2026-08-21",
+"title": "Field Service Technician - Newark-Columbus Region"
 },
 "249582ff-82d0-4883-adda-90d4315e8a98": {
 "company": "Susquehanna International Group (SIG)",
@@ -4673,6 +4693,11 @@
 "company": "Copart",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
+},
+"286dabc0-b73b-4fa8-a82a-b2a384f8b1d3": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Field Applications Engineer Intern - Masters"
 },
 "287c1182-006f-487e-aa40-c2eef51435aa": {
 "company": "GE Healthcare",
@@ -5768,6 +5793,11 @@
 "company": "SRI International",
 "first_seen": "2026-08-15",
 "title": "Drexel University Co-op: Software Engineering/Full stack development"
+},
+"33e514e4-a58b-48dd-a27c-aed4a3391473": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Hardware Engineering Intern/Co-op - Undergrad"
 },
 "33e9e81b-42a0-47d7-9c76-af096d2205c3": {
 "company": "Tesla",
@@ -8234,6 +8264,11 @@
 "first_seen": "2026-08-15",
 "title": "Formal Verification Engineer"
 },
+"4a574331-3373-4ace-961c-0a3591039b20": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Data Analyst Intern/Co-op"
+},
 "4a606d45-9ac9-4c81-977f-bf4328aaf543": {
 "company": "ADT",
 "first_seen": "2026-08-15",
@@ -10513,6 +10548,11 @@
 "company": "Assurant",
 "first_seen": "2026-08-18",
 "title": "Digital & AI Transformation Intern 1 - Internship Program"
+},
+"5ea47a48-bb97-4bea-920e-4f30c64827c8": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Research Engineer Intern/Co-op - AMD Research"
 },
 "5eac3b25-b6c5-4db1-a66d-f2745601de75": {
 "company": "Avoca AI",
@@ -17219,6 +17259,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer"
 },
+"9bb86009-15b1-4f9e-b9ad-f58d7762aebb": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Hardware Engineer Intern/Co-op - Hardware Engineering"
+},
 "9bb998e0-bdcf-4282-9ab0-8e0a36f17a18": {
 "company": "Welo Global",
 "first_seen": "2026-08-15",
@@ -17650,7 +17695,7 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-20",
+"internship": "2026-08-21",
 "new_grad": "2026-08-20"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
@@ -18882,6 +18927,11 @@
 "company": "Volaris Group",
 "first_seen": "2026-08-15",
 "title": "Software Developer 1 - Analyst"
+},
+"aae6d5e2-ef8c-48e8-862e-81029e48a6c7": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Data Analyst Intern/Co-op"
 },
 "aaf52812-d0ae-44a7-988a-4919b6c8e74c": {
 "company": "DellFor Technologies",
@@ -20188,6 +20238,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - Data Search Recommendation Global E-Commerce"
 },
+"b6461f19-ac97-4787-a3e5-e3529e7f1e28": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Product Development Engineer Intern/Co-op"
+},
 "b670d0f6-a015-4f70-82cd-a7fb212cc98b": {
 "company": "Axis Capital",
 "first_seen": "2026-08-15",
@@ -21347,6 +21402,11 @@
 "company": "W.W. Grainger",
 "first_seen": "2026-08-17",
 "title": "Business Systems Analyst Intern"
+},
+"c1020856-a3c0-443a-b5fe-2fbe9eaed1a4": {
+"company": "Scientific Games",
+"first_seen": "2026-08-21",
+"title": "Field Service Technician"
 },
 "c1093732-5407-4435-9788-6028cc7a03d4": {
 "company": "Goldman Sachs",
@@ -23602,6 +23662,11 @@
 "company": "Oracle",
 "first_seen": "2026-08-15",
 "title": "Customer Solutions Analyst Intern - Ovip"
+},
+"d56dfd5d-55e2-40d6-8702-5198fabd6208": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Data Analyst Intern/Co-op"
 },
 "d5772952-0a23-4d22-8064-4a62a28bedf6": {
 "company": "L3Harris Technologies",
@@ -26008,6 +26073,11 @@
 "first_seen": "2026-08-15",
 "title": "Controls System ACCIS Engineer"
 },
+"ec03908e-3e83-4c51-adc1-4f9414e3faef": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Machine Learning Intern/Co-op - Machine Learning - Artificial Intelligence"
+},
 "ec0842db-5425-4658-ba82-92eaa5254c5a": {
 "company": "CAPTRUST",
 "first_seen": "2026-08-15",
@@ -27342,6 +27412,11 @@
 "company": "Innodata",
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
+},
+"f7eaba38-fbcf-47fb-88d0-928f5427c0cb": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Machine Learning Intern/Co-op - Multiple Teams"
 },
 "f7f50b23-e251-4e05-a677-0567f8032d66": {
 "company": "Brink",
