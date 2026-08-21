@@ -1294,6 +1294,11 @@
 "first_seen": "2026-08-15",
 "title": "PC Support - Dynamic"
 },
+"0abd445f-ab44-4e56-82ef-f9e02ccd723b": {
+"company": "Bank of Montreal",
+"first_seen": "2026-08-21",
+"title": "Data Science Risk Analyst Co-op Intern"
+},
 "0ac2b277-353d-4c9d-a5d0-d0080ed5b18f": {
 "company": "Cirrus Logic",
 "first_seen": "2026-08-15",
@@ -1393,6 +1398,11 @@
 "company": "Motorola",
 "first_seen": "2026-08-15",
 "title": "Embedded Software Engineer - Modern C++ - Linux"
+},
+"0bca8019-3405-491e-a05b-d99abfd7c3df": {
+"company": "Diamondback Energy",
+"first_seen": "2026-08-21",
+"title": "Geoscience Intern"
 },
 "0bcc64f4-6cb6-4fd6-8cd8-6972e9ef69da": {
 "company": "Lambda",
@@ -1668,6 +1678,11 @@
 "company": "Cerebras",
 "first_seen": "2026-08-15",
 "title": "Simulation Engineer New Grad"
+},
+"0e11839e-739a-4886-8160-38ea0e1460b5": {
+"company": "Bank of Montreal",
+"first_seen": "2026-08-21",
+"title": "Climate Risk Reporting Analyst Co-op Intern - Winter 2027 - 4 Months"
 },
 "0e4a7168-4066-4c3d-a37e-732f9fe8db1c": {
 "company": "Palo Alto Networks",
@@ -3923,6 +3938,11 @@
 "company": "DRW",
 "first_seen": "2026-08-15",
 "title": "Software Developer Intern"
+},
+"2114efe1-c38d-46f1-be07-396bfd2a4034": {
+"company": "Medable",
+"first_seen": "2026-08-21",
+"title": "Associate Forward Deployed Engineer"
 },
 "21161652-9269-4156-abf9-9cd2dd5a5c08": {
 "company": "Palo Alto Networks",
@@ -7919,6 +7939,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Engineer - 3D World Models"
 },
+"4542fdc9-ae91-4050-aa44-0ec742dd1dbe": {
+"company": "Interdigital",
+"first_seen": "2026-08-21",
+"title": "Information Systems / Salesforce Intern"
+},
 "454a8c18-9bbe-47aa-a910-a9c9bf790162": {
 "company": "RELX",
 "first_seen": "2026-08-15",
@@ -8843,6 +8868,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - ML Infra"
+},
+"4e3e1767-60cb-45da-9dcb-9846e8b1d07f": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-21",
+"title": "Data Analyst Co-op - Personal Banking"
 },
 "4e472c61-4cc0-44ba-b561-5d8a90ba46a5": {
 "company": "North Star Staffing Solutions",
@@ -10678,6 +10708,11 @@
 "company": "Northwestern Mutual",
 "first_seen": "2026-08-15",
 "title": "Software Engineer"
+},
+"5de88e0d-b5b8-4552-99be-d02b95f5c9f2": {
+"company": "BRG",
+"first_seen": "2026-08-21",
+"title": "Health Analytics Intern - Health Analytics Practice"
 },
 "5e274ea4-55e9-4ee0-8e93-82d466c18810": {
 "company": "RTX",
@@ -16554,6 +16589,11 @@
 "first_seen": "2026-08-15",
 "title": "Product Software Engineer - Full Stack - .Net"
 },
+"91fbe496-c0ad-4be0-8f7d-981a254764b0": {
+"company": "Hyve Solutions",
+"first_seen": "2026-08-21",
+"title": "Software Engineer New Grad"
+},
 "92102d77-8574-46bc-b529-80e4985b7bbf": {
 "company": "Meta",
 "first_seen": "2026-08-15",
@@ -19208,6 +19248,11 @@
 "first_seen": "2026-08-15",
 "title": "Product Engineer - Electrical"
 },
+"aa552a79-34a4-4596-a829-56a4e51f4fb9": {
+"company": "University System of New Hampshire",
+"first_seen": "2026-08-21",
+"title": "Research Support"
+},
 "aa614bc4-58c3-40d5-a9fb-f5fdbe4a7c43": {
 "company": "Lawrence Livermore National Laboratory (LLNL)",
 "first_seen": "2026-08-15",
@@ -20823,6 +20868,11 @@
 "first_seen": "2026-08-15",
 "title": "Applications Engineer Intern"
 },
+"b85f0dff-7b07-42ee-af50-208fab628c1a": {
+"company": "Frost",
+"first_seen": "2026-08-21",
+"title": "Computer Science Intern - Digital Services"
+},
 "b87e0cb1-c096-4944-b321-820a7452bc86": {
 "company": "KeyBank",
 "first_seen": "2026-08-17",
@@ -22157,6 +22207,11 @@
 "company": "Tesla",
 "first_seen": "2026-08-15",
 "title": "Applied Reinforcement Learning Engineer - Whole Body Controls - Optimus"
+},
+"c4bfe952-8e9a-4599-966c-127295b128ad": {
+"company": "Brunswick",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern"
 },
 "c4e32b45-5217-4bff-ba67-ab2e1f53d43d": {
 "company": "Mini-Circuits",
@@ -25453,6 +25508,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Research Scientist - Tiktok Recommendation-Agentic AI"
 },
+"e1faa8ac-d3b5-4a76-acfb-818860446711": {
+"company": "Bank of Montreal",
+"first_seen": "2026-08-21",
+"title": "Data Science Analyst Co-op Intern - Audit AI & Analytics"
+},
 "e1fc4e73-902b-46f8-a226-2051c83aaee7": {
 "company": "Seven Research",
 "first_seen": "2026-08-15",
@@ -25602,6 +25662,11 @@
 "company": "Ciena",
 "first_seen": "2026-08-15",
 "title": "Wavelogic Systems Design Architecture Intern"
+},
+"e31170bc-ea00-45b7-bce9-7b1c8ecbe643": {
+"company": "General Motors",
+"first_seen": "2026-08-21",
+"title": "Lighting Software Development & Test Co-op"
 },
 "e3221443-b374-4b72-b948-ccecf7590b90": {
 "company": "Staples",
@@ -26738,6 +26803,11 @@
 "first_seen": "2026-08-15",
 "title": "Unity 3D Developer Intern"
 },
+"ee1cdd8a-13f7-405e-81a2-69a736cdb6b6": {
+"company": "Alfa Financial Software",
+"first_seen": "2026-08-21",
+"title": "Implementation Analyst - Graduate Program"
+},
 "ee23b508-8622-4e85-a48c-712f76a6db3b": {
 "company": "Hypercubic",
 "first_seen": "2026-08-15",
@@ -27112,6 +27182,11 @@
 "company": "Stantec",
 "first_seen": "2026-08-21",
 "title": "Geospatial Analyst"
+},
+"f174b1be-a056-4615-8dff-9e0ddd31ec21": {
+"company": "T-Mobile",
+"first_seen": "2026-08-21",
+"title": "Associate Software Engineer"
 },
 "f18e1c6b-1286-4e39-af87-b217d7a605a7": {
 "company": "Revel",
