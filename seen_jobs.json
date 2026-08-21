@@ -1204,6 +1204,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Training Generalist - AI Trainer"
 },
+"09fc1b0f-a4c0-424d-b613-2ea9a8bc5994": {
+"company": "Northrop Grumman",
+"first_seen": "2026-08-21",
+"title": "Associate RF Engineer"
+},
 "0a010f5a-2087-4191-ae86-601ff587789a": {
 "company": "Noblis",
 "first_seen": "2026-08-15",
@@ -5079,6 +5084,11 @@
 "first_seen": "2026-08-18",
 "title": "Software Systems Engineer - Advanced Compute Solutions - Desktop Workstations"
 },
+"2cdf6089-4c84-4731-8216-3c7ace960f00": {
+"company": "Ontario Teachers' Pension Plan",
+"first_seen": "2026-08-21",
+"title": "Capital Markets Intern - Quantitative Strategies and Research"
+},
 "2cf938ce-2c95-464b-b16f-7aaf36b43fbe": {
 "company": "Vertiv",
 "first_seen": "2026-08-15",
@@ -5548,6 +5558,11 @@
 "company": "Datadog",
 "first_seen": "2026-08-17",
 "title": "Product Management Intern"
+},
+"3142b23d-4dfa-443e-82dd-703b3711394b": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern/Co-op"
 },
 "31523bd0-3228-448d-b0ce-f99812c17fca": {
 "company": "NVIDIA",
@@ -6569,6 +6584,11 @@
 "first_seen": "2026-08-15",
 "title": "Analog/Mixed-Signal IC Design Co-Op/Intern"
 },
+"3a7a0552-99e6-49df-a934-5f5f8e97109b": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Firmware Engineering Intern Co-op - Undergrad"
+},
 "3a7da9d0-4f05-439f-bde1-b9fca696577d": {
 "company": "BlackEdge Capital",
 "first_seen": "2026-08-15",
@@ -7033,6 +7053,11 @@
 "company": "Aptiv",
 "first_seen": "2026-08-15",
 "title": "Engineering Intern"
+},
+"3e9d3b5d-b9b8-4556-8c46-75ca36c2b15d": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern/Co-op"
 },
 "3ea65aaa-0297-4b8f-9378-51e35478fb95": {
 "company": "Octaura",
@@ -12589,6 +12614,11 @@
 "first_seen": "2026-08-15",
 "title": "R&D Engineer Co-op"
 },
+"705aa0dc-9caf-4a10-8196-9c201a884e84": {
+"company": "Ontario Teachers' Pension Plan",
+"first_seen": "2026-08-21",
+"title": "Finance Intern - Risk Analytics"
+},
 "706ec5af-3b65-44e6-b035-00b49595c54a": {
 "company": "Teledyne",
 "first_seen": "2026-08-15",
@@ -14844,6 +14874,11 @@
 "first_seen": "2026-08-15",
 "title": "Principal Engineer Technology Development"
 },
+"859f3772-e32c-49b4-a277-ec18490b63ed": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Hardware Design Verification Engineer Co-op/Intern"
+},
 "85a549ad-cef1-458b-b15e-382ac68ad136": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-19",
@@ -16289,6 +16324,11 @@
 "first_seen": "2026-08-15",
 "title": "Embedded Software Engineering Intern - Embedded Software Engineer - High Voltage Systems"
 },
+"924b8ac7-f08b-4620-9762-01deab61c794": {
+"company": "Starbucks",
+"first_seen": "2026-08-21",
+"title": "Application Developer - Application Development"
+},
 "926aad82-a906-40e6-ad7f-97a1fca95370": {
 "company": "Synchrony Financial",
 "first_seen": "2026-08-15",
@@ -16508,6 +16548,11 @@
 "company": "Cencora",
 "first_seen": "2026-08-15",
 "title": "Service Technician"
+},
+"944978fc-7eeb-4346-82ad-857bec5239a5": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Software Engineer Intern/Co-op"
 },
 "945197df-c892-48e9-b3b0-a1f5c12ac26e": {
 "company": "Radix Trading",
@@ -18302,6 +18347,11 @@
 "company": "NVIDIA",
 "first_seen": "2026-08-15",
 "title": "Low Power ASIC Engineer New Grad"
+},
+"a5a8ff7e-b250-4699-8d5f-b15adf724936": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Firmware Engineer Intern/Co-op"
 },
 "a5aa45ee-0926-4b52-be7d-2da9c0da54da": {
 "company": "Group 1001",
@@ -21328,6 +21378,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Analytics Developer Intern - Consulting Practice"
 },
+"c042921c-cebf-43b2-952d-c5484993695b": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Hardware Design Verification Engineer Co-op/Intern"
+},
 "c0479012-54e4-478d-922f-1948cd356ac4": {
 "company": "Cerebras",
 "first_seen": "2026-08-15",
@@ -21387,6 +21442,11 @@
 "company": "Hologic",
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer"
+},
+"c0db1ec2-4bd3-43f3-b7e2-c8a9d3bfab14": {
+"company": "Stanley Black & Decker",
+"first_seen": "2026-08-21",
+"title": "Leadership Program Engineering - Embedded Software"
 },
 "c0eb02da-813a-4aba-85ac-aaf2109ebb3f": {
 "company": "IMC Trading",
@@ -21977,6 +22037,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Research Scientist New Grad - Trust and Safety"
+},
+"c6d37325-22f7-46a7-ab78-d7c0f970628e": {
+"company": "Ontario Teachers' Pension Plan",
+"first_seen": "2026-08-21",
+"title": "Capital Markets Intern - Quantitative Strategies and Research"
 },
 "c6d82ee5-5831-4558-af20-96402ae4a4b1": {
 "company": "Diebold Nixdorf",
@@ -24693,6 +24758,11 @@
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Research Associate - Nuclear Non-Proliferation"
 },
+"deafc16b-b9d8-4b84-b748-2dafcb25b2c7": {
+"company": "Ontario Teachers' Pension Plan",
+"first_seen": "2026-08-21",
+"title": "Business Insights and Analytics Intern - Member Services"
+},
 "deb5637d-60bc-4243-af66-b77c7a06b3ef": {
 "company": "RWS",
 "first_seen": "2026-08-15",
@@ -25752,6 +25822,11 @@
 "company": "Baker Tilly",
 "first_seen": "2026-08-15",
 "title": "Associate Data Engineer"
+},
+"e8cedff1-c202-4a0c-82aa-62375733005a": {
+"company": "AMD",
+"first_seen": "2026-08-21",
+"title": "Data Analyst Intern/Co-op"
 },
 "e8fd0290-a079-4cc3-a3b6-0514580b3142": {
 "company": "Tesla",
