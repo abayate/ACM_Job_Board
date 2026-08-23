@@ -18471,7 +18471,7 @@
 },
 "_headers": {
 "internship": "2026-08-22",
-"new_grad": "2026-08-21"
+"new_grad": "2026-08-22"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -22792,6 +22792,11 @@
 "company": "Uncountable",
 "first_seen": "2026-08-15",
 "title": "Full-Stack Intern"
+},
+"c5debf1a-809e-407a-b7e4-acfc2b531f29": {
+"company": "Avride",
+"first_seen": "2026-08-23",
+"title": "Robot Service Technician Assistant"
 },
 "c5e3ece8-669f-4ff8-9bb7-45dba1374d0f": {
 "company": "WEC Energy Group",
