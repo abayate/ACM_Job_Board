@@ -1974,6 +1974,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Analyst 1 - Business Intelligence & Strategy"
 },
+"10360e05-db49-4c1b-a62d-7e0038f835fd": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Geographic Information Systems Intern - GIS"
+},
 "1047f0ae-d31a-4e56-89f6-43c77bbef90e": {
 "company": "Jobs for Humanity",
 "first_seen": "2026-08-15",
@@ -2413,6 +2418,11 @@
 "company": "Argonne National Laboratory",
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Appointee - AI/ML for Particle Accelerators"
+},
+"13cc39f8-a256-4d21-866f-4cf8cb77d4ef": {
+"company": "Analog Devices",
+"first_seen": "2026-08-24",
+"title": "Product Engineer Intern - Product Development"
 },
 "13dd6724-1cd9-4292-842c-fa60c2494ce4": {
 "company": "Apple",
@@ -3273,6 +3283,11 @@
 "company": "Citadel Securities",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
+},
+"1a60f341-1e73-446d-957c-8011859ac7aa": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Labor Systems Web Integration Intern - Spring 2027"
 },
 "1a6a18d4-6804-44f9-81df-a545c51719c9": {
 "company": "Apple",
@@ -4338,6 +4353,11 @@
 "company": "AlphaHire",
 "first_seen": "2026-08-15",
 "title": "Research Fellow - Workforce Intelligence"
+},
+"23aca199-d8e5-4ce4-a030-42cd3eff7a05": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Labor Systems Data Analytics & Integration Intern - Spring 2027"
 },
 "23c3f668-098e-4f24-a412-52544831bb78": {
 "company": "Medpace, Inc.",
@@ -7129,6 +7149,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Linux/Windows Engineer New Grad"
 },
+"3c2660f1-564f-4b37-8947-dd2725c2560f": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Environmental Sustainability Data Analytics Intern - Spring 2027"
+},
 "3c2a5b0f-4b17-430c-ae44-2186d722f9b2": {
 "company": "Howmet Aerospace",
 "first_seen": "2026-08-15",
@@ -8328,6 +8353,11 @@
 "company": "Palantir",
 "first_seen": "2026-08-15",
 "title": "Forward Deployed Software Engineer Intern"
+},
+"4697dde1-b67d-4e55-b9e2-2f62a41f5749": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Show Control Hardware Intern"
 },
 "46a77194-f12c-4547-8132-1cdef59fbcb7": {
 "company": "BCforward",
@@ -10219,6 +10249,11 @@
 "first_seen": "2026-08-15",
 "title": "Junior Business Data Analyst"
 },
+"5761cdd3-b449-4610-ad4d-378a789eb3ed": {
+"company": "Ontario Teachers' Pension Plan",
+"first_seen": "2026-08-24",
+"title": "Total Fund Risk Intern - Months"
+},
 "5763867a-2e36-4d9b-af5f-3a2829075f98": {
 "company": "V2X",
 "first_seen": "2026-08-15",
@@ -10943,6 +10978,11 @@
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
 "title": "Software Engineer / User Experience Applications"
+},
+"5dc06638-a693-4c36-a677-6550cd99957d": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Pricing & Revenue Management Intern"
 },
 "5dd5bac7-36ff-4f7d-9bff-a16346ccfa89": {
 "company": "Verne Robotics",
@@ -12308,6 +12348,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern"
+},
+"69059e28-4445-4999-a45b-c4ede19786ad": {
+"company": "Cigna Group",
+"first_seen": "2026-08-24",
+"title": "Healthcare Policy & Regulated Markets Intern"
 },
 "6908222c-e936-4f53-9279-78f6f59e507d": {
 "company": "TikTok",
@@ -14078,6 +14123,11 @@
 "company": "Applied Materials",
 "first_seen": "2026-08-19",
 "title": "Software Support Engineer 1 - Global"
+},
+"78c03ab4-f50a-445d-9802-fb785330b50f": {
+"company": "Mastercard",
+"first_seen": "2026-08-24",
+"title": "Software Engineer Intern"
 },
 "78e8e324-34ed-43aa-aa73-0e8160950199": {
 "company": "PartnerRe",
@@ -18495,7 +18545,7 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-22",
+"internship": "2026-08-23",
 "new_grad": "2026-08-23"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
@@ -23253,6 +23303,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Engineer Intern"
 },
+"c98416e0-475e-4fe0-985e-29b64aacb9a1": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Computer Science / Computer Engineering Intern - Multiple Teams"
+},
 "c9a5b195-2b20-4bf0-9c3d-574667e66bd4": {
 "company": "Independent Software",
 "first_seen": "2026-08-15",
@@ -26428,6 +26483,11 @@
 "first_seen": "2026-08-15",
 "title": "Electrical Engineer - Power Systems Design"
 },
+"e4bccefd-5b5e-42ca-8b87-17256893d663": {
+"company": "Analog Devices",
+"first_seen": "2026-08-24",
+"title": "Digital Design Engineer Intern"
+},
 "e4dd1ece-36bc-4785-88a7-beb7bdfb4414": {
 "company": "Fullbay",
 "first_seen": "2026-08-21",
@@ -27417,6 +27477,11 @@
 "company": "Alfa Financial Software",
 "first_seen": "2026-08-21",
 "title": "Implementation Analyst - Graduate Program"
+},
+"ee239b53-fb7d-46b7-b98b-900f2b504f38": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Transportation Logistics & Analytics Intern - Spring 2027"
 },
 "ee23b508-8622-4e85-a48c-712f76a6db3b": {
 "company": "Hypercubic",
@@ -29118,6 +29183,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Intern/Co-op"
 },
+"fca521d9-9f1c-4b18-aeb4-0edd5281b9f5": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Transportation Logistics & Analytics Intern - Spring 2027"
+},
 "fca8c004-76a9-436d-a84c-5cf528bd35c3": {
 "company": "WSP",
 "first_seen": "2026-08-15",
@@ -29217,6 +29287,11 @@
 "company": "MSA Safety",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Co-op - Product Development"
+},
+"fd566011-9892-458b-844e-88c411b782f3": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-24",
+"title": "Systems Software Engineer Intern"
 },
 "fd61bf7a-2536-4242-9d48-42c4c11f5c44": {
 "company": "Valeo Foods",
