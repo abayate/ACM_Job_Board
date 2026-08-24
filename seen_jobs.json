@@ -5219,6 +5219,11 @@
 "first_seen": "2026-08-21",
 "title": "Associate AI Product Strategist"
 },
+"2b1cb4ad-439e-499f-95a2-d30ea699fb24": {
+"company": "Audax Group",
+"first_seen": "2026-08-24",
+"title": "AI Engineer Co-op"
+},
 "2b3b35ca-a65d-43e8-aa08-c9ea1ea97fd1": {
 "company": "Munters",
 "first_seen": "2026-08-15",
@@ -7009,6 +7014,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineering Intern"
 },
+"3ab9013f-6052-4487-a363-3bc028b58b16": {
+"company": "EquipmentShare",
+"first_seen": "2026-08-24",
+"title": "Telematics Installer"
+},
 "3ace8680-5997-4467-ad7e-82ecc656e241": {
 "company": "Five Rings Capital",
 "first_seen": "2026-08-15",
@@ -8269,6 +8279,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Systematic Trading Intern"
 },
+"451d266b-c459-492a-b5c3-df553f98d6d5": {
+"company": "Audax Group",
+"first_seen": "2026-08-24",
+"title": "Data Engineer Co-op"
+},
 "45370022-82fa-4ecf-a427-d2585613cc56": {
 "company": "SpAItial",
 "first_seen": "2026-08-15",
@@ -8583,6 +8598,11 @@
 "company": "RunSybil",
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1"
+},
+"47fb79bc-9f49-407b-bb0c-52352eba40be": {
+"company": "Audax Group",
+"first_seen": "2026-08-24",
+"title": "Data Analyst Co-op - Business Solutions"
 },
 "47fe2157-ddd3-4233-87d7-cf96058a286d": {
 "company": "Datadog",
@@ -11648,6 +11668,11 @@
 "company": "Jane Street",
 "first_seen": "2026-08-15",
 "title": "Software Engineering Intern"
+},
+"626c7d1a-4bcc-4146-ba68-1481a6d946a2": {
+"company": "AECOM",
+"first_seen": "2026-08-24",
+"title": "Entry-Level Geologist/Geophysicist - Geotechnical and Geophysics Group"
 },
 "626ecf45-a7a7-4ebc-aeb8-fe97ed05b66b": {
 "company": "Picton Mahoney Asset Management",
@@ -15043,6 +15068,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Research Engineer Graduate - Monetization Technology - Business Integrity"
+},
+"7f70a436-4619-458c-818b-33252bb0a7c9": {
+"company": "Audax Group",
+"first_seen": "2026-08-24",
+"title": "Data Engineer Co-op"
 },
 "7f7708f8-60e0-45e9-83a1-b622de309e47": {
 "company": "Noviam Inc.",
@@ -22643,6 +22673,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Hardware Engineer"
 },
+"c0ec2df1-1a46-422f-8fc5-40a2cd9e3c70": {
+"company": "CenturyLink",
+"first_seen": "2026-08-24",
+"title": "Field Technician 1"
+},
 "c0ff0ed8-d99a-4394-b967-956c4d6fa4ae": {
 "company": "Adobe",
 "first_seen": "2026-08-19",
@@ -23097,6 +23132,11 @@
 "company": "Zoox",
 "first_seen": "2026-08-15",
 "title": "Data Analyst Co-op"
+},
+"c582d3c2-5152-41c6-b5d9-162452d0eabf": {
+"company": "TraceLink",
+"first_seen": "2026-08-24",
+"title": "Software Engineer 1 - Engineering Services"
 },
 "c58457ce-e22e-4633-bddb-0886f0537cc2": {
 "company": "Palo Alto Networks",
@@ -24017,6 +24057,11 @@
 "company": "Tesla",
 "first_seen": "2026-08-15",
 "title": "Product Management Intern - Product Engineer - Applications Engineering"
+},
+"cd7682b8-7722-4a26-9813-42ece290a387": {
+"company": "Google",
+"first_seen": "2026-08-24",
+"title": "Software Engineer Intern"
 },
 "cd77dcd5-5398-4e0e-933c-9a0d9ec1ddc0": {
 "company": "Tesla",
@@ -25023,6 +25068,11 @@
 "first_seen": "2026-08-15",
 "title": "Thermal Controls Engineer Intern - Thermal Controls Engineer - Vehicle Controls"
 },
+"d55a832d-489f-468a-8688-f419fb8b1b38": {
+"company": "InfiniteQuant",
+"first_seen": "2026-08-24",
+"title": "Quantitative Developer Internship - Summer 2027"
+},
 "d55da702-839a-42a9-8c4d-a6356630c452": {
 "company": "Oracle",
 "first_seen": "2026-08-15",
@@ -25167,6 +25217,11 @@
 "company": "Apple",
 "first_seen": "2026-08-15",
 "title": "Camera Framework Tooling Engineer - Photo Capture - Camera & Photos"
+},
+"d6b556fe-abad-41f9-80f2-0377ef5e9b34": {
+"company": "Medpace",
+"first_seen": "2026-08-24",
+"title": "Python Intern - Summer 2027"
 },
 "d6b86750-e627-46d2-92a1-90ec653e1238": {
 "company": "Royal Bank of Canada",
@@ -28507,6 +28562,11 @@
 "company": "Tilde Research",
 "first_seen": "2026-08-15",
 "title": "Kernel Engineer \u2013 Intern and Full-time"
+},
+"f4699b02-b7e9-4575-8cf1-ff5099f6c42c": {
+"company": "EquipmentShare",
+"first_seen": "2026-08-24",
+"title": "Telematics Installer"
 },
 "f472ec8a-728e-429e-ba5c-4e72d559732f": {
 "company": "NeoSigma",
