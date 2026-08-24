@@ -984,6 +984,11 @@
 "first_seen": "2026-08-17",
 "title": "Field Service Technician"
 },
+"07fb9dda-5acf-40a0-8daa-9a4ef8e9d7a5": {
+"company": "DuCharme, McMillen & Associates",
+"first_seen": "2026-08-24",
+"title": "Software Developer Intern"
+},
 "07fc4738-d12f-4bb3-b8de-6b749a723716": {
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-08-15",
@@ -1734,6 +1739,11 @@
 "first_seen": "2026-08-15",
 "title": "Emerging Technology Intern"
 },
+"0df59faa-c7e2-47a6-83d7-e8637cc3d960": {
+"company": "DuCharme, McMillen & Associates",
+"first_seen": "2026-08-24",
+"title": "Software Development Intern - Spring 2027"
+},
 "0df8e8db-3493-4b30-ac6d-81f4e6c21920": {
 "company": "BlueLabs Analytics",
 "first_seen": "2026-08-15",
@@ -1793,6 +1803,11 @@
 "company": "Voyager Technologies",
 "first_seen": "2026-08-15",
 "title": "Accelerated Physics Simulation Engineer - Agentic Computational Engineering"
+},
+"0e8d516f-a804-45b0-94f8-0f4aa2523d45": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-24",
+"title": "Data Enablement Co-op - CFO - 8 Months"
 },
 "0e90651f-2008-4290-b336-a660bb4398af": {
 "company": "TikTok",
@@ -2379,6 +2394,11 @@
 "first_seen": "2026-08-15",
 "title": "Electronic Trading Risk Management Associate"
 },
+"133fba0a-28f0-4ec8-8ae8-6344885ba200": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-24",
+"title": "Data Engineer Intern - Chief Data Office"
+},
 "13540a7a-3ab0-4bde-ae75-edcab7f4406f": {
 "company": "CaseGuard",
 "first_seen": "2026-08-15",
@@ -2793,6 +2813,11 @@
 "company": "Trane Technologies",
 "first_seen": "2026-08-20",
 "title": "Point Mapping Specialist 1 - Centralized Services - Point Mapping Team"
+},
+"16070704-db3b-4142-9663-e56f9a828bbb": {
+"company": "LPL Financial Holdings",
+"first_seen": "2026-08-24",
+"title": "Service Transformation & Data Analytics Intern"
 },
 "1607a4ba-3b77-40cc-aa04-244640bdc0f7": {
 "company": "RTX",
@@ -5419,6 +5444,11 @@
 "first_seen": "2026-08-21",
 "title": "Quantitative Researcher - Ph.D"
 },
+"2ca29e94-257e-49f3-8ba7-5ad8b1ef12ea": {
+"company": "Freddie Mac",
+"first_seen": "2026-08-24",
+"title": "Multifamily Digital Product Analysis Intern - Summer 2027"
+},
 "2cc55124-4613-4f77-b226-6eb616f18ca8": {
 "company": "SpaceX",
 "first_seen": "2026-08-15",
@@ -6698,6 +6728,11 @@
 "company": "XPENG Motors",
 "first_seen": "2026-08-15",
 "title": "Senior Machine Learning Engineer - LLM Quantization & Deployment"
+},
+"37d3bb54-6e21-4fd6-b61a-89314a0aa387": {
+"company": "Micron Technology",
+"first_seen": "2026-08-24",
+"title": "Realtime Defect Analysis Intern - Yield Technology"
 },
 "37d56d64-a9cd-4527-aacf-932724b30468": {
 "company": "Royal Bank of Canada",
@@ -10814,6 +10849,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Workflow Specialist"
 },
+"5a92381f-f858-4847-a147-1dc9ffc07f92": {
+"company": "Monolithic Power Systems",
+"first_seen": "2026-08-24",
+"title": "AI Developer Intern"
+},
 "5a950ebc-9b3a-416e-88d1-be7db4bd5560": {
 "company": "Apple",
 "first_seen": "2026-08-15",
@@ -11503,6 +11543,11 @@
 "company": "Chevron Corporation",
 "first_seen": "2026-08-15",
 "title": "Supply & Trading TRIP Program Intern"
+},
+"61113397-5045-45a9-8385-92577d546a89": {
+"company": "University of Virginia",
+"first_seen": "2026-08-24",
+"title": "Technical Research Assistant Intern"
 },
 "613121a0-b6ea-469c-bf10-9bb507ad6f4c": {
 "company": "University of Arkansas",
@@ -12504,6 +12549,11 @@
 "first_seen": "2026-08-15",
 "title": "Health Data Analyst Intern"
 },
+"6886558d-1278-4dad-9f3b-598f5654f1b3": {
+"company": "Micron Technology",
+"first_seen": "2026-08-24",
+"title": "Thin Films Equipment Engineering Intern - EDE"
+},
 "688685f6-3e2b-48ae-b097-6e9a5fea7143": {
 "company": "University of Texas at Austin",
 "first_seen": "2026-08-15",
@@ -13319,6 +13369,11 @@
 "first_seen": "2026-08-15",
 "title": "Application Development Intern"
 },
+"6fc7d52e-825d-4917-aaaa-3941e28d5c5a": {
+"company": "Fannie Mae",
+"first_seen": "2026-08-24",
+"title": "Technology Program Intern"
+},
 "6fc7e4af-87e1-4ae0-9903-2066010754a3": {
 "company": "Micron Technology",
 "first_seen": "2026-08-18",
@@ -13383,6 +13438,11 @@
 "company": "AeroVect",
 "first_seen": "2026-08-18",
 "title": "Autonomy Intern"
+},
+"7037d659-2547-4963-be41-0cc634026324": {
+"company": "Canadian Solar",
+"first_seen": "2026-08-24",
+"title": "Data Analysis Intern - Quality"
 },
 "703ca800-7739-4af0-ac22-fe5aa240bd03": {
 "company": "Citadel",
@@ -22808,6 +22868,11 @@
 "first_seen": "2026-08-18",
 "title": "Laboratory Materials Analyst 1"
 },
+"c19b5782-0819-467c-9919-c64181bd93d2": {
+"company": "Micron Technology",
+"first_seen": "2026-08-24",
+"title": "Advanced Spectroscopy and Nanoscale Materials Characterization Intern"
+},
 "c1a68563-fce3-4b44-b45f-03020c8ce1c2": {
 "company": "Analog Devices",
 "first_seen": "2026-08-15",
@@ -24902,6 +24967,11 @@
 "company": "Denso",
 "first_seen": "2026-08-18",
 "title": "Tester Design Engineer 2"
+},
+"d3d4026f-7692-4702-b165-7ab30790335c": {
+"company": "Worcester Polytechnic Institute",
+"first_seen": "2026-08-24",
+"title": "Graduate Research Assistant - Fire Protection Engineering - JM"
 },
 "d3dabef7-abe2-4f2c-adcc-bcc8fe657013": {
 "company": "PricewaterhouseCoopers (PwC)",
@@ -29392,6 +29462,11 @@
 "company": "CROSSMARK",
 "first_seen": "2026-08-18",
 "title": "Data Collection Associate"
+},
+"fa59ec3c-a4bd-4395-87e0-3817d5e0f9f6": {
+"company": "Booz Allen",
+"first_seen": "2026-08-24",
+"title": "Software Engineer Intern"
 },
 "fa5f9365-4100-48b9-a209-20b0abd1211d": {
 "company": "EAi Technologies",
