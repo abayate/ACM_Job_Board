@@ -1284,6 +1284,11 @@
 "first_seen": "2026-08-15",
 "title": "Product Operations Associate - Tier 1"
 },
+"0a24e0a1-31c0-4019-8e78-17c048481430": {
+"company": "Cologix",
+"first_seen": "2026-08-24",
+"title": "DCIM Analyst"
+},
 "0a2f062c-ced8-4581-9ddc-ddd3f11bcb05": {
 "company": "Zebra Technologies",
 "first_seen": "2026-08-15",
@@ -5124,6 +5129,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Co-op"
 },
+"28a744e2-2ac1-4370-ae97-b7520c9897dd": {
+"company": "Daktronics",
+"first_seen": "2026-08-24",
+"title": "Hardware Design Co-op Intern - Firmware"
+},
 "28be03da-801e-4180-a761-ffb6ac098c30": {
 "company": "Cummins",
 "first_seen": "2026-08-15",
@@ -7859,6 +7869,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Trader New Grad"
 },
+"40ac8f0e-2e41-4c53-9757-6a1ee928093c": {
+"company": "RTX",
+"first_seen": "2026-08-24",
+"title": "Software Engineer 1"
+},
 "40cc0419-8dbb-4ea5-81d6-cb30c72b1032": {
 "company": "pony.ai",
 "first_seen": "2026-08-15",
@@ -10153,6 +10168,11 @@
 "company": "General Dynamics",
 "first_seen": "2026-08-15",
 "title": "Electrical Test - Virginia and Columbia Programs"
+},
+"54709709-e38f-49b4-bcd9-5141b73a679e": {
+"company": "Apple",
+"first_seen": "2026-08-24",
+"title": "GPU Top Design Engineer"
 },
 "54727d6b-91fe-4a6f-a0d1-fad49ce8303a": {
 "company": "L3Harris Technologies",
@@ -12699,6 +12719,11 @@
 "first_seen": "2026-08-15",
 "title": "Browser Software Engineer Intern"
 },
+"68eeb05f-c94a-49b3-950a-0e69b203c009": {
+"company": "Apple",
+"first_seen": "2026-08-24",
+"title": "GPU Intern"
+},
 "69027049-de9f-4e0e-bdee-61811ae6424b": {
 "company": "SRI International",
 "first_seen": "2026-08-15",
@@ -15074,6 +15099,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
 },
+"7d3105a2-ce2a-4567-8cf5-03fa80a9a082": {
+"company": "Canon",
+"first_seen": "2026-08-24",
+"title": "Field Service Technician 1"
+},
 "7d3709c5-eca0-4793-8cbd-bb444a1d8975": {
 "company": "GE Vernova",
 "first_seen": "2026-08-15",
@@ -16974,6 +17004,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Center Repair Technician"
 },
+"8d357db3-4bed-433c-8281-3e0775e1be25": {
+"company": "KBR",
+"first_seen": "2026-08-24",
+"title": "Junior Software Engineer"
+},
 "8d443e92-a10b-41cc-b162-f76fbb2686fa": {
 "company": "StepStone Group",
 "first_seen": "2026-08-15",
@@ -18423,6 +18458,11 @@
 "company": "Red Bull",
 "first_seen": "2026-08-15",
 "title": "Data Science Intern - Data Science"
+},
+"9a501b59-f29b-4a7d-b8ef-eb5221735c94": {
+"company": "Northrop Grumman",
+"first_seen": "2026-08-24",
+"title": "Associate Software Engineer"
 },
 "9a61bf02-26d8-441a-b583-2c75f25ee9a5": {
 "company": "Toyota Research Institute",
@@ -20958,6 +20998,11 @@
 "first_seen": "2026-08-21",
 "title": "SoC RTL Design Engineer Intern - HBM"
 },
+"afa7917f-eec9-411a-9a5c-e3aad5839ae6": {
+"company": "Garmin",
+"first_seen": "2026-08-24",
+"title": "Software Engineer Intern"
+},
 "afb0eadc-fa15-4ff5-85c8-1aa9777ed90c": {
 "company": "ADT",
 "first_seen": "2026-08-15",
@@ -22173,6 +22218,11 @@
 "first_seen": "2026-08-15",
 "title": "Telematics Installer"
 },
+"b970996f-8877-40d2-878d-563423e5ae83": {
+"company": "Intellisense Systems",
+"first_seen": "2026-08-24",
+"title": "Electronics Assembler 1 - Operations Department"
+},
 "b977109a-8e8c-4173-a584-460e709a733f": {
 "company": "Citadel Securities",
 "first_seen": "2026-08-15",
@@ -22182,6 +22232,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-22",
 "title": "Software Engineer Intern"
+},
+"b984107e-3314-4712-ae60-7851681cee2d": {
+"company": "Intel",
+"first_seen": "2026-08-24",
+"title": "Packaging Module Development Engineer"
 },
 "b989c0d7-19f2-4acd-8837-402a4c9fbfe0": {
 "company": "Fidelity Investments",
@@ -22292,6 +22347,11 @@
 "company": "Semtech",
 "first_seen": "2026-08-15",
 "title": "Associate Analog Design Engineer"
+},
+"ba733cd9-7086-4e38-bdec-d13b07b8b1d3": {
+"company": "Apple",
+"first_seen": "2026-08-24",
+"title": "GPU Intern"
 },
 "ba7781d0-c294-42f8-8255-596388700098": {
 "company": "Infojini",
@@ -26563,6 +26623,11 @@
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Research Associate - Nuclear Non-Proliferation"
 },
+"dead17d4-de13-40ac-923b-ac8d41bdaba0": {
+"company": "Nightwing Intelligence Solutions",
+"first_seen": "2026-08-24",
+"title": "Software Engineer 1"
+},
 "deafc16b-b9d8-4b84-b748-2dafcb25b2c7": {
 "company": "Ontario Teachers' Pension Plan",
 "first_seen": "2026-08-21",
@@ -26938,10 +27003,20 @@
 "first_seen": "2026-08-15",
 "title": "MedTech Field Service Technician"
 },
+"e21e62d2-e9e1-40b2-b5f8-c4dfb22aba13": {
+"company": "Restaurant Technologies",
+"first_seen": "2026-08-24",
+"title": "Oil Service Technician 1"
+},
 "e24c2017-99ff-4c15-9636-3246335193a8": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Agent Evaluation & Evolution Machine Learning Engineer Intern - Applied Machine Learning Ark"
+},
+"e254d57d-91c7-4a04-adf6-557c91847bcf": {
+"company": "Econic Partners",
+"first_seen": "2026-08-24",
+"title": "Research Analyst"
 },
 "e25c595d-2be1-4931-921c-4ed75b55ddfe": {
 "company": "DellFor Technologies",
