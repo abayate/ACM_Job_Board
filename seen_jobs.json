@@ -389,6 +389,11 @@
 "first_seen": "2026-08-15",
 "title": "Application Engineer"
 },
+"03055ce7-1d96-46c4-861e-8c19404e1767": {
+"company": "Gulfstream",
+"first_seen": "2026-08-24",
+"title": "Software Engineer Intern - IEF"
+},
 "0311ac29-d2ee-4cf9-ae1e-28a3abdb428c": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -1613,6 +1618,11 @@
 "company": "Solerity",
 "first_seen": "2026-08-15",
 "title": "JavaScript Software Engineer 1 - TS/SCI with Poly"
+},
+"0d138427-6921-4a12-99e2-30a0b223cef3": {
+"company": "BNY",
+"first_seen": "2026-08-24",
+"title": "Software Developer Intern - Engineering"
 },
 "0d1a5d14-2cc4-4c85-a1a6-aa02ecc2b4f8": {
 "company": "TikTok",
@@ -3568,6 +3578,11 @@
 "company": "Ivo",
 "first_seen": "2026-08-15",
 "title": "Software Engineer, Frontend"
+},
+"1cc17ed5-3841-485e-bfcd-d41dec899b72": {
+"company": "BNY",
+"first_seen": "2026-08-24",
+"title": "Data Science Intern - Engineering"
 },
 "1cc58798-4a64-45ce-a9b1-f7225d6d1a68": {
 "company": "PlusAI",
@@ -7199,6 +7214,11 @@
 "first_seen": "2026-08-15",
 "title": "Maintenance Electronic Technician"
 },
+"3c2fba34-247d-45b8-99ed-1ebad1821c61": {
+"company": "ADT",
+"first_seen": "2026-08-24",
+"title": "Smart Home Consultant"
+},
 "3c510880-5a95-4889-b975-ff4cbcea4877": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -7958,6 +7978,11 @@
 "company": "Asure",
 "first_seen": "2026-08-15",
 "title": "Associate Software Engineer"
+},
+"43314ea5-8533-4883-a5e5-5afdc6cff866": {
+"company": "Polaris",
+"first_seen": "2026-08-24",
+"title": "Predictive Data Science Intern - Digital & IT"
 },
 "43396a43-2ced-4a5e-8508-9e6571d9d114": {
 "company": "American Electric Power",
@@ -8773,6 +8798,11 @@
 "company": "IMC Trading",
 "first_seen": "2026-08-15",
 "title": "Hardware Engineer Intern"
+},
+"4abd0496-bdc8-4df2-9444-8150ab63445d": {
+"company": "Gulfstream",
+"first_seen": "2026-08-24",
+"title": "Software Engineer Intern - Innovation, Engineering and Flight"
 },
 "4abde8fd-c043-447c-9b29-b3af382c19ad": {
 "company": "NVIDIA",
@@ -11294,6 +11324,11 @@
 "first_seen": "2026-08-15",
 "title": "Engineer AI Agentic Solutions"
 },
+"601c9bc9-49e0-4394-be4f-8a40c9b2ffba": {
+"company": "Polaris",
+"first_seen": "2026-08-24",
+"title": "Digital & IT Leadership Development Program Associate - Predictive Data Science"
+},
 "6030164c-e664-402f-979c-959537416807": {
 "company": "Rainmaker",
 "first_seen": "2026-08-15",
@@ -11789,6 +11824,11 @@
 "first_seen": "2026-08-19",
 "title": "Software Engineer Associate - Tempus"
 },
+"643187a2-24a5-4866-8cbb-5dd7214a4755": {
+"company": "Pennsylvania State University",
+"first_seen": "2026-08-24",
+"title": "Operations Research Engineer Intern - Undersea Systems"
+},
 "64378a3e-8909-4039-badd-4fa17cf582c2": {
 "company": "Pennsylvania State University",
 "first_seen": "2026-08-15",
@@ -11953,6 +11993,11 @@
 "company": "Prudential Financial",
 "first_seen": "2026-08-15",
 "title": "Public Credit Summer Investment Analyst Intern - Portfolio Analysis Group"
+},
+"6524ae1b-a5e8-4aa8-a413-98634f2b6a88": {
+"company": "Nomagic",
+"first_seen": "2026-08-24",
+"title": "Engineering Intern - Software or Hardware"
 },
 "652b38fc-56e5-4a83-8756-16ff6e0186cf": {
 "company": "Apple",
@@ -16514,6 +16559,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - AI Infrastructure-Compute Efficiency & Scheduling"
 },
+"8caf8a32-6383-404c-8f0e-49c55ec304a7": {
+"company": "Polaris",
+"first_seen": "2026-08-24",
+"title": "Digital & IT Leadership Development Program Associate - Digital Product Development"
+},
 "8cb1d0bf-d269-4586-9f9e-cb3777f9d7b0": {
 "company": "Integra FEC",
 "first_seen": "2026-08-21",
@@ -17309,6 +17359,11 @@
 "first_seen": "2026-08-15",
 "title": "GPU Architecture Engineer New Grad"
 },
+"93769dfc-66de-414c-8cf3-6d4ff85fd56d": {
+"company": "ADT",
+"first_seen": "2026-08-24",
+"title": "Smart Home Consultant"
+},
 "937bbf47-9af5-4ffd-9dee-85751c288cad": {
 "company": "Trillium",
 "first_seen": "2026-08-15",
@@ -18054,6 +18109,11 @@
 "first_seen": "2026-08-18",
 "title": "AI Engineer Intern - Enterprise Technology Services"
 },
+"9ac6ae38-9b5a-4373-934b-b04f5fbdc09c": {
+"company": "InfiniteQuant",
+"first_seen": "2026-08-24",
+"title": "Quantitative Researcher Intern - Summer 2027"
+},
 "9ac9294a-199f-42d5-857f-6a149669840e": {
 "company": "Charter Manufacturing",
 "first_seen": "2026-08-15",
@@ -18635,8 +18695,8 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-23",
-"new_grad": "2026-08-23"
+"internship": "2026-08-24",
+"new_grad": "2026-08-24"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -21308,6 +21368,11 @@
 "first_seen": "2026-08-21",
 "title": "Product Development Engineer Intern/Co-op"
 },
+"b663930f-d9d5-4851-b763-657f8e5f0b08": {
+"company": "ADT",
+"first_seen": "2026-08-24",
+"title": "Smart Home Consultant"
+},
 "b670d0f6-a015-4f70-82cd-a7fb212cc98b": {
 "company": "Axis Capital",
 "first_seen": "2026-08-15",
@@ -21467,6 +21532,11 @@
 "company": "Altamira Technologies",
 "first_seen": "2026-08-15",
 "title": "Research and Development Intern"
+},
+"b805164b-f585-456b-a2f0-f150f699eb3a": {
+"company": "Raymond James Financial",
+"first_seen": "2026-08-24",
+"title": "Associate Experience Analytics Advisor"
 },
 "b810a416-7ff9-4dd2-9bee-5b5b5ca5e317": {
 "company": "TikTok",
@@ -27537,6 +27607,11 @@
 "company": "Intel",
 "first_seen": "2026-08-15",
 "title": "Dry Etch Module Equipment Technician - Ocotillo Technology Fabrication"
+},
+"ed410248-773f-43a3-a1dd-3157708a9b23": {
+"company": "Raymond James Financial",
+"first_seen": "2026-08-24",
+"title": "Information Technology Accelerated Development Program - Software Developer Track"
 },
 "ed847441-9d11-4dc7-aa8a-8a2e49fdbc90": {
 "company": "The Boeing Company",
