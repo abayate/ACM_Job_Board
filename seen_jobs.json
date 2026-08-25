@@ -789,6 +789,11 @@
 "first_seen": "2026-08-24",
 "title": "Associate Software Engineer - Ts/Sci"
 },
+"06673e9a-5d65-4652-9ea8-f673b24c85a5": {
+"company": "AMD",
+"first_seen": "2026-08-25",
+"title": "ASIC Package Engineering Co-op/Intern"
+},
 "0673c550-4c1f-4d6c-b03d-e2185d8183b0": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -4854,6 +4859,11 @@
 "first_seen": "2026-08-15",
 "title": "Full-Stack Developer Intern - Python"
 },
+"25d8c265-f1ed-4e2b-9729-18047088e3ff": {
+"company": "Fortive",
+"first_seen": "2026-08-25",
+"title": "Field Service Engineer Co-op"
+},
 "25eca41c-f475-4b9a-95e0-810654292e16": {
 "company": "IMC Trading",
 "first_seen": "2026-08-15",
@@ -5388,6 +5398,11 @@
 "company": "Munters",
 "first_seen": "2026-08-15",
 "title": "Electrical Panel Shop Cell Lead"
+},
+"2b427c48-848f-4f28-b666-9136b44ba757": {
+"company": "Meridian Partners",
+"first_seen": "2026-08-25",
+"title": "Embedded Software Engineer Co-op"
 },
 "2b48878b-0de3-4e6d-96be-02778b855b93": {
 "company": "Northrop Grumman",
@@ -13934,6 +13949,11 @@
 "first_seen": "2026-08-18",
 "title": "Business Analysis Associate - Access Management"
 },
+"721b1502-72bd-47a9-91c2-a71011c5fd1c": {
+"company": "Meridian Partners",
+"first_seen": "2026-08-25",
+"title": "Data Scientist Co-op"
+},
 "722bb14f-670f-48c9-8320-e07db2eff930": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -14903,6 +14923,11 @@
 "company": "NVIDIA",
 "first_seen": "2026-08-19",
 "title": "Ph.D. Research Graphics and Simulation Intern - Graphics and Simulation"
+},
+"7a0e26e4-7787-42a2-8128-e496212ae724": {
+"company": "Meridian Partners",
+"first_seen": "2026-08-25",
+"title": "Full Stack Software Engineer Co-op"
 },
 "7a0ebab5-1cf3-49b7-b609-5c5258ac7694": {
 "company": "L3Harris Technologies",
@@ -16499,6 +16524,11 @@
 "first_seen": "2026-08-15",
 "title": "Research & Development PhD Engineer Intern"
 },
+"87d12a7b-d741-4dd9-a558-de2b329aa098": {
+"company": "AMD",
+"first_seen": "2026-08-25",
+"title": "ASIC Package Engineering Intern Co-op"
+},
 "87d1b39d-5c83-431c-9e1f-bc13469fde4b": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -17278,6 +17308,11 @@
 "company": "Hippocratic AI",
 "first_seen": "2026-08-15",
 "title": "Agent Deployment Engineer"
+},
+"8d8ee1d2-7639-4b3a-a595-6be2478476c4": {
+"company": "AMD",
+"first_seen": "2026-08-25",
+"title": "ASIC Package Engineer Intern Co-op"
 },
 "8d99b019-5c4f-4228-8e7f-9ce6934f3d7d": {
 "company": "TikTok",
@@ -18624,6 +18659,11 @@
 "first_seen": "2026-08-15",
 "title": "Field Service Technician"
 },
+"99a1529a-7b07-48b6-bd63-8e2367d1b196": {
+"company": "Brown University",
+"first_seen": "2026-08-25",
+"title": "Health Economics Research Analyst"
+},
 "99b96750-4604-4ae8-8e56-d3c3287cc493": {
 "company": "Persistent Systems",
 "first_seen": "2026-08-15",
@@ -19355,8 +19395,8 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-24",
-"new_grad": "2026-08-24"
+"internship": "2026-08-25",
+"new_grad": "2026-08-25"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -20122,6 +20162,11 @@
 "company": "R1 RCM",
 "first_seen": "2026-08-15",
 "title": "Analyst AI Opportunity & Value Creation"
+},
+"a707d075-8431-4357-8579-21f9516b6b9c": {
+"company": "Aramark",
+"first_seen": "2026-08-25",
+"title": "Food Services Worker - Student Worker"
 },
 "a71590f2-2c07-4e4c-aefe-dd5da0b5ee4a": {
 "company": "nVent",
@@ -21267,6 +21312,11 @@
 "company": "Mujin",
 "first_seen": "2026-08-15",
 "title": "Software Integration Intern"
+},
+"af9ad2a9-dee9-44f4-abc5-b30f9c1df4e4": {
+"company": "Dell Technologies",
+"first_seen": "2026-08-25",
+"title": "Hardware Engineer 1 - Client Solutions Group"
 },
 "af9b003f-eabf-4313-a486-425b39e293ca": {
 "company": "3S Business Corporation",
@@ -23567,6 +23617,11 @@
 "company": "dunnhumby",
 "first_seen": "2026-08-15",
 "title": "Category & Store Solutions Associate"
+},
+"c27d16b6-b660-4fb5-b2f8-825ddf9072f7": {
+"company": "Meridian Partners",
+"first_seen": "2026-08-25",
+"title": "Cloud Software Engineer Co-op"
 },
 "c282058b-cc59-4c84-882c-b9455c3fa0e9": {
 "company": "SoloPulse",
@@ -25933,6 +25988,11 @@
 "first_seen": "2026-08-15",
 "title": "Product Management Trainee - Bilingual Mandarin Required"
 },
+"d5cb9991-9336-4138-b9c5-18d14b6c8f1b": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-25",
+"title": "Associate Software Engineering"
+},
 "d5cec203-67b4-4970-8718-20bdbbe30e43": {
 "company": "Astranis",
 "first_seen": "2026-08-15",
@@ -26882,6 +26942,11 @@
 "company": "AT&T",
 "first_seen": "2026-08-22",
 "title": "Installation Technician"
+},
+"ddae6979-7fcd-4b8d-97c8-36d02bd02f06": {
+"company": "AMD",
+"first_seen": "2026-08-25",
+"title": "ASIC Package Engineering Intern Co-op"
 },
 "ddb04217-d7a2-4576-abf4-9213f9bda09f": {
 "company": "Pennsylvania State University",
@@ -28838,6 +28903,11 @@
 "first_seen": "2026-08-15",
 "title": "Forward Deployed Software Engineer Intern - Commercial"
 },
+"eeda0ac4-569c-4d27-927d-56e668f95ffa": {
+"company": "Meridian Partners",
+"first_seen": "2026-08-25",
+"title": "Python Software Engineer Co-op"
+},
 "eee826e6-97e1-40a7-91fd-be9d495e5e43": {
 "company": "Tesla",
 "first_seen": "2026-08-15",
@@ -30702,6 +30772,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Graduate Software Engineer - Media Engine"
+},
+"fe19db08-c5c8-4451-a135-035a0a2ccdcf": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-25",
+"title": "Software Engineer Intern"
 },
 "fe420397-a888-4b18-9542-70d65ec4c190": {
 "company": "PNC Financial Services",
