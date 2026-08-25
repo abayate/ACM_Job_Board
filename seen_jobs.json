@@ -2184,6 +2184,11 @@
 "first_seen": "2026-08-24",
 "title": "Software Engineer Intern - Tech & Data Program"
 },
+"11435ff1-cc4d-469b-9935-224cfaeec6c6": {
+"company": "OceanComm",
+"first_seen": "2026-08-25",
+"title": "Embedded Software Engineer - DSP"
+},
 "1146b7db-d86a-4314-a87f-42d5440c2862": {
 "company": "GlobalFoundries",
 "first_seen": "2026-08-15",
@@ -3934,6 +3939,11 @@
 "first_seen": "2026-08-22",
 "title": "Product Management Dashboard Analytics Intern"
 },
+"1f2bf4b5-3f79-48a6-a9df-947ef666ee29": {
+"company": "Sciemo",
+"first_seen": "2026-08-25",
+"title": "Data Scientist"
+},
 "1f2ff005-c233-4296-b7a1-75cb32637c4e": {
 "company": "RTX",
 "first_seen": "2026-08-15",
@@ -5319,6 +5329,11 @@
 "first_seen": "2026-08-15",
 "title": "SoC DFT Engineer"
 },
+"2ad8c3d0-43b7-4038-9ea2-b88e6dda0b9a": {
+"company": "John Deere",
+"first_seen": "2026-08-25",
+"title": "Robotics Engineer Intern"
+},
 "2aec360c-7d97-44c9-90e1-5ad25913c551": {
 "company": "SpaceX",
 "first_seen": "2026-08-15",
@@ -5528,6 +5543,11 @@
 "company": "SKYTRAC",
 "first_seen": "2026-08-15",
 "title": "Electronics Technologist"
+},
+"2c8d4660-6467-4fcd-8dcd-05c5cbc86604": {
+"company": "Pryzm",
+"first_seen": "2026-08-25",
+"title": "Federal Data Analyst"
 },
 "2c9a9813-d166-422b-adf3-2c534553bedb": {
 "company": "Shirley Ryan AbilityLab",
@@ -7949,6 +7969,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Software Engineer"
 },
+"40d7d962-1019-4506-8d2b-5bfcb8ecb6d2": {
+"company": "Willis Aviation",
+"first_seen": "2026-08-25",
+"title": "Graduate Planning & Records Engineer"
+},
 "40dbbf5f-d4ad-493a-9644-4f4b0662556c": {
 "company": "Cadence Design Systems",
 "first_seen": "2026-08-15",
@@ -8373,6 +8398,11 @@
 "company": "DellFor Technologies",
 "first_seen": "2026-08-15",
 "title": "Entry Level .Net Developer"
+},
+"44600b6e-3825-411c-81ce-fe0455fa2ffb": {
+"company": "Ponca City Development Authority",
+"first_seen": "2026-08-25",
+"title": "Repair Technician"
 },
 "4463104a-5a74-418f-9f4a-2e821160e230": {
 "company": "Realm",
@@ -13734,6 +13764,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist"
 },
+"707f077b-d4f3-4d3b-a12c-a7dd9eb195ce": {
+"company": "Yelp",
+"first_seen": "2026-08-25",
+"title": "Machine Learning Engineer"
+},
 "708843fa-cd23-4f58-8f6b-9d646ec6460d": {
 "company": "Tencent",
 "first_seen": "2026-08-15",
@@ -14203,6 +14238,11 @@
 "company": "Mizuho Securities USA",
 "first_seen": "2026-08-15",
 "title": "Commercial Lending Technology Intern"
+},
+"748876fb-0603-4b73-b26c-469bc138674c": {
+"company": "Cisco",
+"first_seen": "2026-08-25",
+"title": "Software Engineer 1"
 },
 "7488c664-80c5-4270-8dba-8eeb45c1397a": {
 "company": "TikTok",
@@ -21293,6 +21333,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Developer"
 },
+"b02738f0-a8b2-46a2-b6d0-ef53d1c0da39": {
+"company": "Cisco",
+"first_seen": "2026-08-25",
+"title": "Software Engineer 2"
+},
 "b027e384-ef72-4db9-8ff3-c63ea36f4583": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -21653,6 +21698,11 @@
 "first_seen": "2026-08-21",
 "title": "Software Engineer Intern - Multiple Teams"
 },
+"b36d77b3-8f2d-43d7-bf82-ad49189efa02": {
+"company": "John Deere",
+"first_seen": "2026-08-25",
+"title": "Robotics Engineer Part-Time Student - Product Engineering"
+},
 "b3868b75-e140-4592-ac8e-8055882cf959": {
 "company": "Target",
 "first_seen": "2026-08-24",
@@ -21832,6 +21882,11 @@
 "company": "Marriott International",
 "first_seen": "2026-08-15",
 "title": "Product Analyst"
+},
+"b4fbf723-b634-4b03-a717-5a7477ac972b": {
+"company": "Yelp",
+"first_seen": "2026-08-25",
+"title": "Data Backend Engineer - Trust & Safety"
 },
 "b51925a9-5a99-4ef7-9294-2514bc956ac5": {
 "company": "GSK",
@@ -25363,6 +25418,11 @@
 "first_seen": "2026-08-18",
 "title": "Embedded Software Engineer"
 },
+"d23aec50-c086-4fda-9f46-1e6e598f195c": {
+"company": "DMS",
+"first_seen": "2026-08-25",
+"title": "Junior Technical Operator - Lates Shift"
+},
 "d24846e3-7ab0-4dc5-8419-0d070719ad82": {
 "company": "Cybernetic Labs",
 "first_seen": "2026-08-15",
@@ -26118,6 +26178,11 @@
 "first_seen": "2026-08-15",
 "title": "Design Engineer New Grad - Design Engineer - Non-Volatile Engineering Group"
 },
+"d8128313-1a27-4475-bfe7-ccff7edc883d": {
+"company": "Tesla",
+"first_seen": "2026-08-25",
+"title": "Electronic Hardware Validation - Low Voltage Systems"
+},
 "d814462b-3da1-4eea-a608-4b26245a5207": {
 "company": "Oracle",
 "first_seen": "2026-08-15",
@@ -26337,6 +26402,11 @@
 "company": "Renesas Electronics",
 "first_seen": "2026-08-19",
 "title": "Systems Design Engineer New Grad"
+},
+"d98abdd9-48bc-4767-ad87-4f39e8156cba": {
+"company": "Rystad Energy",
+"first_seen": "2026-08-25",
+"title": "Analyst Intern - Summer 2027"
 },
 "d98d37e6-2528-4278-ac21-97f42db9f4eb": {
 "company": "JP Morgan Chase",
@@ -28842,6 +28912,11 @@
 "company": "University of St. Thomas",
 "first_seen": "2026-08-18",
 "title": "Data Analytics Associate"
+},
+"efe8c7af-0baa-411f-8106-bdfcbe0674b4": {
+"company": "Liberty Mutual",
+"first_seen": "2026-08-25",
+"title": "Data Scientist"
 },
 "eff78df6-63f3-44c3-a44c-8c05d0eebf15": {
 "company": "Semtech",
