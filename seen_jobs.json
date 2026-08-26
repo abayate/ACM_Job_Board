@@ -1729,6 +1729,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Driven Insights Analyst"
 },
+"0d471c98-a58e-40e3-a4d9-a332bfbec196": {
+"company": "Rivian",
+"first_seen": "2026-08-26",
+"title": "Field Service Technician - Night Shift"
+},
 "0d5b6431-b3ab-4450-8dc4-f912a69e0e6a": {
 "company": "Metropolitan Transportation Authority",
 "first_seen": "2026-08-15",
@@ -2068,6 +2073,11 @@
 "company": "Fujifilm",
 "first_seen": "2026-08-15",
 "title": "Engineering Technician - Level depends on Skills Match"
+},
+"1021bc85-de01-4e2a-93e8-4d10a25731fd": {
+"company": "BJC HealthCare",
+"first_seen": "2026-08-26",
+"title": "EHR Application Analyst 1"
 },
 "10232d0d-4e9b-4fc1-8961-da6acac23b88": {
 "company": "Hays Electrical Services",
@@ -4589,6 +4599,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Solutions Analyst"
 },
+"232c9773-c328-4d64-b2d0-eeaf1673e51d": {
+"company": "University Health Network",
+"first_seen": "2026-08-26",
+"title": "Administrative Support - Research"
+},
 "233be5a1-8ddf-4ec6-b781-965da462a12d": {
 "company": "Fannie Mae",
 "first_seen": "2026-08-18",
@@ -5013,6 +5028,11 @@
 "company": "Radiance Technologies",
 "first_seen": "2026-08-15",
 "title": "Entry Level Microelectronics Research and Development Engineer"
+},
+"262949d4-ed66-4934-b2fe-ba5b67318c50": {
+"company": "DTCC",
+"first_seen": "2026-08-26",
+"title": "Data Solutions Intern - Internship Program"
 },
 "262b8bd2-850c-44ef-906d-9dcf0a271e1c": {
 "company": "CROSSMARK",
@@ -8078,6 +8098,11 @@
 "company": "General Dynamics Information Technology",
 "first_seen": "2026-08-15",
 "title": "Engineering Technician 1"
+},
+"3f8094e9-85cc-45af-9147-882df0bfcd9f": {
+"company": "Hilton Worldwide",
+"first_seen": "2026-08-26",
+"title": "Cook"
 },
 "3f8afa13-81ca-48dd-9563-4cd15da1c144": {
 "company": "ByteDance",
@@ -11289,6 +11314,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Center of Excellence Intern - NLP"
 },
+"597ffe84-362b-4490-961d-d8b3173ea538": {
+"company": "Corning",
+"first_seen": "2026-08-26",
+"title": "IT Asset Management Co-op - D&IT"
+},
 "59882688-f37f-4664-bba8-fd1c9b781086": {
 "company": "Veeva Systems",
 "first_seen": "2026-08-15",
@@ -11303,6 +11333,11 @@
 "company": "CoServe Global Solutions",
 "first_seen": "2026-08-15",
 "title": "C++ Software Developer"
+},
+"59a9da96-9441-4bf5-adea-b1f68156600d": {
+"company": "Lawrence Livermore National Laboratory (LLNL)",
+"first_seen": "2026-08-26",
+"title": "Academic Graduate Appointee - Data Acquisition Software Development"
 },
 "59aaa50c-6f7f-427b-950f-8b772440e208": {
 "company": "Quora",
@@ -14174,6 +14209,11 @@
 "first_seen": "2026-08-21",
 "title": "Finance Intern - Risk Analytics"
 },
+"706c113d-3534-4a68-8836-c8195ea3f0c9": {
+"company": "Epic Games",
+"first_seen": "2026-08-26",
+"title": "Gameplay Programmer Intern"
+},
 "706ec5af-3b65-44e6-b035-00b49595c54a": {
 "company": "Teledyne",
 "first_seen": "2026-08-15",
@@ -16213,6 +16253,11 @@
 "company": "Equifax",
 "first_seen": "2026-08-19",
 "title": "Technology Rotational Development Program Employee"
+},
+"80ebf08c-0c7a-4d4e-972a-91adbc6e5509": {
+"company": "Arcfield",
+"first_seen": "2026-08-26",
+"title": "Model Based Systems Engineer 1"
 },
 "80eda434-6c14-4a62-b65d-ecd5dbcdaa18": {
 "company": "Circle K",
@@ -20223,6 +20268,11 @@
 "first_seen": "2026-08-18",
 "title": "Student AI Developer"
 },
+"a1eb1e2b-bd12-4ee2-b019-34e40010a803": {
+"company": "DTCC",
+"first_seen": "2026-08-26",
+"title": "Application Developer Intern"
+},
 "a1ed0eeb-abf6-4f36-b1e0-18fd23fe6bee": {
 "company": "CSL",
 "first_seen": "2026-08-25",
@@ -21153,6 +21203,11 @@
 "first_seen": "2026-08-22",
 "title": "Digital & AI Technology Intern"
 },
+"a978ff38-52c5-44c8-b7ca-fc5bba5a02a7": {
+"company": "Smiths Detection Group",
+"first_seen": "2026-08-26",
+"title": "Technical Service Engineer Intern"
+},
 "a98768c3-1d79-4f8a-89a9-d3357004a2de": {
 "company": "Apple",
 "first_seen": "2026-08-15",
@@ -21262,6 +21317,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Research Scientist Intern - Monetization Technology - Business Integrity"
+},
+"aa3e56c3-8607-42dc-a43b-9fe91f4b275d": {
+"company": "DTCC",
+"first_seen": "2026-08-26",
+"title": "Application Developer Analyst - 2027 EDGE Program"
 },
 "aa42f4fa-9a75-46d4-b15c-9edf6678d943": {
 "company": "RWS",
@@ -28998,6 +29058,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Graduate - AML-Engine-Orchestration"
 },
+"e745f9f7-84b2-4962-af95-6e3faf61a307": {
+"company": "General Dynamics UK",
+"first_seen": "2026-08-26",
+"title": "Junior Software Engineer"
+},
 "e74adfd5-9138-466d-af45-4a26c1c886f9": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -31148,6 +31213,11 @@
 "first_seen": "2026-08-18",
 "title": "Software Engineer Intern"
 },
+"f940c913-da8e-4109-8de2-54cd5d65acfa": {
+"company": "DTCC",
+"first_seen": "2026-08-26",
+"title": "Product Management Intern - 2027 Internship Program"
+},
 "f9530ed3-2587-45c5-8a92-1bf929f199f3": {
 "company": "Integra FEC",
 "first_seen": "2026-08-15",
@@ -31412,6 +31482,11 @@
 "company": "DMC Engineering",
 "first_seen": "2026-08-15",
 "title": "Entry Level Embedded Engineer"
+},
+"fb49ee65-7eac-4ac7-ab79-c3262d6f04d7": {
+"company": "ADT",
+"first_seen": "2026-08-26",
+"title": "Installation Technician - Residential"
 },
 "fb4c05e4-dae7-48e3-b6d3-5e670ed8556d": {
 "company": "Springs Window Fashions",
