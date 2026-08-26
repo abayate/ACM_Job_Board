@@ -1604,6 +1604,11 @@
 "first_seen": "2026-08-15",
 "title": "Science & Technology Intern"
 },
+"0c6f879e-b3f8-47f4-85ed-ababb0e44d80": {
+"company": "Vigil Labs",
+"first_seen": "2026-08-26",
+"title": "Founding Member of Technical Staff \u2014 Markets"
+},
 "0c7330a0-83d0-41a4-aa16-783494525f73": {
 "company": "FactSet",
 "first_seen": "2026-08-15",
@@ -17844,6 +17849,11 @@
 "first_seen": "2026-08-25",
 "title": "Product Management Intern - AI Products"
 },
+"8cf72dd6-f0f9-40d1-85c5-813990262e3e": {
+"company": "Johns Hopkins Applied Physics Laboratory",
+"first_seen": "2026-08-26",
+"title": "Data Scientist/Engineer New Grad - Analytic Capabilities"
+},
 "8cfb1bdb-94da-41c0-be36-e516586909b0": {
 "company": "Dedalus Labs",
 "first_seen": "2026-08-15",
@@ -20111,7 +20121,7 @@
 },
 "_headers": {
 "internship": "2026-08-25",
-"new_grad": "2026-08-25"
+"new_grad": "2026-08-26"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
