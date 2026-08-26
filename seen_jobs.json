@@ -4219,6 +4219,11 @@
 "first_seen": "2026-08-15",
 "title": "Web Development Intern"
 },
+"1ff986e7-1259-4ef6-be26-7e2bcc66303b": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-26",
+"title": "Data & AI Intern - Balance Sheet and Liquidity Risk"
+},
 "1ffbd441-9fea-43f5-819f-f097b8702aaf": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -4543,6 +4548,11 @@
 "company": "The Boeing Company",
 "first_seen": "2026-08-20",
 "title": "Associate Software Engineer"
+},
+"225c073c-c7cc-420b-a859-6c087a72388a": {
+"company": "Boeing",
+"first_seen": "2026-08-26",
+"title": "Entry Level ASIC/FPGA Design Engineer - Space Electronics"
 },
 "226d8391-85d9-4671-9460-0c1aba2da6d1": {
 "company": "Magna",
@@ -7233,6 +7243,11 @@
 "company": "Lawrence Livermore National Laboratory (LLNL)",
 "first_seen": "2026-08-15",
 "title": "John S. Foster"
+},
+"386e2728-ef0f-4332-86d8-df3f6627f509": {
+"company": "RTX",
+"first_seen": "2026-08-26",
+"title": "Software Engineer Intern - Summer 2027"
 },
 "387d5861-f87f-4086-b76b-88018de85a3f": {
 "company": "Occidental Petroleum",
@@ -11839,6 +11854,11 @@
 "first_seen": "2026-08-25",
 "title": "Associate Software Engineer"
 },
+"5d29a21d-96f0-4931-8692-66e38b5818e4": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-26",
+"title": "Retail Risk Modeling Analyst Intern - 8 Months"
+},
 "5d3e2344-02c8-4588-8164-b89352954c6c": {
 "company": "V2X",
 "first_seen": "2026-08-15",
@@ -12033,6 +12053,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Student Researcher - Speech Foundation Model"
+},
+"5eecec55-6e05-4898-acb6-2869c78bf30b": {
+"company": "RTX",
+"first_seen": "2026-08-26",
+"title": "Software Engineer Intern"
 },
 "5efbd1de-4e9a-48b1-82f2-9d2d0c6f3914": {
 "company": "FTI Consulting",
@@ -15914,6 +15939,11 @@
 "first_seen": "2026-08-24",
 "title": "Quantitative Risk Management Intern"
 },
+"7d63ae5d-6722-40c4-a6b6-22560e143461": {
+"company": "RTX",
+"first_seen": "2026-08-26",
+"title": "Software Engineer Intern - Summer 2027"
+},
 "7d67654b-4933-41a8-b796-81003c0d2c31": {
 "company": "GE Vernova",
 "first_seen": "2026-08-21",
@@ -17493,6 +17523,11 @@
 "company": "Ema",
 "first_seen": "2026-08-19",
 "title": "AI Application Engineer"
+},
+"8a31b58f-d4ac-415b-8246-de97ab1c39b4": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-26",
+"title": "Data & AI Intern - Group Risk Management - Balance Sheet and Liquidity Risk"
 },
 "8a33c1bd-d842-48c3-affe-4dd477c9b407": {
 "company": "Optiver",
@@ -22598,6 +22633,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Scientist I - Hybrid"
 },
+"b2d3a293-02ed-4860-a76b-6098d2adfcfe": {
+"company": "Sun Life",
+"first_seen": "2026-08-26",
+"title": "Automation Specialist Student"
+},
 "b2e656b6-1af2-450c-92b5-d767bbca6f1b": {
 "company": "Jump Trading",
 "first_seen": "2026-08-15",
@@ -23197,6 +23237,11 @@
 "company": "McGill University",
 "first_seen": "2026-08-24",
 "title": "Teaching Assistant"
+},
+"b7962d2f-67df-4058-bbd5-91dc4be202c4": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-26",
+"title": "Insights and Analytics Intern - Spring 2027"
 },
 "b798780f-4009-488b-ab0c-948146a7a0ca": {
 "company": "Crowdstrike",
@@ -24042,6 +24087,11 @@
 "company": "Citadel",
 "first_seen": "2026-08-15",
 "title": "Quantitative Research Engineer Intern"
+},
+"bd871ca0-79e9-4329-968d-a6139390333d": {
+"company": "Fannie Mae",
+"first_seen": "2026-08-26",
+"title": "Treasury & Capital Markets Intern - Quantitative Research Track"
 },
 "bd8f34d5-610e-45ec-82e7-ba644e0ee6d3": {
 "company": "PDF Solutions",
@@ -25263,6 +25313,11 @@
 "first_seen": "2026-08-20",
 "title": "Graduate Engineering Training Programme - Software"
 },
+"c874f359-c317-4bb9-8bf9-f4c699848017": {
+"company": "Repsol",
+"first_seen": "2026-08-26",
+"title": "Reservoir Engineer Intern"
+},
 "c8765359-5157-4d4a-ab1b-cf058982d597": {
 "company": "KBR",
 "first_seen": "2026-08-19",
@@ -26058,6 +26113,11 @@
 "first_seen": "2026-08-15",
 "title": "Dedicated Meta Technician Expert"
 },
+"ce59423a-ece5-418f-bd39-14da130d9598": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-08-26",
+"title": "Insights and Analytics Intern - ABC News"
+},
 "ce5c150d-10d5-4180-94b8-d13815629bd6": {
 "company": "SiMa.ai",
 "first_seen": "2026-08-15",
@@ -26707,6 +26767,11 @@
 "company": "Internship",
 "first_seen": "2026-08-15",
 "title": "AI Deployment Engineering Internship"
+},
+"d3633b94-e956-4f3a-9fc4-5a0b4a57a16b": {
+"company": "Royal Bank of Canada",
+"first_seen": "2026-08-26",
+"title": "Retail Risk Modeling Analyst Intern - 8 Months"
 },
 "d3680ba2-c14d-4200-9aec-fbfcf6ab8214": {
 "company": "Freddie Mac",
@@ -27852,6 +27917,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Backend Software Engineer Intern"
+},
+"dba52fd7-4f33-4675-9e38-c7d3f597d3ec": {
+"company": "QTS",
+"first_seen": "2026-08-26",
+"title": "Data Center Infrastructure Management Intern - DCIM"
 },
 "dba5405f-12de-4a7e-a7b7-323dd31fc670": {
 "company": "ByteDance",
@@ -30017,6 +30087,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - E-commerce Governance Algorithms"
+},
+"ee871fc2-a48b-4f6f-8b78-4f13099021ca": {
+"company": "Boeing",
+"first_seen": "2026-08-26",
+"title": "Entry Level ASIC/FPGA Design Engineer - Space Electronics"
 },
 "ee8a3af2-214e-482e-9a90-3dd327c6bdf1": {
 "company": "ByteDance",
