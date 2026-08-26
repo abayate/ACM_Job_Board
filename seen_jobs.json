@@ -1504,6 +1504,11 @@
 "first_seen": "2026-08-15",
 "title": "Engineering Technician B"
 },
+"0bb11c52-e4bf-4eb0-b1e8-68d76b7aefe1": {
+"company": "Brunswick",
+"first_seen": "2026-08-26",
+"title": "Transducer Engineering Intern"
+},
 "0bc0163f-90ea-4590-a028-87ba03c31820": {
 "company": "Motorola",
 "first_seen": "2026-08-15",
@@ -5229,6 +5234,11 @@
 "first_seen": "2026-08-25",
 "title": "Data Scientist Co-op"
 },
+"27a6ad01-fe1e-43d5-b073-0910ba54f479": {
+"company": "GrayMatter Robotics",
+"first_seen": "2026-08-26",
+"title": "AI Research Intern - Foundation Models"
+},
 "27b61932-d5fb-4bd8-81ea-90b600aaabe5": {
 "company": "Louisiana Blue",
 "first_seen": "2026-08-15",
@@ -8538,6 +8548,11 @@
 "company": "AllianceBernstein",
 "first_seen": "2026-08-15",
 "title": "Global Analytics Performance Analyst"
+},
+"4313018c-b18f-43d6-93e3-df7efe66ba77": {
+"company": "Tesla",
+"first_seen": "2026-08-26",
+"title": "Data Collection Operator - Optimus"
 },
 "432431b2-2756-4e92-a866-d8bcaf710a6b": {
 "company": "BCforward",
@@ -20125,7 +20140,7 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-25",
+"internship": "2026-08-26",
 "new_grad": "2026-08-26"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
@@ -26962,6 +26977,11 @@
 "company": "Qualcomm",
 "first_seen": "2026-08-15",
 "title": "AI Integration & Interoperability Intern"
+},
+"d519541f-6c0b-4028-a651-bf9bd099c8b5": {
+"company": "CrowdGen by Appen",
+"first_seen": "2026-08-26",
+"title": "Gig Worker"
 },
 "d521d54d-6211-43d4-9d48-c874c592067d": {
 "company": "Schweitzer Engineering Laboratories",
