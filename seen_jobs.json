@@ -1459,6 +1459,11 @@
 "first_seen": "2026-08-15",
 "title": "Entry Level .Net Developer"
 },
+"0b2ebb3e-0627-41b1-b699-1b746a023edd": {
+"company": "Relay",
+"first_seen": "2026-08-27",
+"title": "Software Engineer Associate - Embedded Development"
+},
 "0b582d71-b046-4158-b4c0-6a62699b2233": {
 "company": "Thales",
 "first_seen": "2026-08-15",
@@ -7164,6 +7169,11 @@
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer - London/South East"
 },
+"37510038-1f6f-4be0-bfe7-50811c1ee137": {
+"company": "EvenUp",
+"first_seen": "2026-08-27",
+"title": "Software Engineer \u2013 New Grad - Cases Product"
+},
 "3761b187-d0d2-438d-9b56-f3853671880e": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-25",
@@ -7403,6 +7413,11 @@
 "company": "Laserfiche",
 "first_seen": "2026-08-15",
 "title": "Support Engineer 1 - I"
+},
+"394e0012-c136-47f1-9d1a-1065be754a84": {
+"company": "The Hartford",
+"first_seen": "2026-08-27",
+"title": "Software Engineer Intern - Technology, Data, AI, and Operations"
 },
 "3958e289-2cc7-46c2-b642-bef4e445c5d8": {
 "company": "Squarepoint Capital",
@@ -8573,6 +8588,11 @@
 "company": "GlobalFoundries",
 "first_seen": "2026-08-15",
 "title": "Advanced Manufacturing Equipment Engineer"
+},
+"42b979a9-208e-4d7b-afa4-00adc10107b9": {
+"company": "Chamber Cardio",
+"first_seen": "2026-08-27",
+"title": "Data Analyst"
 },
 "42c0c70a-f3aa-4aab-b737-a65c498589b7": {
 "company": "TikTok",
@@ -10229,6 +10249,11 @@
 "first_seen": "2026-08-21",
 "title": "Hardware Design Verification Engineer Intern/Co-op"
 },
+"5022bef0-ef20-4549-8823-95bd6b2141f5": {
+"company": "Ameren",
+"first_seen": "2026-08-27",
+"title": "Crisis Management Meteorology Intern"
+},
 "50302205-471f-44ae-b50c-6d339917d72f": {
 "company": "PNC Financial Services",
 "first_seen": "2026-08-15",
@@ -11264,6 +11289,11 @@
 "first_seen": "2026-08-15",
 "title": "Senior ASIC Design Verification Engineer - Compute DSP/AI Processors - ASICS Engineering"
 },
+"58077951-984f-4310-b0ce-55853074ed6e": {
+"company": "Kognitos",
+"first_seen": "2026-08-27",
+"title": "Software Engineer Intern - AI-Native"
+},
 "580b0f4c-0ea5-4af9-be1a-a9894f85c5aa": {
 "company": "General Dynamics Mission Systems",
 "first_seen": "2026-08-25",
@@ -11408,6 +11438,11 @@
 "company": "RTX",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
+},
+"59023951-9789-4da2-b485-241751672517": {
+"company": "Applied Intuition",
+"first_seen": "2026-08-27",
+"title": "Research Intern - Robotic Hardware - Simulation and Data"
 },
 "590631c5-050f-4f41-94ce-eabce6cb30cd": {
 "company": "Tunnl",
@@ -11823,6 +11858,11 @@
 "company": "Huntington Ingalls Industries",
 "first_seen": "2026-08-19",
 "title": "Software Development Analyst 1"
+},
+"5c83cea3-dccc-4e0b-b407-f4703216b9ae": {
+"company": "Idler",
+"first_seen": "2026-08-27",
+"title": "Software Engineer"
 },
 "5c8636dd-9a87-4f4e-b8d5-4feb37823af0": {
 "company": "Proximate Technologies",
@@ -18319,6 +18359,11 @@
 "first_seen": "2026-08-15",
 "title": "PHP or Drupal Web Developer Intern"
 },
+"8ef9ec94-2cd9-44c1-a0c8-c9d81c946638": {
+"company": "Rocket Software",
+"first_seen": "2026-08-27",
+"title": "Software Engineer - Nextgen"
+},
 "8f05dd2f-befa-4ddd-8488-134b03cc716d": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -21943,6 +21988,11 @@
 "first_seen": "2026-08-26",
 "title": "Associate DevOps Software Engineer"
 },
+"ac212bc1-fae8-4aaf-b3de-13d70ae5fa0a": {
+"company": "Johnson Electric",
+"first_seen": "2026-08-27",
+"title": "Lab Technician Apprentice - Electrical Lab"
+},
 "ac34479a-59f5-4dd7-afad-64f30851650e": {
 "company": "American Express",
 "first_seen": "2026-08-18",
@@ -25348,6 +25398,11 @@
 "first_seen": "2026-08-15",
 "title": "Intelligence Analyst"
 },
+"c644bb00-7db2-4b44-9656-0d2f81f01bd1": {
+"company": "NCR Voyix",
+"first_seen": "2026-08-27",
+"title": "Field Service Technician"
+},
 "c64805ee-9f23-4a5f-8ee4-84449bbe7334": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -25457,6 +25512,11 @@
 "company": "AeroVect",
 "first_seen": "2026-08-15",
 "title": "Mapping Engineer"
+},
+"c7a77189-10a5-4804-b59b-433c62c35133": {
+"company": "The Hartford",
+"first_seen": "2026-08-27",
+"title": "Data Engineer Intern - Technology, Data, AI, and Operations"
 },
 "c7b38ac0-8d5f-400a-a370-f4429a45800c": {
 "company": "Cenovus Energy",
@@ -25762,6 +25822,11 @@
 "company": "Chicago Trading Company",
 "first_seen": "2026-08-15",
 "title": "Quant Trading Associate"
+},
+"c9f13018-0f28-472d-a355-1d35416d8429": {
+"company": "Ambarella",
+"first_seen": "2026-08-27",
+"title": "ASIC Design Engineer Intern"
 },
 "c9f89689-277d-4507-95e7-eb3646d0581e": {
 "company": "DellFor Technologies",
@@ -27742,6 +27807,11 @@
 "company": "Palantir",
 "first_seen": "2026-08-15",
 "title": "Forward Deployed Software Engineer New Grad - Commercial"
+},
+"d824572c-f3ea-466d-a052-34f4c402149b": {
+"company": "The Hartford",
+"first_seen": "2026-08-27",
+"title": "Data Engineer Intern - Technology, Data, AI, and Operations"
 },
 "d826e4b9-2dc1-49fa-881e-cd8795539e03": {
 "company": "Welo Global",
@@ -30297,6 +30367,11 @@
 "company": "Innodata",
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
+},
+"ee03f6e5-4ee4-4045-9664-e38ffc7617bd": {
+"company": "Ancestry",
+"first_seen": "2026-08-27",
+"title": "Software Engineer Co-op - Observability"
 },
 "ee1a3b7b-ed9d-4664-8291-c30e79a97e63": {
 "company": "Flexcompute",
