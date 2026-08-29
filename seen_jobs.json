@@ -3129,6 +3129,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Development Engineer - Azure PostgreSQL"
 },
+"169ee4eb-3319-4a8b-9ea1-9e765661b92b": {
+"company": "Later",
+"first_seen": "2026-08-29",
+"title": "AI Automation Engineer Co-op"
+},
 "16a33b72-1c61-4db1-b55e-63d10155b928": {
 "company": "Maxinsights",
 "first_seen": "2026-08-26",
@@ -8019,6 +8024,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Trader Intern"
 },
+"3cb45823-f475-44c7-aaca-4a1335faf6ff": {
+"company": "Salesforce",
+"first_seen": "2026-08-29",
+"title": "Software Engineer Intern"
+},
 "3cc4da2b-b198-42e2-90af-900a56e76c8c": {
 "company": "Carefeed",
 "first_seen": "2026-08-15",
@@ -9083,6 +9093,11 @@
 "company": "Audax Group",
 "first_seen": "2026-08-24",
 "title": "Data Engineer Co-op"
+},
+"452daa00-79b9-40ff-902b-6a5c3ddc4357": {
+"company": "Salesforce",
+"first_seen": "2026-08-29",
+"title": "Software Engineer Intern"
 },
 "45370022-82fa-4ecf-a427-d2585613cc56": {
 "company": "SpAItial",
@@ -12824,6 +12839,11 @@
 "first_seen": "2026-08-15",
 "title": "Product Manager 1 - Future Opening"
 },
+"629aa3b3-db84-4aee-bb4d-ac8e399aaf08": {
+"company": "Sysmex",
+"first_seen": "2026-08-29",
+"title": "Field Service Technician - Regional"
+},
 "629fac72-4880-42e9-b648-cdfa036a00ac": {
 "company": "Goldman Sachs",
 "first_seen": "2026-08-15",
@@ -13268,6 +13288,11 @@
 "company": "We Are Social",
 "first_seen": "2026-08-15",
 "title": "Analyst"
+},
+"65b3f57a-acd4-4c2a-b15f-4e58dc9de499": {
+"company": "The Boeing Company",
+"first_seen": "2026-08-29",
+"title": "Missions Systems Software Engineer \u2013 Senior - Embedded"
 },
 "65b44c5d-8fda-4aa8-aff9-e9ccb3106913": {
 "company": "Royal Bank of Canada",
@@ -14193,6 +14218,11 @@
 "company": "Argonne National Laboratory",
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Appointee"
+},
+"6ce7a09d-190c-4b5b-8cb2-5b01795d2664": {
+"company": "Deloitte",
+"first_seen": "2026-08-29",
+"title": "Engineering and Capital Projects Summer Scholar Intern - Government & Public Services"
 },
 "6cef3660-2532-4a39-8249-aa38025e51a8": {
 "company": "Omnicell",
@@ -17504,6 +17534,11 @@
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
 },
+"873e0bb6-6311-4d44-9849-f81373ccdeeb": {
+"company": "GE Healthcare",
+"first_seen": "2026-08-29",
+"title": "Surgery Field Engineer Apprentice"
+},
 "8741a52e-0aaf-43bb-949a-85b23902a433": {
 "company": "Leidos",
 "first_seen": "2026-08-15",
@@ -18264,6 +18299,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineering Co-op"
 },
+"8c744354-a4ae-42f5-8f27-c5ab2023398c": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-29",
+"title": "Associate \u2013 Hardware Engineer"
+},
 "8c7fce06-656d-49d9-bf64-703e487b5cac": {
 "company": "LMI",
 "first_seen": "2026-08-18",
@@ -18653,6 +18693,11 @@
 "company": "Citadel Securities",
 "first_seen": "2026-08-15",
 "title": "Quantitative Researcher PhD Intern"
+},
+"8f8f43f6-d285-4357-bc29-112f95d6d232": {
+"company": "Brink",
+"first_seen": "2026-08-29",
+"title": "ATM Technician"
 },
 "8f92877d-e680-4332-960c-8f9f8242c24d": {
 "company": "TikTok",
@@ -19114,6 +19159,11 @@
 "first_seen": "2026-08-15",
 "title": "DV Intern"
 },
+"92da9261-d96e-4a23-bc2f-d44747ae7076": {
+"company": "AAA Club Alliance",
+"first_seen": "2026-08-29",
+"title": "Data Scientist"
+},
 "92df8e09-9c84-4019-9087-e8a497375754": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -19294,10 +19344,20 @@
 "first_seen": "2026-08-15",
 "title": "Analytics Analyst - Fraud"
 },
+"948a7229-20bf-4220-9876-ec5879966d9c": {
+"company": "Zoox",
+"first_seen": "2026-08-29",
+"title": "Student Worker Intern - Firmware Engineer - Firmware Thermal/Body"
+},
 "94b1d3c4-d5f6-4c9b-a17c-8cc97a1339c6": {
 "company": "M.C. Dean",
 "first_seen": "2026-08-15",
 "title": "Engineer 1 New Grad - Cis"
+},
+"94b7b55f-edd1-4611-a96d-e2e602c33ad5": {
+"company": "Marvell",
+"first_seen": "2026-08-29",
+"title": "Application Engineer \u2013 Early Career"
 },
 "94ba7763-9880-4945-95b0-821a78534555": {
 "company": "Kitware",
@@ -22863,6 +22923,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1"
 },
+"b06b049d-75c2-4a0e-85d0-d89de1dfa2f5": {
+"company": "The Boeing Company",
+"first_seen": "2026-08-29",
+"title": "Missions Systems Software Engineer \u2013 Senior - Multiple Teams"
+},
 "b06e8976-8d59-4e44-abc0-30e329f46f38": {
 "company": "GE Healthcare",
 "first_seen": "2026-08-21",
@@ -26013,6 +26078,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer College Grad"
 },
+"c9399273-b32f-4ca5-80e9-70eeaf4037f7": {
+"company": "GE Healthcare",
+"first_seen": "2026-08-29",
+"title": "Field Service Engineer 1"
+},
 "c9509f6d-616f-4865-a883-0bb3b2fcba90": {
 "company": "TikTok",
 "first_seen": "2026-08-25",
@@ -28557,6 +28627,11 @@
 "company": "ASML",
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer - HMI"
+},
+"dbe103b1-b383-4e45-858a-901fe2d3c566": {
+"company": "AT&T",
+"first_seen": "2026-08-29",
+"title": "Senior Specialist Member of Technical Staff"
 },
 "dbef86f9-fcbd-4750-b16a-e8062c8541bf": {
 "company": "Micron Technology",
