@@ -6444,6 +6444,11 @@
 "first_seen": "2026-08-15",
 "title": "Electronics Technician - Archambault - Sadp"
 },
+"2ef54b60-3789-4c6c-9334-f82a476cfc90": {
+"company": "Cincinnati Children\u2019s Hospital and Medical Center",
+"first_seen": "2026-08-31",
+"title": "Application Developer 1 - Power Platform"
+},
 "2ef5d7c2-ef83-459f-af78-5a0340ba59fe": {
 "company": "DV Trading",
 "first_seen": "2026-08-15",
@@ -8609,6 +8614,11 @@
 "first_seen": "2026-08-15",
 "title": "Analytics Intern"
 },
+"3f232600-1023-4500-a3d7-7740abb084a3": {
+"company": "MultiCare Health System",
+"first_seen": "2026-08-31",
+"title": "Revenue Cycle Systems Analyst 1"
+},
 "3f2807ce-6d49-4857-b716-f178ab0025ba": {
 "company": "Fortuna Health",
 "first_seen": "2026-08-15",
@@ -10044,6 +10054,11 @@
 "first_seen": "2026-08-15",
 "title": "Hardware Engineer Intern"
 },
+"4ab70c4d-6ec3-474a-bd78-065260824c81": {
+"company": "Intel",
+"first_seen": "2026-08-31",
+"title": "RTL Design Engineer"
+},
 "4abd0496-bdc8-4df2-9444-8150ab63445d": {
 "company": "Gulfstream",
 "first_seen": "2026-08-24",
@@ -10318,6 +10333,11 @@
 "company": "Westinghouse Electric Company",
 "first_seen": "2026-08-15",
 "title": "Electrical/Mechanical Technician 1"
+},
+"4cd774d6-6dba-4947-9f2c-bb55647cccca": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-31",
+"title": "Engineering Technician B"
 },
 "4ce5b5f7-d03d-487f-aa5c-b9786a42a4b2": {
 "company": "Terranova",
@@ -10609,6 +10629,11 @@
 "first_seen": "2026-08-17",
 "title": "Associate Software Engineer - Engineering Development Program"
 },
+"4f125643-39a2-45e5-a002-581199b92f79": {
+"company": "TD Bank",
+"first_seen": "2026-08-31",
+"title": "Associate Software Engineer"
+},
 "4f13671d-ac3d-44b0-90ac-bffd5406ffdd": {
 "company": "Equinor",
 "first_seen": "2026-08-15",
@@ -10723,6 +10748,11 @@
 "company": "Altom Transport",
 "first_seen": "2026-08-15",
 "title": "Software Development Intern"
+},
+"4ff50867-f282-4038-9e52-4ae5ef1dede6": {
+"company": "Johnson & Johnson",
+"first_seen": "2026-08-31",
+"title": "R&D Applications"
 },
 "4ff921c1-6ccb-40f6-aff2-0f2ae665bc9d": {
 "company": "Northrop Grumman",
@@ -11693,6 +11723,11 @@
 "company": "Pine Rest",
 "first_seen": "2026-08-15",
 "title": "Intern \u2013 Master's Level Social Worker - Inpatient and PHP"
+},
+"57123fb8-44cd-438c-bcd0-f1c97fcd5c9c": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-31",
+"title": "Engineering Operations Intern"
 },
 "5715d5fe-76a4-46e6-9cea-0b6ab4f8fc11": {
 "company": "Anthelion Capital",
@@ -16279,6 +16314,11 @@
 "first_seen": "2026-08-21",
 "title": "Quantitative Strategy Developer Intern"
 },
+"78fa2a7e-f922-4d62-a833-4d9225cacd2c": {
+"company": "Zipline",
+"first_seen": "2026-08-31",
+"title": "Embedded Systems Intern - Summer 2027"
+},
 "78faf2f2-9391-4542-b593-468ce69a67b5": {
 "company": "NVIDIA",
 "first_seen": "2026-08-19",
@@ -19169,6 +19209,11 @@
 "first_seen": "2026-08-15",
 "title": "Electronics Technician - Entry-Level"
 },
+"8ec2e0cc-9193-4d77-9021-5dd3029b637c": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-31",
+"title": "Software Engineer Intern"
+},
 "8ec30018-f2c6-45b8-ba34-9afbf20eee7f": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -21346,7 +21391,7 @@
 },
 "_headers": {
 "internship": "2026-08-26",
-"new_grad": "2026-08-26"
+"new_grad": "2026-08-27"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -24192,6 +24237,11 @@
 "company": "Vertiv",
 "first_seen": "2026-08-15",
 "title": "Planning Analytics Intern - Summer 2027"
+},
+"b53ff4e5-1364-4cac-bdf2-c7cb8845717f": {
+"company": "Rubie",
+"first_seen": "2026-08-31",
+"title": "Forward Deployed Engineer"
 },
 "b5439e90-0c4b-47d8-93a3-32b4cc743b9f": {
 "company": "Anthropic",
@@ -28453,6 +28503,11 @@
 "first_seen": "2026-08-25",
 "title": "Artificial Intelligence/Machine Learning Intern"
 },
+"d44c4b34-245b-4951-b4ec-573f93fbe2ac": {
+"company": "Retell AI",
+"first_seen": "2026-08-31",
+"title": "Forward Deployed Engineer"
+},
 "d44d7dc7-8912-4b2f-969c-4ea8f0ba6eab": {
 "company": "Retail Information Systems",
 "first_seen": "2026-08-15",
@@ -31458,6 +31513,11 @@
 "first_seen": "2026-08-19",
 "title": "Student Research Assistant"
 },
+"eba0dcb3-15c0-454b-8598-e3ad330b7bb8": {
+"company": "Legal & General",
+"first_seen": "2026-08-31",
+"title": "Product Analyst - Funds Oversight"
+},
 "ebb7f560-b3e3-4f57-b812-b0097eeb39bf": {
 "company": "Integra FEC",
 "first_seen": "2026-08-15",
@@ -33633,6 +33693,11 @@
 "first_seen": "2026-08-19",
 "title": "GIS Analyst"
 },
+"fc5e50d8-d6ab-499b-8265-dca8c4c14ad7": {
+"company": "Honeywell",
+"first_seen": "2026-08-31",
+"title": "IT New Grad"
+},
 "fc66b12e-8d7f-4a0e-b4f6-8f54189941d9": {
 "company": "Belvedere Trading",
 "first_seen": "2026-08-15",
@@ -33748,6 +33813,11 @@
 "first_seen": "2026-08-17",
 "title": "AI and Software Engineer Intern - Automotive MPUs"
 },
+"fd3f0fb9-681d-4c31-9e48-221580bf7c03": {
+"company": "DataVisor",
+"first_seen": "2026-08-31",
+"title": "Data Scientist - Fraud Detection"
+},
 "fd436b2e-986c-44fb-b8c3-48b1f27b85f4": {
 "company": "T-Mobile",
 "first_seen": "2026-08-15",
@@ -33787,6 +33857,11 @@
 "company": "Heidelberg Materials",
 "first_seen": "2026-08-15",
 "title": "Master Data Intern - Service & Support"
+},
+"fd89ae0c-d315-47fd-910a-9c9b60aefe74": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-08-31",
+"title": "Engineering Operations Intern"
 },
 "fd960a3d-8212-46cf-8d1f-60df0b47e33d": {
 "company": "Moog",
