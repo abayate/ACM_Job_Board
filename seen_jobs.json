@@ -2844,6 +2844,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Engineer"
 },
+"148e3318-5e31-4e70-a0a0-6b779ec4accf": {
+"company": "Jane Street",
+"first_seen": "2026-09-01",
+"title": "Windows Engineer Intern"
+},
 "148f5d32-0272-4e18-8f2a-7b0e48c7fa21": {
 "company": "Palo Alto Networks",
 "first_seen": "2026-08-15",
@@ -4313,6 +4318,11 @@
 "company": "Northrop Grumman",
 "first_seen": "2026-08-21",
 "title": "Associate Computer Systems Analyst - Linux - Pathways Program"
+},
+"1ed0d67f-c05f-4cc9-bf79-9c13b1a17811": {
+"company": "Tesla",
+"first_seen": "2026-09-01",
+"title": "Engineering Technician - Abuse Test & Engineering"
 },
 "1ed38264-654d-4366-b1fc-9e0df58b47a0": {
 "company": "Analytical Mechanics Associates",
@@ -11689,6 +11699,11 @@
 "first_seen": "2026-08-17",
 "title": "GMU Scholar Program Intern"
 },
+"566656b0-ce19-4d4c-86e2-a04cc1458f57": {
+"company": "Microsoft",
+"first_seen": "2026-09-01",
+"title": "Data Center Technician"
+},
 "5669b0ee-2c91-48c1-a10f-9014661b589c": {
 "company": "United Smart Tech",
 "first_seen": "2026-08-15",
@@ -16249,6 +16264,11 @@
 "first_seen": "2026-08-15",
 "title": "Market Analysis and Trading Graduate"
 },
+"77ad6851-537c-48f4-a303-c011b75a68b1": {
+"company": "Trustpilot",
+"first_seen": "2026-09-01",
+"title": "Software Engineer 1 - Trust Tech"
+},
 "77ce4406-421d-4a67-89e6-431d60b1c981": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-25",
@@ -17593,6 +17613,11 @@
 "company": "D-Wave Quantum",
 "first_seen": "2026-08-26",
 "title": "Software Engineer 1 - Systems Software Engineering"
+},
+"81f31a55-3c12-476c-bb99-e74e63986e74": {
+"company": "IMC Trading",
+"first_seen": "2026-09-01",
+"title": "Performance Engineer Intern"
 },
 "81f6102b-b17c-4792-8d73-f5f5b8783ac2": {
 "company": "PAM Health",
@@ -20324,6 +20349,11 @@
 "first_seen": "2026-08-30",
 "title": "Software Engineer Intern - Summer 2027"
 },
+"96a80fff-d4c9-467e-b9f7-80924676ceca": {
+"company": "Tesla",
+"first_seen": "2026-09-01",
+"title": "Product Support Engineer Intern - Service Engineering"
+},
 "96abcfae-3ddc-401b-b860-9f8c4532d8f5": {
 "company": "The Aerospace Corporation",
 "first_seen": "2026-08-29",
@@ -21608,6 +21638,11 @@
 "first_seen": "2026-08-25",
 "title": "Product Management Intern - Product Management"
 },
+"a07f8010-25a5-464a-9c1f-934209e53aed": {
+"company": "CACI",
+"first_seen": "2026-09-01",
+"title": "Software Engineer"
+},
 "a087e458-a157-42a7-9412-df50760f3f6b": {
 "company": "American Electric Power",
 "first_seen": "2026-08-15",
@@ -21817,6 +21852,11 @@
 "company": "Peraton",
 "first_seen": "2026-08-15",
 "title": "Image Scientist - Entry Level"
+},
+"a270922d-2173-4482-b7ad-d9fcc70f0b39": {
+"company": "Intertek",
+"first_seen": "2026-09-01",
+"title": "Engineer \u2013 Life Safety & Security"
 },
 "a273009c-e12a-4932-b782-474b6b498898": {
 "company": "Honeywell",
@@ -22958,6 +22998,11 @@
 "first_seen": "2026-08-15",
 "title": "Lead MTS Application Engineer - Memory Interface"
 },
+"aac19326-02f3-415a-991f-d6a81d6a7ef9": {
+"company": "Tesla",
+"first_seen": "2026-09-01",
+"title": "Automated Diagnostics Intern - Software Engineer"
+},
 "aac4e683-8759-4295-9c11-862d924abaf4": {
 "company": "Noblis",
 "first_seen": "2026-08-20",
@@ -23523,6 +23568,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Researcher \u2013 PhD Graduate"
 },
+"ae6480dc-19f7-41c1-93ec-fd10763825b1": {
+"company": "Amazon",
+"first_seen": "2026-09-01",
+"title": "Software Development Engineer Intern - Annapurna Labs"
+},
 "ae64ab31-638f-434c-9355-0ad72a7cdc23": {
 "company": "Kite Ping",
 "first_seen": "2026-08-15",
@@ -24047,6 +24097,11 @@
 "company": "Royal Bank of Canada",
 "first_seen": "2026-08-30",
 "title": "Data Analyst Developer Intern - Group Risk Management"
+},
+"b28000f1-01d7-4052-8ad3-e73e8bf916cc": {
+"company": "Trustpilot",
+"first_seen": "2026-09-01",
+"title": "Software Engineer 1 - Trust Tech"
 },
 "b284d91c-3b2a-4ee2-b71a-8f14bb1b3c7d": {
 "company": "Texas A&M University System",
@@ -25617,6 +25672,11 @@
 "company": "Lentech Inc.",
 "first_seen": "2026-08-15",
 "title": "Entry Level Web Developer - Multiple Teams"
+},
+"bd50ff7c-e21f-427c-87ad-4a45b42e134c": {
+"company": "IMC Trading",
+"first_seen": "2026-09-01",
+"title": "Performance Engineer"
 },
 "bd5985bd-7c09-4dfe-b27f-46d6f0d3418a": {
 "company": "Palantir",
@@ -31218,6 +31278,11 @@
 "first_seen": "2026-08-30",
 "title": "Data Scientist Intern - University"
 },
+"e7428679-0ff4-45b7-8a59-135cb9b646cc": {
+"company": "Ernst & Young",
+"first_seen": "2026-09-01",
+"title": "Agent Development Architect Senior"
+},
 "e745f9f7-84b2-4962-af95-6e3faf61a307": {
 "company": "General Dynamics UK",
 "first_seen": "2026-08-26",
@@ -31257,6 +31322,11 @@
 "company": "NXP Semiconductors",
 "first_seen": "2026-08-15",
 "title": "Digital Physical Design Intern - P&R"
+},
+"e7990df2-5f98-4b9e-9a6e-9b33d348b6a6": {
+"company": "NRG Energy",
+"first_seen": "2026-09-01",
+"title": "Field Service Professional"
 },
 "e7be092f-49c3-429c-a396-1bdbff4a3e79": {
 "company": "Visa",
@@ -33927,6 +33997,11 @@
 "company": "Belvedere Trading",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Summer 2027"
+},
+"fc68604c-b8e1-48af-8aff-6be5588f3037": {
+"company": "NRG Energy",
+"first_seen": "2026-09-01",
+"title": "Field Service Professional"
 },
 "fc801a2a-cfb8-446f-9e69-b13feadd90e1": {
 "company": "Chicago Trading Company",
