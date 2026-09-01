@@ -1514,6 +1514,11 @@
 "first_seen": "2026-08-19",
 "title": "Event Services Technician - Event Technology - Audio Visual"
 },
+"0b12884f-ce29-40d6-a184-ded1653ddc1b": {
+"company": "GE Healthcare",
+"first_seen": "2026-09-01",
+"title": "Engineering Development Program Intern - Hardware"
+},
 "0b289d87-b4b1-4056-8003-0a76181dcb52": {
 "company": "SpreeAI",
 "first_seen": "2026-08-15",
@@ -5278,6 +5283,11 @@
 "company": "Inbulks",
 "first_seen": "2026-08-15",
 "title": "Junior Front End Developer Intern"
+},
+"25286ad8-8260-4a0d-9ab1-89a677c29b20": {
+"company": "Microsoft",
+"first_seen": "2026-09-01",
+"title": "Software Engineer: AI/ML & LLM Intern"
 },
 "2533cf48-d1d8-4e5f-bed0-485c583da8a6": {
 "company": "Eudia",
@@ -9824,6 +9834,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Graduate - Media Engine"
 },
+"47aa8cc5-ef85-4dfe-8a06-89c593ea541a": {
+"company": "Hoffman Construction",
+"first_seen": "2026-09-01",
+"title": "Data Analyst Intern"
+},
 "47caf917-ad4f-4a22-b10d-16d68437d70f": {
 "company": "Ludlum Measurements",
 "first_seen": "2026-08-21",
@@ -10783,6 +10798,11 @@
 "company": "Copart",
 "first_seen": "2026-08-15",
 "title": "Software Engineering Intern"
+},
+"4fa5508b-be5b-43c6-8651-fcb4753d6e99": {
+"company": "Microsoft",
+"first_seen": "2026-09-01",
+"title": "Software Engineer Intern - Data Platform & Analytics"
 },
 "4fac63c8-0f56-4273-96aa-0c11b48a752f": {
 "company": "Argonne National Laboratory",
@@ -13209,6 +13229,11 @@
 "first_seen": "2026-08-15",
 "title": "Analyst \u2013 Sales & Trading"
 },
+"615b2214-ffde-44ff-b1af-d08cea6fe865": {
+"company": "Tesla",
+"first_seen": "2026-09-01",
+"title": "Software Engineer Intern - Information Security - Spring 2027"
+},
 "615e673e-d151-4378-ac1e-15cefa2b366d": {
 "company": "Freddie Mac",
 "first_seen": "2026-08-15",
@@ -13733,6 +13758,11 @@
 "company": "Jane Street",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Researcher"
+},
+"64997f89-8d5e-4379-8743-ed57dbe15db5": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-09-01",
+"title": "Software Engineering Associate"
 },
 "649dd754-7be6-47ff-9eb9-6e43146c9ab6": {
 "company": "ByteDance",
@@ -17143,6 +17173,11 @@
 "company": "Copart",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
+},
+"7e143f06-1c28-41b7-9291-53a869d86325": {
+"company": "Microsoft",
+"first_seen": "2026-09-01",
+"title": "Software Engineer Intern - Cloud & Distributed Backend"
 },
 "7e21b76f-fae1-4564-9f64-456d019b46b2": {
 "company": "Replit",
@@ -21539,6 +21574,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Labeling Analyst - Speech & Voice AI - Speakers"
 },
+"9fe00265-7716-44f9-bc43-1017aa863220": {
+"company": "Microsoft",
+"first_seen": "2026-09-01",
+"title": "Software Engineer Intern - CoreAI"
+},
 "9feafb0b-6b19-41e3-a267-41e62454292f": {
 "company": "DRW",
 "first_seen": "2026-08-15",
@@ -22197,6 +22237,11 @@
 "company": "Leonardo",
 "first_seen": "2026-08-15",
 "title": "Embedded Design Engineer - FPGA Academy"
+},
+"a5097a0a-6ce3-4617-b4e0-b214eec284bb": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-09-01",
+"title": "Software Engineer 1 - Rights & Accounting"
 },
 "a50a37d7-38a8-4a25-9de8-9744a0ac5f89": {
 "company": "Innodata",
@@ -24323,6 +24368,11 @@
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Scholar"
 },
+"b412b084-36e9-45e2-b3a0-561c4336e62e": {
+"company": "Microsoft",
+"first_seen": "2026-09-01",
+"title": "Software Engineer Security & Identity Intern"
+},
 "b4164b93-99fc-4289-a9cd-de27b0ed1579": {
 "company": "Lawrence Livermore National Laboratory (LLNL)",
 "first_seen": "2026-08-15",
@@ -24567,6 +24617,11 @@
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
 "title": "Software Engineer / Principal Software Engineer"
+},
+"b5bd7acb-fb6d-45e9-b967-efb69ef23fa3": {
+"company": "Andersen Corporation",
+"first_seen": "2026-09-01",
+"title": "Manufacturing Associate 1"
 },
 "b5c1fef0-1b4d-45d7-aebe-2baa0c94063b": {
 "company": "Northrop Grumman",
@@ -26727,6 +26782,11 @@
 "company": "PDF Solutions",
 "first_seen": "2026-08-15",
 "title": "Senior R&D Engineer"
+},
+"c5bd1b3f-c4a1-4606-b687-e4afcc112363": {
+"company": "Tesla",
+"first_seen": "2026-09-01",
+"title": "Software Engineer Intern - Vehicle Software - Summer 2027"
 },
 "c5c96698-e25e-4209-8af4-5886495e5a80": {
 "company": "Deeter Analytics",
@@ -31983,6 +32043,11 @@
 "first_seen": "2026-08-15",
 "title": "Hardware - Hw - Qualification and Development Support Team"
 },
+"ed31bd8d-9acf-436c-9628-1d4c79959bac": {
+"company": "Microsoft",
+"first_seen": "2026-09-01",
+"title": "Full-Stack Product Engineer Intern - Web + Services"
+},
 "ed35a87a-ac89-4c5b-9418-6b53e93b5a82": {
 "company": "Intel",
 "first_seen": "2026-08-15",
@@ -32447,6 +32512,11 @@
 "company": "RTX",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Summer 2027"
+},
+"f09f0a56-4999-4d19-afb4-894ea819d401": {
+"company": "GE Healthcare",
+"first_seen": "2026-09-01",
+"title": "Engineering Development Program Intern - Software"
 },
 "f0a0624c-fb42-416b-bf31-094b5999f772": {
 "company": "SAM",
@@ -33977,6 +34047,11 @@
 "company": "Freddie Mac",
 "first_seen": "2026-08-15",
 "title": "Software Developer Analyst"
+},
+"fc4f4841-d5c6-4987-bf32-d4cb867a8b34": {
+"company": "Hoffman Construction",
+"first_seen": "2026-09-01",
+"title": "Data Scientist 1"
 },
 "fc566276-6ff0-44ef-a887-537136813d76": {
 "company": "Marvell",
