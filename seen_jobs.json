@@ -3544,6 +3544,11 @@
 "first_seen": "2026-08-15",
 "title": "Wafer Fab Equipment Engineer"
 },
+"180c2b69-a897-4c36-9460-0eac1066b869": {
+"company": "CSX",
+"first_seen": "2026-09-02",
+"title": "Engineering Intern - Positive Train Control - Paid"
+},
 "1827abb6-82cd-4735-aeff-87e0b81c8003": {
 "company": "Observable Space",
 "first_seen": "2026-08-15",
@@ -4463,6 +4468,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Data Knowledge System Research Scientist Graduate - Data Platform-Global Live"
+},
+"1eee8b28-4b50-4d6f-9db1-48e016b66ed2": {
+"company": "CoreWeave",
+"first_seen": "2026-09-02",
+"title": "Data Center Technician"
 },
 "1ef9a4b7-60e3-4375-a415-39ae5148988a": {
 "company": "Apple",
@@ -8949,6 +8959,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Sales Intelligence Analyst"
 },
+"3fd37507-e2bd-4c44-9b79-e7860e15061b": {
+"company": "InfraServices",
+"first_seen": "2026-09-02",
+"title": "Data Center Technician 1"
+},
 "3fd7c27a-a027-4f40-9a9f-b819aee35931": {
 "company": "Capital One",
 "first_seen": "2026-08-15",
@@ -9248,6 +9263,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Product Manager Graduate - Signal and Identity Product"
+},
+"42886bb0-a824-4a57-b7bb-76e2e1855ec5": {
+"company": "SRI International",
+"first_seen": "2026-09-02",
+"title": "Research Engineer - Semiconductor Materials"
 },
 "428df784-325e-4a3f-91fc-db383c993b7b": {
 "company": "MassMutual Ascend",
@@ -12829,6 +12849,11 @@
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
 },
+"5c89b93e-45af-48be-aee5-6beb4870aa82": {
+"company": "Schroders",
+"first_seen": "2026-09-02",
+"title": "Product Intern"
+},
 "5c8a98c5-fd71-49a1-a18e-0288492a5163": {
 "company": "Autodesk",
 "first_seen": "2026-08-15",
@@ -14023,6 +14048,11 @@
 "company": "Parsons",
 "first_seen": "2026-08-26",
 "title": "Software Intern - Summer 2027"
+},
+"64b19bed-4841-4d4c-b32d-f5f6f582f38d": {
+"company": "Zipline",
+"first_seen": "2026-09-02",
+"title": "Maps Intern - Spring 2027"
 },
 "64b41a7b-4a92-4d69-bc33-95786288e3cd": {
 "company": "ByteDance",
@@ -16473,6 +16503,11 @@
 "company": "Interdigital",
 "first_seen": "2026-08-15",
 "title": "Generative AI Implementation Intern"
+},
+"76b36874-f561-4551-b201-d4ca3ac11673": {
+"company": "Apple",
+"first_seen": "2026-09-02",
+"title": "Software Engineer - Front-end"
 },
 "76b5da5a-7ffe-41b2-904e-a9c6de944fd1": {
 "company": "Great American Insurance Company",
@@ -23473,6 +23508,11 @@
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
 },
+"ab1c5055-45ed-49f4-bd74-572e5cb702ff": {
+"company": "Expleo",
+"first_seen": "2026-09-02",
+"title": "Application & Support Engineer"
+},
 "ab36ebe7-5b0f-4e2f-91a1-201b82f21bef": {
 "company": "Watts Water",
 "first_seen": "2026-08-18",
@@ -23933,6 +23973,11 @@
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
 },
+"ade53b06-3917-4447-9f7a-29db35b50253": {
+"company": "Schroders",
+"first_seen": "2026-09-02",
+"title": "Public Markets Quants Intern - Quants (Public Markets)"
+},
 "adeac3f1-1c24-456d-a09f-179101c39c2f": {
 "company": "Generac",
 "first_seen": "2026-08-15",
@@ -24207,6 +24252,11 @@
 "company": "Northwestern Mutual",
 "first_seen": "2026-08-15",
 "title": "Quantitative Analyst Intern - Public Investments"
+},
+"afe892b4-c1f7-4900-a870-e2defcbe7c3e": {
+"company": "Apple",
+"first_seen": "2026-09-02",
+"title": "Camera Hardware Engineering Intern"
 },
 "aff0f7eb-cbae-4dcd-a24a-f6e020259c05": {
 "company": "Lawrence Livermore National Laboratory (LLNL)",
@@ -24497,6 +24547,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Research Engineer Graduate - Seed Infra"
+},
+"b1f4a272-66f6-4ed0-a3ad-69e251a0e74c": {
+"company": "Johns Hopkins Applied Physics Laboratory",
+"first_seen": "2026-09-02",
+"title": "Modeler and Data Analyst New Grad"
 },
 "b1f647fd-f815-455a-942d-5341122bcffd": {
 "company": "Worldwide TechServices",
@@ -26893,6 +26948,11 @@
 "first_seen": "2026-08-22",
 "title": "Dealer Business Operations & Analytics Intern - Summer 2027"
 },
+"c30cb093-fd08-4b69-8630-8625bb0c89a3": {
+"company": "Verne Robotics",
+"first_seen": "2026-09-02",
+"title": "Robot Pilot"
+},
 "c321363d-16e2-462b-a93a-3f75544d87df": {
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
@@ -27513,6 +27573,11 @@
 "first_seen": "2026-08-18",
 "title": "Software Engineer Intern"
 },
+"c827a700-5a23-411c-932d-4168d653e02e": {
+"company": "Stantec",
+"first_seen": "2026-09-02",
+"title": "Geospatial Analyst"
+},
 "c82946ef-cdc6-4316-90ee-083d296759f4": {
 "company": "Ciena",
 "first_seen": "2026-08-15",
@@ -27763,6 +27828,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Research Intern"
 },
+"c9c57cf7-62ec-4642-86c1-ff4f0656d937": {
+"company": "CSX",
+"first_seen": "2026-09-02",
+"title": "Technology Intern - Paid"
+},
 "c9d38db8-8f30-4b19-96f0-6fa31b2c31da": {
 "company": "Nissan Global",
 "first_seen": "2026-08-15",
@@ -27792,6 +27862,11 @@
 "company": "DellFor Technologies",
 "first_seen": "2026-08-15",
 "title": "Entry-Level Java Developer"
+},
+"ca004f32-b456-4cae-ba94-82034c00e338": {
+"company": "Verne Robotics",
+"first_seen": "2026-09-02",
+"title": "Robot Technician"
 },
 "ca012a00-87e1-40b7-ac6f-1464ce5ad2f1": {
 "company": "ByteDance",
