@@ -1394,6 +1394,11 @@
 "first_seen": "2026-08-15",
 "title": "Machinery Silencing Technician Intern"
 },
+"0a1a5e36-8dfc-4746-b8e3-c3db4d69a7b5": {
+"company": "Johnson & Johnson",
+"first_seen": "2026-09-02",
+"title": "Materials Engineer Co-op"
+},
 "0a20816a-d18d-455c-9e1d-fe6a126bb513": {
 "company": "Anduril",
 "first_seen": "2026-08-15",
@@ -4264,6 +4269,11 @@
 "first_seen": "2026-08-27",
 "title": "Compiler Engineer \u2013 Backend-New College Grad"
 },
+"1de737c5-bccf-4549-af82-84d6fcf7cb26": {
+"company": "Cadence Design Systems",
+"first_seen": "2026-09-02",
+"title": "Post-Silicon Validation Engineering Intern - Characterization and Support"
+},
 "1de8fe40-f91e-490d-9460-77065dcf122f": {
 "company": "Jump Trading",
 "first_seen": "2026-08-15",
@@ -5134,6 +5144,11 @@
 "first_seen": "2026-08-15",
 "title": "Electrical Assembler"
 },
+"240aec7f-4292-4146-b546-08c1b4d6430f": {
+"company": "Hewlett Packard Enterprise",
+"first_seen": "2026-09-02",
+"title": "Software Engineer Graduate"
+},
 "241a43cd-dad1-4859-a5e3-071488f9dd2f": {
 "company": "ExxonMobil",
 "first_seen": "2026-08-15",
@@ -5873,6 +5888,11 @@
 "company": "Freeform",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
+},
+"2947ab18-7630-43b2-ac82-07b28508a561": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-09-02",
+"title": "Software Engineer Intern"
 },
 "294e8c59-e444-4348-a3c1-ff277ced192b": {
 "company": "UTHealth Houston",
@@ -9219,6 +9239,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Graduate - AML Engine Orchestration - 2027 Start"
 },
+"42eef265-0f1e-458a-9c31-10bd91ae1021": {
+"company": "Boeing",
+"first_seen": "2026-09-02",
+"title": "Entry Level ASIC/FPGA Verification Engineer - Space Electronics"
+},
 "42f27fb0-baca-4b45-91dc-60dd9dd9c5e6": {
 "company": "Susquehanna International Group (SIG)",
 "first_seen": "2026-08-15",
@@ -11234,6 +11259,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer"
 },
+"52359f6e-ece2-48b9-a135-9c1af9490443": {
+"company": "Viavi Solutions",
+"first_seen": "2026-09-02",
+"title": "Development Engineer - Rotational Program"
+},
 "52380edf-9fbc-4ef4-b33a-33bf00d230a4": {
 "company": "Cboe",
 "first_seen": "2026-08-15",
@@ -12043,6 +12073,11 @@
 "company": "ASM Global",
 "first_seen": "2026-08-15",
 "title": "Digital Workplace Experience Intern"
+},
+"57e5f0a2-fec1-4e80-9d79-803c7984db1d": {
+"company": "Boeing",
+"first_seen": "2026-09-02",
+"title": "Entry Level ASIC/FPGA Verification Engineer - Space Electronics"
 },
 "57ebe73c-5293-496b-9bf5-1b38081d2cdf": {
 "company": "RTX",
@@ -13253,6 +13288,11 @@
 "company": "RTX",
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1"
+},
+"60939f3a-adfd-468b-878f-957b1f16e003": {
+"company": "Microchip Technology",
+"first_seen": "2026-09-02",
+"title": "Applications Engineer"
 },
 "6093e680-0285-45a2-8e38-1f6ae4e9f4cc": {
 "company": "Tesla",
@@ -16529,6 +16569,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Scientist 1 - Card Fraud"
 },
+"78715df6-3f76-4957-9e9a-ee1ecb1caafa": {
+"company": "The Walt Disney Company",
+"first_seen": "2026-09-02",
+"title": "Systems Application Development and Sustainment Intern"
+},
 "787f92a1-006f-4ba4-baac-41b86f13cf1a": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -16563,6 +16608,11 @@
 "company": "Medpace",
 "first_seen": "2026-08-15",
 "title": "AI Engineer Intern"
+},
+"78b93d81-ddbc-4b9f-847f-f352c09c5308": {
+"company": "TikTok",
+"first_seen": "2026-09-02",
+"title": "Data Analyst and Business Projects Intern"
 },
 "78bcfab7-4ae8-462b-a21f-fc1444d142c9": {
 "company": "Applied Materials",
@@ -20734,6 +20784,11 @@
 "first_seen": "2026-08-17",
 "title": "Software Engineer Intern - Enterprise Technology Services"
 },
+"9832a63d-8aa0-487a-8736-a199952f78d9": {
+"company": "Hewlett Packard Enterprise",
+"first_seen": "2026-09-02",
+"title": "Product Management Graduate - Master's/MBA"
+},
 "983f8874-b9ed-43ca-9910-718e20bcac70": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -22337,6 +22392,11 @@
 "company": "The University of Edinburgh",
 "first_seen": "2026-08-25",
 "title": "Early Career Fellow / Lecturer in Digital Innovation and Artificial Intelligence - Entrepreneurship and Innovation Group"
+},
+"a48d6518-7010-47dc-bf82-ae4f02277bf1": {
+"company": "Cadence Design Systems",
+"first_seen": "2026-09-02",
+"title": "Characterization and Support Intern - Fall 2026"
 },
 "a48ddd41-804f-44ac-b08f-8ea10552ea6d": {
 "company": "Fortinet",
@@ -25898,6 +25958,11 @@
 "first_seen": "2026-08-19",
 "title": "Senior Software Engineer - Backend"
 },
+"bcea96d4-d109-4a9e-84e7-1f444b1f2e7b": {
+"company": "Philips",
+"first_seen": "2026-09-02",
+"title": "Data AI/ML Engineer Intern - Image Guided Therapy Devices - Software R&D"
+},
 "bcf0ca2a-3b0d-408b-809c-b5ddf36b64e4": {
 "company": "Capital One",
 "first_seen": "2026-08-17",
@@ -29108,6 +29173,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Analyst"
 },
+"d4a5fe5f-ec96-49d4-995d-0f69e68ca450": {
+"company": "Cadence Design Systems",
+"first_seen": "2026-09-02",
+"title": "Characterization and Support Intern - Fall 2026"
+},
 "d4a99db8-8105-449e-a0e7-eb1fe7c6eb35": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-25",
@@ -31657,6 +31727,11 @@
 "company": "NRG Energy",
 "first_seen": "2026-09-01",
 "title": "Field Service Professional"
+},
+"e7a97be7-ee20-442f-8ac6-81aedeb5c8a8": {
+"company": "Microchip Technology",
+"first_seen": "2026-09-02",
+"title": "Engineer 1 Applications - Secure Computing Group"
 },
 "e7be092f-49c3-429c-a396-1bdbff4a3e79": {
 "company": "Visa",
