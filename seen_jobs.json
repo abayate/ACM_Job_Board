@@ -1149,6 +1149,11 @@
 "first_seen": "2026-08-20",
 "title": "Biometrics Intelligence Analyst"
 },
+"0859ff2b-28b7-4854-90bb-9147bf5be674": {
+"company": "Fab2",
+"first_seen": "2026-09-02",
+"title": "Rust Software Engineer Intern - Chip Design Tools - Winter"
+},
 "085ae734-e5c2-4ef1-b527-667a60cf97be": {
 "company": "Halliburton",
 "first_seen": "2026-08-15",
@@ -2139,6 +2144,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Engineer Graduate - Seed Infra"
 },
+"0f6c8f09-a18d-4201-9375-9e1cf2ce6047": {
+"company": "Welocalize",
+"first_seen": "2026-09-02",
+"title": "Data Collection Operator"
+},
 "0f751d23-8510-4b13-a70c-465cc9362769": {
 "company": "Turner & Townsend",
 "first_seen": "2026-08-15",
@@ -2178,6 +2188,11 @@
 "company": "CCC Intelligent Solutions",
 "first_seen": "2026-08-28",
 "title": "Applied AI Engineer Intern"
+},
+"0f94673d-ad63-443b-b316-2c5a32b269a9": {
+"company": "Obsidian Solutions Group",
+"first_seen": "2026-09-02",
+"title": "Electrical Assembly Technician - J-STD-001 Certified"
 },
 "0f9c77ed-f654-499d-9764-6f6986f8ab2c": {
 "company": "NORY",
@@ -2303,6 +2318,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Student Researcher - Compiler - Seed Infra"
+},
+"107cf100-bd38-4d8f-8f2d-c55e7a97bcbe": {
+"company": "Bosch Home Comfort",
+"first_seen": "2026-09-02",
+"title": "Digital Product & Delivery Graduate"
 },
 "1084cdf5-3b7b-46a6-bf6d-10fdfa752e77": {
 "company": "TickPick",
@@ -2698,6 +2718,11 @@
 "company": "National Laboratory of the Rockies",
 "first_seen": "2026-08-15",
 "title": "Graduate Intern"
+},
+"12efc93b-9cb0-424d-9a67-53c256bb95bf": {
+"company": "Invesco",
+"first_seen": "2026-09-02",
+"title": "ETF Quantitative Developer"
 },
 "12f41653-efd9-400f-b588-f28d7d390aaf": {
 "company": "Fidelity Investments",
@@ -6789,6 +6814,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Research Intern"
 },
+"302e7185-9863-49b6-a674-0842c67a4158": {
+"company": "Fab2",
+"first_seen": "2026-09-02",
+"title": "Software Engineering Intern - Winter"
+},
 "30350af5-a049-4298-aec4-64ca2095b85f": {
 "company": "McGill University",
 "first_seen": "2026-08-15",
@@ -10208,6 +10238,11 @@
 "company": "T-Mobile",
 "first_seen": "2026-08-15",
 "title": "Associate Engineer - Software"
+},
+"49a375ed-840a-4380-a626-0c101cef2f1f": {
+"company": "Wabtec",
+"first_seen": "2026-09-02",
+"title": "Engineering Co-op - Multiple Teams"
 },
 "49a6eea9-f3b2-4c8a-bcb9-73f0f684a0af": {
 "company": "SZNS Solutions",
@@ -16089,6 +16124,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist Graduate - ML Recommendation Systems"
 },
+"7446a6fa-1e34-44e8-8b3a-46688131ec9f": {
+"company": "CSX",
+"first_seen": "2026-09-02",
+"title": "Intermodal Intern - Summer 2027 - Paid"
+},
 "7454affb-3e4e-42b0-bb63-7e1f868e117b": {
 "company": "Morgan Stanley",
 "first_seen": "2026-08-15",
@@ -16228,6 +16268,11 @@
 "company": "Thermo Fisher Scientific",
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer - Em"
+},
+"75402146-9ba8-4366-a048-72d66cd5bfeb": {
+"company": "Culina Group",
+"first_seen": "2026-09-02",
+"title": "Desktop Engineer Trainee - Fleet Department"
 },
 "754d18f3-d73c-451f-8214-a9c84a06d7c9": {
 "company": "EagleView",
@@ -19234,6 +19279,11 @@
 "first_seen": "2026-08-15",
 "title": "Technology Intern"
 },
+"8b74bc73-21bb-499c-a67a-d34845246a91": {
+"company": "Tesla",
+"first_seen": "2026-09-02",
+"title": "Backend Engineer Intern - Infrastructure Engineering"
+},
 "8b82242b-ee49-413d-9ba5-a840c2dc3385": {
 "company": "Microsoft",
 "first_seen": "2026-08-15",
@@ -21900,8 +21950,8 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"internship": "2026-08-27",
-"new_grad": "2026-08-27"
+"internship": "2026-08-28",
+"new_grad": "2026-08-28"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -24547,6 +24597,11 @@
 "company": "Sun Life",
 "first_seen": "2026-08-26",
 "title": "Automation Specialist Student"
+},
+"b2d99288-c86e-4027-95fd-d19f07bca4f5": {
+"company": "Southern Company",
+"first_seen": "2026-09-02",
+"title": "Application Developer 1 - Asset Technology AMI"
 },
 "b2e656b6-1af2-450c-92b5-d767bbca6f1b": {
 "company": "Jump Trading",
@@ -29978,6 +30033,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer New Grad - Search Quality"
 },
+"d8fcefa4-be4d-476c-89c8-dae303547940": {
+"company": "RTX",
+"first_seen": "2026-09-02",
+"title": "Digital Hardware Design Engineer 1"
+},
 "d8ff5790-a34b-425f-b812-2e10a1350a70": {
 "company": "NVIDIA",
 "first_seen": "2026-08-19",
@@ -30257,6 +30317,11 @@
 "company": "Deloitte",
 "first_seen": "2026-08-15",
 "title": "Delivery Analyst - Government & Public Services - AI & Data Engineering Solutions"
+},
+"db0fda0e-62fc-4d76-a312-0c1488051b73": {
+"company": "Rebellion",
+"first_seen": "2026-09-02",
+"title": "Graduate Programmer"
 },
 "db2ae7c8-3d21-42b0-9cb4-b4fb4de5cc58": {
 "company": "Argmax",
@@ -30542,6 +30607,11 @@
 "company": "Hewlett Packard",
 "first_seen": "2026-08-18",
 "title": "Software Systems Engineer - Advanced Compute Solutions - Desktop Workstations"
+},
+"dd9872ea-6a55-4724-9b58-908b225567fd": {
+"company": "Fab2",
+"first_seen": "2026-09-02",
+"title": "Automation Software Engineer Intern - Winter"
 },
 "dd9ebf83-de62-46a1-bb39-e82699aaad89": {
 "company": "Denso",
@@ -34882,6 +34952,11 @@
 "company": "JP Morgan Chase",
 "first_seen": "2026-08-15",
 "title": "Wealth Management Associate - J.P. Morgan Personal Investing"
+},
+"fe8d6250-c4c0-4fb3-b256-8ad1b487a711": {
+"company": "Fab2",
+"first_seen": "2026-09-02",
+"title": "Embedded Software Engineer Intern - Winter"
 },
 "fe8fd0a0-0ded-47c1-8bba-8ac16fdd2926": {
 "company": "Cybernetic Labs",
