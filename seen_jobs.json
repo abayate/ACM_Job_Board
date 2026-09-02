@@ -1474,6 +1474,11 @@
 "first_seen": "2026-09-02",
 "title": "Triage Associate 1 - Platform Triage"
 },
+"0a8485fb-d1dc-4372-aabb-6bc7c3980fb9": {
+"company": "The Aerospace Corporation",
+"first_seen": "2026-09-02",
+"title": "Real-time Launch Operations Software and Data Engineer - Engineering Applications Department - Information Systems and Cyber Division"
+},
 "0a965d21-50f3-4b2c-b9b1-d967745ab2be": {
 "company": "Zipline",
 "first_seen": "2026-08-21",
@@ -2198,6 +2203,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Data Science Intern - TikTok Live"
+},
+"0fbc0c07-29bd-40e7-9596-847314361138": {
+"company": "NVIDIA",
+"first_seen": "2026-09-02",
+"title": "GPU PCIe and Boot Architect New Grad - New College Grad"
 },
 "0fc23464-ee24-45e4-ae4c-cbf98ca6ac10": {
 "company": "NAXO",
@@ -5564,6 +5574,11 @@
 "first_seen": "2026-08-15",
 "title": "Integration Engineer"
 },
+"2642491d-58eb-447a-ae7d-a7f33759c98d": {
+"company": "RTX",
+"first_seen": "2026-09-02",
+"title": "Software Engineer 1"
+},
 "2672baf9-a609-4fe4-b69c-97c5ebad875e": {
 "company": "Parsons",
 "first_seen": "2026-08-21",
@@ -7903,6 +7918,11 @@
 "company": "CACI",
 "first_seen": "2026-08-15",
 "title": "MI Systems Maintainer Integrator"
+},
+"38b3ffd6-c574-43b6-b9ec-d1c477d2bfac": {
+"company": "KLA Corporation",
+"first_seen": "2026-09-02",
+"title": "Algorithm Engineer"
 },
 "38bea890-dde6-419d-ac75-293198f586c5": {
 "company": "PENN Entertainment",
@@ -12484,6 +12504,11 @@
 "first_seen": "2026-08-24",
 "title": "Software Developer Intern - Single-Family"
 },
+"5a26da4a-19ad-4f1c-9fe1-b44593866407": {
+"company": "ABB",
+"first_seen": "2026-09-02",
+"title": "Service Repair Technician"
+},
 "5a334443-9d0a-4ac3-a774-3989f12d55f3": {
 "company": "Domino's",
 "first_seen": "2026-08-30",
@@ -13219,6 +13244,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineering Intern"
 },
+"5fddc043-6751-4ad7-8e6a-005f2c260e72": {
+"company": "TC Energy",
+"first_seen": "2026-09-02",
+"title": "Data Analyst - IoTx"
+},
 "5fde436c-570a-464b-9d9c-3a3e457151d0": {
 "company": "Amazon",
 "first_seen": "2026-08-15",
@@ -13583,6 +13613,11 @@
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-20",
 "title": "Senior Associate Data Architect - Data Architect"
+},
+"6265e645-8c43-401d-88bb-a80495d7700c": {
+"company": "Scientific Games",
+"first_seen": "2026-09-02",
+"title": "Field Service Technician"
 },
 "626bb7ad-7fc6-4fd0-99cd-31a7fb23cef3": {
 "company": "Jane Street",
@@ -16129,6 +16164,11 @@
 "first_seen": "2026-08-21",
 "title": "Data Science Intern - College to Corporate IT"
 },
+"74af6c16-85ee-4e4b-89c6-1296e8169c52": {
+"company": "Vermeer",
+"first_seen": "2026-09-02",
+"title": "IT Developer"
+},
 "74b2d4ff-f0ec-41d4-bc51-c06875faa9b7": {
 "company": "AeroVironment",
 "first_seen": "2026-08-15",
@@ -16973,6 +17013,11 @@
 "company": "Symbotic",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
+},
+"7b26ed3e-24a7-430f-9375-3426132ac229": {
+"company": "Barr",
+"first_seen": "2026-09-02",
+"title": "Air Quality Scientist/Engineer - Emissions Monitoring Focus"
 },
 "7b28ad1a-3b67-44fa-9397-e62fd4fab9d3": {
 "company": "Monogram",
@@ -18313,6 +18358,11 @@
 "company": "Goldman Sachs",
 "first_seen": "2026-08-15",
 "title": "Quantitative Strategist Intern - Multiple Teams"
+},
+"8546f56e-8a35-4cd4-9513-8ccc1994c185": {
+"company": "Newrez",
+"first_seen": "2026-09-02",
+"title": "Data & Analytics Operations Specialist"
 },
 "854edc4e-b75d-45db-b9f6-9af76f207298": {
 "company": "The Home Depot",
@@ -20398,6 +20448,11 @@
 "company": "Noblis",
 "first_seen": "2026-08-20",
 "title": "Identity Intelligence Analyst"
+},
+"94439f86-761e-479b-ad07-ff674a810362": {
+"company": "Barry-Wehmiller",
+"first_seen": "2026-09-02",
+"title": "Entry Level Software Engineer"
 },
 "9443f06f-2004-4e88-96c8-adac588d0b2d": {
 "company": "Cencora",
@@ -23518,6 +23573,11 @@
 "first_seen": "2026-08-27",
 "title": "Lab Technician Apprentice - Electrical Lab"
 },
+"ac2ae229-7224-4e3c-be41-781ae6ea4954": {
+"company": "Iberdrola Group",
+"first_seen": "2026-09-02",
+"title": "Technology Rotational Program - Digital & Analytics"
+},
 "ac34479a-59f5-4dd7-afad-64f30851650e": {
 "company": "American Express",
 "first_seen": "2026-08-18",
@@ -23832,6 +23892,11 @@
 "company": "Nordstrom",
 "first_seen": "2026-08-15",
 "title": "Assistant Product Developer - Non-Apparel"
+},
+"adefcb6c-6e0b-4b5a-9cd1-b78e8f116ff0": {
+"company": "C Spire",
+"first_seen": "2026-09-02",
+"title": "Technician - Home Services"
 },
 "adfcb3a2-2763-48e0-b417-77f931e4fcda": {
 "company": "Susquehanna International Group",
@@ -29893,6 +29958,11 @@
 "first_seen": "2026-08-24",
 "title": "Data Science New Grad - Master\u2019s degree"
 },
+"d8d60887-fcc9-40dd-a33a-fd8dc0da66fd": {
+"company": "Viavi Solutions",
+"first_seen": "2026-09-02",
+"title": "Rotational Program Development Engineer"
+},
 "d8dde7da-b9cd-456f-8810-481073996ee1": {
 "company": "Helsing",
 "first_seen": "2026-08-15",
@@ -32082,6 +32152,11 @@
 "company": "GE Appliances",
 "first_seen": "2026-08-15",
 "title": "Engineering Co-op"
+},
+"ea42316f-e909-4d3a-90fc-bb203789a6b6": {
+"company": "RTX",
+"first_seen": "2026-09-02",
+"title": "Test Systems Engineer Intern"
 },
 "ea47b81d-38b4-4c79-b7a8-d4b98cd222bc": {
 "company": "Selector Software",
