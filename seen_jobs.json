@@ -1509,6 +1509,11 @@
 "first_seen": "2026-08-15",
 "title": "Business Intelligence Intern"
 },
+"0aab8b93-7a94-4f09-9d83-ef3c13762e01": {
+"company": "Jobs for Humanity",
+"first_seen": "2026-09-03",
+"title": "Web Search Evaluator"
+},
 "0ab1b050-e71d-498f-b2a9-5ef4572f92ca": {
 "company": "Worldwide TechServices",
 "first_seen": "2026-08-15",
@@ -2148,6 +2153,11 @@
 "company": "Two Sigma",
 "first_seen": "2026-08-15",
 "title": "AI Research Scientist - Campus Full-Time"
+},
+"0f3ae34f-4072-4ba0-a9bc-512b0f8d22bc": {
+"company": "Procom",
+"first_seen": "2026-09-03",
+"title": "Salesforce Data Operations Analyst"
 },
 "0f474509-a4fe-4afd-a3b2-875ee4689df0": {
 "company": "Johnson & Johnson",
@@ -3769,6 +3779,11 @@
 "first_seen": "2026-08-25",
 "title": "Software Developer New Grad"
 },
+"19a5cc92-9a47-4f1a-80fd-42aff0d2ac63": {
+"company": "STEM Xpert",
+"first_seen": "2026-09-03",
+"title": "Java Developer"
+},
 "19adb890-3588-42e8-ac86-3d099f703889": {
 "company": "Marvell",
 "first_seen": "2026-08-15",
@@ -4674,6 +4689,11 @@
 "first_seen": "2026-08-15",
 "title": "Fellow"
 },
+"1ff12d45-ac6d-4306-977c-9e46ffa4f701": {
+"company": "North Star Staffing Solutions",
+"first_seen": "2026-09-03",
+"title": "Principal Product Engineer - Electronics"
+},
 "1ff5a755-8677-43b6-8f49-bc5e7e431e39": {
 "company": "Nebo",
 "first_seen": "2026-08-15",
@@ -5098,6 +5118,11 @@
 "company": "CGS Federal (Contact Government Services)",
 "first_seen": "2026-08-15",
 "title": "ServiceNow Architect - Sna - Junior"
+},
+"22d43520-b2e7-4ceb-b8b6-6a9e0a9bb684": {
+"company": "SA Technologies",
+"first_seen": "2026-09-03",
+"title": "Software Developer"
 },
 "22da6961-acb7-4c21-b55b-05a5a8ee6bde": {
 "company": "Mackenzie Investments",
@@ -9084,6 +9109,11 @@
 "first_seen": "2026-09-01",
 "title": "Robot Service Technician Apprentice"
 },
+"40528ffd-a9d4-4749-8527-e9282a352120": {
+"company": "Testing Xperts",
+"first_seen": "2026-09-03",
+"title": "Manhattan WMOS Developer"
+},
 "40569998-45dc-4119-b2ea-2f11366a604f": {
 "company": "RTX",
 "first_seen": "2026-08-18",
@@ -11129,6 +11159,11 @@
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Appointee - Materials Informatics and Autonomous Synthesis"
 },
+"4fafb0b2-e40a-4fae-8d26-efafc8a30ac1": {
+"company": "Testing Xperts",
+"first_seen": "2026-09-03",
+"title": "Java Tech Lead"
+},
 "4fb8de3c-e887-45a4-ba40-d9582d68cc5d": {
 "company": "HCA Healthcare UK",
 "first_seen": "2026-08-19",
@@ -11724,6 +11759,11 @@
 "first_seen": "2026-08-15",
 "title": "Firmware Engineer"
 },
+"53eeee26-857f-401e-8600-9b4498aa3bb1": {
+"company": "Testing Xperts",
+"first_seen": "2026-09-03",
+"title": "Java Technical Lead"
+},
 "53efd4af-54a6-411e-a939-031cead7e3c1": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -12083,6 +12123,11 @@
 "company": "Microsoft",
 "first_seen": "2026-09-01",
 "title": "Data Center Technician"
+},
+"5667e441-288d-4fe3-a032-e0a03e37e561": {
+"company": "North Star Staffing Solutions",
+"first_seen": "2026-09-03",
+"title": "Software Engineer - Multiple Teams"
 },
 "5669b0ee-2c91-48c1-a10f-9014661b589c": {
 "company": "United Smart Tech",
@@ -20184,6 +20229,11 @@
 "first_seen": "2026-08-15",
 "title": "Drive Failure Analysis and Reliability Integration Engineer"
 },
+"8fd4f758-40e0-49b6-8857-15b1a8965479": {
+"company": "Myriad Genetics",
+"first_seen": "2026-09-03",
+"title": "Bioinformatics Analyst 1"
+},
 "8fd97a09-131d-4ab2-8e78-33256bad3ee6": {
 "company": "Keysight Technologies",
 "first_seen": "2026-08-15",
@@ -21788,6 +21838,11 @@
 "company": "Strata Decision Technology",
 "first_seen": "2026-08-31",
 "title": "Data Integration Analyst"
+},
+"9c4dbcdd-dc66-46a6-9933-4c17c65c1160": {
+"company": "Jobsbridge",
+"first_seen": "2026-09-03",
+"title": "C++ / C# Software Engineer"
 },
 "9c4f6e91-a5cc-482a-ad58-1870f54b7c91": {
 "company": "CACI",
@@ -27198,6 +27253,11 @@
 "first_seen": "2026-08-15",
 "title": "Sports Research Engineer Intern"
 },
+"c24cb28c-f9f3-4fe1-a361-083f42434595": {
+"company": "Jobsbridge",
+"first_seen": "2026-09-03",
+"title": "Java Web Services Developer"
+},
 "c24fa0b2-9b8e-494c-880d-d33c97076848": {
 "company": "Chick-fil-A",
 "first_seen": "2026-08-25",
@@ -27267,6 +27327,11 @@
 "company": "Maven Securities",
 "first_seen": "2026-08-15",
 "title": "Quantitative Researcher New Grad"
+},
+"c2e040f0-ef6a-49de-92f8-e2cbceff262a": {
+"company": "Jobs for Humanity",
+"first_seen": "2026-09-03",
+"title": "AI Web Search Evaluator"
 },
 "c2e2f7ef-3469-446d-a35a-b0a767e0683e": {
 "company": "Teledyne",
@@ -32718,6 +32783,11 @@
 "first_seen": "2026-08-30",
 "title": "Associate Technical Service Specialist - Diagnostics"
 },
+"ea89eb5d-1ce4-4b97-855e-ecb9edab70ab": {
+"company": "Myriad Genetics",
+"first_seen": "2026-09-03",
+"title": "Bioinformatics Analyst 1"
+},
 "ea8c5ebd-a6c4-49ff-9dac-f3532c41737a": {
 "company": "NVIDIA",
 "first_seen": "2026-08-19",
@@ -34347,6 +34417,11 @@
 "company": "University of Central Florida",
 "first_seen": "2026-08-20",
 "title": "Software Developer 1"
+},
+"f61d9f79-83cb-4f65-a724-e14eb2ca30de": {
+"company": "Testing Xperts",
+"first_seen": "2026-09-03",
+"title": "Big Data Architect"
 },
 "f6235338-2c1a-4ce5-b8bf-cc208c9635da": {
 "company": "Jobsbridge",
