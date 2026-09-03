@@ -589,6 +589,11 @@
 "first_seen": "2026-08-15",
 "title": "Production Test Technician 1"
 },
+"0434742b-0c20-4b93-b7e3-bda6c349f5f8": {
+"company": "Insurify",
+"first_seen": "2026-09-03",
+"title": "Business Data Analyst"
+},
 "04378827-0725-43e5-b38f-7b12ca4660a4": {
 "company": "Mapjects",
 "first_seen": "2026-08-15",
@@ -6829,6 +6834,11 @@
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer"
 },
+"2ff8021a-9741-4562-a72d-7e1ba5fd39bf": {
+"company": "Data Cloud Merge",
+"first_seen": "2026-09-03",
+"title": "Entry Level Business Analyst"
+},
 "2ff916d3-3671-4e8e-a5df-485dc5048bba": {
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-08-15",
@@ -7173,6 +7183,11 @@
 "company": "Cisco",
 "first_seen": "2026-08-15",
 "title": "Software Engineer 3 - ENG/CPO/WTG ETR"
+},
+"32c3f20e-aed6-4933-811e-8e48b6cef89d": {
+"company": "BCforward",
+"first_seen": "2026-09-03",
+"title": "Quality Assurance Analyst Japanese"
 },
 "32e32073-854a-4b16-8adf-f981a6901e09": {
 "company": "TikTok",
@@ -12849,6 +12864,11 @@
 "first_seen": "2026-08-15",
 "title": "Senior Machine Learning Engineer - Perception"
 },
+"5b7802f6-b055-4d73-b1cf-7d3272c01af7": {
+"company": "Data Cloud Merge",
+"first_seen": "2026-09-03",
+"title": "Entry Level Business Analyst"
+},
 "5b7bded6-d742-4cff-9d9e-5b4c88e6b56d": {
 "company": "Marshall Wace",
 "first_seen": "2026-08-15",
@@ -14598,6 +14618,11 @@
 "company": "ManTech",
 "first_seen": "2026-08-15",
 "title": "Associate CNO Developer"
+},
+"6780c9f1-005f-48a6-9fcd-0c5758b8465d": {
+"company": "Atria Group",
+"first_seen": "2026-09-03",
+"title": "Cognos Developer"
 },
 "6782ff48-fa1d-47f8-bab9-bb94b0ab30f1": {
 "company": "ConocoPhillips",
@@ -19259,6 +19284,11 @@
 "first_seen": "2026-08-29",
 "title": "Equipment Engineer New Grad - RDA & Metrology"
 },
+"89f594f1-36b8-4da1-a6b7-4c345fc51e0b": {
+"company": "TikTok",
+"first_seen": "2026-09-03",
+"title": "Frontend Engineer Intern"
+},
 "8a00bccf-5acb-4f2d-bdb9-c398d864ed9c": {
 "company": "Leidos",
 "first_seen": "2026-08-24",
@@ -19959,6 +19989,11 @@
 "first_seen": "2026-08-15",
 "title": "Formal Verification Intern"
 },
+"8ee26259-5914-4601-981d-94d0d0a886ae": {
+"company": "NVIDIA",
+"first_seen": "2026-09-03",
+"title": "ASIC Verification Engineer"
+},
 "8ee2c108-7c86-4c94-b7bb-5667b48e3d3a": {
 "company": "Peraton",
 "first_seen": "2026-08-15",
@@ -20564,6 +20599,11 @@
 "first_seen": "2026-08-31",
 "title": "Software Engineer 1"
 },
+"92e9dd79-e2da-43cf-ac8b-c99c97cde9d8": {
+"company": "SDSU Research Foundation",
+"first_seen": "2026-09-03",
+"title": "Graduate Student ISR Department Lead Systems Engineer - Task"
+},
 "92ec25b9-67cb-4a92-87d3-379a0012eb5d": {
 "company": "AQR Capital Management",
 "first_seen": "2026-08-15",
@@ -20883,6 +20923,11 @@
 "company": "Altom Transport",
 "first_seen": "2026-08-15",
 "title": "Software Development Intern"
+},
+"95cfcae1-13a4-46ee-998d-53e2d76bbe2f": {
+"company": "Mechanize",
+"first_seen": "2026-09-03",
+"title": "Junior Software Engineer"
 },
 "95dbbfea-b072-44f1-a033-05228bbc1a1b": {
 "company": "Focal",
@@ -22797,6 +22842,11 @@
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-19",
 "title": "Application Developer Associate - Enterprise Data and AI"
+},
+"a4aad8c4-9986-41fb-a34f-cc96716c834f": {
+"company": "JP Morgan Chase",
+"first_seen": "2026-09-03",
+"title": "Martech Product Manager"
 },
 "a4aca9ca-8ec6-4a92-b3a6-e0c31d3b86ab": {
 "company": "Home Solutions",
@@ -27697,6 +27747,11 @@
 "company": "Tech Tammina",
 "first_seen": "2026-08-15",
 "title": "Software Engineer - Inspection - Permanent"
+},
+"c6fabb1c-ea49-4a57-b51c-f8fa6db5e0de": {
+"company": "Direct Staffing",
+"first_seen": "2026-09-03",
+"title": "Product Engineer"
 },
 "c7142e93-997d-4cb6-a4e3-6cd5fac970ad": {
 "company": "Silicon Laboratories",
@@ -35133,6 +35188,11 @@
 "first_seen": "2026-08-15",
 "title": "Field Service Technician 1"
 },
+"fd2aa27a-d775-4452-8bfc-318d2021b364": {
+"company": "TikTok",
+"first_seen": "2026-09-03",
+"title": "Product Manager Project Intern - Tiktok LIVE-Ecosystem Governance - 2026 Start"
+},
 "fd2b7ca0-58e9-4f80-8d96-b384d401bf1e": {
 "company": "Field AI",
 "first_seen": "2026-08-15",
@@ -35227,6 +35287,11 @@
 "company": "Palantir",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - Infrastructure"
+},
+"fd9ff0ca-e3ee-47bf-82df-14b05f61f61c": {
+"company": "Atria Group",
+"first_seen": "2026-09-03",
+"title": "Web/UI Developer - Replacement Position"
 },
 "fdb28bed-d2e6-44f2-b305-6599d8d12c2f": {
 "company": "University of Arkansas",
@@ -35468,6 +35533,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Fellow - AI & Knowledge Management"
 },
+"ff37886d-5c12-4d69-a63e-4ab3d5539bd2": {
+"company": "Invisible Technologies AI",
+"first_seen": "2026-09-03",
+"title": "Entry-Level AI Generalist"
+},
 "ff38f8af-bafd-4a27-b65d-e65d625efe50": {
 "company": "G-Research",
 "first_seen": "2026-08-15",
@@ -35552,6 +35622,11 @@
 "company": "KLA",
 "first_seen": "2026-08-31",
 "title": "Applications Development Engineer - Broadband Plasma"
+},
+"ffb56402-7fe4-431b-92b9-1df914f66737": {
+"company": "Ample Insight",
+"first_seen": "2026-09-03",
+"title": "Data Administrator"
 },
 "ffb577d7-9361-420e-b157-f03bdbd597d3": {
 "company": "Motorola",
