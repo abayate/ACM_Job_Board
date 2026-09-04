@@ -534,6 +534,11 @@
 "first_seen": "2026-08-15",
 "title": "Lab Power Platform Development Intern"
 },
+"03b14945-e476-4afb-92ea-e05ca0993e9a": {
+"company": "TikTok",
+"first_seen": "2026-09-04",
+"title": "Applied Scientist Intern - Multiple Teams"
+},
 "03c41462-567b-45cd-bd7a-c296b9b2d016": {
 "company": "Optiver",
 "first_seen": "2026-08-15",
@@ -1258,6 +1263,11 @@
 "company": "Stanley Black & Decker",
 "first_seen": "2026-08-15",
 "title": "Assistant Product Manager Outdoor Products"
+},
+"08e56e83-1160-4acc-8180-8c63cbf2f259": {
+"company": "Field AI",
+"first_seen": "2026-09-04",
+"title": "Sensor Systems Engineer - Autonomous Vehicles - Federal"
 },
 "08ef2cb1-d690-428a-8b19-ffef263fa20e": {
 "company": "L3Harris Technologies",
@@ -5624,6 +5634,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineering Internship/Co-Op"
 },
+"254cb863-1383-47c0-a1eb-ccbc4dbd7899": {
+"company": "Acceldata",
+"first_seen": "2026-09-04",
+"title": "Field Engineering Co-op"
+},
 "254d1c36-2e43-4f3a-86fc-ec06b7e8a725": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -5933,6 +5948,11 @@
 "company": "Goldman Sachs",
 "first_seen": "2026-08-15",
 "title": "Quantitative Strategist Associate - Core Planning and Analysis Strats"
+},
+"2796dea0-7c2c-4550-ad13-ef371cf9bc2b": {
+"company": "Field AI",
+"first_seen": "2026-09-04",
+"title": "Electrical Engineer - Autonomous Vehicles - Federal"
 },
 "279e377c-2072-4fa1-a807-724ccf72f78f": {
 "company": "Qualcomm",
@@ -7468,6 +7488,11 @@
 "company": "Hudson River Trading",
 "first_seen": "2026-08-15",
 "title": "Algorithm Developer - Quant Researcher"
+},
+"33d87281-2914-4356-ad13-441114284934": {
+"company": "AQR Capital Management",
+"first_seen": "2026-09-04",
+"title": "Engineering Summer Analyst Intern"
 },
 "33da215d-313a-45b7-8ad3-bde21b250ffe": {
 "company": "Palantir",
@@ -9788,6 +9813,11 @@
 "company": "Crowe",
 "first_seen": "2026-08-21",
 "title": "AI Functional Intern"
+},
+"441050ea-b57f-4448-ae69-2a4a8646229f": {
+"company": "Palantir",
+"first_seen": "2026-09-04",
+"title": "Year at Palantir Intern - Forward Deployed Software Engineer"
 },
 "441c3d0c-ee76-4f06-85bc-5c015f9c7452": {
 "company": "Micron Technology",
@@ -12303,6 +12333,11 @@
 "company": "Ontario Teachers' Pension Plan",
 "first_seen": "2026-08-21",
 "title": "Portfolio Engineer Intern - Capital Markets - CMIA"
+},
+"563916cf-2297-4c6b-93cc-b171f73555c4": {
+"company": "Palantir",
+"first_seen": "2026-09-04",
+"title": "Palantir Intern - Software Engineer"
 },
 "5646d793-dc8c-4ff6-82d3-e8d00aa58389": {
 "company": "Willkie Farr & Gallagher",
@@ -16194,6 +16229,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist Vision Foundation Model - Seed"
 },
+"7107711b-0874-460d-932c-0c0d7b729f42": {
+"company": "Palantir",
+"first_seen": "2026-09-04",
+"title": "Year at Palantir Intern - Forward Deployed Software Engineer"
+},
 "71149fe5-961e-4bf1-8571-edd4d46f114a": {
 "company": "Sysmex",
 "first_seen": "2026-08-27",
@@ -16798,6 +16838,11 @@
 "company": "Thermo Fisher Scientific",
 "first_seen": "2026-08-15",
 "title": "Field Service Engineer - Em"
+},
+"7530924d-1675-415e-a8e5-194c2ad28139": {
+"company": "Man Group",
+"first_seen": "2026-09-04",
+"title": "Associate Portfolio Manager - Fixed Income"
 },
 "75402146-9ba8-4366-a048-72d66cd5bfeb": {
 "company": "Culina Group",
@@ -18388,6 +18433,11 @@
 "company": "XPENG Motors",
 "first_seen": "2026-08-15",
 "title": "AI Infrastructure Onboard Performance Intern"
+},
+"80d74961-722d-4792-ab7a-4f178e4e0e58": {
+"company": "NVIDIA",
+"first_seen": "2026-09-04",
+"title": "Power Methodology and Modeling Engineer New Grad"
 },
 "80d83f90-c434-4eab-8ea5-32fc7be8043c": {
 "company": "Salesforce",
@@ -21184,6 +21234,11 @@
 "first_seen": "2026-08-15",
 "title": "Analytics Analyst - Fraud"
 },
+"948069a6-1ba7-4d4e-a5ad-e2910de7f5f1": {
+"company": "MJH Life Sciences",
+"first_seen": "2026-09-04",
+"title": "Associate Product Engineer"
+},
 "948a7229-20bf-4220-9876-ec5879966d9c": {
 "company": "Zoox",
 "first_seen": "2026-08-29",
@@ -22648,6 +22703,11 @@
 "company": "Pentair",
 "first_seen": "2026-08-15",
 "title": "Product Management Internship"
+},
+"9ffc4283-179a-417e-9f10-94177cd996ca": {
+"company": "Astera Labs",
+"first_seen": "2026-09-04",
+"title": "Product Quality Engineer"
 },
 "_headers": {
 "internship": "2026-08-28",
@@ -24207,6 +24267,11 @@
 "company": "Expleo",
 "first_seen": "2026-09-02",
 "title": "Application & Support Engineer"
+},
+"ab243f13-7a16-4917-8e5c-23226aa7ad38": {
+"company": "TikTok",
+"first_seen": "2026-09-04",
+"title": "Product Manager Project Intern - Ads Interface and Platform"
 },
 "ab36ebe7-5b0f-4e2f-91a1-201b82f21bef": {
 "company": "Watts Water",
@@ -32843,6 +32908,11 @@
 "first_seen": "2026-08-21",
 "title": "AI Software Engineer Intern"
 },
+"e78d8db1-0336-4670-aa71-5b51a2f8ad60": {
+"company": "Amazon",
+"first_seen": "2026-09-04",
+"title": "Software Development Engineer - AWS Data Services"
+},
 "e790b9f8-a895-4493-b4b7-acfffcb9b5d7": {
 "company": "NXP Semiconductors",
 "first_seen": "2026-08-15",
@@ -33242,6 +33312,11 @@
 "company": "i2G Systems",
 "first_seen": "2026-08-18",
 "title": "Electronic Security Installer - Special Projects"
+},
+"eae3b99e-8a7e-4960-9ce5-b8afaa1e5fce": {
+"company": "Anduril",
+"first_seen": "2026-09-04",
+"title": "Early Career Electrical Engineer"
 },
 "eae9fa9e-6d4b-4889-abae-c7a7f99d23be": {
 "company": "Royal Bank of Canada",
