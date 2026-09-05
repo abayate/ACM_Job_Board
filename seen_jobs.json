@@ -249,6 +249,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern"
 },
+"01b8795d-7b11-42d2-8ab9-9bc0f46bd425": {
+"company": "Oracle",
+"first_seen": "2026-09-05",
+"title": "AI Agent Intern - Logistics Focus"
+},
 "01ba76c4-8637-49c3-a04f-324409838c74": {
 "company": "Trillium",
 "first_seen": "2026-08-15",
@@ -4093,6 +4098,11 @@
 "company": "Innodata",
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
+},
+"1b47df5a-a950-4f67-8411-1bb9a8fd4554": {
+"company": "Akima",
+"first_seen": "2026-09-05",
+"title": "Unity Game Designer"
 },
 "1b48a832-086f-45cd-a54e-70a288bb2a70": {
 "company": "OCLC",
@@ -8629,6 +8639,11 @@
 "first_seen": "2026-08-15",
 "title": "Operations Technician 1"
 },
+"3b7e5b89-386a-4301-aada-1c80599f1def": {
+"company": "Carrier Global",
+"first_seen": "2026-09-05",
+"title": "Engineering Apprentice"
+},
 "3b997bd2-56ff-4dfa-9687-f43559333c6a": {
 "company": "MSR-FSR",
 "first_seen": "2026-08-15",
@@ -9208,6 +9223,11 @@
 "company": "Microsoft",
 "first_seen": "2026-08-15",
 "title": "Software Development Consultant - Technology Consulting"
+},
+"3fa13a7e-c5ff-44e8-982b-19a4d1129b16": {
+"company": "TSC",
+"first_seen": "2026-09-05",
+"title": "Systems Engineer 1"
 },
 "3fa23531-820c-41f3-8581-8e155a6a3bd0": {
 "company": "Brunswick",
@@ -11764,6 +11784,11 @@
 "first_seen": "2026-08-15",
 "title": "Flight Software Engineer"
 },
+"525b14e3-dbd2-4712-af62-63511a8dc9d5": {
+"company": "Westinghouse Electric Company",
+"first_seen": "2026-09-05",
+"title": "Nuclear Analysis Technician C / Civil Engineering Technicians"
+},
 "525ef07a-7783-4422-9c52-ec97e51183af": {
 "company": "Ameren",
 "first_seen": "2026-08-15",
@@ -12013,6 +12038,11 @@
 "company": "MCG Health",
 "first_seen": "2026-08-15",
 "title": "Software Engineering Intern"
+},
+"542ac711-82de-42c9-8876-dc0553d0a585": {
+"company": "ByteDance",
+"first_seen": "2026-09-05",
+"title": "Machine Learning Engineer Intern - Security-Data"
 },
 "542b64c8-2818-4c7a-ac2e-819703cd81c0": {
 "company": "General Dynamics Mission Systems",
@@ -17634,6 +17664,11 @@
 "first_seen": "2026-08-15",
 "title": "Forward Deployed Software Engineer New Grad - UK Government"
 },
+"7b12d8f8-2ad7-4945-a1e6-7e63d7a113c1": {
+"company": "AQR Capital Management",
+"first_seen": "2026-09-05",
+"title": "Research Summer Analyst Intern"
+},
 "7b15856e-8d6a-4c0c-8bb6-0d9b679d0d8c": {
 "company": "Alto-Shaam",
 "first_seen": "2026-08-15",
@@ -21039,6 +21074,11 @@
 "first_seen": "2026-08-31",
 "title": "Software Engineer 1"
 },
+"92e67392-a875-429d-8520-a8a60034ae9a": {
+"company": "Leggett & Platt",
+"first_seen": "2026-09-05",
+"title": "Systems Engineer Intern"
+},
 "92e9dd79-e2da-43cf-ac8b-c99c97cde9d8": {
 "company": "SDSU Research Foundation",
 "first_seen": "2026-09-03",
@@ -22129,6 +22169,11 @@
 "first_seen": "2026-08-15",
 "title": "Postdoctoral Researcher - XLZD experiment"
 },
+"9b672f45-f8d5-49d0-a38a-d0b4933a1d8d": {
+"company": "TSMG",
+"first_seen": "2026-09-05",
+"title": "AI/ML Data Contributor - Data Labeling - Content Evaluation"
+},
 "9b814dc4-e65c-4e43-aa10-eb1cfeed3036": {
 "company": "Freddie Mac",
 "first_seen": "2026-08-24",
@@ -22148,6 +22193,11 @@
 "company": "Optiver",
 "first_seen": "2026-08-15",
 "title": "Institutional Trader Intern"
+},
+"9ba29fe7-9d90-4fbd-b38b-9e4d1e887041": {
+"company": "Centific",
+"first_seen": "2026-09-05",
+"title": "Software Engineer 2 - 4"
 },
 "9bb1e297-4e54-423d-95b6-87905ec6f140": {
 "company": "Quantcast",
@@ -22852,6 +22902,11 @@
 "company": "Tesla",
 "first_seen": "2026-08-15",
 "title": "Embedded Software Engineer Intern - AI Platforms - Embedded Software Engineer"
+},
+"a0eb551c-9048-4dde-ac40-f2bd01e4d05f": {
+"company": "Oracle",
+"first_seen": "2026-09-05",
+"title": "Project Manager Intern"
 },
 "a0ec26fd-db0f-4eb4-9bed-73b9409cabc5": {
 "company": "TikTok",
@@ -23952,6 +24007,11 @@
 "company": "Collaborative Robotics",
 "first_seen": "2026-09-03",
 "title": "Robotics Assistant"
+},
+"a9556b44-6c39-4804-ac5f-23fcacd9520b": {
+"company": "AQR Capital Management",
+"first_seen": "2026-09-05",
+"title": "Risk Summer Analyst Intern"
 },
 "a95d2993-b768-44d8-8bb1-bebd2b211638": {
 "company": "Ema",
@@ -30053,6 +30113,11 @@
 "first_seen": "2026-08-15",
 "title": "Geology Specialist"
 },
+"d342e8d5-0959-45a5-a4b6-df3b930c83fd": {
+"company": "AQR Capital Management",
+"first_seen": "2026-09-05",
+"title": "Portfolio Implementation \u2013 Trading and Portfolio Finance Analyst Intern"
+},
 "d34efe5f-8b16-4631-abb7-2997d0702bcd": {
 "company": "Citadel Securities",
 "first_seen": "2026-08-15",
@@ -31797,6 +31862,11 @@
 "company": "Montenson",
 "first_seen": "2026-08-15",
 "title": "Sustainability Engineer Intern"
+},
+"df021870-bc1b-408c-ac28-255a67469798": {
+"company": "Oracle",
+"first_seen": "2026-09-05",
+"title": "Data Strategy Intern"
 },
 "df144a1f-ccc1-4936-b47d-78ddd8d7c8df": {
 "company": "Instacart",
@@ -35892,6 +35962,11 @@
 "company": "DataVisor",
 "first_seen": "2026-08-31",
 "title": "Data Scientist - Fraud Detection"
+},
+"fd404e0e-48f5-40a5-bcb9-7db3833a26f7": {
+"company": "Oracle",
+"first_seen": "2026-09-05",
+"title": "Product Manager Intern - Ovip"
 },
 "fd436b2e-986c-44fb-b8c3-48b1f27b85f4": {
 "company": "T-Mobile",
