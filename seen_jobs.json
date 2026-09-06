@@ -3804,6 +3804,11 @@
 "first_seen": "2026-08-31",
 "title": "Associate Software Engineer"
 },
+"18d1159a-0fc5-4395-a800-8360f12d024d": {
+"company": "AVEVA",
+"first_seen": "2026-09-06",
+"title": "Cloud Operations & Infrastructure Graduate"
+},
 "18d486ba-7847-4071-af9b-c194a73c76ea": {
 "company": "Innodata",
 "first_seen": "2026-08-15",
@@ -6693,6 +6698,11 @@
 "company": "Hewlett Packard",
 "first_seen": "2026-08-18",
 "title": "Software Systems Engineer - Advanced Compute Solutions - Desktop Workstations"
+},
+"2cd0f1c9-7c43-41d3-850c-4b74451159f6": {
+"company": "Amazon",
+"first_seen": "2026-09-06",
+"title": "Software Development Engineer - AWS Glue"
 },
 "2cd86c95-8bf0-4b5b-95b6-5788b012a67c": {
 "company": "TSMG",
@@ -10273,6 +10283,11 @@
 "company": "SAM",
 "first_seen": "2026-08-15",
 "title": "Geomatics Technician Apprentice - Survey and Mapping"
+},
+"4606ce11-67d1-4e0f-9d80-dbb78413e4f4": {
+"company": "Motorola",
+"first_seen": "2026-09-06",
+"title": "Associate Research and Development Test Engineer - R&D - Test Engineer"
 },
 "460b6640-45d1-4a42-94ac-6d460f1287b6": {
 "company": "Old Mission",
@@ -17204,6 +17219,11 @@
 "first_seen": "2026-08-24",
 "title": "Entry Level Application Engineer"
 },
+"75acc9bd-029d-44b4-b076-68197a7c1735": {
+"company": "Texas A&M International University",
+"first_seen": "2026-09-06",
+"title": "Information Technology Intern"
+},
 "75af4966-3c71-447e-9622-da5d0c139e79": {
 "company": "Flexcompute",
 "first_seen": "2026-08-15",
@@ -17213,6 +17233,11 @@
 "company": "Magna",
 "first_seen": "2026-08-15",
 "title": "IoT Systems Engineer Co-op"
+},
+"75bcead3-bc36-4555-933e-eb57ee8d05bb": {
+"company": "Clerkie",
+"first_seen": "2026-09-06",
+"title": "Associate Product Manager"
 },
 "75cc7659-6d2e-4570-b141-133fc30e5e5b": {
 "company": "DellFor Technologies",
@@ -19389,6 +19414,11 @@
 "first_seen": "2026-09-05",
 "title": "Research and Portfolio Management Engineering Summer Analyst Intern"
 },
+"853f43c9-8095-4fb8-880b-20c796875015": {
+"company": "Marvell",
+"first_seen": "2026-09-06",
+"title": "Analog Engineer Intern - PhD"
+},
 "8540d9e9-5a90-4ecb-a7f6-b854e696fb8e": {
 "company": "Goldman Sachs",
 "first_seen": "2026-08-15",
@@ -20133,6 +20163,11 @@
 "company": "AltaGas",
 "first_seen": "2026-08-15",
 "title": "Data Science and Analytics Co-op"
+},
+"8a515628-d7dd-42ce-8ce3-794a71c8d0bb": {
+"company": "PJM",
+"first_seen": "2026-09-06",
+"title": "Senior Market Strategist 1 - Renewable Services"
 },
 "8a6343a9-f416-4241-9451-0fabca5ffd7d": {
 "company": "Wells Fargo",
@@ -21728,6 +21763,11 @@
 "company": "Qualcomm",
 "first_seen": "2026-08-21",
 "title": "System Level Test Engineer - Hardware Engineering"
+},
+"95601a0e-301f-44c7-bc2c-49694ad34817": {
+"company": "Prime Healthcare",
+"first_seen": "2026-09-06",
+"title": "Business Analyst 1"
 },
 "9560628e-382e-4abf-8490-b978e15d27fe": {
 "company": "Canon",
@@ -24283,6 +24323,11 @@
 "first_seen": "2026-08-15",
 "title": "Mapping Technician - Mapping I"
 },
+"a8275d8b-68c2-4d00-9987-b0ca5a505662": {
+"company": "Applied Intuition",
+"first_seen": "2026-09-06",
+"title": "Research Intern - Reinforcement Learning - Robotics"
+},
 "a829ca2b-67d1-4241-b6db-70adc403355e": {
 "company": "NationGraph",
 "first_seen": "2026-08-15",
@@ -25452,6 +25497,11 @@
 "company": "Atria Group",
 "first_seen": "2026-08-15",
 "title": ".NET Developer"
+},
+"af8c8ecc-e6b9-4b08-beaf-15035af3472b": {
+"company": "Applied Intuition",
+"first_seen": "2026-09-06",
+"title": "Research Intern - World-Action Foundation Model - Robotics"
 },
 "af8ee11b-8ecb-4e0d-a573-663d2b202291": {
 "company": "FlexAI",
@@ -26872,6 +26922,11 @@
 "company": "Thales",
 "first_seen": "2026-08-15",
 "title": "Data Engineer Intern - Student"
+},
+"b9259e5b-7949-46e3-a734-8f488c76de5d": {
+"company": "Tesla",
+"first_seen": "2026-09-06",
+"title": "Manufacturing Trainee - Megafactory"
 },
 "b93029bb-0502-4da5-9050-4b8933270db8": {
 "company": "ERPA",
@@ -29107,6 +29162,11 @@
 "company": "GE Vernova",
 "first_seen": "2026-08-20",
 "title": "Software Engineer Graduate - Software"
+},
+"c8c5aa40-1271-42fb-937f-a311fcaf917d": {
+"company": "Palantir",
+"first_seen": "2026-09-06",
+"title": "Software Engineer Intern - Defense Tech"
 },
 "c8d12bba-d657-4fe9-8c69-af2f801895a1": {
 "company": "DRW",
@@ -31833,6 +31893,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - Security"
 },
+"da858cff-a5e2-4d14-802a-be39fa5cf5c0": {
+"company": "AQR Capital Management",
+"first_seen": "2026-09-06",
+"title": "Portfolio Solutions Group Summer Analyst Intern - Portfolio Solutions Group"
+},
 "da8a18fa-889f-40b2-aed8-e47cf70f8f15": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -32722,6 +32787,11 @@
 "company": "Valstad",
 "first_seen": "2026-08-15",
 "title": "Robotics Software Intern - Manipulation & Simulation"
+},
+"e1cb71b6-18fc-4d48-9c80-55c54bb62a50": {
+"company": "Palantir",
+"first_seen": "2026-09-06",
+"title": "Software Engineer Intern"
 },
 "e1ce7cd0-8b1d-4707-9fce-7f8566d631c5": {
 "company": "TSMG",
@@ -35667,6 +35737,11 @@
 "company": "GE Vernova",
 "first_seen": "2026-08-15",
 "title": "Digital Technology Intern"
+},
+"f6c49c8b-3945-40eb-8940-91af8eb8e707": {
+"company": "Field AI",
+"first_seen": "2026-09-06",
+"title": "Robotics Engineer - Humanoid System Integration"
 },
 "f6cba027-4f6a-4213-adf2-a739bf808dde": {
 "company": "3S Business Corporation",
