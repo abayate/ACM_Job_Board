@@ -4069,6 +4069,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Product Manager Intern"
 },
+"1a3e9e00-5d2c-4657-be1b-e639c34231eb": {
+"company": "T. Rowe Price",
+"first_seen": "2026-09-07",
+"title": "Global Trading Intern"
+},
 "1a403d17-88bf-4d3d-919a-954fa39fa641": {
 "company": "TSMG",
 "first_seen": "2026-09-04",
@@ -5263,6 +5268,11 @@
 "company": "Veeva Systems",
 "first_seen": "2026-08-17",
 "title": "Associate Software Engineer"
+},
+"22220f24-f992-49aa-8bfb-f4cc148a0a58": {
+"company": "Tapcart",
+"first_seen": "2026-09-07",
+"title": "AI Ops Engineer - GTM"
 },
 "222309af-4985-4525-a1f9-8a183a6c64b0": {
 "company": "Prelim",
@@ -9949,6 +9959,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - Deep Learning Libraries"
 },
+"43276f3b-fef9-4040-bf96-1efb7bfc71c4": {
+"company": "TechInsights",
+"first_seen": "2026-09-07",
+"title": "Circuit Analysis Co-op"
+},
 "43282669-26b4-424d-a58e-152780651ad6": {
 "company": "Artera Technologies",
 "first_seen": "2026-08-15",
@@ -10583,6 +10598,11 @@
 "company": "Advanced Energy",
 "first_seen": "2026-09-03",
 "title": "Electronics Service Technician"
+},
+"47365994-d392-4502-8a95-530e2273f746": {
+"company": "Unisys",
+"first_seen": "2026-09-07",
+"title": "Support Services Engineer"
 },
 "47396485-020d-4723-a0eb-84364424bc72": {
 "company": "Onware",
@@ -11709,6 +11729,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Center Technician"
 },
+"4f97919a-e2f3-42e7-a1e7-6b964079b369": {
+"company": "Pegatron Technologies LLC",
+"first_seen": "2026-09-07",
+"title": "Electronic Engineer - Multiple Teams"
+},
 "4fa1b683-fa30-44b0-a279-ea52a60e6a84": {
 "company": "Copart",
 "first_seen": "2026-08-15",
@@ -12529,6 +12554,11 @@
 "first_seen": "2026-08-25",
 "title": "Flight Software Engineer 1 New Grad"
 },
+"55234801-d556-462f-be52-b2878199c203": {
+"company": "Hearst",
+"first_seen": "2026-09-07",
+"title": "Analyst \u2013 Pricing & Yield"
+},
 "5525b708-b3f8-4b78-a546-7b5c638d8fdb": {
 "company": "Ritchie Bros.",
 "first_seen": "2026-08-15",
@@ -13073,6 +13103,11 @@
 "company": "Specter Aerospace",
 "first_seen": "2026-08-15",
 "title": "Image Processing Co-op"
+},
+"58856b41-819a-46fe-b1b3-cb5b18811424": {
+"company": "Amazon",
+"first_seen": "2026-09-07",
+"title": "Applied Science Intern - Automated Reasoning - PhD Student Science Recruiting"
 },
 "5885fd27-d00d-4fdb-b080-609c22fd5d6c": {
 "company": "Worldwide TechServices",
@@ -20314,6 +20349,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Engineer Analyst - WDP"
 },
+"8956fcef-9bc0-4e93-bbc2-2f9165ddc136": {
+"company": "TikTok",
+"first_seen": "2026-09-07",
+"title": "Product Solutions and Operations Project Intern - Ads Interface and Platform Product"
+},
 "895ea579-0ca7-4aa8-82a2-db62cfeba95c": {
 "company": "Optiver",
 "first_seen": "2026-08-15",
@@ -25813,6 +25853,11 @@
 "first_seen": "2026-08-15",
 "title": "Unix Developer"
 },
+"ae948682-42af-46dc-919c-fbef1921d88f": {
+"company": "Hewlett Packard (HP)",
+"first_seen": "2026-09-07",
+"title": "Embedded Firmware and Software Engineer"
+},
 "ae9efb80-c34c-4b8e-bf04-7c5bfb7f3355": {
 "company": "Northrop Grumman",
 "first_seen": "2026-08-19",
@@ -28228,10 +28273,20 @@
 "first_seen": "2026-09-04",
 "title": "Hardware Power Engineer \u2013 New Grad"
 },
+"be35be40-fd48-4f09-95d3-3b3aa985a289": {
+"company": "Capvision",
+"first_seen": "2026-09-07",
+"title": "Senior Manager - Client Services"
+},
 "be3d979b-63eb-4f25-9562-ddb20049b611": {
 "company": "Scientific Games",
 "first_seen": "2026-08-26",
 "title": "Field Service Technician 2"
+},
+"be3e35f8-1563-4b79-bac8-ad63f0571b76": {
+"company": "Hershey",
+"first_seen": "2026-09-07",
+"title": "Packaging Coordinator"
 },
 "be3e6820-439b-4242-84a6-7638cd7ad5a9": {
 "company": "Optiver",
@@ -29477,6 +29532,11 @@
 "company": "eBay",
 "first_seen": "2026-08-22",
 "title": "Senior Data Engineer Manager"
+},
+"c78c2cf6-ca8a-4839-b3b2-9a58826c3379": {
+"company": "Aalyria",
+"first_seen": "2026-09-07",
+"title": "Electrical Engineer"
 },
 "c798be75-f002-4735-ae90-3a77727b897e": {
 "company": "PSECU",
@@ -33013,6 +33073,11 @@
 "first_seen": "2026-08-21",
 "title": "Business Insights and Analytics Intern - Member Services"
 },
+"deb0d97f-47d1-4d62-bbfc-69de8cdfec88": {
+"company": "Chronograph",
+"first_seen": "2026-09-07",
+"title": "Private Equity Data Operations Analyst"
+},
 "deb5637d-60bc-4243-af66-b77c7a06b3ef": {
 "company": "RWS",
 "first_seen": "2026-08-15",
@@ -33557,6 +33622,11 @@
 "company": "Kensington",
 "first_seen": "2026-08-20",
 "title": "Data Analyst Intern - Revenue Optimization"
+},
+"e2bcf157-ebd6-4101-b5a0-f9ea043a117d": {
+"company": "Entergy",
+"first_seen": "2026-09-07",
+"title": "AMI Operations Analyst"
 },
 "e2cd2c18-b6de-4e54-bdcf-f35c06225ca4": {
 "company": "Nebo",
@@ -37002,6 +37072,11 @@
 "company": "Truveta",
 "first_seen": "2026-08-15",
 "title": "Software Engineer - Live Link"
+},
+"fb1333ce-9156-4a30-a89d-92ec4d2b6185": {
+"company": "T. Rowe Price",
+"first_seen": "2026-09-07",
+"title": "Quantitative Equity Investing Intern"
 },
 "fb24800d-9071-4222-88c5-21a669cb81ec": {
 "company": "Blue Origin",
