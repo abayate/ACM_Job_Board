@@ -5974,6 +5974,11 @@
 "first_seen": "2026-09-02",
 "title": "Software Engineer 1"
 },
+"2643154c-81da-4e50-a255-f026c03f0324": {
+"company": "CSC Generation",
+"first_seen": "2026-09-07",
+"title": "AI Solutions Engineer"
+},
 "2672baf9-a609-4fe4-b69c-97c5ebad875e": {
 "company": "Parsons",
 "first_seen": "2026-08-21",
@@ -6409,6 +6414,11 @@
 "first_seen": "2026-08-15",
 "title": "Member of Technical Staff 2 - Service Provider"
 },
+"29da5e2a-a429-4951-a8e4-8217d7421bf8": {
+"company": "UL Solutions",
+"first_seen": "2026-09-07",
+"title": "Engineer \u2013 Switching Devices"
+},
 "29edc090-b552-4025-b423-23528dab82bb": {
 "company": "RTX",
 "first_seen": "2026-08-15",
@@ -6483,6 +6493,11 @@
 "company": "Apple",
 "first_seen": "2026-08-15",
 "title": "SoC DFT Engineer"
+},
+"2acf90ef-f1bc-49f0-a87d-30f3e0c3b961": {
+"company": "Dipper",
+"first_seen": "2026-09-07",
+"title": "Creator Circle - Dipper"
 },
 "2ad3e6d5-d4e3-4b1c-8ca8-74840b82691b": {
 "company": "Blackline Safety",
@@ -11009,6 +11024,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
 },
+"4acc628e-f876-4206-82c5-91cc5b21e425": {
+"company": "Aptura",
+"first_seen": "2026-09-07",
+"title": "Investment Banking Intern - AI Evaluation"
+},
 "4ad87d63-2221-4e93-9644-1fafb2275d88": {
 "company": "Tesla",
 "first_seen": "2026-08-15",
@@ -12318,6 +12338,11 @@
 "company": "PHIHONG USA",
 "first_seen": "2026-08-15",
 "title": "Firmware Engineer"
+},
+"53e31bb3-a644-4a2e-bab9-9e5124c1cd77": {
+"company": "Barnard College",
+"first_seen": "2026-09-07",
+"title": "Graduate Assistant"
 },
 "53eeee26-857f-401e-8600-9b4498aa3bb1": {
 "company": "Testing Xperts",
@@ -14604,6 +14629,11 @@
 "first_seen": "2026-08-15",
 "title": "Performance Engineer"
 },
+"62b8c02d-ce43-4230-86fa-eda7032e1a3e": {
+"company": "CACI",
+"first_seen": "2026-09-07",
+"title": "Digital Signal Processing Engineer"
+},
 "62d11aec-ce0b-4085-b323-3da6cb9f2ea0": {
 "company": "Boson Ai",
 "first_seen": "2026-08-15",
@@ -15758,6 +15788,11 @@
 "company": "NVIDIA",
 "first_seen": "2026-08-15",
 "title": "DFT Engineer \u2013 New College Grad"
+},
+"69fd4a54-565f-45d1-8c93-47adb5ce5f6f": {
+"company": "Optiver",
+"first_seen": "2026-09-07",
+"title": "Equity Analyst New Grad"
 },
 "6a053db8-23fb-4075-8cbb-7ed2328d5f43": {
 "company": "Cohere",
@@ -17924,6 +17959,11 @@
 "first_seen": "2026-08-19",
 "title": "Mixed Signal Design Intern"
 },
+"7900b65d-9f07-4d31-b68f-cfa6cc770e37": {
+"company": "Gradient Robotics",
+"first_seen": "2026-09-07",
+"title": "Electrical Engineer"
+},
 "79054f04-0e8b-45fb-865d-bc789b4acfe9": {
 "company": "Citadel Securities",
 "first_seen": "2026-08-15",
@@ -19113,6 +19153,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-19",
 "title": "Product Manager Graduate - Scaled Growth"
+},
+"813940c2-4ae8-454b-86c7-69d451c09c9f": {
+"company": "Zen Educate",
+"first_seen": "2026-09-07",
+"title": "Resourcer"
 },
 "81410c86-5eab-481e-b83a-d9aef5ae21a3": {
 "company": "Maigrate",
@@ -22569,6 +22614,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Automation Intern - Electrical Construction Operations"
 },
+"991f0b7c-4424-49de-9ea0-525e7ec6c32a": {
+"company": "Ramiel Capital",
+"first_seen": "2026-09-07",
+"title": "Trading Intern"
+},
 "99283317-d8aa-4b4e-be87-1a9bd31e8e11": {
 "company": "Northeastern University",
 "first_seen": "2026-08-15",
@@ -22583,6 +22633,11 @@
 "company": "Kenco Management Services",
 "first_seen": "2026-08-15",
 "title": "Automation Technician 1"
+},
+"9934de7b-995f-4cde-b259-cb7f7db64df6": {
+"company": "Corning",
+"first_seen": "2026-09-07",
+"title": "Automation Measurements Engineer"
 },
 "99547ce9-5e06-4524-9de3-0bbd63ed6dd0": {
 "company": "L3Harris Technologies",
@@ -28923,6 +28978,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Scientist in Multimodal Interaction and World Model"
 },
+"c3f1885f-027a-4ba5-af79-a19c8caea727": {
+"company": "Analog Bits",
+"first_seen": "2026-09-07",
+"title": "CMOS Mixed-Signal Circuit Design Engineer"
+},
 "c3f214ad-fe6d-4020-9530-249687a4089d": {
 "company": "BNY",
 "first_seen": "2026-08-24",
@@ -29307,6 +29367,11 @@
 "company": "Arizona State University",
 "first_seen": "2026-09-07",
 "title": "Strategic Research Analyst Student - Launch Studio"
+},
+"c66cf93d-6458-4c2e-8035-c7c50f03af85": {
+"company": "FS Studio",
+"first_seen": "2026-09-07",
+"title": "Teleoperator - Robotics"
 },
 "c672badc-9657-46ee-bfdf-c31ec6e4308c": {
 "company": "IMC Trading",
@@ -34623,6 +34688,11 @@
 "first_seen": "2026-08-21",
 "title": "Trading System Engineer New Grad"
 },
+"eb3f0731-398b-4121-94b3-7a73e3829bb2": {
+"company": "Sinclair",
+"first_seen": "2026-09-07",
+"title": "Contract Associate Development Engineer"
+},
 "eb585dc3-b293-4a65-8bdb-f18fc0f37e6b": {
 "company": "Weatherford",
 "first_seen": "2026-08-25",
@@ -37527,6 +37597,11 @@
 "company": "Canonical",
 "first_seen": "2026-08-15",
 "title": "Software Engineer \u2013 Graduate Level - Python - Cloud"
+},
+"ff0be0ee-d145-491c-8841-2fc76be15dab": {
+"company": "SpaceX",
+"first_seen": "2026-09-07",
+"title": "Business Analyst - Customer Success"
 },
 "ff10df50-35b8-47c4-8138-ff9083746abf": {
 "company": "Veeva Systems",
