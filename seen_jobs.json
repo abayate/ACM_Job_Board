@@ -1189,6 +1189,11 @@
 "first_seen": "2026-08-15",
 "title": "Data & Analytics Assistant"
 },
+"08210b31-d7bd-413f-b967-222f2d005c3a": {
+"company": "NVIDIA",
+"first_seen": "2026-09-07",
+"title": "Research Scientist New Grad - Robotics Research"
+},
 "083cfc54-1c27-4fc6-ab89-6606e06aca1f": {
 "company": "Leidos",
 "first_seen": "2026-08-30",
@@ -4423,6 +4428,11 @@
 "company": "The Trade Desk",
 "first_seen": "2026-08-25",
 "title": "Software Engineering Intern"
+},
+"1cbb5b37-ad0e-460b-8c1a-ed4441db8c04": {
+"company": "Later",
+"first_seen": "2026-09-07",
+"title": "Data/Analytics Co-op"
 },
 "1cc17ed5-3841-485e-bfcd-d41dec899b72": {
 "company": "BNY",
@@ -8519,6 +8529,11 @@
 "first_seen": "2026-08-15",
 "title": "Student Researcher"
 },
+"38dd79e9-6abd-459e-9571-75919ddffdf7": {
+"company": "Textron",
+"first_seen": "2026-09-07",
+"title": "Information Systems Quality Intern - Quality Systems Information Technology"
+},
 "38e8a939-62a1-48f1-a692-553a8cfc1341": {
 "company": "Etched",
 "first_seen": "2026-08-15",
@@ -10154,6 +10169,11 @@
 "first_seen": "2026-08-15",
 "title": "Entry Level SAP Development Associate"
 },
+"443b4d84-5b87-497b-bb36-a713b6128d31": {
+"company": "Skydio",
+"first_seen": "2026-09-07",
+"title": "Electrical Engineer Intern"
+},
 "443c0a68-63ca-4026-94b7-cf3e555f2d0f": {
 "company": "Goldman Sachs",
 "first_seen": "2026-08-15",
@@ -10898,6 +10918,11 @@
 "company": "Vertiv",
 "first_seen": "2026-08-15",
 "title": "Thermal Engineer Intern - Summer 2027"
+},
+"497d74b1-baa5-412b-ba3d-76ffc87e197d": {
+"company": "TikTok",
+"first_seen": "2026-09-07",
+"title": "Global Product Strategy & Operation Project Intern - Ads Interface and Platform Product"
 },
 "49811d2d-c4c5-4b12-a63a-f0be4842a2d5": {
 "company": "Capital One",
@@ -14534,6 +14559,11 @@
 "first_seen": "2026-08-26",
 "title": "GIS/Cartography Technician 1"
 },
+"62159d15-bab7-4d5c-87ff-dbfd99f3c357": {
+"company": "TikTok",
+"first_seen": "2026-09-07",
+"title": "Product Solutions and Operations Intern - Ads Interface and Platform Product"
+},
 "6216196b-494f-4086-8c73-bc3fa0bbc11f": {
 "company": "Entegris",
 "first_seen": "2026-08-21",
@@ -15308,6 +15338,11 @@
 "company": "Koah",
 "first_seen": "2026-08-19",
 "title": "Software Engineer - Early Career"
+},
+"66794999-157e-437c-b788-b6a29e50b2f6": {
+"company": "Aspen Dental",
+"first_seen": "2026-09-07",
+"title": "Entry-level Denture Lab Technician - Digital"
 },
 "667a14b7-c214-403c-b1c1-adcde95fec1a": {
 "company": "Perplexity AI",
@@ -21069,6 +21104,11 @@
 "first_seen": "2026-08-25",
 "title": "Engineering Intern"
 },
+"8dabfbeb-9470-4bd5-a885-54da976acb82": {
+"company": "Boyne Resorts",
+"first_seen": "2026-09-07",
+"title": "Systems Integration and Test Engineer"
+},
 "8db73e59-868b-443c-ae94-c136c0561141": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -21963,6 +22003,11 @@
 "company": "The Nuclear Company",
 "first_seen": "2026-08-15",
 "title": "AI Engineer 1 - Platform Integration & AI/Data"
+},
+"93e325b1-07c2-48a6-97eb-affa3dd10b6a": {
+"company": "Pennsylvania State University",
+"first_seen": "2026-09-07",
+"title": "AI/ML Research Support Intern - Visualization and Decision Support Division"
 },
 "93ee6f59-9431-4ad7-9fd4-cdf74652fe01": {
 "company": "Mass General Brigham",
@@ -23578,6 +23623,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Backend Software Engineer - Machine Moderation Platform"
+},
+"9fc101eb-aefb-4a77-bb87-b91570e12034": {
+"company": "GE Appliances",
+"first_seen": "2026-09-07",
+"title": "Edison Engineering Development Program - Electrical"
 },
 "9fc959fb-5511-4d94-a76d-f7175d92c3fc": {
 "company": "Amazon",
@@ -29508,6 +29558,11 @@
 "first_seen": "2026-08-18",
 "title": "Research Analyst Intern"
 },
+"c731b9b0-a8c2-4b05-9d60-ae18bd6593eb": {
+"company": "Nakupuna Companies",
+"first_seen": "2026-09-07",
+"title": "Junior Knowledge Management Analyst"
+},
 "c744244f-670e-496a-a8e7-3f470887a7dd": {
 "company": "Booz Allen",
 "first_seen": "2026-08-31",
@@ -31328,6 +31383,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Endpoint Engineer"
 },
+"d378c42b-5e79-40b8-91ea-020a28e4bc43": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-09-07",
+"title": "Associate Integration and Test Engineering"
+},
 "d37c57dd-2a33-4fb5-a1f5-71e277f49809": {
 "company": "Xsolla",
 "first_seen": "2026-08-15",
@@ -32447,6 +32507,11 @@
 "company": "Garmin",
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1 - Web Development/Applications"
+},
+"da047806-6762-490b-bf1e-0fc6c4d9bbea": {
+"company": "Appalachian Regional Healthcare",
+"first_seen": "2026-09-07",
+"title": "Decision Support Associate"
 },
 "da048e8f-6ba6-43fd-8dc9-7c5a1adf494a": {
 "company": "Compass",
@@ -34222,6 +34287,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - Lead Ads"
+},
+"e70a8231-6aa8-410e-875b-2f9e16941fba": {
+"company": "Analytic Partners",
+"first_seen": "2026-09-07",
+"title": "Marketing Science Analyst"
 },
 "e7109ad2-2567-43b1-a1b4-e149cfeafab1": {
 "company": "HEXAWARE",
@@ -37822,6 +37892,11 @@
 "company": "Tesla",
 "first_seen": "2026-08-26",
 "title": "AI Hardware Physical Design Engineer Intern - AI Hardware"
+},
+"ffcc1bc5-977d-4385-831f-6009bc3091b9": {
+"company": "Torch Technologies",
+"first_seen": "2026-09-07",
+"title": "4&5 Software/Systems Engineer"
 },
 "ffed4c0e-ef20-4b01-b9fd-db56428a85d5": {
 "company": "Marvell",
