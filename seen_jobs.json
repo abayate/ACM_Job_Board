@@ -6279,6 +6279,11 @@
 "first_seen": "2026-08-25",
 "title": "Electronic Manufacturing Specialist"
 },
+"2869e42a-aa24-4c96-a6af-93fc142804cd": {
+"company": "Marshall Wace",
+"first_seen": "2026-09-07",
+"title": "Software/Infrastructure Graduate"
+},
 "286dabc0-b73b-4fa8-a82a-b2a384f8b1d3": {
 "company": "AMD",
 "first_seen": "2026-08-21",
@@ -7583,6 +7588,11 @@
 "company": "Hitachi",
 "first_seen": "2026-08-15",
 "title": "Software Analyst Intern"
+},
+"3278eb15-e3f1-4dee-960d-7e1481d6b4a5": {
+"company": "University of Rochester",
+"first_seen": "2026-09-07",
+"title": "Student Researcher Co-op"
 },
 "327ffcc9-d306-44ce-8b6d-ddbdeb204304": {
 "company": "Philips",
@@ -11474,6 +11484,11 @@
 "first_seen": "2026-08-15",
 "title": "Technician 1 - Building and Construction"
 },
+"4d9470a4-54bd-4fd0-a320-34bfe6a6729e": {
+"company": "BTI Solutions",
+"first_seen": "2026-09-07",
+"title": "Korean Bilingual Vision System Engineer//TL//Savannah GA"
+},
 "4db085c5-fa06-4b71-9641-e578b6896eaa": {
 "company": "Northrop Grumman",
 "first_seen": "2026-08-15",
@@ -14854,6 +14869,11 @@
 "first_seen": "2026-08-26",
 "title": "Data Science Associate"
 },
+"63e35d52-59ef-41f5-9562-df62a222e103": {
+"company": "Persona AI",
+"first_seen": "2026-09-07",
+"title": "Electrical Engineer Intern"
+},
 "63f0b134-ee9c-4af6-89fc-9bf1aa4e885a": {
 "company": "Orennia",
 "first_seen": "2026-08-15",
@@ -16143,6 +16163,11 @@
 "company": "City of Aurora",
 "first_seen": "2026-08-20",
 "title": "Water GIS Intern"
+},
+"6c1b495d-c993-4a1e-80fc-bb8b295e7c8b": {
+"company": "Red Bull",
+"first_seen": "2026-09-07",
+"title": "Academy Scouting Intern - Academy Scout"
 },
 "6c2fe943-5778-43b7-9845-06428b3eec92": {
 "company": "Micron Technology",
@@ -20914,6 +20939,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineering Co-op"
 },
+"8c6be6a1-2be9-4bd1-bbbf-59f76df80daf": {
+"company": "General Dynamics Mission Systems",
+"first_seen": "2026-09-07",
+"title": "Systems Engineer - FCS Auxiliary and Training Systems"
+},
 "8c744354-a4ae-42f5-8f27-c5ab2023398c": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-29",
@@ -25033,6 +25063,11 @@
 "first_seen": "2026-08-18",
 "title": "Developer Co-op - Technology & Operations"
 },
+"a9983aa2-9379-4ac7-8606-4d06bbc7e26b": {
+"company": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale de Surveillance",
+"first_seen": "2026-09-07",
+"title": "Engineering Laboratory Technician - Emc"
+},
 "a998ee7a-7f05-482d-82bb-d6e84da94314": {
 "company": "Warner Bros.",
 "first_seen": "2026-08-15",
@@ -27453,6 +27488,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer - Person Matching"
 },
+"b91d1b8c-98f8-4dad-8b55-0398ca8daac5": {
+"company": "Space Kinetic",
+"first_seen": "2026-09-07",
+"title": "Flight Software Engineer Development Program - Path to Hire"
+},
 "b91eb1ba-bb36-4352-b6be-33ef33997b7b": {
 "company": "BP",
 "first_seen": "2026-08-15",
@@ -28287,6 +28327,11 @@
 "company": "Genentech",
 "first_seen": "2026-08-25",
 "title": "Machine Learning Intern - OpRegen Machine Learning"
+},
+"bdfc529e-d34c-4cda-b93d-fe023147a3e0": {
+"company": "HUB International",
+"first_seen": "2026-09-07",
+"title": "Employee Benefits Financial Analyst"
 },
 "be001f88-4df5-4cc7-be0e-2ef836029012": {
 "company": "L3Harris Technologies",
@@ -29723,6 +29768,11 @@
 "first_seen": "2026-09-04",
 "title": "AI/ML Data Contributor - Data Labeling - Content Evaluation"
 },
+"c86190fb-9921-4afd-a6bd-99bc4ff8a734": {
+"company": "FSH Technologies",
+"first_seen": "2026-09-07",
+"title": "Generalist/Builder New Grad"
+},
 "c86d490b-4b50-4436-9a7b-0d6287bbb4ca": {
 "company": "GE Vernova",
 "first_seen": "2026-08-20",
@@ -30133,6 +30183,11 @@
 "first_seen": "2026-08-15",
 "title": "Part-time Adjunct Teaching Positions"
 },
+"caf543a8-a628-4086-99d8-05ddac34c2dd": {
+"company": "Shield AI",
+"first_seen": "2026-09-07",
+"title": "Electrical Engineer - Test Equipment Design"
+},
 "caf65c55-0c26-43b0-b3e7-f7bb2f5fc7db": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -30362,6 +30417,11 @@
 "company": "GM financial",
 "first_seen": "2026-08-15",
 "title": "Economist 1"
+},
+"cc58fac9-b0fa-47d6-8d76-5a9b5e373147": {
+"company": "Marquee Brands",
+"first_seen": "2026-09-07",
+"title": "Consumer Insights Intern"
 },
 "cc5ee59a-59c1-4e20-90ce-d5bc7cbc587e": {
 "company": "RTX",
@@ -30977,6 +31037,11 @@
 "company": "RTX",
 "first_seen": "2026-08-20",
 "title": "Electrical Engineer 1 - ASIC/FPGA"
+},
+"d0934e48-ad28-481d-9c3c-0a1688314c9b": {
+"company": "Cleveland-Cliffs",
+"first_seen": "2026-09-07",
+"title": "Commercial Sales Analyst"
 },
 "d0a7e5d4-0029-4c15-aec8-ea347fe6067b": {
 "company": "ByteDance",
@@ -32118,6 +32183,11 @@
 "first_seen": "2026-08-15",
 "title": "Intelligence Analyst - TS/SCI CI Poly"
 },
+"d79c4b08-a936-4ce6-b169-b2046b09973e": {
+"company": "Promise Robotics",
+"first_seen": "2026-09-07",
+"title": "Robotics Software Developer"
+},
 "d7af5b7f-8a9c-4def-bee5-6df93eb62782": {
 "company": "NJ Department of Environmental Protection",
 "first_seen": "2026-09-02",
@@ -32777,6 +32847,11 @@
 "company": "AT&T",
 "first_seen": "2026-08-29",
 "title": "Senior Specialist Member of Technical Staff"
+},
+"dbef2550-13ed-4579-95c4-df33ba85e6f1": {
+"company": "Mercer University",
+"first_seen": "2026-09-07",
+"title": "Digital Image Asset Management"
 },
 "dbef86f9-fcbd-4750-b16a-e8062c8541bf": {
 "company": "Micron Technology",
