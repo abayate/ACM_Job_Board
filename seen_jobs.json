@@ -474,6 +474,11 @@
 "first_seen": "2026-08-15",
 "title": "Electronics Worker 1"
 },
+"0326fee7-b91f-444e-8aab-b0b621d7b02a": {
+"company": "Motorola",
+"first_seen": "2026-09-08",
+"title": "Supply Chain Applied AI Engineering Intern"
+},
 "0327292f-07c4-467b-83c8-867fbee19266": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -1673,6 +1678,11 @@
 "company": "Thales",
 "first_seen": "2026-08-15",
 "title": "Environmental Test Technician - Weekend Shift"
+},
+"0b5c9dea-7022-4ca9-8252-d54f7f61db3e": {
+"company": "Freeform",
+"first_seen": "2026-09-08",
+"title": "Electrical Engineer New Grad"
 },
 "0b696bca-e863-4471-a8e9-55eaf3576843": {
 "company": "CMC Markets",
@@ -3018,6 +3028,11 @@
 "company": "Analog Devices",
 "first_seen": "2026-08-24",
 "title": "Product Engineer Intern - Product Development"
+},
+"13cec194-ac74-4dc7-97bf-d335bf29135f": {
+"company": "GlobalFoundries",
+"first_seen": "2026-09-08",
+"title": "Packaging Design Integration Engineer - Advanced Packaging and Silicon Photonics"
 },
 "13dd6724-1cd9-4292-842c-fa60c2494ce4": {
 "company": "Apple",
@@ -4619,6 +4634,11 @@
 "first_seen": "2026-09-04",
 "title": "AI/ML Data Contributor - Data Labeling - Content Evaluation"
 },
+"1da49025-7b0d-4d4c-9736-f113885c1e26": {
+"company": "Niantic Spatial",
+"first_seen": "2026-09-08",
+"title": "Robotics Engineering Intern"
+},
 "1db08df4-23e3-427d-b70e-dab6dd910782": {
 "company": "Palantir",
 "first_seen": "2026-08-15",
@@ -5913,6 +5933,11 @@
 "company": "Mechanize",
 "first_seen": "2026-08-15",
 "title": "Junior Software Engineer"
+},
+"25a32dd8-22bd-4f7d-be0d-b34c848ce2d1": {
+"company": "CloudFactory",
+"first_seen": "2026-09-08",
+"title": "Video Data Capture Technician"
 },
 "25a61501-a552-4f3c-b147-5d1ba74548f5": {
 "company": "Chevron Corporation",
@@ -7309,6 +7334,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Analyst Intern"
 },
+"2fe280fe-5031-4477-ba75-3261ae5e81fe": {
+"company": "Axon",
+"first_seen": "2026-09-08",
+"title": "2027 US Electrical Engineering Internship"
+},
 "2feb0baf-d212-4827-9c88-22d0b99dd528": {
 "company": "Point72",
 "first_seen": "2026-08-15",
@@ -7738,6 +7768,11 @@
 "company": "United Parcel Service (UPS)",
 "first_seen": "2026-08-15",
 "title": "Bus Systems Analysis Associate"
+},
+"333aa74d-b39a-4bd9-9659-8f03d7a969fb": {
+"company": "TikTok",
+"first_seen": "2026-09-08",
+"title": "World Model Research Scientist - Intelligent Creation - Multiple Teams"
 },
 "333d668e-a703-465a-adfe-71773ba80e9b": {
 "company": "General Dynamics Information Technology",
@@ -9148,6 +9183,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Systems Scheduling Engineer Graduate - Applied Machine Learning"
+},
+"3c53a802-b7b7-48db-8366-4f2ee710edd6": {
+"company": "Ozmo",
+"first_seen": "2026-09-08",
+"title": "Content Developer"
 },
 "3c547bc5-9116-4e68-a302-e7206745477a": {
 "company": "RTX",
@@ -10933,6 +10973,11 @@
 "company": "NewsBreak",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Junior New Grad - ML Infra"
+},
+"4899def5-70ad-47d2-aa3d-96e343f593aa": {
+"company": "Teledyne",
+"first_seen": "2026-09-08",
+"title": "Electrical Engineer Intern"
 },
 "48a0ce33-6322-4a3a-b92a-e1218c2218a6": {
 "company": "Astreya",
@@ -13674,6 +13719,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer - Transmission"
 },
+"5aef10de-dacf-40f8-93e0-3e9fd71ed29f": {
+"company": "TransPerfect",
+"first_seen": "2026-09-08",
+"title": "Litigation Support Analyst"
+},
 "5af1930e-294c-4e12-a3e1-63d14ca38c09": {
 "company": "Thermo Fisher Scientific",
 "first_seen": "2026-08-15",
@@ -15098,6 +15148,11 @@
 "company": "Palantir",
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - Defense"
+},
+"64519e07-9f32-4cb2-b293-18460d912c83": {
+"company": "Sorting Robotics",
+"first_seen": "2026-09-08",
+"title": "Robotics Engineer Co-op Intern"
 },
 "64520db5-19f9-4d78-80a3-c0baa9feff7e": {
 "company": "Mujin",
@@ -29718,6 +29773,11 @@
 "first_seen": "2026-08-15",
 "title": "Culinary Analyst"
 },
+"c6628942-b621-4a26-9578-7061a45823f4": {
+"company": "BP",
+"first_seen": "2026-09-08",
+"title": "Supply and Shipping Graduate Program - Trading"
+},
 "c6638cbe-82ec-44ed-a6db-0a7bb2d60c6a": {
 "company": "Digs",
 "first_seen": "2026-08-15",
@@ -31393,6 +31453,11 @@
 "first_seen": "2026-08-15",
 "title": "Digital Product Analyst Intern"
 },
+"d18679b9-d87f-4ffd-a1c2-72c408274aba": {
+"company": "TikTok",
+"first_seen": "2026-09-08",
+"title": "AI/ML Infrastructure Engineer Intern - Data-Arch-Tiktok Live"
+},
 "d18e7a7d-54ff-4946-bca8-1bdb2a671a6f": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -31507,6 +31572,11 @@
 "company": "DMS",
 "first_seen": "2026-08-25",
 "title": "Junior Technical Operator - Lates Shift"
+},
+"d2423d18-b85e-42bc-91ad-3e14d9570554": {
+"company": "TikTok",
+"first_seen": "2026-09-08",
+"title": "Recommendation Architecture AI/ML Infrastructure Engineer Graduate - Data-Arch-Tiktok Live"
 },
 "d24846e3-7ab0-4dc5-8419-0d070719ad82": {
 "company": "Cybernetic Labs",
@@ -35702,6 +35772,11 @@
 "company": "Meridian Partners",
 "first_seen": "2026-08-25",
 "title": "Python Software Engineer Co-op"
+},
+"eede34f5-aa2a-4ae6-b182-e6f39969e693": {
+"company": "ByteDance",
+"first_seen": "2026-09-08",
+"title": "AI Molecular Dynamics Algorithm Researcher Graduate - Seed AI for Science - Atomistic AI"
 },
 "eee826e6-97e1-40a7-91fd-be9d495e5e43": {
 "company": "Tesla",
