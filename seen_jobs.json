@@ -499,6 +499,11 @@
 "first_seen": "2026-08-15",
 "title": "Campus Quantitative Researcher Intern - PhD"
 },
+"034ef464-5bdc-4799-b9fc-48cc6418433b": {
+"company": "TikTok",
+"first_seen": "2026-09-09",
+"title": "Global Product Strategy & Operations Graduate - Scaled Growth"
+},
 "0369c5be-bfeb-4925-bb56-2baef2d13166": {
 "company": "ExxonMobil",
 "first_seen": "2026-09-06",
@@ -1033,6 +1038,11 @@
 "company": "Tesla",
 "first_seen": "2026-08-15",
 "title": "Applied AI Engineer Intern - AI Hardware"
+},
+"070fa122-c4d1-42cc-8a65-00d795f41738": {
+"company": "onsemi",
+"first_seen": "2026-09-09",
+"title": "Reliability Staff Engineer - Development"
 },
 "07139441-d9d3-4130-a236-620296b3a62a": {
 "company": "Wells Fargo",
@@ -1638,6 +1648,11 @@
 "company": "Equifax",
 "first_seen": "2026-08-15",
 "title": "D&a Rotational Development Program Associate"
+},
+"0acd3302-db9b-4fb1-9c06-35483b4569d3": {
+"company": "ByteDance",
+"first_seen": "2026-09-09",
+"title": "Multi-Cloud CDN Scheduling Platform Engineer Graduate - CDN Platform"
 },
 "0ad21b0e-b334-4f46-a502-e75492ac01b2": {
 "company": "Clyde Companies",
@@ -5569,6 +5584,11 @@
 "first_seen": "2026-09-05",
 "title": "Electrical Design Engineer - Starlink Mobile"
 },
+"22df8c5c-0e8b-4326-8957-e318533de76a": {
+"company": "Dexmate",
+"first_seen": "2026-09-09",
+"title": "Robotics Data Collection Operator"
+},
 "22f4cbf0-ea63-4e72-9fba-4319ef8415c3": {
 "company": "Blue Origin",
 "first_seen": "2026-08-15",
@@ -6158,6 +6178,11 @@
 "company": "Apple",
 "first_seen": "2026-08-15",
 "title": "RTL Design Engineer"
+},
+"26974045-db71-468b-954a-9e11ac55fb38": {
+"company": "SpaceX",
+"first_seen": "2026-09-09",
+"title": "Electrical Engineer New Grad - Starlink"
 },
 "269848d0-7a8d-45ef-8519-06340de9f7fc": {
 "company": "Onto Innovation",
@@ -17054,6 +17079,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer 1"
 },
+"6fc52e99-15ec-474d-badb-f26015b0d0bb": {
+"company": "Cisco",
+"first_seen": "2026-09-09",
+"title": "Electrical Engineer 2"
+},
 "6fc78a74-18a9-4623-afde-99715cbe9297": {
 "company": "Northwestern Mutual",
 "first_seen": "2026-08-15",
@@ -17108,6 +17138,11 @@
 "company": "General Dynamics Mission Systems",
 "first_seen": "2026-08-15",
 "title": "Embedded Software Engineer - HOH Fellows - Spouseworks Fellows"
+},
+"7006ad37-95b3-4932-923d-e8cfc62efd7c": {
+"company": "LG Electronics",
+"first_seen": "2026-09-09",
+"title": "Product Planning Program Manager"
 },
 "70102cd0-6897-4126-bb0e-ab346d3b259f": {
 "company": "Evertz Microsystems Limited",
@@ -19323,6 +19358,11 @@
 "company": "Ohiohealth",
 "first_seen": "2026-08-19",
 "title": "Electronic Imaging Technician"
+},
+"7eccb20e-d7d1-4bd0-9c89-87529eefc918": {
+"company": "GuideWell Mutual",
+"first_seen": "2026-09-09",
+"title": "Associate Health Business Analyst - Nautilus Program"
 },
 "7ed05700-9bd2-454d-90af-970389552705": {
 "company": "County of Kauai",
@@ -22844,6 +22884,11 @@
 "first_seen": "2026-08-30",
 "title": "Software Engineer Intern - Summer 2027"
 },
+"96a486f8-a09e-4eb6-9430-055213a993c2": {
+"company": "Rolls-Royce",
+"first_seen": "2026-09-09",
+"title": "Test and Measurement Software Engineer"
+},
 "96a80fff-d4c9-467e-b9f7-80924676ceca": {
 "company": "Tesla",
 "first_seen": "2026-09-01",
@@ -23788,6 +23833,11 @@
 "company": "Truveta",
 "first_seen": "2026-08-15",
 "title": "Engineering"
+},
+"9d3e4916-4e1e-4317-83a1-92d2664ed59b": {
+"company": "Goldman Sachs",
+"first_seen": "2026-09-09",
+"title": "Quantitative Strategist Intern - Americas"
 },
 "9d3f1c22-843d-4d5f-822e-542fba89e477": {
 "company": "DRW",
@@ -25097,6 +25147,11 @@
 "company": "Zipline",
 "first_seen": "2026-08-26",
 "title": "Embedded Software Engineer Intern - Spring 2027"
+},
+"a69d666d-f9d3-4321-9a63-85962cfda0a2": {
+"company": "ByteDance",
+"first_seen": "2026-09-09",
+"title": "Multi-Cloud CDN Data Platform Engineer Graduate - CDN Platform"
 },
 "a69da076-e18a-42b5-9a88-0838d7941959": {
 "company": "Deloitte",
@@ -26443,6 +26498,11 @@
 "first_seen": "2026-08-15",
 "title": "Analyst \u2013 Commercial Analytics and Data Science"
 },
+"ae6eb5ff-93c2-452f-bbef-228ba626267e": {
+"company": "SpaceX",
+"first_seen": "2026-09-09",
+"title": "Electrical Engineer New Grad - Starlink"
+},
 "ae72d45f-8a3a-45db-9cf2-c1cdb945e21e": {
 "company": "Observable Space",
 "first_seen": "2026-08-28",
@@ -27057,6 +27117,11 @@
 "company": "BinSentry",
 "first_seen": "2026-08-15",
 "title": "Electronic Assembler"
+},
+"b2b3a7df-bea1-4290-b988-4c3e567814b8": {
+"company": "Goldman Sachs",
+"first_seen": "2026-09-09",
+"title": "Summer Analyst Intern - Engineering"
 },
 "b2b93c28-353f-458c-83fe-cd14c4471ac5": {
 "company": "Microsoft",
@@ -27677,6 +27742,11 @@
 "company": "Etched.ai",
 "first_seen": "2026-08-15",
 "title": "Firmware Intern - Firmware"
+},
+"b6a6b28f-c858-4ef8-b6b4-aeda2206e9ad": {
+"company": "Goldman Sachs",
+"first_seen": "2026-09-09",
+"title": "Summer Analyst Intern"
 },
 "b6b81b7c-8a3c-4051-b26f-13b8ba3690ed": {
 "company": "Leidos",
@@ -30327,6 +30397,11 @@
 "company": "Innodata",
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
+},
+"c8082548-72f4-43bd-861a-8eb924951ca8": {
+"company": "Allen Control Systems",
+"first_seen": "2026-09-09",
+"title": "Systems Test Engineer"
 },
 "c81df46f-5efa-4098-b6c0-15e209f0b535": {
 "company": "ASM International",
