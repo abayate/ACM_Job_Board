@@ -439,6 +439,11 @@
 "first_seen": "2026-09-06",
 "title": "Financial Analyst - Structured Products"
 },
+"02d9e13e-0a78-4ac3-ac88-bcc860a02ee5": {
+"company": "Nationwide",
+"first_seen": "2026-09-10",
+"title": "State Product Analyst Intern - Personal Lines"
+},
 "02f2beb7-58e8-4aea-9598-45728f820599": {
 "company": "Arondite",
 "first_seen": "2026-08-15",
@@ -583,6 +588,11 @@
 "company": "Options Technology",
 "first_seen": "2026-08-15",
 "title": "PHP/SQL Web Developer - Options Market Data Team"
+},
+"03f41f5f-8abb-4769-af48-22497157aece": {
+"company": "Microchip Technology",
+"first_seen": "2026-09-10",
+"title": "Intern \u2013 Engineering - Device Software and Test"
 },
 "03f5f454-515c-41f5-b670-e30a0e59a27e": {
 "company": "NVIDIA",
@@ -3894,6 +3904,11 @@
 "first_seen": "2026-09-04",
 "title": "Graduate Research Scientist - Multiple Teams"
 },
+"17caa628-9c18-425c-9388-ad89219fba54": {
+"company": "Analog Devices",
+"first_seen": "2026-09-10",
+"title": "Associate Systems Integration Engineer"
+},
 "17d853eb-3412-4b94-a962-815fd64e1b6c": {
 "company": "University System of New Hampshire",
 "first_seen": "2026-08-15",
@@ -4354,6 +4369,11 @@
 "first_seen": "2026-08-19",
 "title": "Data Analyst Graduate"
 },
+"1b0ebd58-305f-4b68-b5bd-61277c845cdb": {
+"company": "Freeform",
+"first_seen": "2026-09-10",
+"title": "Electrical Engineer New Grad - Summer 2027"
+},
 "1b19f544-bada-4297-8147-46d2ae6afe4d": {
 "company": "CROSSMARK",
 "first_seen": "2026-08-18",
@@ -4493,6 +4513,11 @@
 "company": "Booz Allen",
 "first_seen": "2026-08-31",
 "title": "Data Engineer"
+},
+"1c09445e-a943-4258-9c49-7bf34a1087dd": {
+"company": "Ontario Teachers' Pension Plan",
+"first_seen": "2026-09-10",
+"title": "Risk Intern - Models and Asset Liability"
 },
 "1c141650-b107-465f-a7ed-290459b5da2a": {
 "company": "Tencent",
@@ -12954,6 +12979,11 @@
 "first_seen": "2026-08-15",
 "title": "AI Innovation Intern"
 },
+"544a91de-8c02-404d-8acd-5d1dc17c71a4": {
+"company": "Freeform",
+"first_seen": "2026-09-10",
+"title": "Electrical Engineer Intern"
+},
 "5458105c-13e8-4817-9425-650a59963793": {
 "company": "Sopra Steria",
 "first_seen": "2026-08-25",
@@ -15384,6 +15414,11 @@
 "first_seen": "2026-08-15",
 "title": "Full Stack Engineer - Specialist"
 },
+"6394d713-b7f5-48a5-8b48-fbe4373cdda6": {
+"company": "Allegro MicroSystems",
+"first_seen": "2026-09-10",
+"title": "Systems Engineer - Robotics"
+},
 "63959b32-024e-4ff1-859c-6927dfa9e8dd": {
 "company": "DeKalb County",
 "first_seen": "2026-09-06",
@@ -15733,6 +15768,11 @@
 "company": "Teserac",
 "first_seen": "2026-08-15",
 "title": "AI Engineer"
+},
+"655d22b5-48d2-4cbf-8661-f6f5311a0a50": {
+"company": "Synectic Solutions",
+"first_seen": "2026-09-10",
+"title": "Junior Electronics Engineer - Metrology"
 },
 "65650b49-1680-440d-8f63-1cc74d0ba188": {
 "company": "Notion",
@@ -18194,6 +18234,11 @@
 "first_seen": "2026-08-15",
 "title": "Application Engineer"
 },
+"75a2a7c4-e5d9-4544-bf24-a2a705653433": {
+"company": "Epic Games",
+"first_seen": "2026-09-10",
+"title": "Technical Art Intern - Rocket League"
+},
 "75a66528-c177-480e-9924-cde2ebd6a6d4": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -19058,6 +19103,11 @@
 "company": "RTX",
 "first_seen": "2026-08-31",
 "title": "Research Engineer 2"
+},
+"7b4326db-4150-48f3-a6af-a5492b8a0b2a": {
+"company": "Analog Devices",
+"first_seen": "2026-09-10",
+"title": "Analog Design Engineer Intern"
 },
 "7b4418e9-7bf5-406f-ae87-67a80d64b411": {
 "company": "Noom",
@@ -24748,6 +24798,11 @@
 "first_seen": "2026-08-19",
 "title": "Software Development Apprentice - Digital Solutions Team"
 },
+"a1751c17-9d64-4bdd-b1f4-3be9eafed502": {
+"company": "Allegiant Air",
+"first_seen": "2026-09-10",
+"title": "Pricing Analyst 1"
+},
 "a188e67b-1783-4dcd-9052-82585ee3aaf0": {
 "company": "Coherent",
 "first_seen": "2026-08-15",
@@ -29913,6 +29968,11 @@
 "first_seen": "2026-08-24",
 "title": "Technology Co-op - Technology LDP"
 },
+"c279d491-6fc9-4099-9260-61f85afbb3cf": {
+"company": "Analog Devices",
+"first_seen": "2026-09-10",
+"title": "Associate Test Engineer"
+},
 "c27c66d5-9509-490d-968c-e3ce9a235a04": {
 "company": "dunnhumby",
 "first_seen": "2026-08-15",
@@ -30397,6 +30457,11 @@
 "company": "Tesla",
 "first_seen": "2026-09-01",
 "title": "Software Engineer Intern - Vehicle Software - Summer 2027"
+},
+"c5c964b0-551b-4248-8fc8-6503f3519f57": {
+"company": "Avery Dennison",
+"first_seen": "2026-09-10",
+"title": "RFID Applications Engineer Co-op - Spring 2027 - Plus one semester"
 },
 "c5c96698-e25e-4209-8af4-5886495e5a80": {
 "company": "Deeter Analytics",
@@ -34583,6 +34648,11 @@
 "first_seen": "2026-08-15",
 "title": "Intern - Applications, AI and Machine Learning"
 },
+"e0651f34-c8da-4f75-9860-a97bbc100220": {
+"company": "Bank of Montreal",
+"first_seen": "2026-09-10",
+"title": "Business Analyst Co-op Intern - Data and Change Management"
+},
 "e069ff5e-614f-4167-aebe-d4a2587e393d": {
 "company": "Capgemini",
 "first_seen": "2026-08-15",
@@ -36137,6 +36207,11 @@
 "company": "Rivian and Volkswagen Group Technologies",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern Co-op - Systems Engineering"
+},
+"eb657ecd-fc17-4068-80c6-acd93dd9b7ac": {
+"company": "Masimo",
+"first_seen": "2026-09-10",
+"title": "Failure Analysis Engineer"
 },
 "eb6abc1f-b44d-436b-a6ab-6ab6af1e18c6": {
 "company": "Bosch Home Comfort",
