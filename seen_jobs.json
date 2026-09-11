@@ -5349,6 +5349,11 @@
 "first_seen": "2026-08-15",
 "title": "Analog Engineer Intern"
 },
+"209c40be-ff27-480f-b6f4-d2ce152109bb": {
+"company": "Northwood Space",
+"first_seen": "2026-09-11",
+"title": "Fleet Reliability Intern - Summer Internship"
+},
 "209fc4a4-5626-4653-baa1-7a5393231ce9": {
 "company": "Varsity Brands",
 "first_seen": "2026-08-15",
@@ -6233,6 +6238,11 @@
 "company": "Fortive",
 "first_seen": "2026-08-25",
 "title": "Field Service Engineer Co-op"
+},
+"25daa740-61f1-4b2b-b16f-ef6798135d16": {
+"company": "Bland AI",
+"first_seen": "2026-09-11",
+"title": "Machine Learning Research Intern - Audio"
 },
 "25eca41c-f475-4b9a-95e0-810654292e16": {
 "company": "IMC Trading",
@@ -9809,6 +9819,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Science and Analytics Part-Time Student - Data and Analytics"
 },
+"3e1957cd-768a-47fc-9140-cae0d35bb273": {
+"company": "Cogent Security",
+"first_seen": "2026-09-11",
+"title": "Forward Deployed Agent Engineer - Early Career"
+},
 "3e27f6f2-4ccd-49ee-aba7-8e836a225375": {
 "company": "AXQ Capital",
 "first_seen": "2026-08-15",
@@ -10329,6 +10344,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Trader \u2013 Graduate Program - August Start"
 },
+"41d74667-6411-41d5-a208-d0d96a443a61": {
+"company": "Lendable",
+"first_seen": "2026-09-11",
+"title": "Graduate Analyst - Share Options"
+},
 "41e5d607-8e4b-4840-8a89-834022636c99": {
 "company": "SDSU Research Foundation",
 "first_seen": "2026-08-15",
@@ -10578,6 +10598,11 @@
 "company": "Apex Fintech Solutions",
 "first_seen": "2026-08-25",
 "title": "Technology Fintern - Software Engineering - Product Management"
+},
+"4376d807-2cde-46d3-be30-f77757fc9eed": {
+"company": "TikTok",
+"first_seen": "2026-09-11",
+"title": "AI Product Manager Graduate - Product Social"
 },
 "43770cec-4ffd-413c-b934-485a9c10264b": {
 "company": "Microchip Technology",
@@ -12278,6 +12303,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Graduate - TikTok Vertical Recommendation"
+},
+"4eca034e-e697-4d90-bb46-323cab4f0668": {
+"company": "Crest Industries",
+"first_seen": "2026-09-11",
+"title": "Manufacturing Intelligence Solutions Specialist 1"
 },
 "4ecdff57-6188-48f4-9540-4521c485bc53": {
 "company": "TikTok",
@@ -18914,6 +18944,11 @@
 "first_seen": "2026-08-24",
 "title": "Software Engineer Intern"
 },
+"78c615cc-dde5-4897-aa80-d2cd8cfc2c60": {
+"company": "Zipline",
+"first_seen": "2026-09-11",
+"title": "Maps Intern - Summer 2027"
+},
 "78e8e324-34ed-43aa-aa73-0e8160950199": {
 "company": "PartnerRe",
 "first_seen": "2026-08-15",
@@ -21319,6 +21354,11 @@
 "first_seen": "2026-09-08",
 "title": "Embedded Electrical Engineer Intern"
 },
+"88ee222e-f092-4c2a-ad37-b63eb0445010": {
+"company": "Persona AI",
+"first_seen": "2026-09-11",
+"title": "Robotics Software Intern - Manipulation"
+},
 "88efe793-aaac-42c1-a5dd-58fbf94aa053": {
 "company": "Impiricus",
 "first_seen": "2026-08-15",
@@ -22853,6 +22893,11 @@
 "company": "Tesla",
 "first_seen": "2026-08-15",
 "title": "Embedded Software Engineering Intern - Embedded Software Engineer - High Voltage Systems"
+},
+"924a8e94-4f3a-475e-93ea-e8208d857766": {
+"company": "TikTok",
+"first_seen": "2026-09-11",
+"title": "Machine Learning Engineer Graduate - E-Commerce Knowledge Graph"
 },
 "924b8ac7-f08b-4620-9762-01deab61c794": {
 "company": "Starbucks",
@@ -25733,6 +25778,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Trader Intern"
 },
+"a61f9f72-9c0c-4aae-b389-6c806edc606a": {
+"company": "Schweitzer Engineering Laboratories",
+"first_seen": "2026-09-11",
+"title": "Engineering Intern - Protection Systems Forensics"
+},
 "a6223a31-ac8c-476d-8887-dcf951e37dfe": {
 "company": "ByteDance",
 "first_seen": "2026-09-05",
@@ -26942,6 +26992,11 @@
 "company": "AmNet Services",
 "first_seen": "2026-08-15",
 "title": "Software Systems Engineer 3"
+},
+"ad10dd9a-ab7f-4ce4-8057-f55834468051": {
+"company": "Qualified Health",
+"first_seen": "2026-09-11",
+"title": "Clinical AI Evaluation Intern"
 },
 "ad150652-4f82-4967-b194-6fa16626a5b6": {
 "company": "Capital One",
@@ -29852,6 +29907,11 @@
 "company": "Primetals Technologies",
 "first_seen": "2026-08-25",
 "title": "IT Data & Analytics Intern - Asset Demand & Procurement"
+},
+"bf10a48d-c59f-4775-844e-c402c2ee86a7": {
+"company": "TikTok",
+"first_seen": "2026-09-11",
+"title": "Research Scientist Graduate - Conversational AI"
 },
 "bf242ed9-9919-4627-bcd1-35178762d9c5": {
 "company": "American Express",
@@ -36063,6 +36123,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Graduate - AML-Engine-Orchestration"
 },
+"e7257a57-0f8e-4057-a337-d5a11e47d4d2": {
+"company": "Energy Transfer Partners",
+"first_seen": "2026-09-11",
+"title": "Associate Analyst - Energy"
+},
 "e7293c88-f396-415f-920c-742686dde2e3": {
 "company": "Booz Allen",
 "first_seen": "2026-08-30",
@@ -36877,6 +36942,11 @@
 "company": "Peraton",
 "first_seen": "2026-09-02",
 "title": "Junior Software Engineer - Developer - Space Communications Program"
+},
+"ecdb732a-4566-44b5-bb1e-360045df13d9": {
+"company": "Northwood Space",
+"first_seen": "2026-09-11",
+"title": "Electrical Engineer Intern - Summer Internship"
 },
 "ece4e830-0167-4f19-a330-763c58d7d099": {
 "company": "GRVTY",
@@ -38867,6 +38937,11 @@
 "company": "Generalist",
 "first_seen": "2026-08-25",
 "title": "Engineering Technician"
+},
+"f9f97fdb-31b2-402a-8522-918cec708267": {
+"company": "Epic Games",
+"first_seen": "2026-09-11",
+"title": "Web Engineer Intern - Tools & Portals"
 },
 "f9fe7e9f-de7d-47c2-875e-a933cee69ede": {
 "company": "Marsh & McLennan",
