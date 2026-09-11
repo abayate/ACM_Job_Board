@@ -609,6 +609,11 @@
 "first_seen": "2026-08-15",
 "title": "PHP/SQL Web Developer - Options Market Data Team"
 },
+"03e47660-5cad-406f-96e2-5bce36928d44": {
+"company": "CesiumAstro",
+"first_seen": "2026-09-11",
+"title": "Electrical Engineer 1 - Satcom"
+},
 "03f41f5f-8abb-4769-af48-22497157aece": {
 "company": "Microchip Technology",
 "first_seen": "2026-09-10",
@@ -1123,6 +1128,11 @@
 "company": "Innodata",
 "first_seen": "2026-08-15",
 "title": "Generative AI Associate"
+},
+"07518274-9bcb-4d1e-a857-62891b0c9c6f": {
+"company": "GE Vernova",
+"first_seen": "2026-09-11",
+"title": "Product Management Intern - Controls Lifecare Services"
 },
 "0753b1d0-7af4-4aa8-b9b9-96efa8cde209": {
 "company": "Chevron",
@@ -1968,6 +1978,11 @@
 "company": "Apple",
 "first_seen": "2026-08-15",
 "title": "Formal Verification Engineer"
+},
+"0cac198d-5b59-411b-8ddf-3138668da722": {
+"company": "Clerkie",
+"first_seen": "2026-09-11",
+"title": "Software Engineer Intern"
 },
 "0cbe5f0d-bc44-4b45-85bb-9272f05546e8": {
 "company": "ByteDance",
@@ -5738,6 +5753,11 @@
 "company": "Dexmate",
 "first_seen": "2026-09-09",
 "title": "Robotics Data Collection Operator"
+},
+"22e8ae7a-01f6-45a4-b1e6-5dbd92874d50": {
+"company": "Micron Technology",
+"first_seen": "2026-09-11",
+"title": "Product Test Engineer Intern - DRAM"
 },
 "22f4cbf0-ea63-4e72-9fba-4319ef8415c3": {
 "company": "Blue Origin",
@@ -9874,6 +9894,11 @@
 "first_seen": "2026-09-06",
 "title": "Principal/Sr. Principal Systems Engineer"
 },
+"3e77a1a2-8628-4836-9e07-b43a12a8468e": {
+"company": "Equifax",
+"first_seen": "2026-09-11",
+"title": "Technology Intern - Software Development - Site Reliability Engineering"
+},
 "3e8269f9-71b4-4732-b664-160a966600cf": {
 "company": "Curtiss-Wright",
 "first_seen": "2026-08-18",
@@ -13249,6 +13274,11 @@
 "first_seen": "2026-08-20",
 "title": "Software Engineer - Commerce"
 },
+"54cabb56-5337-4344-9f40-9ad54dc468b3": {
+"company": "Micron Technology",
+"first_seen": "2026-09-11",
+"title": "Product Test Engineer New Grad"
+},
 "54d2ba32-b5a8-428e-a746-8c1892180797": {
 "company": "Stryker",
 "first_seen": "2026-08-21",
@@ -14908,6 +14938,11 @@
 "company": "American Fidelity",
 "first_seen": "2026-08-15",
 "title": "Software Development Intern"
+},
+"5f396023-d3b0-4532-8632-b4b75e97bd2b": {
+"company": "PIMCO",
+"first_seen": "2026-09-11",
+"title": "Software Engineering Intern - Technology Analyst"
 },
 "5f3d33fb-4b34-47a8-a127-86e779a876b6": {
 "company": "GE Aerospace",
@@ -24374,6 +24409,11 @@
 "first_seen": "2026-08-15",
 "title": "Junior Software Engineer"
 },
+"9c526e49-d762-4923-802e-2cb13b434fee": {
+"company": "GE Vernova",
+"first_seen": "2026-09-11",
+"title": "Product Management Intern - Controls Lifecare Services"
+},
 "9c569a74-622f-4862-8f43-84f0e63f9893": {
 "company": "Panasonic Holdings",
 "first_seen": "2026-08-15",
@@ -24930,8 +24970,8 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"internship": "2026-08-28",
-"new_grad": "2026-08-28"
+"internship": "2026-08-30",
+"new_grad": "2026-08-30"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -28583,6 +28623,11 @@
 "first_seen": "2026-08-15",
 "title": "French Data Trainer"
 },
+"b768d2ef-8934-4832-9949-f25ca77045c0": {
+"company": "Notability",
+"first_seen": "2026-09-11",
+"title": "Backend Engineer"
+},
 "b77751b6-859f-4a04-a1aa-66508bbaf277": {
 "company": "Phaidra",
 "first_seen": "2026-08-15",
@@ -28737,6 +28782,11 @@
 "company": "Helmerich & Payne",
 "first_seen": "2026-08-15",
 "title": "Wellbore Positioning Engineer"
+},
+"b887b47d-3ded-45eb-8d5a-268813a2e75d": {
+"company": "Northwood Space",
+"first_seen": "2026-09-11",
+"title": "Software Engineer Intern - Multiple Teams"
 },
 "b88a3852-64cb-44cf-ad65-71ede8a595e4": {
 "company": "ByteDance",
@@ -31218,6 +31268,11 @@
 "first_seen": "2026-09-11",
 "title": "Risk & Performance Analyst"
 },
+"c81468d7-5674-4da5-8022-1abb69535db7": {
+"company": "Northwood Space",
+"first_seen": "2026-09-11",
+"title": "Embedded Software Engineer Intern"
+},
 "c81df46f-5efa-4098-b6c0-15e209f0b535": {
 "company": "ASM International",
 "first_seen": "2026-09-03",
@@ -32262,6 +32317,11 @@
 "company": "Meridian Partners",
 "first_seen": "2026-08-25",
 "title": "Flight Software Engineer Co-op"
+},
+"ce65b40a-38c7-43ea-8dac-7f8d96755290": {
+"company": "Koch Industries",
+"first_seen": "2026-09-11",
+"title": "Business Data Analyst"
 },
 "ce6bb4b3-0f2f-4eb0-b490-e518ef1dba06": {
 "company": "Abundant",
@@ -33772,6 +33832,11 @@
 "company": "LMI",
 "first_seen": "2026-08-15",
 "title": "Integrating Firmware Engineer - Mesh"
+},
+"d7464a56-df34-4389-8516-7a3d68551e07": {
+"company": "Bestgate Engineering",
+"first_seen": "2026-09-11",
+"title": "Systems Engineer"
 },
 "d7612fa7-5009-43fc-a9d3-8f16c3478eb2": {
 "company": "Jane Street",
@@ -36583,6 +36648,11 @@
 "first_seen": "2026-08-19",
 "title": "Systems Software Engineering Intern"
 },
+"ea8e010f-cdbe-48c6-bc3f-5a509561f098": {
+"company": "Koch Industries",
+"first_seen": "2026-09-11",
+"title": "Data Product Analyst - ET&S data delivery"
+},
 "ea8ff237-6cb5-424b-917e-9ce08abf23a1": {
 "company": "Medpace, Inc.",
 "first_seen": "2026-08-15",
@@ -37907,6 +37977,11 @@
 "company": "Zoox",
 "first_seen": "2026-08-15",
 "title": "Triage Student Worker - ASTE"
+},
+"f32cc37e-03b7-40c8-93fc-a2b179618b4f": {
+"company": "Intelcom | Dragonfly",
+"first_seen": "2026-09-11",
+"title": "R&D Solution Builder Intern"
 },
 "f32f3cd2-e5b0-43b7-8c9c-327a571a048c": {
 "company": "CROSSMARK",
