@@ -424,6 +424,11 @@
 "first_seen": "2026-08-15",
 "title": "Wireless Software Engineer Associate"
 },
+"029c5f0c-b8f4-4a61-8b47-fa5dcfb02ba2": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-09-11",
+"title": "Electrical Engineer Intern"
+},
 "02a3daa8-78be-409a-bd55-b630dfae60c1": {
 "company": "Fussball Club Cincinnati LLC (\u201cFC Cincinnati\u201d)",
 "first_seen": "2026-08-15",
@@ -533,6 +538,11 @@
 "company": "Avnet",
 "first_seen": "2026-08-15",
 "title": "Associate Field Application Engineer"
+},
+"037965da-859d-4532-a3b3-45dc8fd6220f": {
+"company": "Amentum",
+"first_seen": "2026-09-11",
+"title": "Entry Level Software Engineer"
 },
 "037b975c-a205-4233-a14e-db1ef66822d9": {
 "company": "Prosidian Consulting",
@@ -3219,6 +3229,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad - Software - Starlink"
 },
+"143cf8b4-9bbc-484e-b9c2-cbebf98d57e9": {
+"company": "AQR Capital Management",
+"first_seen": "2026-09-11",
+"title": "Portfolio Implementation Analyst"
+},
 "143e4b9d-cab8-44f1-88c8-57faf543844f": {
 "company": "Artera",
 "first_seen": "2026-08-15",
@@ -3743,6 +3758,11 @@
 "company": "Kaiser Permanente",
 "first_seen": "2026-08-26",
 "title": "Utilization Analyst"
+},
+"16c1dd6a-df69-4b28-b4ac-581408b67050": {
+"company": "Micron Technology",
+"first_seen": "2026-09-11",
+"title": "Device & Cell Technology Engineer New Grad - DRAM"
 },
 "16ce4db3-0bd6-408c-a77b-036687dda1b7": {
 "company": "KBR",
@@ -4488,6 +4508,11 @@
 "company": "Airbnb",
 "first_seen": "2026-09-01",
 "title": "Machine Learning Engineer - Relevance and Personalization"
+},
+"1ba8cb92-8e38-4aa3-8528-4c7e4a02db1f": {
+"company": "Focal Systems",
+"first_seen": "2026-09-11",
+"title": "Field Data Collector"
 },
 "1babc71b-6886-48e4-9870-7503ec24824f": {
 "company": "Royal Bank of Canada",
@@ -7448,6 +7473,11 @@
 "company": "DV Trading",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - DV Commodities"
+},
+"2efe5ad7-560f-41b4-a4d2-891dd7a1587b": {
+"company": "Bosch Home Comfort",
+"first_seen": "2026-09-11",
+"title": "Software Engineering Intern"
 },
 "2efe7383-c35c-499a-8d3e-e914016e2ce0": {
 "company": "Noblis",
@@ -12828,6 +12858,11 @@
 "company": "BakerHicks",
 "first_seen": "2026-08-21",
 "title": "Asset Information Manager Graduate"
+},
+"5295600e-5e97-4566-af9f-cdaaa9aacf99": {
+"company": "Artera Technologies",
+"first_seen": "2026-09-11",
+"title": "Systems Engineer"
 },
 "529d15e9-12f4-479e-a380-8ae9a1709134": {
 "company": "ByteDance",
@@ -18749,6 +18784,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Scientist 1 - Card Fraud"
 },
+"786414d8-5fda-439b-81fc-9534536d2589": {
+"company": "Hilbert",
+"first_seen": "2026-09-11",
+"title": "Mathematician - Foundation Team"
+},
 "78715df6-3f76-4957-9e9a-ee1ecb1caafa": {
 "company": "The Walt Disney Company",
 "first_seen": "2026-09-02",
@@ -21514,6 +21554,11 @@
 "first_seen": "2026-08-29",
 "title": "Research Assistant"
 },
+"8a987894-dc4b-4761-8202-798f94b57890": {
+"company": "Micron Technology",
+"first_seen": "2026-09-11",
+"title": "Marketing Analytics Intern - Global Communications & Marketing"
+},
 "8aa24bd6-8bc7-4e6c-a4aa-06fbaea2d494": {
 "company": "Deloitte",
 "first_seen": "2026-08-15",
@@ -23454,6 +23499,11 @@
 "first_seen": "2026-08-18",
 "title": "Machine Learning Software Engineer Co-op - 4 Months"
 },
+"9775ba99-30e4-4a15-a03e-dcd63abcd16e": {
+"company": "Aerotech",
+"first_seen": "2026-09-11",
+"title": "Electrical / Computer Engineer - Firmware & FPGA"
+},
 "9778af58-1bb3-45ce-8c29-a47b0cc9fb65": {
 "company": "Cadence Design Systems",
 "first_seen": "2026-08-15",
@@ -24464,6 +24514,11 @@
 "first_seen": "2026-08-15",
 "title": "Customer Service Representative"
 },
+"9e2ec060-ced5-4de9-8b37-e6606f616233": {
+"company": "Metropolitan Transportation Authority",
+"first_seen": "2026-09-11",
+"title": "EAM Analyst Intern - Emerging Talent"
+},
 "9e3744d0-6013-44b6-8207-f13d87b99654": {
 "company": "ExxonMobil",
 "first_seen": "2026-08-25",
@@ -24812,6 +24867,11 @@
 "company": "Deloitte",
 "first_seen": "2026-08-25",
 "title": "Technology Transformation Analyst"
+},
+"a0690963-ad5c-4710-92b1-ce2cab817542": {
+"company": "Alberta Investment Management Corporation",
+"first_seen": "2026-09-11",
+"title": "Fixed Income Co-op"
 },
 "a06fff13-7f57-418b-8a60-089543530e70": {
 "company": "ChowBus",
@@ -26462,6 +26522,11 @@
 "company": "WallStreetQuants",
 "first_seen": "2026-08-15",
 "title": "Quantitative Researcher Intern"
+},
+"ab5d3be5-287f-4cbd-9990-bd3a9705d95c": {
+"company": "Tesla",
+"first_seen": "2026-09-11",
+"title": "Field Reliability Engineer - Infotainment Hardware"
 },
 "ab5e0d14-05f1-48f3-bc4d-adbedd6b2066": {
 "company": "Textron",
@@ -32928,6 +32993,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Intern"
 },
+"d426e9ca-e32d-4a71-a6ee-9c402976ef8e": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-09-11",
+"title": "Electrical Engineer Intern"
+},
 "d429d89b-a684-47e8-a3c8-32639ab0d9c8": {
 "company": "Voloridge",
 "first_seen": "2026-08-15",
@@ -34982,6 +35052,11 @@
 "company": "Motorola",
 "first_seen": "2026-09-06",
 "title": "Embedded Software Intern"
+},
+"e1465a5c-a124-438a-bee8-abb99bb5e18b": {
+"company": "Microchip Technology",
+"first_seen": "2026-09-11",
+"title": "Test Engineer - Modules"
 },
 "e14b2c88-5ec2-4018-bc0e-95bb24d017b0": {
 "company": "Northrop Grumman",
