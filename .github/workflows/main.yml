@@ -18,6 +18,10 @@ on:
         description: "Backfill from an exact date, YYYY-MM-DD (overrides the days box)."
         required: false
         default: ""
+      only_channels:
+        description: "Post to these channels only, e.g. 'grad'. Blank = all. Use when backfilling a new channel."
+        required: false
+        default: ""
       dry_run:
         description: "Dry run: print what would be posted, send nothing to Discord."
         type: boolean
@@ -44,11 +48,13 @@ jobs:
         env:
           DISCORD_WEBHOOK_INTERNSHIPS: ${{ secrets.DISCORD_WEBHOOK_INTERNSHIPS }}
           DISCORD_WEBHOOK_NEWGRAD: ${{ secrets.DISCORD_WEBHOOK_NEWGRAD }}
+          DISCORD_WEBHOOK_GRAD: ${{ secrets.DISCORD_WEBHOOK_GRAD }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           GITHUB_TOKEN: ${{ github.token }} # lets repo auto-discovery avoid rate limits
 
           BACKFILL_DAYS: ${{ inputs.backfill_days }}
           BACKFILL_SINCE: ${{ inputs.backfill_since }}
+          ONLY_CHANNELS: ${{ inputs.only_channels }}
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
 
           # --- What gets posted -------------------------------------------
@@ -67,7 +73,17 @@ jobs:
           MAX_POSTS_PER_RUN: "40"
           MAX_JOB_AGE_DAYS: "7"
 
-          # --- Presentation -------------------------------------------------
+          # --- Degree routing ----------------------------------------------
+          # Three channels: bachelors / grad / newgrad. "grad" means an MS or
+          # PhD is REQUIRED, not merely accepted - ~1,000 roles take either,
+          # and those stay in the bachelors/newgrad channels rather than being
+          # posted twice. When the feed omits the degree we read the posting
+          # itself from Greenhouse/Ashby/Lever (free, keyless) and abstain if
+          # it does not clearly say. Set DEGREE_LOOKUP=0 to turn that off.
+          DEGREE_LOOKUP: "1"
+          MAX_DEGREE_LOOKUPS: "40" # per-run HTTP budget
+
+          # --- Presentation ------------------------------------------------
           LOCAL_STATES: "NJ,NY,PA,CT,DE" # these get a marker + posting priority
           TIMEZONE: "America/New_York"
           DATE_HEADERS: "1"
@@ -84,7 +100,8 @@ jobs:
         run: |
           git config user.name "acm-job-radar[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seen_jobs.json
+          git add seen_jobs.json || true
+          git add degree_cache.json || true
           if git diff --cached --quiet; then
             echo "No new jobs this run - nothing to commit."
             exit 0
