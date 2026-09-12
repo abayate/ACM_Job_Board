@@ -7,7 +7,15 @@ Runs entirely on GitHub Actions — no server, no hosting cost, no bot token,
 nothing to keep alive.
 
 ```
-SimplifyJobs feeds ──▶ filter (US · CS/IT · current term) ──▶ diff vs seen_jobs.json ──▶ Discord webhooks
+SimplifyJobs feeds ──▶ filter (US · CS/IT · current term) ──▶ diff vs seen_jobs.json
+                                                                      │
+                                            resolve degree level ◀────┘
+                                                      │
+                    ┌─────────────────────────────────┼─────────────────────────────────┐
+                    ▼                                 ▼                                 ▼
+             #internships                        #grad-roles                     #new-grad
+          bachelor's internships             MS/PhD *required*            entry-level full-time
+               ~63/day                           ~9/day                        ~24/day
 ```
 
 ## Data sources
@@ -31,7 +39,45 @@ Of ~6,700 open listings nationwide, roughly **3,900 (~100/day)** survive filteri
 | `LOCAL_STATES` | `NJ,NY,PA,CT,DE` | These get a 📍 marker, a gold embed, and priority when a run is over cap |
 
 **There is no degree filter** — PhD and Master's roles are posted too, since
-plenty of members are headed to grad school.
+plenty of members are headed to grad school. They are *routed* to their own
+channel rather than dropped.
+
+## Channels and degree routing
+
+Routing is **degree-first**: a role requiring an MS/PhD goes to the grad
+channel whether it is an internship or full-time. The alternative
+(career-stage first) leaves grad students digging through the new-grad channel
+for the full-time roles they qualify for.
+
+> **`grad` means grad-degree-REQUIRED, not grad-relevant.** 1,012 open roles
+> accept Bachelor's *and* Master's/PhD. Those stay in the bachelors/newgrad
+> channels — routing them to both would duplicate a third of the feed every
+> day. **Put this in the grad channel's topic**, or grad students will treat it
+> as their whole feed and miss the ~1,000 roles they're eligible for.
+
+Degree level is resolved in tiers, most confident first:
+
+| Tier | Source | Coverage | Confidence |
+|---|---|---|---|
+| 1 | Simplify's `degrees` field | ~84% | authoritative |
+| 2 | `phd`/`doctoral` in the title | ~10% of the rest | 100% precision on 1,731 held-out roles |
+| 3 | The posting itself, via free keyless Greenhouse/Ashby/Lever JSON endpoints | ~40% of the remainder | 27/27 correct on real postings; abstained on 63 more |
+| 4 | **Abstain** → bachelors/newgrad, embed reads *"Not listed"* | everything left | makes no claim |
+
+**Tier 4 is the point.** Title-only classifiers measure ~70% precision — wrong
+3 times in 10 — because 108 distinct titles appear in the data as *both*
+grad-required and bachelor's-ok. "Software engineer intern" is literally both.
+No amount of cleverness recovers information that isn't there, so the bot says
+"not listed" instead of guessing.
+
+The two failure modes aren't symmetric, which is why abstaining defaults to the
+bachelor's channel: a grad-only role appearing there costs one wasted click,
+while a bachelor's-eligible role hidden in the grad channel is never seen at
+all.
+
+Tier 3 lookups are budgeted per run (`MAX_DEGREE_LOOKUPS`) and cached in
+`degree_cache.json`, so this costs roughly **6 HTTP calls a day and no API
+key**.
 
 ## How it avoids going stale
 
@@ -84,9 +130,10 @@ Set the channels to view-only for members (deny *Send Messages* for
 
 | Secret | Purpose |
 |---|---|
-| `DISCORD_WEBHOOK_INTERNSHIPS` | Internship channel |
-| `DISCORD_WEBHOOK_NEWGRAD` | New-grad channel |
-| `DISCORD_WEBHOOK_URL` | Optional fallback used for both if the two above are unset |
+| `DISCORD_WEBHOOK_INTERNSHIPS` | Bachelor's internships channel |
+| `DISCORD_WEBHOOK_GRAD` | MS/PhD-required channel. **Optional** — if unset, those roles stay in the other two channels |
+| `DISCORD_WEBHOOK_NEWGRAD` | New-grad full-time channel |
+| `DISCORD_WEBHOOK_URL` | Optional fallback used for internships + new-grad if those two are unset |
 
 That's the entire required setup. Everything else has a working default.
 
@@ -109,15 +156,19 @@ Tuning knobs live in `env:` in [`.github/workflows/main.yml`](.github/workflows/
 | `DATE_HEADERS` | `1` | Big 📅 banner at each day boundary |
 | `TIMEZONE` | `America/New_York` | Which local day a job falls under |
 | `PRUNE_AFTER_DAYS` | `45` | Forget closed jobs to bound state-file growth |
+| `DEGREE_LOOKUP` | `1` | Read postings to settle degree level. `0` = tiers 1–2 only |
+| `MAX_DEGREE_LOOKUPS` | `40` | Per-run HTTP budget for tier 3 |
+| `ONLY_CHANNELS` | *(empty)* | Post to these channels only, e.g. `grad`. For backfilling a new channel |
 | `BOOTSTRAP_POST_COUNT` | `5` | Posts per category on a first-ever run |
 | `PING_ROLE_ID` | *(unset)* | Role to @mention. See **Notifications**. |
 
 ## Running it manually
 
-**Actions → ACM Job Radar → Run workflow.** Three inputs:
+**Actions → ACM Job Radar → Run workflow.** Four inputs:
 
 - **`backfill_days`** — post every open job from the last N days (a number, or `all`), even ones already posted
 - **`backfill_since`** — same, but from an exact `YYYY-MM-DD` (overrides the days box)
+- **`only_channels`** — restrict posting to one channel, e.g. `grad`. Use this to populate a newly created channel without re-posting to the existing ones
 - **`dry_run`** — log what *would* be posted and send nothing to Discord
 
 Backfills post oldest → newest with a date header per day, so the archive reads
@@ -155,3 +206,5 @@ category, instead of flooding the channel with thousands of old listings.
 | Nothing posting | `[fetch]` counts at 0 means the upstream `dev` branch or `listings.json` path moved. |
 | Runs far less often than the cron | Normal. GitHub throttles scheduled workflows on public repos; the freshness floor is what makes this harmless. |
 | Everything posts twice | Two workflow files, or `seen_jobs.json` failing to commit. Check the *Save seen-jobs state* step. |
+| Grad channel empty | Expected at ~9/day. Run a backfill with `only_channels: grad` to populate it. |
+| A role is in the wrong channel | Check the `🎓 Degree` field. "Not listed" means the posting never stated one — the bot abstained rather than guessed. |
