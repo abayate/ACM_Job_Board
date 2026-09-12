@@ -49,7 +49,8 @@ Design notes worth knowing before you change anything:
     embed says "not listed" rather than implying a level we did not verify.
     Measured on held-out data: title-only classifiers top out around 70%
     precision, i.e. wrong 3 times in 10, which is worse than saying nothing.
-    See degree_level().
+    ~16% of listings end up "not listed"; that is the honest answer, not a gap
+    to be filled with a guess. See resolve_degrees().
 
 Backfill mode: set BACKFILL_DAYS to a number (or "all"), or BACKFILL_SINCE to
 a YYYY-MM-DD date, to post every currently-open listing in that window even if
@@ -187,9 +188,19 @@ ONLY_CHANNELS = {
 
 # --- Degree lookup ---------------------------------------------------------
 
-# Read job descriptions from Greenhouse/Ashby/Lever public JSON endpoints to
-# settle the degree level when the feed does not say. Free, no API key.
-DEGREE_LOOKUP = _env_flag("DEGREE_LOOKUP", "1")
+# Tier 3: read the posting itself from Greenhouse/Ashby/Lever public JSON
+# endpoints (free, no API key) when the feed omits the degree.
+#
+# OFF BY DEFAULT, because measurement says it does not work *on the jobs it
+# would run against*. Validating it against listings that HAVE a degrees field
+# gave 27/27 correct - but those are, by construction, postings that state a
+# degree. On the actual target population (listings with NO degrees field)
+# only 2 of 45 descriptions mention a degree at all: Simplify's field is empty
+# precisely because the posting never said. Real resolution rate ~0-4%.
+#
+# The code is kept and tested in case upstream coverage changes; flip this to
+# 1 to re-enable. Tiers 1, 2 and 4 do the real work.
+DEGREE_LOOKUP = _env_flag("DEGREE_LOOKUP", "0")
 # Per-run budget, so a backfill can't fire thousands of HTTP requests.
 MAX_DEGREE_LOOKUPS = _env_int("MAX_DEGREE_LOOKUPS", 40)
 
@@ -252,7 +263,7 @@ _PHD_TITLE = re.compile(r"\bph\.?\s?d\.?\b|\bdoctoral\b", re.I)
 # HTML, which is what dragged a naive version down to 59% accuracy.
 _DEGREE_CTX = re.compile(
     r"\b(pursu\w+|enrolled|degree|candidate|qualif\w+|require\w*|seeking"
-    r"|working toward|studying|graduating)\b",
+    r"|working toward|studying|graduat\w+|fit with)\b",
     re.I,
 )
 _BACH_RE = re.compile(
@@ -544,7 +555,9 @@ def resolve_degrees(jobs, cache: dict) -> dict:
         if lvl is None and j["id"] in cache:
             v = cache[j["id"]]
             lvl, src = (v if v != "unknown" else None), "cached"
-        elif lvl is None and budget > 0:
+        elif lvl is None and budget > 0 and ats_endpoint(j["url"]):
+            # Check reachability BEFORE spending budget - otherwise most of it
+            # is burned on Workday/SmartRecruiters URLs we can never read.
             budget -= 1
             lvl = degree_from_description(fetch_description(j["url"], boards))
             cache[j["id"]] = lvl or "unknown"

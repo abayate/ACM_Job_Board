@@ -61,14 +61,32 @@ Degree level is resolved in tiers, most confident first:
 |---|---|---|---|
 | 1 | Simplify's `degrees` field | ~84% | authoritative |
 | 2 | `phd`/`doctoral` in the title | ~10% of the rest | 100% precision on 1,731 held-out roles |
-| 3 | The posting itself, via free keyless Greenhouse/Ashby/Lever JSON endpoints | ~40% of the remainder | 27/27 correct on real postings; abstained on 63 more |
-| 4 | **Abstain** → bachelors/newgrad, embed reads *"Not listed"* | everything left | makes no claim |
+| 3 | *(disabled)* read the posting via free Greenhouse/Ashby/Lever JSON | ~0% | see below |
+| 4 | **Abstain** → bachelors/newgrad, embed reads *"Not listed"* | ~16% of all listings | makes no claim |
 
 **Tier 4 is the point.** Title-only classifiers measure ~70% precision — wrong
 3 times in 10 — because 108 distinct titles appear in the data as *both*
 grad-required and bachelor's-ok. "Software engineer intern" is literally both.
 No amount of cleverness recovers information that isn't there, so the bot says
 "not listed" instead of guessing.
+
+### Why tier 3 is off (a useful negative result)
+
+Reading the job description to settle the degree sounds obviously right, and it
+validated beautifully: **27/27 correct** on real postings.
+
+That validation was measured on the wrong population. Those were listings that
+*have* a `degrees` field — which are, by construction, postings that state a
+degree. The jobs tier 3 would actually run against are the ones with **no**
+`degrees` field, and Simplify's field is empty *precisely because the posting
+never said*. Measured on that population: **only 2 of 45 descriptions mention a
+degree at all.** Real resolution rate ≈ 0–4%.
+
+So it is off by default (`DEGREE_LOOKUP=0`) and the bot makes zero HTTP calls
+for degrees. The code is kept and tested in case upstream coverage changes.
+
+*If you add a classifier here, validate it on listings with no `degrees` field
+— not on the labelled ones.*
 
 The two failure modes aren't symmetric, which is why abstaining defaults to the
 bachelor's channel: a grad-only role appearing there costs one wasted click,

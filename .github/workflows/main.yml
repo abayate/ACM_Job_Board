@@ -77,11 +77,14 @@ jobs:
           # Three channels: bachelors / grad / newgrad. "grad" means an MS or
           # PhD is REQUIRED, not merely accepted - ~1,000 roles take either,
           # and those stay in the bachelors/newgrad channels rather than being
-          # posted twice. When the feed omits the degree we read the posting
-          # itself from Greenhouse/Ashby/Lever (free, keyless) and abstain if
-          # it does not clearly say. Set DEGREE_LOOKUP=0 to turn that off.
-          DEGREE_LOOKUP: "1"
-          MAX_DEGREE_LOOKUPS: "40" # per-run HTTP budget
+          # posted twice.
+          #
+          # When the feed omits the degree the bot says "Not listed" rather
+          # than guessing. DEGREE_LOOKUP would read the posting itself to try
+          # to settle it, but measurement showed only 2 of 45 such postings
+          # mention a degree at all, so it is off. See job_bot.py.
+          DEGREE_LOOKUP: "0"
+          MAX_DEGREE_LOOKUPS: "40" # per-run HTTP budget, if ever re-enabled
 
           # --- Presentation ------------------------------------------------
           LOCAL_STATES: "NJ,NY,PA,CT,DE" # these get a marker + posting priority
