@@ -2,13 +2,27 @@ name: ACM Job Radar
 
 on:
   schedule:
-    - cron: "*/15 * * * *" # every 15 minutes (UTC; GitHub may delay a few min)
+    # Every 30 minutes. Do NOT lower this to */15 - GitHub deprioritises
+    # high-frequency schedules on public repos and silently drops most of
+    # them. A */15 schedule was actually landing ~6 runs/day; */30 is honoured
+    # far more consistently and the bot only needs a couple of runs a day to
+    # keep up with ~100 new listings.
+    - cron: "*/30 * * * *"
   workflow_dispatch: # manual "Run workflow" button in the Actions tab
     inputs:
       backfill_days:
-        description: "Backfill: post ALL open jobs from the last N days (a number, or 'all'). Leave blank for a normal run."
+        description: "Backfill N days of open jobs (a number, or 'all'). Blank = normal run."
         required: false
         default: ""
+      backfill_since:
+        description: "Backfill from an exact date, YYYY-MM-DD (overrides the days box)."
+        required: false
+        default: ""
+      dry_run:
+        description: "Dry run: print what would be posted, send nothing to Discord."
+        type: boolean
+        required: false
+        default: false
 
 # Never let two runs overlap (prevents duplicate posts / git push races)
 concurrency:
@@ -21,6 +35,7 @@ permissions:
 jobs:
   post-jobs:
     runs-on: ubuntu-latest
+    timeout-minutes: 60 # a full backfill takes ~10 min; this is just a guard
     steps:
       - name: Check out repo
         uses: actions/checkout@v5
@@ -30,20 +45,60 @@ jobs:
           DISCORD_WEBHOOK_INTERNSHIPS: ${{ secrets.DISCORD_WEBHOOK_INTERNSHIPS }}
           DISCORD_WEBHOOK_NEWGRAD: ${{ secrets.DISCORD_WEBHOOK_NEWGRAD }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          PING_ROLE_ID: ${{ vars.PING_ROLE_ID }}
-          BACKFILL_DAYS: ${{ inputs.backfill_days }}
           GITHUB_TOKEN: ${{ github.token }} # lets repo auto-discovery avoid rate limits
+
+          BACKFILL_DAYS: ${{ inputs.backfill_days }}
+          BACKFILL_SINCE: ${{ inputs.backfill_since }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+
+          # --- What gets posted -------------------------------------------
+          # CS/IT roles only. Add "Hardware" for computer-engineering roles
+          # or "Quant" for quantitative finance. Full vocabulary:
+          #   Software | AI/ML/Data | Hardware | Product | Quant
+          CATEGORY_ALLOWLIST: "Software,AI/ML/Data,Product"
+          US_ONLY: "1" # drop London / Toronto / Bangalore postings
+          DROP_EXPIRED_TERMS: "1" # no "Summer 2026" listings in September 2026
+          # No degree filter: PhD and Master's roles are posted too.
+
+          # --- Pacing ------------------------------------------------------
+          # Inflow is ~100 relevant listings/day. A 40/run cap over even a
+          # handful of runs leaves ~2x headroom, and MAX_JOB_AGE_DAYS makes
+          # sure a missed day can never turn into a stale backlog.
+          MAX_POSTS_PER_RUN: "40"
+          MAX_JOB_AGE_DAYS: "7"
+
+          # --- Presentation -------------------------------------------------
+          LOCAL_STATES: "NJ,NY,PA,CT,DE" # these get a marker + posting priority
+          TIMEZONE: "America/New_York"
+          DATE_HEADERS: "1"
+
+          # Silent delivery: members never get a push notification. Leave this
+          # at 1 and leave PING_ROLE_ID unset unless you first create an
+          # opt-in, self-assignable role - otherwise this pings ~100x/day.
+          SILENT: "1"
+          PING_ROLE_ID: ${{ vars.PING_ROLE_ID }}
         run: python3 job_bot.py
 
       - name: Save seen-jobs state
+        if: always() # state is written even if posting failed partway
         run: |
           git config user.name "acm-job-radar[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add seen_jobs.json
-          if ! git diff --cached --quiet; then
-            git commit -m "🤖 update seen jobs"
-            git pull --rebase
-            git push
-          else
-            echo "No new jobs this run — nothing to commit."
+          if git diff --cached --quiet; then
+            echo "No new jobs this run - nothing to commit."
+            exit 0
           fi
+          git commit -m "update seen jobs"
+          # Retry the push: a queued manual run can land between our fetch and
+          # push even with the concurrency group.
+          for i in 1 2 3; do
+            if git pull --rebase --autostash && git push; then
+              echo "pushed"
+              exit 0
+            fi
+            echo "push attempt $i failed, retrying..."
+            sleep 5
+          done
+          echo "::error::could not push seen_jobs.json after 3 attempts"
+          exit 1

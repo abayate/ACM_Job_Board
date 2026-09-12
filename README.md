@@ -1,108 +1,157 @@
-# ACM Job Radar 📡
+# ACM Job Radar
 
-Auto-posts new CS/IT **internships**, **new-grad**, and **early-career** roles into your ACM Discord — every 30 minutes, forever, for free.
+Automated Discord job board for the **ACM chapter at Kean University**.
 
-No server. No hosting bill. No bot token to babysit. It runs entirely on GitHub Actions and posts through Discord webhooks, so it keeps working even after every current officer graduates.
-
-## How it works
-
-```
-GitHub Actions (every 30 min)
-        │
-        ├─► pulls listings.json from SimplifyJobs job boards
-        │     • Summer20XX-Internships  (current cycle auto-discovered)
-        │     • New-Grad-Positions
-        │
-        ├─► diffs against seen_jobs.json (committed in this repo)
-        │
-        ├─► posts anything new to Discord as rich embeds
-        │
-        └─► commits updated seen_jobs.json back
-```
-
-The SimplifyJobs boards are the community-maintained lists (originally Pitt CSC) that most tech job-drop Discords run on — thousands of active tech postings, updated many times a day, covering software, AI/ML/data, hardware, quant, and product roles.
-
-## Setup (~10 minutes)
-
-### 1. Create the Discord webhook(s)
-
-In your ACM server: **channel → ⚙️ Edit Channel → Integrations → Webhooks → New Webhook** → name it, then **Copy Webhook URL**.
-
-- Want internships and new-grad roles in **separate channels**? Make two webhooks (one per channel).
-- One combined `#job-board` channel? One webhook is fine.
-
-⚠️ Treat webhook URLs like passwords — anyone who has one can post to your channel. They only ever go in GitHub Secrets (step 3), never in code.
-
-### 2. Create the GitHub repo
-
-Create a new repo (under your ACM org account, ideally, so it survives officer turnover) and add these files, keeping the folder structure:
+Posts new CS/IT internships and new-grad roles into Discord as rich embeds.
+Runs entirely on GitHub Actions — no server, no hosting cost, no bot token,
+nothing to keep alive.
 
 ```
-job_bot.py
-seen_jobs.json            (created automatically on first run)
-.github/
-  └── workflows/
-      └── job-bot.yml
-README.md
+SimplifyJobs feeds ──▶ filter (US · CS/IT · current term) ──▶ diff vs seen_jobs.json ──▶ Discord webhooks
 ```
 
-Easiest way: upload the zip contents, or `git init` locally and push. The `.github/workflows/` path must be exact or GitHub won't see the workflow.
+## Data sources
 
-### 3. Add the webhook(s) as secrets
+Community-maintained job boards, updated many times a day:
 
-Repo → **Settings → Secrets and variables → Actions → New repository secret**:
+- [`SimplifyJobs/Summer20XX-Internships`](https://github.com/SimplifyJobs/Summer2027-Internships) — the current cycle is **auto-discovered**, so the annual repo rename needs no code change
+- [`SimplifyJobs/New-Grad-Positions`](https://github.com/SimplifyJobs/New-Grad-Positions)
 
-- Two channels: add `DISCORD_WEBHOOK_INTERNSHIPS` and `DISCORD_WEBHOOK_NEWGRAD`
-- One channel: add just `DISCORD_WEBHOOK_URL`
+Both are read from `.github/scripts/listings.json` on the `dev` branch.
 
-### 4. Run it once manually
+## What actually gets posted
 
-Repo → **Actions** tab → enable workflows if prompted → select **ACM Job Radar** → **Run workflow**.
+Of ~6,700 open listings nationwide, roughly **3,900 (~100/day)** survive filtering:
 
-The first run "bootstraps": it marks all ~4,700 currently-active listings as already-seen (so your channel doesn't get nuked with years of backlog) and posts only the 5 freshest per category so you can confirm it works.
+| Filter | Default | What it does |
+|---|---|---|
+| `CATEGORY_ALLOWLIST` | `Software,AI/ML/Data,Product` | CS/IT roles only. Drops Quant (finance) and Hardware (EE). Full vocabulary: `Software`, `AI/ML/Data`, `Hardware`, `Product`, `Quant` |
+| `US_ONLY` | `1` | Drops London / Toronto / Bangalore postings |
+| `DROP_EXPIRED_TERMS` | `1` | No "Summer 2026" internships showing up in September 2026 |
+| `LOCAL_STATES` | `NJ,NY,PA,CT,DE` | These get a 📍 marker, a gold embed, and priority when a run is over cap |
 
-### 5. Done
+**There is no degree filter** — PhD and Master's roles are posted too, since
+plenty of members are headed to grad school.
 
-It now runs every 30 minutes automatically. From here on, only *newly added* postings get posted, oldest-first, max 15 per run (extras queue up for the next run — nothing is lost).
+## How it avoids going stale
 
-## Configuration (all optional)
+This is the part that matters, and the part an earlier version got wrong.
 
-Set secrets in **Settings → Secrets and variables → Actions → Secrets**, and variables under the **Variables** tab.
+The feeds add ~100 relevant listings a day. If the bot can't keep up, a backlog
+forms — and if it posts *oldest-first*, students only ever see the stalest end
+of that queue. That is exactly what happened: the bot ran a permanent ~12-day
+lag with a 2,500-job backlog that grew ~73 jobs/day.
 
-| Name | Type | Default | What it does |
-|---|---|---|---|
-| `DISCORD_WEBHOOK_INTERNSHIPS` | secret | — | Webhook for internship posts |
-| `DISCORD_WEBHOOK_NEWGRAD` | secret | — | Webhook for new-grad posts |
-| `DISCORD_WEBHOOK_URL` | secret | — | Fallback webhook used for both |
-| `PING_ROLE_ID` | variable | off | Discord role ID to @mention when jobs drop (right-click role → Copy Role ID, with Developer Mode on) |
-| `MAX_POSTS_PER_RUN` | env in yml | 15 | Anti-flood cap per 30-min run |
-| `BOOTSTRAP_POST_COUNT` | env in yml | 5 | Posts per category on the very first run |
-| `CATEGORY_BLOCKLIST` | env in yml | none | Skip categories, e.g. `Quant,Product`. Categories: Software, AI/ML/Data, Hardware, Quant, Product |
-| `BOT_NAME` | env in yml | ACM Job Radar 📡 | Display name on posts |
+Three mechanisms prevent it now:
 
-To change the schedule, edit the `cron` line in `.github/workflows/job-bot.yml` (`*/30 * * * *` = every 30 min).
+1. **Freshness floor** (`MAX_JOB_AGE_DAYS`, default `7`). Anything older is
+   marked seen and *never posted*. A backlog can't accumulate even if GitHub
+   drops scheduled runs for days.
+2. **Select newest, post oldest.** When a run exceeds `MAX_POSTS_PER_RUN`, the
+   *freshest* jobs are selected, then posted oldest-first so the channel still
+   reads chronologically and date headers ascend.
+3. **Real headroom.** 40 posts/run against ~100 new jobs/day is ~2x capacity
+   even on a bad day for GitHub's scheduler.
 
-## Testing locally
+> **Don't set the cron below `*/30`.** GitHub deprioritises high-frequency
+> schedules on public repos. A `*/15` cron was landing ~6 runs/day, not 96 —
+> which is what let the backlog form in the first place.
+
+## Notifications
+
+**Every message is sent silently** (Discord's `SUPPRESS_NOTIFICATIONS` flag,
+`4096`). Members get no push or desktop notification regardless of their
+personal settings; the channel just quietly fills up. At ~100 posts/day this is
+not optional — a channel that pings that often gets muted or left.
+
+`PING_ROLE_ID` is **intentionally unset**. Only set it if you first create an
+*opt-in, self-assignable* role — otherwise you are pinging the whole server
+~100 times a day.
+
+## Setup
+
+### 1. Discord webhooks
+
+For each channel: **Edit Channel → Integrations → Webhooks → New Webhook**,
+then **Copy Webhook URL**.
+
+Set the channels to view-only for members (deny *Send Messages* for
+`@everyone`) — webhooks bypass this and post fine.
+
+### 2. GitHub secrets
+
+**Settings → Secrets and variables → Actions → Secrets**:
+
+| Secret | Purpose |
+|---|---|
+| `DISCORD_WEBHOOK_INTERNSHIPS` | Internship channel |
+| `DISCORD_WEBHOOK_NEWGRAD` | New-grad channel |
+| `DISCORD_WEBHOOK_URL` | Optional fallback used for both if the two above are unset |
+
+That's the entire required setup. Everything else has a working default.
+
+## Configuration
+
+Tuning knobs live in `env:` in [`.github/workflows/main.yml`](.github/workflows/main.yml).
+
+| Variable | Default | Purpose |
+|---|---|---|
+| `CATEGORY_ALLOWLIST` | `Software,AI/ML/Data,Product` | Categories to post |
+| `CATEGORY_BLOCKLIST` | *(empty)* | Categories to always skip |
+| `US_ONLY` | `1` | US / US-remote roles only |
+| `DROP_EXPIRED_TERMS` | `1` | Skip past academic terms |
+| `TERM_GRACE_DAYS` | `45` | How long after a term starts it still counts |
+| `MAX_JOB_AGE_DAYS` | `7` | Freshness floor; `0` disables |
+| `MAX_POSTS_PER_RUN` | `40` | Anti-flood cap per run |
+| `LOCAL_STATES` | `NJ,NY,PA,CT,DE` | Marked 📍 and prioritized |
+| `LOCAL_QUOTA_PCT` | `60` | Max share of an over-cap run given to local roles, so out-of-state roles aren't starved |
+| `SILENT` | `1` | Suppress push notifications. **Keep on.** |
+| `DATE_HEADERS` | `1` | Big 📅 banner at each day boundary |
+| `TIMEZONE` | `America/New_York` | Which local day a job falls under |
+| `PRUNE_AFTER_DAYS` | `45` | Forget closed jobs to bound state-file growth |
+| `BOOTSTRAP_POST_COUNT` | `5` | Posts per category on a first-ever run |
+| `PING_ROLE_ID` | *(unset)* | Role to @mention. See **Notifications**. |
+
+## Running it manually
+
+**Actions → ACM Job Radar → Run workflow.** Three inputs:
+
+- **`backfill_days`** — post every open job from the last N days (a number, or `all`), even ones already posted
+- **`backfill_since`** — same, but from an exact `YYYY-MM-DD` (overrides the days box)
+- **`dry_run`** — log what *would* be posted and send nothing to Discord
+
+Backfills post oldest → newest with a date header per day, so the archive reads
+as dated sections. Budget ~2 seconds per 5 jobs (~10 min for 1,500).
+
+### Testing locally
 
 ```bash
-DRY_RUN=1 python3 job_bot.py
+DRY_RUN=1 python3 job_bot.py                        # what would post right now
+DRY_RUN=1 BACKFILL_SINCE=2026-08-30 python3 job_bot.py
 ```
 
-Prints what would be posted without touching Discord or saving state. No dependencies needed — pure Python standard library.
+Stdlib only, Python 3.9+. No `pip install` required.
 
-## Maintenance & officer-handoff notes
+## State
 
-- **Annual repo rename? Handled.** SimplifyJobs creates a new `Summer20XX-Internships` repo each cycle. The bot auto-discovers the newest one via the GitHub API on every run, so nobody has to update anything each year. (There's a hardcoded fallback in `job_bot.py` if the API is ever unreachable.)
-- **"Scheduled workflow disabled due to inactivity"** — GitHub pauses schedules on repos with no activity for 60 days, but the bot's own state commits count as activity, so it self-sustains. If it ever *does* get paused (e.g., the bot erred for 60+ days), just hit re-enable in the Actions tab.
-- **One post per listing.** Reposts/date-bumps of a listing the bot already posted are ignored by design.
-- **Duplicate posts after a config change?** Delete `seen_jobs.json` only if you want a fresh bootstrap — otherwise leave it alone; it's the bot's memory.
-- **Be a good citizen.** These boards are community-maintained. Every-30-min polling is polite; don't crank it to every minute. If your members find dead links or missing roles, contribute fixes upstream at [SimplifyJobs on GitHub](https://github.com/SimplifyJobs).
+`seen_jobs.json` is the bot's memory, committed back to the repo after every
+run. It maps job ID → `{company, title, first_seen}`, plus a `_headers` key
+tracking the last date header announced per channel.
 
-## Extending it later
+Jobs are marked seen **as each Discord message succeeds**, and state is saved
+in a `finally` block. A crash mid-batch therefore can't duplicate posts — the
+undelivered jobs simply go out on the next run. Closed jobs are pruned after
+`PRUNE_AFTER_DAYS` so the file doesn't grow without bound.
 
-- **More sources:** add another entry in `fetch_source()`-style — any JSON feed of jobs works (e.g., a Google Form + Sheet where members submit local/campus postings).
-- **Slash commands / search** (`/jobs search google`): that requires a real hosted bot (discord.py + somewhere to run 24/7). This design is push-only on purpose — zero hosting is what keeps it alive long-term.
+To force a clean slate, delete `seen_jobs.json` — the next run bootstraps:
+seeds everything as seen and posts only the freshest `BOOTSTRAP_POST_COUNT` per
+category, instead of flooding the channel with thousands of old listings.
 
----
+## Troubleshooting
 
-Built for the ACM chapter. Job data courtesy of the [SimplifyJobs](https://github.com/SimplifyJobs) community boards. 💚
+| Symptom | Cause |
+|---|---|
+| Old jobs being posted | Check `[retire]` and `[queue]` in the run log. A large `[queue]` means inflow exceeds capacity — raise `MAX_POSTS_PER_RUN`. |
+| Nothing posting | `[fetch]` counts at 0 means the upstream `dev` branch or `listings.json` path moved. |
+| Runs far less often than the cron | Normal. GitHub throttles scheduled workflows on public repos; the freshness floor is what makes this harmless. |
+| Everything posts twice | Two workflow files, or `seen_jobs.json` failing to commit. Check the *Save seen-jobs state* step. |
