@@ -394,6 +394,11 @@
 "first_seen": "2026-08-21",
 "title": "Software Engineer - Automation"
 },
+"0248d8cd-ddf4-40c9-8021-92f8972c9c6e": {
+"company": "Energy Transfer Partners",
+"first_seen": "2026-09-12",
+"title": "Engineering Intern"
+},
 "024920d7-fddd-42bd-938a-7a1bb3622415": {
 "company": "TikTok",
 "first_seen": "2026-09-04",
@@ -2548,6 +2553,11 @@
 "company": "Deluxe",
 "first_seen": "2026-08-15",
 "title": "Implementation Specialist 1"
+},
+"0d6e7377-fae5-4c85-8452-8ee419b90b6a": {
+"company": "Energy Transfer Partners",
+"first_seen": "2026-09-12",
+"title": "Power Optimization Intern"
 },
 "0d7e17ba-1903-46ba-bfa9-bf2aa26a1ba6": {
 "company": "Micron Technology",
@@ -17249,6 +17259,11 @@
 "first_seen": "2026-08-19",
 "title": "Software Development Analyst 1"
 },
+"5c792b7d-16ed-4b9e-a8c7-e14569e5b1a4": {
+"company": "Acuity",
+"first_seen": "2026-09-12",
+"title": "Software Engineering Specialist - BUILD Leadership Program"
+},
 "5c83cea3-dccc-4e0b-b407-f4703216b9ae": {
 "company": "Idler",
 "first_seen": "2026-08-27",
@@ -20724,6 +20739,11 @@
 "first_seen": "2026-08-15",
 "title": "Quantitative Research Intern"
 },
+"6f0ac1d2-020c-4403-bbe7-85b5e31d912d": {
+"company": "Constellation Energy",
+"first_seen": "2026-09-12",
+"title": "Information Technology Software Development Intern"
+},
 "6f0dbd5a-a41a-4a05-a5f4-7fa193dbc2ab": {
 "company": "Optiver",
 "first_seen": "2026-08-15",
@@ -21134,6 +21154,11 @@
 "first_seen": "2026-08-19",
 "title": "Junior AI Software Engineer"
 },
+"716fd175-ba44-46d7-a0b6-0d77bf93b7c4": {
+"company": "Constellation Energy",
+"first_seen": "2026-09-12",
+"title": "IT Data Engineering Intern"
+},
 "717279b5-3392-4184-8ec5-92924c627291": {
 "company": "Canon",
 "first_seen": "2026-08-15",
@@ -21428,6 +21453,11 @@
 "company": "Base Power",
 "first_seen": "2026-08-15",
 "title": "Hardware Engineer Intern"
+},
+"7344bc6c-d776-41df-9b0b-4420cee62741": {
+"company": "Kulicke & Soffa",
+"first_seen": "2026-09-12",
+"title": "Software Engineering Intern"
 },
 "734b8743-71ff-418a-abc6-9dc4da738253": {
 "company": "Jobsbridge",
@@ -23134,6 +23164,11 @@
 "first_seen": "2026-08-24",
 "title": "Software Engineer - AI/Machine Learning - PhD"
 },
+"7c1ab0e2-c11d-4d40-b0a5-af075f866cec": {
+"company": "AfterQuery",
+"first_seen": "2026-09-12",
+"title": "AI/ML Research Intern"
+},
 "7c1afd88-0826-4992-92dc-ef6210a2efbc": {
 "company": "Zipline",
 "first_seen": "2026-08-21",
@@ -23563,6 +23598,11 @@
 "company": "Freeform",
 "first_seen": "2026-08-15",
 "title": "Materials Lab - General Helper"
+},
+"7ea8b761-f25f-4575-b1b1-f152ec0772f5": {
+"company": "Acuity",
+"first_seen": "2026-09-12",
+"title": "Software Engineering Specialist - BUILD Leadership Program"
 },
 "7eaacdbf-2298-43ea-9c3f-9995dcc0cd1d": {
 "company": "Scientific Research Corporation",
@@ -29515,9 +29555,9 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-09-11",
+"bachelors": "2026-09-12",
 "grad": "2026-09-11",
-"newgrad": "2026-09-11"
+"newgrad": "2026-09-12"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -37329,6 +37369,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Research Engineer"
 },
+"c922e8d4-2a85-4851-868c-771e8523bb0e": {
+"company": "Retell AI",
+"first_seen": "2026-09-12",
+"title": "Forward Deployed Engineer New Grad"
+},
 "c924c806-5fa8-4f1d-9765-da6d89a05dc7": {
 "company": "Figma",
 "first_seen": "2026-08-15",
@@ -37398,6 +37443,11 @@
 "company": "Cloudflare",
 "first_seen": "2026-08-15",
 "title": "Research Engineer Intern"
+},
+"c980e3e0-5eb6-443f-bc62-cd9de0ab4ae2": {
+"company": "Acuity",
+"first_seen": "2026-09-12",
+"title": "Software Engineering Specialist - BUILD Leadership Program"
 },
 "c98416e0-475e-4fe0-985e-29b64aacb9a1": {
 "company": "The Walt Disney Company",
@@ -46143,6 +46193,11 @@
 "company": "Xcellent Technology Solutions",
 "first_seen": "2026-08-20",
 "title": "Operational GEOINT Analyst - Imagery - OPIR"
+},
+"f968b448-0edf-43ed-9f4c-8954bef0183b": {
+"company": "Axon",
+"first_seen": "2026-09-12",
+"title": "Software Engineer Intern - R&D Program"
 },
 "f96bb586-5dba-40b3-ad65-08b6decf9934": {
 "company": "RTX",
