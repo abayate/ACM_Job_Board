@@ -119,6 +119,11 @@
 "first_seen": "2026-08-18",
 "title": "Data Collector - Testing and Data Collection"
 },
+"00b431d7-b27a-42f0-9b16-db2bb8402cf7": {
+"company": "TD Bank",
+"first_seen": "2026-09-14",
+"title": "Data Analyst Intern - Global Technology & Solutions"
+},
 "00b962ad-7300-4a69-b5ea-dc0b7bad5669": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -8849,6 +8854,11 @@
 "first_seen": "2026-09-12",
 "title": "Technology Analyst - Data Science and Analytics"
 },
+"2e731a5d-c18c-446b-ab15-23f671730a6e": {
+"company": "Guardian Life",
+"first_seen": "2026-09-14",
+"title": "Summer Intern - Digital & Technology - AI & Machine Learning"
+},
 "2e739e24-6a0a-4c8c-8a20-4efcce93c652": {
 "company": "MiTek",
 "first_seen": "2026-08-21",
@@ -11613,6 +11623,11 @@
 "company": "Clearwater Analytics",
 "first_seen": "2026-09-12",
 "title": "Data Management & Reporting Intern"
+},
+"3dbc310b-10e9-42fe-b065-dd74747582e0": {
+"company": "Philips",
+"first_seen": "2026-09-14",
+"title": "Software Engineer Intern"
 },
 "3dbcee54-b89f-4ded-a74d-6acab2f32410": {
 "company": "Urban Science",
@@ -24099,6 +24114,11 @@
 "first_seen": "2026-08-21",
 "title": "Graduate Technical Product Analyst"
 },
+"8155c07e-de11-481a-ba23-c42178f1189c": {
+"company": "Guardian Life",
+"first_seen": "2026-09-14",
+"title": "Application Development Intern - Digital & Technology"
+},
 "8158e219-cde8-43aa-bd43-7e3aaa9a48c4": {
 "company": "City of Mission",
 "first_seen": "2026-08-18",
@@ -29610,7 +29630,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-09-12",
+"bachelors": "2026-09-14",
 "grad": "2026-09-12",
 "newgrad": "2026-09-12"
 },
@@ -36129,6 +36149,11 @@
 "first_seen": "2026-08-24",
 "title": "Advanced Spectroscopy and Nanoscale Materials Characterization Intern"
 },
+"c19ee2fa-0e58-4623-b3ce-9f2afa6f2b21": {
+"company": "ABEC",
+"first_seen": "2026-09-14",
+"title": "Project Engineer Intern"
+},
 "c1a54af5-b3ee-4cc0-875e-1ac1cb6f9fcc": {
 "company": "ByteDance",
 "first_seen": "2026-09-05",
@@ -39479,6 +39504,11 @@
 "first_seen": "2026-08-15",
 "title": "Associate Product Manager - Marketing Operations and Automation"
 },
+"d410a9b5-528c-4d2a-bcec-b5999e85d25f": {
+"company": "Base Power",
+"first_seen": "2026-09-14",
+"title": "Supply Chain Tooling Engineer Intern"
+},
 "d4160e5e-8dc5-4f23-bbb5-73742e02e435": {
 "company": "Tesla",
 "first_seen": "2026-09-05",
@@ -41743,6 +41773,11 @@
 "company": "Cisive",
 "first_seen": "2026-08-15",
 "title": "Software Development Intern"
+},
+"e019b0ce-4c0e-490b-b51c-9ac7e88b4472": {
+"company": "Interstates",
+"first_seen": "2026-09-14",
+"title": "Data Analyst Intern"
 },
 "e03373d5-4e12-4466-bfdd-b4ad5a3b13f5": {
 "company": "TSMG",
@@ -46933,6 +46968,11 @@
 "company": "Jane Street",
 "first_seen": "2026-08-15",
 "title": "Data Engineering Intern"
+},
+"fcc0a6c7-e090-4804-8107-677c58b416a9": {
+"company": "Guardian Life",
+"first_seen": "2026-09-14",
+"title": "Data Engineering Intern - Digital & Technology"
 },
 "fcc9a4e8-bcc7-4a2b-9be5-d0a57e5760c4": {
 "company": "BP",
