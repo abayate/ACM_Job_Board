@@ -609,6 +609,11 @@
 "first_seen": "2026-08-15",
 "title": "Electronics Worker 1"
 },
+"0323e548-0c85-4a82-8973-ae8faa214117": {
+"company": "Qualcomm",
+"first_seen": "2026-09-18",
+"title": "Machine Learning Compiler Engineer - Machine Learning Engineering"
+},
 "0326fee7-b91f-444e-8aab-b0b621d7b02a": {
 "company": "Motorola",
 "first_seen": "2026-09-08",
@@ -8709,6 +8714,11 @@
 "first_seen": "2026-09-12",
 "title": "Economist"
 },
+"29e9f556-9e35-4310-8152-1524d17f6640": {
+"company": "Highmark Residential",
+"first_seen": "2026-09-18",
+"title": "Operations Data Analyst"
+},
 "29edc090-b552-4025-b423-23528dab82bb": {
 "company": "RTX",
 "first_seen": "2026-08-15",
@@ -16179,6 +16189,11 @@
 "first_seen": "2026-08-15",
 "title": "Product & Software Internship"
 },
+"50aa2666-a2a3-4da7-8099-d77ee703ebd6": {
+"company": "Tesla",
+"first_seen": "2026-09-18",
+"title": "Software Engineer Intern - Energy Engineering"
+},
 "50b74e7f-6fd6-4664-990a-0cf32bb4f58f": {
 "company": "AXQ Capital",
 "first_seen": "2026-08-15",
@@ -19073,6 +19088,11 @@
 "company": "Citizens Financial Group",
 "first_seen": "2026-09-12",
 "title": "Data Analyst Intern - Multiple Teams"
+},
+"5eeb71a2-4362-490d-91b2-80bec3bb466d": {
+"company": "Tesla",
+"first_seen": "2026-09-18",
+"title": "Internship - Software Engineering - People Products - Summer 2027"
 },
 "5eecec55-6e05-4898-acb6-2869c78bf30b": {
 "company": "RTX",
@@ -26919,6 +26939,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Assistant"
 },
+"86e907c2-6aef-4071-ae6c-20a9c6b7306c": {
+"company": "Netsmart",
+"first_seen": "2026-09-18",
+"title": "Software Engineer Intern"
+},
 "86eec77e-62fa-43bc-a011-1e73aac2d372": {
 "company": "Jump Trading",
 "first_seen": "2026-08-15",
@@ -29624,6 +29649,11 @@
 "first_seen": "2026-08-15",
 "title": "Data Innovation Research Data Analyst"
 },
+"93ef662e-5551-44f1-b92f-7803ee8a3ea1": {
+"company": "Tesla",
+"first_seen": "2026-09-18",
+"title": "Internship - Software Engineering - People Products - Winter/Spring 2027"
+},
 "93f4951e-c280-428f-8f6f-a0611c97b96e": {
 "company": "Charles Schwab",
 "first_seen": "2026-09-11",
@@ -31825,9 +31855,9 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-09-17",
-"grad": "2026-09-17",
-"newgrad": "2026-09-17"
+"bachelors": "2026-09-18",
+"grad": "2026-09-18",
+"newgrad": "2026-09-18"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -40149,6 +40179,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Software Engineer Industrial Firmware - Energy Engineering"
 },
+"c8aca959-9a59-41e5-b70f-6b65d4b67856": {
+"company": "Gordon Food Service",
+"first_seen": "2026-09-18",
+"title": "Vendor & Customer Master Data Intern - Master Data"
+},
 "c8adc3a4-d608-46ce-852a-ce04022b7944": {
 "company": "Skydio",
 "first_seen": "2026-08-15",
@@ -40358,6 +40393,11 @@
 "company": "ASM International",
 "first_seen": "2026-09-01",
 "title": "Software Engineer - Early Career - Fall 2026"
+},
+"c99fb84b-f415-4d60-8de5-3ad2537bd74f": {
+"company": "Tesla",
+"first_seen": "2026-09-18",
+"title": "Product Manager Intern - Residential Energy Engineering"
 },
 "c9a5b195-2b20-4bf0-9c3d-574667e66bd4": {
 "company": "Independent Software",
@@ -44054,6 +44094,11 @@
 "first_seen": "2026-08-15",
 "title": "Backend Software Engineer Intern"
 },
+"db9c57de-0338-484f-acbc-6ea1db0e12ed": {
+"company": "Netsmart",
+"first_seen": "2026-09-18",
+"title": "Software Engineer"
+},
 "dba52fd7-4f33-4675-9e38-c7d3f597d3ec": {
 "company": "QTS",
 "first_seen": "2026-08-26",
@@ -45208,6 +45253,11 @@
 "company": "AeroVironment",
 "first_seen": "2026-09-12",
 "title": "Software Engineer Intern"
+},
+"e2411783-af3b-47bd-b838-8448c3dd37b9": {
+"company": "XPENG Motors",
+"first_seen": "2026-09-18",
+"title": "AI Research Intern - Predictive World Model"
 },
 "e24c2017-99ff-4c15-9636-3246335193a8": {
 "company": "ByteDance",
@@ -47054,6 +47104,11 @@
 "first_seen": "2026-09-03",
 "title": "Entry Level Core Java"
 },
+"ebda590f-cbe9-4e03-b0eb-6de1c724a228": {
+"company": "Brady Martz",
+"first_seen": "2026-09-18",
+"title": "AI Prototyping Engineer"
+},
 "ebdf452a-f6c6-46cb-beb0-fce7830344e4": {
 "company": "NVIDIA",
 "first_seen": "2026-09-16",
@@ -48158,6 +48213,11 @@
 "company": "T-Mobile",
 "first_seen": "2026-08-21",
 "title": "Associate Software Engineer"
+},
+"f17e1a25-2872-42d0-90f6-3e3dbb14c8fa": {
+"company": "Microsoft",
+"first_seen": "2026-09-18",
+"title": "Software Engineer Intern"
 },
 "f185aabd-bbe9-4554-8a62-fe6dfe0deff2": {
 "company": "NewsBreak",
