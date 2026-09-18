@@ -1814,6 +1814,11 @@
 "first_seen": "2026-08-26",
 "title": "Product Analyst 1 - Catalog Content"
 },
+"0898f2ca-d1f9-4270-b125-3c13ef3486b3": {
+"company": "MSI Express",
+"first_seen": "2026-09-18",
+"title": "Batch Mixer"
+},
 "08a02c02-3528-4423-9e11-3726b0c1a09e": {
 "company": "EquipmentShare",
 "first_seen": "2026-08-15",
@@ -2823,6 +2828,11 @@
 "company": "UntilLabs",
 "first_seen": "2026-08-15",
 "title": "Physics and Engineering Technician"
+},
+"0dc73614-450c-4591-9cc6-2527c420ff41": {
+"company": "Chewy",
+"first_seen": "2026-09-18",
+"title": "Category Analyst New Grad"
 },
 "0dcc5662-3e2f-46d3-ba5f-bd817118855d": {
 "company": "BestEx Research",
@@ -8078,6 +8088,11 @@
 "company": "Truveta",
 "first_seen": "2026-09-16",
 "title": "Software Engineer - Analytical Platform Services"
+},
+"266b1e2a-0c5f-4f0f-8ff3-e2b31fb4afe0": {
+"company": "AIG",
+"first_seen": "2026-09-18",
+"title": "Gen AI Engineering Analyst"
 },
 "2672baf9-a609-4fe4-b69c-97c5ebad875e": {
 "company": "Parsons",
@@ -15659,6 +15674,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Machine Learning Engineer - AI"
 },
+"4de71a6b-1acd-4a09-8054-bd0d87814d8b": {
+"company": "AIG",
+"first_seen": "2026-09-18",
+"title": "Gen AI Engineering Analyst"
+},
 "4df3922d-a5db-4de5-8e1c-015be9c67458": {
 "company": "NRG Energy",
 "first_seen": "2026-08-21",
@@ -15678,6 +15698,11 @@
 "company": "Leland",
 "first_seen": "2026-08-15",
 "title": "AI Education Intern"
+},
+"4e0f7ead-dd65-475c-a873-e9f998be70f6": {
+"company": "Applied Materials",
+"first_seen": "2026-09-18",
+"title": "Algorithm Developer 2"
 },
 "4e16084d-6563-4c52-ab06-097709ce5da2": {
 "company": "KLA Corporation",
@@ -26669,6 +26694,11 @@
 "first_seen": "2026-09-12",
 "title": "Data Engineer Co-op - Global Technology & Solutions"
 },
+"85265004-088c-4dad-bb31-cba0038d7879": {
+"company": "Global Medical Response",
+"first_seen": "2026-09-18",
+"title": "Supply Service Technician"
+},
 "85276bc6-20ee-44df-9d13-3887e26d5fdb": {
 "company": "Barclays",
 "first_seen": "2026-09-12",
@@ -27568,6 +27598,11 @@
 "company": "Micron Technology",
 "first_seen": "2026-08-29",
 "title": "Equipment Engineer New Grad - RDA & Metrology"
+},
+"89e37552-ee0c-479f-8b19-19090755e8e2": {
+"company": "Lumentum",
+"first_seen": "2026-09-18",
+"title": "AI/ML Engineer"
 },
 "89e69230-379f-4aee-89b4-80a000e2d655": {
 "company": "Wex",
@@ -42024,6 +42059,11 @@
 "first_seen": "2026-08-15",
 "title": "R&D-Computer Vision Engineer Intern"
 },
+"d1b813b0-a2c1-4bf0-9f07-af06cf394027": {
+"company": "OU Health",
+"first_seen": "2026-09-18",
+"title": "Web Specialist"
+},
 "d1bb038f-04a0-4995-9bcc-ff779f3a2054": {
 "company": "DRW",
 "first_seen": "2026-08-15",
@@ -43228,6 +43268,11 @@
 "company": "Ignite Digital Services",
 "first_seen": "2026-09-02",
 "title": "Engineer/Scientist Intern"
+},
+"d70c190a-d563-4613-b8a7-8e0eaf3ff0cf": {
+"company": "Bosch Home Comfort",
+"first_seen": "2026-09-18",
+"title": "Robot Learning Intern"
 },
 "d70d2957-012d-4805-b794-0d5527276f27": {
 "company": "Avalore",
@@ -45564,6 +45609,11 @@
 "first_seen": "2026-08-19",
 "title": "Associate Software Developer"
 },
+"e39f5ec8-2e9f-406f-8fc2-ffa353765bf7": {
+"company": "AIG",
+"first_seen": "2026-09-18",
+"title": "Data Office Analyst"
+},
 "e3a99a77-86d4-44e8-8c1d-6f9016adc87f": {
 "company": "Worldwide TechServices",
 "first_seen": "2026-08-15",
@@ -47528,6 +47578,11 @@
 "company": "Arthur J. Gallagher & Co.",
 "first_seen": "2026-08-18",
 "title": "Data Analytics Intern"
+},
+"edd61cb3-1077-4e8f-96ef-4862eaefa5b8": {
+"company": "CoBank",
+"first_seen": "2026-09-18",
+"title": "Software Engineer Intern"
 },
 "edd83739-5e69-487e-9312-b2a62a82b91e": {
 "company": "Jobs for Humanity",
@@ -50314,6 +50369,11 @@
 "first_seen": "2026-09-12",
 "title": "Business Insights & Analytics Intern - BI&A LDP"
 },
+"fc07dff3-003e-4b98-9b0e-4a85be9d7489": {
+"company": "Dutch Bros",
+"first_seen": "2026-09-18",
+"title": "Broista"
+},
 "fc0ba9c7-8038-43b5-ae74-d319237d1147": {
 "company": "Kanbrick",
 "first_seen": "2026-08-15",
@@ -51098,6 +51158,11 @@
 "company": "VSC Fire & Security",
 "first_seen": "2026-08-19",
 "title": "Integrated Systems Technician Trainee"
+},
+"ff910fd9-1784-4c56-8c70-b84c15ba59a8": {
+"company": "Invesco",
+"first_seen": "2026-09-18",
+"title": "ETF Product Intern"
 },
 "ff927c2a-6bfd-40b3-bf7c-fde5e28553ab": {
 "company": "Stantec",
