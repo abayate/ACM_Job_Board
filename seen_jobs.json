@@ -27119,6 +27119,11 @@
 "first_seen": "2026-09-12",
 "title": "Contracts Intern - Deals - Summer 2027"
 },
+"86109c63-191c-484b-838b-4448f2812c98": {
+"company": "RTX",
+"first_seen": "2026-09-20",
+"title": "Software Engineer Intern"
+},
 "861658aa-eaf0-4389-afce-80050126ac33": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -31744,6 +31749,11 @@
 "first_seen": "2026-09-12",
 "title": "Software Engineer New Grad - Multiple Teams"
 },
+"9d8d8df4-5b75-448a-9eab-cda823f1a532": {
+"company": "Leidos",
+"first_seen": "2026-09-20",
+"title": "AI/ML Data Scientist"
+},
 "9d908eec-cb2d-4437-9cb1-47aea6e0c308": {
 "company": "Southern States, LLC",
 "first_seen": "2026-08-15",
@@ -32197,7 +32207,7 @@
 "_headers": {
 "bachelors": "2026-09-19",
 "grad": "2026-09-18",
-"newgrad": "2026-09-18"
+"newgrad": "2026-09-19"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
