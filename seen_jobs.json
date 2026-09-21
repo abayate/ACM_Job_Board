@@ -8319,6 +8319,11 @@
 "first_seen": "2026-09-11",
 "title": "AI Data Analyst Intern"
 },
+"26e7fc97-03fa-4445-8338-fdad5cb0812c": {
+"company": "Mercury",
+"first_seen": "2026-09-21",
+"title": "Software Engineering Intern - Spring 2027"
+},
 "26e8e7c9-e37c-42ee-b931-4f4a447fec2d": {
 "company": "CME Group",
 "first_seen": "2026-09-19",
@@ -11408,6 +11413,11 @@
 "company": "American Express",
 "first_seen": "2026-09-12",
 "title": "Digital Product Management Intern - Enterprise Technology Services"
+},
+"373a9878-b32b-4c85-8ce6-20b6df03c8b3": {
+"company": "Sirona Medical",
+"first_seen": "2026-09-21",
+"title": "Go-To-Market Engineer"
 },
 "374818f1-99ab-4a9d-a418-e947a86cc7a0": {
 "company": "Xcel Energy",
@@ -26179,6 +26189,11 @@
 "first_seen": "2026-09-12",
 "title": "Data Scientist Intern - Amgen\u2019s Technology & Medical Organizations"
 },
+"8116df87-b03e-4936-a2bd-5e3550fb1cb7": {
+"company": "Hard Rock Digital",
+"first_seen": "2026-09-21",
+"title": "Associate Product Manager / Associate Game Producer - Casino Games"
+},
 "811b5e57-74cf-4d86-a344-f1af5fbf2b31": {
 "company": "RTX",
 "first_seen": "2026-08-26",
@@ -32237,7 +32252,7 @@
 "_headers": {
 "bachelors": "2026-09-21",
 "grad": "2026-09-18",
-"newgrad": "2026-09-19"
+"newgrad": "2026-09-21"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -46308,6 +46323,11 @@
 "company": "University of Arkansas",
 "first_seen": "2026-08-15",
 "title": "Graduate Research Assistant Intern"
+},
+"e4f74430-6399-401d-97ca-da938138aeb3": {
+"company": "ABEC",
+"first_seen": "2026-09-21",
+"title": "Project Engineer Intern"
 },
 "e4f7c9df-3c11-4887-8760-503c65a43b13": {
 "company": "Fannie Mae",
