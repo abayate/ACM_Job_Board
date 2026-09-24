@@ -3824,6 +3824,11 @@
 "first_seen": "2026-09-12",
 "title": "Systems Performance Engineer Intern"
 },
+"11592e4e-a518-4c9e-9f89-8c2340373f6b": {
+"company": "Kitware",
+"first_seen": "2026-09-24",
+"title": "Annotation Specialist - Computer Vision"
+},
 "1169bc21-fa23-40ca-a33d-bc5c23912da9": {
 "company": "IXL Learning",
 "first_seen": "2026-08-15",
@@ -7044,6 +7049,11 @@
 "first_seen": "2026-08-15",
 "title": "Radio Frequency Silicon Software Engineer - Radio Frequency Integrated Circuit Engineering"
 },
+"20193c4f-2bf1-4b30-a574-750d8d917d92": {
+"company": "Fenwick & West",
+"first_seen": "2026-09-24",
+"title": "Forward Deployed Operations Intern"
+},
 "2019cb04-1f7e-44e2-b190-7cfbd53661c1": {
 "company": "Texas Instruments",
 "first_seen": "2026-08-21",
@@ -10143,6 +10153,11 @@
 "company": "AeroVironment",
 "first_seen": "2026-09-12",
 "title": "Entry-Level Software Engineer - Specialized Exploitation & Targeting (SET)"
+},
+"2eb2bfe3-9937-4b98-9849-60d70134ff10": {
+"company": "Kitware",
+"first_seen": "2026-09-24",
+"title": "Computer Vision Co-op"
 },
 "2ec206a7-537d-45fb-b65f-81af14cd070c": {
 "company": "The Walt Disney Company",
@@ -16459,6 +16474,11 @@
 "first_seen": "2026-09-02",
 "title": "Mission Critical Networks Software Engineer Co-op"
 },
+"4dc81515-1c83-4e6b-b045-6710480f8d74": {
+"company": "IPT Global",
+"first_seen": "2026-09-24",
+"title": "Junior Data Scientist - Petroleum Engineering & Well Integrity"
+},
 "4dcbe6c9-b5cb-4f75-9418-4f669ff1d180": {
 "company": "Tesla",
 "first_seen": "2026-08-15",
@@ -18514,6 +18534,11 @@
 "first_seen": "2026-08-15",
 "title": "Electronics Worker 1 - 2nd Shift"
 },
+"576efb35-6523-4979-8e5d-7188d3bd98b9": {
+"company": "Enterprise Holdings",
+"first_seen": "2026-09-24",
+"title": "Data Engineer Intern - IT"
+},
 "57715dab-c267-4352-aa7c-5aca9054a182": {
 "company": "Cummins",
 "first_seen": "2026-08-26",
@@ -20408,6 +20433,11 @@
 "company": "Nordstrom",
 "first_seen": "2026-08-15",
 "title": "Engineer AI Agentic Solutions"
+},
+"60174f6d-1cb4-49c4-93db-3cf3d5dc9382": {
+"company": "Arconic",
+"first_seen": "2026-09-24",
+"title": "Software Developer Intern"
 },
 "601c9bc9-49e0-4394-be4f-8a40c9b2ffba": {
 "company": "Polaris",
@@ -33565,7 +33595,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-09-23",
+"bachelors": "2026-09-24",
 "grad": "2026-09-23",
 "newgrad": "2026-09-24"
 },
@@ -36613,6 +36643,11 @@
 "company": "Texas A&M University System",
 "first_seen": "2026-08-15",
 "title": "Research Assistant - Energy & Environmental Sustainability"
+},
+"adb0bde1-6acf-4a2d-b952-e77db57cea5c": {
+"company": "Wurl",
+"first_seen": "2026-09-24",
+"title": "Data Science Intern"
 },
 "adbf020e-77f5-43e9-a6f8-dca0b583c219": {
 "company": "Makai Labs",
@@ -45204,6 +45239,11 @@
 "first_seen": "2026-08-15",
 "title": "SoC Design Verification Engineer"
 },
+"d6145bb9-e227-4e58-93d0-88787216d111": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-09-24",
+"title": "Associate Technical Training - Tactical Communications Multimedia Training"
+},
 "d61930a1-1ecb-4cb4-960e-26321be4a0e2": {
 "company": "TikTok",
 "first_seen": "2026-09-08",
@@ -50209,6 +50249,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Global Traffic Architecture"
 },
+"ee90ddfd-4df3-43fb-a192-330a49accc6c": {
+"company": "Odyssey",
+"first_seen": "2026-09-24",
+"title": "AI Resident"
+},
 "ee9895ec-9487-45e6-bc29-cad094e59644": {
 "company": "RTX",
 "first_seen": "2026-08-15",
@@ -51748,6 +51793,11 @@
 "company": "American Express",
 "first_seen": "2026-09-12",
 "title": "Data Engineer Intern - Enterprise Technology Services"
+},
+"f5e5e7e7-1d95-4907-8ad0-5a40a783a6ba": {
+"company": "ByteDance",
+"first_seen": "2026-09-24",
+"title": "Research Scientist - Seed Model - Vision"
 },
 "f5e6e2dc-a266-4145-ae2f-57af70ca00ba": {
 "company": "Varsity Brands",
@@ -53748,6 +53798,11 @@
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-09-12",
 "title": "Data Analyst New Grad - Engagement Optimization"
+},
+"ff69f8ce-2a41-499e-bf69-3d90507eb069": {
+"company": "Caterpillar",
+"first_seen": "2026-09-24",
+"title": "Java Engineer"
 },
 "ff6a64ad-4278-4b87-bd22-42fb9df0c074": {
 "company": "ADT",
