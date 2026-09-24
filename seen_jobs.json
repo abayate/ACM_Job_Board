@@ -6284,6 +6284,11 @@
 "first_seen": "2026-08-15",
 "title": "Applied Scientist 1"
 },
+"1ca8ecda-da5a-4d6f-a950-95dd0295a5a7": {
+"company": "Collaborative Robotics",
+"first_seen": "2026-09-24",
+"title": "Robotics Data Collection Operator Shift Lead - Seattle"
+},
 "1ca94190-fd1a-4531-953f-194660778ad9": {
 "company": "Ivo",
 "first_seen": "2026-08-15",
@@ -9474,6 +9479,11 @@
 "first_seen": "2026-09-21",
 "title": "Model-Based Systems Engineer"
 },
+"2b7bfd46-c622-4c20-ace0-c6ed69851428": {
+"company": "LexisNexis Risk Solutions",
+"first_seen": "2026-09-24",
+"title": "Software Engineer New Grad"
+},
 "2b89b0ca-5a1e-4f42-b139-5fc9c4dd880c": {
 "company": "Apple",
 "first_seen": "2026-08-15",
@@ -12478,6 +12488,11 @@
 "company": "Five Rings Capital",
 "first_seen": "2026-08-15",
 "title": "Quantitative Trader - Quantitative Trader"
+},
+"3a435b5c-6e92-490d-afae-1468682256cf": {
+"company": "NASCO",
+"first_seen": "2026-09-24",
+"title": "Software Engineer Intern"
 },
 "3a5ca7be-fe69-4dc6-90df-9bdae4a796cc": {
 "company": "TikTok",
@@ -33552,7 +33567,7 @@
 "_headers": {
 "bachelors": "2026-09-23",
 "grad": "2026-09-23",
-"newgrad": "2026-09-23"
+"newgrad": "2026-09-24"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
