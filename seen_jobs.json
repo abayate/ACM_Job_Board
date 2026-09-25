@@ -1289,6 +1289,11 @@
 "first_seen": "2026-08-15",
 "title": "Financial Reporting AI Co-op"
 },
+"06121173-b783-44a5-bd34-4a7465768bbb": {
+"company": "Lutron Electronics",
+"first_seen": "2026-09-25",
+"title": "Software Engineering Co-op"
+},
 "0619a49a-f74d-42ec-925c-242a9bfdd57b": {
 "company": "Asurion",
 "first_seen": "2026-08-19",
@@ -1578,6 +1583,11 @@
 "company": "NRG Energy",
 "first_seen": "2026-09-01",
 "title": "Field Service Technician"
+},
+"074a0da6-73e2-402d-90a7-ca4bf302d862": {
+"company": "First Citizens BancShares",
+"first_seen": "2026-09-25",
+"title": "IT Intern - Software Developer"
 },
 "074f3edc-866b-4482-90f5-be00b9391f14": {
 "company": "Innodata",
@@ -15944,6 +15954,11 @@
 "first_seen": "2026-08-15",
 "title": "Hardware Engineer Intern"
 },
+"4ab2be7c-c405-42fa-9dbf-cb0e5ff6a73d": {
+"company": "Leidos",
+"first_seen": "2026-09-25",
+"title": "Software Development Engineer"
+},
 "4ab70c4d-6ec3-474a-bd78-065260824c81": {
 "company": "Intel",
 "first_seen": "2026-08-31",
@@ -28614,6 +28629,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Silicon Engineering Documentation Tools"
 },
+"86767269-2fa8-4a5d-ac9c-845e5dd9f74a": {
+"company": "Welo Global",
+"first_seen": "2026-09-25",
+"title": "Audio Rater"
+},
 "8676c704-b2ee-4643-8fbc-9ad19fa89fa4": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -33920,9 +33940,9 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-09-24",
+"bachelors": "2026-09-25",
 "grad": "2026-09-24",
-"newgrad": "2026-09-24"
+"newgrad": "2026-09-25"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -44944,6 +44964,11 @@
 "first_seen": "2026-09-08",
 "title": "Delivery Analyst - Government & Public Services - Business Analytics Solutions"
 },
+"d314f5f4-0dfc-4dcd-9b4a-b27f1694d1b9": {
+"company": "Bluestaq",
+"first_seen": "2026-09-25",
+"title": "Software Engineering Resident - Multiple Teams"
+},
 "d316d4d5-6b08-4290-b24d-fa803b41cc07": {
 "company": "RTX",
 "first_seen": "2026-08-15",
@@ -46348,6 +46373,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Backend Software Engineer Graduate - Global E-commerce"
+},
+"d8b0a818-ae8f-42a9-b552-3d61c1542683": {
+"company": "Johns Hopkins Applied Physics Laboratory",
+"first_seen": "2026-09-25",
+"title": "Neural Engineer"
 },
 "d8b4a6a3-fb4b-48bb-b359-4fb40392d289": {
 "company": "Sysmex",
@@ -49004,6 +49034,11 @@
 "first_seen": "2026-09-12",
 "title": "Associate Software Engineer"
 },
+"e61c4916-6a49-4922-a691-73e2250dd9c9": {
+"company": "Leidos",
+"first_seen": "2026-09-25",
+"title": "Software Development Intern"
+},
 "e61e91ef-e618-467a-8ce3-391dc8487535": {
 "company": "Tilde Research",
 "first_seen": "2026-08-15",
@@ -50763,6 +50798,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Global Traffic Architecture"
+},
+"ee8ed5ad-3be9-407e-8020-0d9a037d60be": {
+"company": "Barrios",
+"first_seen": "2026-09-25",
+"title": "Data and Computer Engineering/Computer Science Intern"
 },
 "ee90ddfd-4df3-43fb-a192-330a49accc6c": {
 "company": "Odyssey",
@@ -52853,6 +52893,11 @@
 "company": "Parkdepot",
 "first_seen": "2026-09-06",
 "title": "Marketing Analyst Intern"
+},
+"f8aa999f-66d3-4ae6-b0bf-286944064197": {
+"company": "Greenheck Group",
+"first_seen": "2026-09-25",
+"title": "Application Developer Co-op"
 },
 "f8b85cfe-7220-4177-a4a4-cd59e00ecd8b": {
 "company": "Noblis",
