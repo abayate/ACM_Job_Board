@@ -34265,7 +34265,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-09-25",
+"bachelors": "2026-09-26",
 "grad": "2026-09-25",
 "newgrad": "2026-09-25"
 },
@@ -50743,6 +50743,11 @@
 "company": "Amentum",
 "first_seen": "2026-09-12",
 "title": "Component Lab Computer Engineer"
+},
+"ec241207-37cb-48f4-aa65-cf19d960f7a2": {
+"company": "Flint",
+"first_seen": "2026-09-26",
+"title": "Engineering Intern - Summer 2027"
 },
 "ec27d2f4-0e82-4c2b-b8c2-fc8a682baed1": {
 "company": "Deloitte",
