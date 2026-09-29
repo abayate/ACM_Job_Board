@@ -5944,6 +5944,11 @@
 "first_seen": "2026-08-15",
 "title": "MuleSoft Developer"
 },
+"1a76f493-d46a-4e55-a726-506bb074303a": {
+"company": "MintMCP",
+"first_seen": "2026-09-29",
+"title": "Software Engineer"
+},
 "1a7c6a9c-0eb2-4e5b-b0a1-345fc1d5569d": {
 "company": "dcbel Inc",
 "first_seen": "2026-08-15",
@@ -34272,7 +34277,7 @@
 "_headers": {
 "bachelors": "2026-09-26",
 "grad": "2026-09-25",
-"newgrad": "2026-09-25"
+"newgrad": "2026-09-28"
 },
 "a00101f6-5c51-4a7d-a424-e3f3a7ac8a16": {
 "company": "Trillium",
@@ -39693,6 +39698,11 @@
 "company": "BlackRock",
 "first_seen": "2026-08-15",
 "title": "Global Product Intern"
+},
+"b8a0da3d-3c2c-4f9e-bced-378378271310": {
+"company": "CACI",
+"first_seen": "2026-09-29",
+"title": "AI Prompt Engineer"
 },
 "b8a3808e-1eee-4b31-a9ed-c8790b1c82b9": {
 "company": "Copart",
