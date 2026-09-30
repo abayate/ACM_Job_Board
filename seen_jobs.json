@@ -989,6 +989,11 @@
 "first_seen": "2026-08-18",
 "title": "Agricultural Energy Intern - Year-Round"
 },
+"069dfa9c-8d02-4151-9206-14b22adce975": {
+"company": "Wellmark",
+"first_seen": "2026-09-30",
+"title": "Software Engineer Intern - Metadata Enablement Team"
+},
 "069f80fa-80a9-437a-8c72-5d9cb0dfa43b": {
 "company": "Think Academy International Education",
 "first_seen": "2026-09-12",
@@ -3299,11 +3304,6 @@
 "first_seen": "2026-08-21",
 "title": "Design for Test Engineer New Grad - HBM"
 },
-"15ab606d-06a7-4c26-a9f0-13694d5b2e85": {
-"company": "SpaceX",
-"first_seen": "2026-08-15",
-"title": "Application Software Engineer - Manufacturing Systems"
-},
 "15ce1ff8-ad90-43cc-b8d5-33840b96e550": {
 "company": "Savers",
 "first_seen": "2026-09-08",
@@ -4538,6 +4538,11 @@
 "company": "Niantic Spatial",
 "first_seen": "2026-09-08",
 "title": "Robotics Engineering Intern"
+},
+"1dad5d4a-16aa-4c28-810f-df2ac23bfae5": {
+"company": "Jobs for Humanity",
+"first_seen": "2026-09-30",
+"title": "Quality Assurance Rater - German"
 },
 "1db1012e-71c6-49b5-9a0e-3399dce55cea": {
 "company": "Robinhood",
@@ -10129,6 +10134,11 @@
 "first_seen": "2026-09-07",
 "title": "Electrical Engineer Intern"
 },
+"443c0a68-63ca-4026-94b7-cf3e555f2d0f": {
+"company": "Goldman Sachs",
+"first_seen": "2026-09-30",
+"title": "Quantitative Strategist Associate Intern - The Core Quantitative Strats"
+},
 "4443770a-eb73-498d-9946-6976c5cd5984": {
 "company": "DellFor Technologies",
 "first_seen": "2026-08-15",
@@ -13694,6 +13704,11 @@
 "first_seen": "2026-09-12",
 "title": "Service Contracts Lifecycle Operations Intern"
 },
+"5d0c84fa-1994-4946-a104-4a9b317a3f9c": {
+"company": "EvenUp",
+"first_seen": "2026-09-30",
+"title": "Software Engineer New Grad - AI Entities"
+},
 "5d113196-e5fd-48bb-9ca5-3ffccfb4683d": {
 "company": "SimVentions",
 "first_seen": "2026-09-16",
@@ -15383,6 +15398,11 @@
 "company": "Micron Technology",
 "first_seen": "2026-08-24",
 "title": "Thin Films Equipment Engineering Intern - EDE"
+},
+"688f2ebb-1fef-4424-a9f4-04a953688db8": {
+"company": "Torch Technologies",
+"first_seen": "2026-09-30",
+"title": "Software Analyst"
 },
 "68bc721a-09e5-4cdb-89af-2f24f3f59984": {
 "company": "Royal Bank of Canada",
@@ -19009,6 +19029,11 @@
 "first_seen": "2026-08-18",
 "title": "Data Engineer Intern - Platform & Product"
 },
+"822b37cc-a0a6-437f-94cb-e1d7221ab0e9": {
+"company": "Lucid Computing",
+"first_seen": "2026-09-30",
+"title": "Member of Technical Staff"
+},
 "8239ef8b-e07a-4715-bc6d-2036aad271eb": {
 "company": "AMD",
 "first_seen": "2026-09-10",
@@ -19018,6 +19043,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Graduate - Recommendation Infrastructure"
+},
+"8241dd7c-e911-4078-85d3-5095ff275c0d": {
+"company": "General Dynamics Mission Systems",
+"first_seen": "2026-09-30",
+"title": "Software Engineer"
 },
 "824e17c4-67a7-495a-a3c6-f616610f8aa4": {
 "company": "Centene",
@@ -22524,6 +22554,11 @@
 "first_seen": "2026-08-26",
 "title": "Software Engineer Intern"
 },
+"9ab3e6b9-b8cd-4bee-94d4-b877937beb96": {
+"company": "Wells Fargo",
+"first_seen": "2026-09-30",
+"title": "Engineering Associate - CIB Operations Technology"
+},
 "9ac6ae38-9b5a-4373-934b-b04f5fbdc09c": {
 "company": "InfiniteQuant",
 "first_seen": "2026-08-24",
@@ -23217,7 +23252,7 @@
 "_headers": {
 "bachelors": "2026-09-30",
 "grad": "2026-09-29",
-"newgrad": "2026-09-29"
+"newgrad": "2026-09-30"
 },
 "a0079226-724a-4f71-b591-c3dd2275afbf": {
 "company": "Prairie View A&M University",
@@ -26644,6 +26679,11 @@
 "first_seen": "2026-08-25",
 "title": "Software Engineer Intern"
 },
+"b6e13db3-be91-4612-8719-470246e65112": {
+"company": "MFS",
+"first_seen": "2026-09-30",
+"title": "Investment Data Engineer Co-op"
+},
 "b6feff3f-ab0c-400e-bf6f-27d9c3327ec8": {
 "company": "TRUCKING PEOPLE",
 "first_seen": "2026-09-12",
@@ -27163,6 +27203,11 @@
 "company": "Mondelez International",
 "first_seen": "2026-09-24",
 "title": "Promotions Analyst Intern"
+},
+"ba21bc92-2d44-433d-a0dc-0d5c254061c5": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-09-30",
+"title": "Product Management Intern"
 },
 "ba2c84c1-fac5-455c-8d56-afb83ada2a83": {
 "company": "Veeva Systems",
@@ -30469,6 +30514,11 @@
 "first_seen": "2026-09-07",
 "title": "Commercial Sales Analyst"
 },
+"d096b257-6582-4ea3-a158-b1a0dc715999": {
+"company": "Invesco",
+"first_seen": "2026-09-30",
+"title": "Early Career Intern - Digital Asset Product"
+},
 "d0a7e5d4-0029-4c15-aec8-ea347fe6067b": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -32784,6 +32834,11 @@
 "first_seen": "2026-09-14",
 "title": "Data Analyst Intern"
 },
+"e02669bd-1cd4-43fc-ac1d-89d029602b6e": {
+"company": "Invesco",
+"first_seen": "2026-09-30",
+"title": "Early Career Intern - Digital Asset Product"
+},
 "e031f965-19f0-4d28-88d1-410fbff55e45": {
 "company": "Rivian",
 "first_seen": "2026-09-22",
@@ -33739,6 +33794,11 @@
 "first_seen": "2026-09-12",
 "title": "Services Portfolio Management Intern"
 },
+"e6e68252-64e3-4113-87e6-21679405692d": {
+"company": "CACI",
+"first_seen": "2026-09-30",
+"title": "Software/Network Engineering Intern"
+},
 "e6e83f1e-6b71-420e-9c60-f96aa09727e3": {
 "company": "NOV",
 "first_seen": "2026-08-15",
@@ -33758,6 +33818,11 @@
 "company": "MUFG",
 "first_seen": "2026-08-18",
 "title": "ML Engineer - AVP"
+},
+"e6f977e3-0c56-4d61-bd36-637f2e5d2dee": {
+"company": "MFS",
+"first_seen": "2026-09-30",
+"title": "Junior Software Engineer Co-op"
 },
 "e6fbfc33-cdd6-4ee6-acef-70e752008526": {
 "company": "Hippocratic AI",
@@ -34158,6 +34223,11 @@
 "company": "Northrop Grumman",
 "first_seen": "2026-08-18",
 "title": "Repair and Calibration Technician C - 1st Shift"
+},
+"e9fbe253-4c0b-4fd1-9213-529c36cc87a4": {
+"company": "Hewlett Packard",
+"first_seen": "2026-09-30",
+"title": "Channel Enablement and Digital Entry"
 },
 "ea0423f4-dd18-4be8-bae1-f29a30138094": {
 "company": "Spirit AeroSystems",
@@ -36379,6 +36449,11 @@
 "first_seen": "2026-08-26",
 "title": "Product Management Intern - 2027 Internship Program"
 },
+"f954dc3c-0a9f-4083-acd4-848332bf036b": {
+"company": "Hewlett Packard",
+"first_seen": "2026-09-30",
+"title": "Channel Enablement and Digital Entry"
+},
 "f9623735-52b0-4633-a58e-f6eaacdc6c33": {
 "company": "Xcellent Technology Solutions",
 "first_seen": "2026-08-20",
@@ -36863,6 +36938,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Product Manager Intern - Commerce Ads"
+},
+"fc4e65f3-51dc-4ed5-bbd3-4d0d40a18ce5": {
+"company": "International",
+"first_seen": "2026-09-30",
+"title": "Entry-Level Vehicle Powertrain Integration Engineer"
 },
 "fc4f2880-dfbe-4370-a129-24ea58c9a173": {
 "company": "Freddie Mac",
