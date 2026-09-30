@@ -824,11 +824,6 @@
 "first_seen": "2026-09-01",
 "title": "Business Intelligence Manager"
 },
-"05ab114c-f9d4-45b3-ac84-20227b44db3f": {
-"company": "American Express",
-"first_seen": "2026-08-15",
-"title": "Product Management Intern - Product Innovation - Credit & Fraud Risk"
-},
 "05b3642e-a1c8-4a0a-b252-24530e109900": {
 "company": "Google",
 "first_seen": "2026-09-14",
@@ -2569,6 +2564,11 @@
 "first_seen": "2026-09-12",
 "title": "Global Customer Research Intern"
 },
+"10dfa9c3-f163-4d07-a147-2e457a8c3e6b": {
+"company": "Aurelian",
+"first_seen": "2026-09-30",
+"title": "Backend Engineer \u2013 New Grad to Staff Level"
+},
 "10e5e95c-8b55-4510-9620-5c7cf27c7589": {
 "company": "Michelin",
 "first_seen": "2026-09-12",
@@ -3949,6 +3949,11 @@
 "first_seen": "2026-09-15",
 "title": "Operations Technical Training Platforms Co-op"
 },
+"19e4f3e2-8068-46e5-b5f9-879b2594bd38": {
+"company": "ABEC",
+"first_seen": "2026-09-30",
+"title": "Product Engineer"
+},
 "19e6fe83-05e1-4408-9728-bcec83cd3daf": {
 "company": "Booz Allen",
 "first_seen": "2026-08-30",
@@ -4273,6 +4278,11 @@
 "company": "Booz Allen",
 "first_seen": "2026-08-31",
 "title": "Data Engineer"
+},
+"1c05aeb6-1548-460d-ac98-cca04204d3a7": {
+"company": "POET",
+"first_seen": "2026-09-30",
+"title": "Data Engineer Intern"
 },
 "1c09445e-a943-4258-9c49-7bf34a1087dd": {
 "company": "Ontario Teachers' Pension Plan",
@@ -4789,6 +4799,11 @@
 "first_seen": "2026-09-11",
 "title": "CAD Automation and Mixed-Signal Simulation Engineer"
 },
+"1f2f92ef-4765-4730-b29c-a7f5dff8437a": {
+"company": "RTX",
+"first_seen": "2026-09-30",
+"title": "Systems Engineer 1"
+},
 "1f3302b8-c4f2-4812-a925-b3495df2d104": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -5103,6 +5118,11 @@
 "company": "DaVita",
 "first_seen": "2026-09-06",
 "title": "Clinical Programs Analyst"
+},
+"21792146-80f9-45a6-ade2-d26fd0098c49": {
+"company": "H&R Block",
+"first_seen": "2026-09-30",
+"title": "Financial Services Data Analytics Intern"
 },
 "217b3813-5d5b-4b33-9c10-1c264b43215a": {
 "company": "Marvell",
@@ -11073,6 +11093,11 @@
 "company": "General Dynamics Mission Systems",
 "first_seen": "2026-08-19",
 "title": "Entry Level Software Engineer"
+},
+"4bfa4cd6-fbd4-4d12-a70b-e839ea0925e8": {
+"company": "Aurelian",
+"first_seen": "2026-09-30",
+"title": "Product Engineer New Grad"
 },
 "4bfe7bc7-b222-4540-a270-4273bfb31397": {
 "company": "Keenfinity",
@@ -20949,6 +20974,11 @@
 "first_seen": "2026-09-12",
 "title": "AI Engineer 1 - Enterprise Technology Services"
 },
+"8ffb7cb4-3135-424a-be7f-812eb7049a39": {
+"company": "Synhawk",
+"first_seen": "2026-09-30",
+"title": "Member of Technical Staff: Junior AI Researcher"
+},
 "90073809-4e42-4a91-9c65-c5750c320aba": {
 "company": "Klaviyo",
 "first_seen": "2026-09-12",
@@ -21738,6 +21768,11 @@
 "company": "Qualcomm",
 "first_seen": "2026-08-21",
 "title": "System Level Test Engineer - Hardware Engineering"
+},
+"95424707-6f2c-4445-b12e-6210ef442404": {
+"company": "PricewaterhouseCoopers (PwC)",
+"first_seen": "2026-09-30",
+"title": "Deals Analytics Senior Associate - DTDS"
 },
 "954f1915-886d-44d2-b63c-900fb3b88410": {
 "company": "GovSignals",
@@ -22734,6 +22769,11 @@
 "first_seen": "2026-08-19",
 "title": "Geoscience Intern"
 },
+"9cb9b3d0-14d5-47cb-bd55-ce2ce7c5213e": {
+"company": "AMCA",
+"first_seen": "2026-09-30",
+"title": "Software Engineer Intern"
+},
 "9cbd92a5-bad6-41d7-b1ee-fb170ceb8a49": {
 "company": "Perpay",
 "first_seen": "2026-09-10",
@@ -23175,7 +23215,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-09-29",
+"bachelors": "2026-09-30",
 "grad": "2026-09-29",
 "newgrad": "2026-09-29"
 },
@@ -23553,6 +23593,11 @@
 "company": "Honeywell",
 "first_seen": "2026-08-25",
 "title": "Information Systems Intern - Multiple Teams"
+},
+"a273034e-3b57-4e7a-9eaa-23b7e5d751d3": {
+"company": "UL Solutions",
+"first_seen": "2026-09-30",
+"title": "Product Management Intern"
 },
 "a2743d30-b180-4a83-8edf-a8092e35fd0f": {
 "company": "Rivian and Volkswagen Group Technologies",
@@ -24363,6 +24408,11 @@
 "company": "Gentex",
 "first_seen": "2026-09-10",
 "title": "Electrical Component Engineer 1"
+},
+"a84b5ca0-5e89-4893-97cb-4be5aead281c": {
+"company": "Goldman Sachs",
+"first_seen": "2026-09-30",
+"title": "Engineering New Analyst"
 },
 "a85254d2-8066-44f1-94d3-904c02e8c5f3": {
 "company": "Radiance Technologies",
@@ -26244,11 +26294,6 @@
 "first_seen": "2026-08-20",
 "title": "GIS Technician"
 },
-"b4947a2f-6ea5-4d4a-8cb0-1e08e351d0e9": {
-"company": "American Express",
-"first_seen": "2026-08-15",
-"title": "Product Innovation Intern - Credit & Fraud Risk"
-},
 "b4956a38-5faa-4849-acb9-3800ce1f366a": {
 "company": "Applied Materials",
 "first_seen": "2026-09-15",
@@ -26593,11 +26638,6 @@
 "company": "Moffitt Cancer Center",
 "first_seen": "2026-09-12",
 "title": "AI Administrative Resident"
-},
-"b6d3d4b8-3f64-48cc-8eaf-ba6c2cdc2c20": {
-"company": "Arch Aerial",
-"first_seen": "2026-08-15",
-"title": "Junior GIS Technician"
 },
 "b6d77c85-4c5b-4da2-819e-86166d105648": {
 "company": "L3Harris Technologies",
@@ -27743,6 +27783,11 @@
 "company": "Leviton",
 "first_seen": "2026-08-18",
 "title": "Associate Embedded Firmware Engineer"
+},
+"be220962-337b-458d-9bf5-631a762cc07b": {
+"company": "Fidelity Investments",
+"first_seen": "2026-09-30",
+"title": "Software Engineer"
 },
 "be23128a-5c7b-4120-8bd1-f4887d7042ce": {
 "company": "Instacart",
@@ -30299,6 +30344,11 @@
 "first_seen": "2026-09-17",
 "title": "Software Engineer Intern"
 },
+"cfd65384-8de0-4673-9086-3e19b4843b5e": {
+"company": "POET",
+"first_seen": "2026-09-30",
+"title": "Software Developer Intern"
+},
 "cfdb84c0-3b66-4b42-90a5-9189a55f2592": {
 "company": "Zip",
 "first_seen": "2026-08-26",
@@ -31808,6 +31858,11 @@
 "company": "Welo Global",
 "first_seen": "2026-08-15",
 "title": "Data Labeling Analyst - Speech & Voice AI Analyst - German Speakers"
+},
+"d9192af9-44cc-4afc-bb53-481c9e5acabf": {
+"company": "RTX",
+"first_seen": "2026-09-30",
+"title": "Software Engineer Intern"
 },
 "d9270ca6-ff0e-4172-a370-e76a727bd54a": {
 "company": "Fortinet",
