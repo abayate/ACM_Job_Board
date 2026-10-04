@@ -3274,6 +3274,11 @@
 "first_seen": "2026-09-12",
 "title": "Application Developer Intern"
 },
+"16856e96-3bd9-4fee-85e4-ed92164905ae": {
+"company": "Primient",
+"first_seen": "2026-10-04",
+"title": "AI Analyst Intern"
+},
 "16964152-6459-4e36-9a3a-588afcf03bb0": {
 "company": "The Walt Disney Company",
 "first_seen": "2026-09-02",
@@ -8219,6 +8224,11 @@
 "first_seen": "2026-09-18",
 "title": "Staff Analyst Trainee 1/2 - Operations Planning - Bus Schedules"
 },
+"39440a28-111a-4535-887b-1a683c23ef54": {
+"company": "Pangram Labs",
+"first_seen": "2026-10-04",
+"title": "AI Research Intern"
+},
 "39479bef-648c-4874-b869-572f2b6b585a": {
 "company": "Uline",
 "first_seen": "2026-09-08",
@@ -9363,6 +9373,11 @@
 "company": "AbbVie",
 "first_seen": "2026-08-26",
 "title": "Business Technology Solutions Intern - Data & Software Engineering"
+},
+"410b28b6-b357-4b72-9480-bad83701b4cb": {
+"company": "Citadel",
+"first_seen": "2026-10-04",
+"title": "Software Engineer \u2013 University Graduate"
 },
 "410fe293-036e-43d5-afdd-1139c15645f6": {
 "company": "Johnson & Johnson",
@@ -22706,7 +22721,7 @@
 },
 "_headers": {
 "bachelors": "2026-10-04",
-"grad": "2026-10-03",
+"grad": "2026-10-04",
 "newgrad": "2026-10-02"
 },
 "a0079226-724a-4f71-b591-c3dd2275afbf": {
