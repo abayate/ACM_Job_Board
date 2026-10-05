@@ -4109,11 +4109,6 @@
 "first_seen": "2026-09-12",
 "title": "Software Engineer Intern"
 },
-"1c88f911-2f0f-4b1b-9b29-04f75ea42543": {
-"company": "Apollo Mission Critical Engineering",
-"first_seen": "2026-08-15",
-"title": "Business & Data Analyst"
-},
 "1c8c6bac-3c43-4f37-aef3-01425709c4e3": {
 "company": "Booz Allen",
 "first_seen": "2026-09-21",
@@ -7093,11 +7088,6 @@
 "company": "Pariveda Solutions",
 "first_seen": "2026-10-04",
 "title": "Software Engineer 2"
-},
-"30d1162f-2765-4044-9e44-203f4a85d5a1": {
-"company": "Meta",
-"first_seen": "2026-08-15",
-"title": "Research Scientist Intern - AI Alignment"
 },
 "30e36d66-cf25-4851-9655-d22bb0c6d319": {
 "company": "ByteDance",
@@ -10109,6 +10099,11 @@
 "first_seen": "2026-09-12",
 "title": "Software Engineer Intern"
 },
+"477f4a29-918e-4971-aa80-59cac674f192": {
+"company": "KeyBank",
+"first_seen": "2026-10-05",
+"title": "Analytics and Quantitative Modeling Rotational Analyst - Rotational Program"
+},
 "47844f61-18ee-4be2-a378-45789bdee8d5": {
 "company": "Autodesk",
 "first_seen": "2026-08-25",
@@ -10813,6 +10808,11 @@
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-31",
 "title": "Engineering Technician B"
+},
+"4cf30745-6f3b-4afc-b4a7-8c156b74804c": {
+"company": "NVIDIA",
+"first_seen": "2026-10-05",
+"title": "Software Engineer Intern"
 },
 "4cfc6f1c-ae9e-447d-8980-a90e98153e86": {
 "company": "Tesla",
@@ -11598,6 +11598,11 @@
 "company": "Boston Scientific",
 "first_seen": "2026-09-25",
 "title": "Software Engineer Intern - R&D"
+},
+"5225e58c-5696-4982-94a4-d20dfef3c850": {
+"company": "Ernst & Young",
+"first_seen": "2026-10-05",
+"title": "Tax Intern - Other Tax - Americas Tax Technology Group"
 },
 "52280fbc-05cd-4714-a6fa-72ff9c3d0f9f": {
 "company": "Auto-Owners Insurance",
@@ -14449,6 +14454,11 @@
 "first_seen": "2026-08-24",
 "title": "Data Analyst Co-op"
 },
+"65f7b670-3781-41dd-be44-6173a52f0451": {
+"company": "Aptean",
+"first_seen": "2026-10-05",
+"title": "Product Portfolio Coordinator"
+},
 "65fb320d-4bf5-43e6-818a-db47e95e1353": {
 "company": "Lutron Electronics",
 "first_seen": "2026-09-09",
@@ -14593,6 +14603,11 @@
 "company": "Winsupply",
 "first_seen": "2026-09-12",
 "title": "Data Analyst Intern"
+},
+"670d8a8b-1082-42e8-9009-e35612ea924a": {
+"company": "Motorola",
+"first_seen": "2026-10-05",
+"title": "Android Applications Developer Intern"
 },
 "671134e3-db0f-4f23-a72b-43e76cc0f002": {
 "company": "Choice Healthcare Services",
@@ -14808,6 +14823,11 @@
 "company": "Bosch Home Comfort",
 "first_seen": "2026-09-03",
 "title": "Vehicle Motion Intern"
+},
+"6942172c-4edc-4339-b395-fb8080da9906": {
+"company": "Autodesk",
+"first_seen": "2026-10-05",
+"title": "Researcher Intern - Machine Learning for Construction"
 },
 "69430fc1-dbac-4fba-8c07-697012305db3": {
 "company": "Pennsylvania State University",
@@ -15043,6 +15063,11 @@
 "company": "Waymo",
 "first_seen": "2026-09-23",
 "title": "Data Science Intern - PhD"
+},
+"6b1f9464-5638-4f1b-907d-f525edb6c4fb": {
+"company": "KeyBank",
+"first_seen": "2026-10-05",
+"title": "Consumer Analyst Development Program"
 },
 "6b2b7f9d-ddb1-4941-beae-08c1dfc04296": {
 "company": "National Research Group",
@@ -16033,6 +16058,11 @@
 "company": "TD Bank",
 "first_seen": "2026-09-06",
 "title": "Associate Software Engineer"
+},
+"726360c4-caf8-48cc-bc62-9dc9ba9eaca4": {
+"company": "Quantum Signal AI",
+"first_seen": "2026-10-05",
+"title": "Software Engineer Intern - Tools and Prototypes"
 },
 "726a288e-5e7a-40fd-ae58-e65668dd3a7e": {
 "company": "Intel",
@@ -19694,6 +19724,11 @@
 "first_seen": "2026-10-01",
 "title": "Product Engineer Intern"
 },
+"8c3ef60f-82b8-40a0-a8af-f49d57750b6c": {
+"company": "CACI",
+"first_seen": "2026-10-05",
+"title": "Software Development Intern"
+},
 "8c416546-f532-484d-92fd-9dd055fb19d8": {
 "company": "Baird",
 "first_seen": "2026-09-12",
@@ -21099,6 +21134,11 @@
 "first_seen": "2026-09-14",
 "title": "Associate Marketing Data Analyst"
 },
+"96540543-955c-4dd4-a9ab-4382147f9d78": {
+"company": "Autodesk",
+"first_seen": "2026-10-05",
+"title": "Research Intern - Multimodal AI for Human Experience"
+},
 "965536fc-80b0-4965-aafe-ee8d4b61441b": {
 "company": "Welo Global",
 "first_seen": "2026-09-06",
@@ -21369,6 +21409,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Development Engineer Graduate - Intent-Based Networking"
 },
+"9841d195-19c9-4d37-8876-6d72b9dec5af": {
+"company": "Johns Hopkins Applied Physics Laboratory",
+"first_seen": "2026-10-05",
+"title": "PhD Graduate - Distributed Tactical Awareness"
+},
 "9850b5dd-6e6b-4fb0-81b2-240f12f59dd7": {
 "company": "Google",
 "first_seen": "2026-09-14",
@@ -21593,11 +21638,6 @@
 "company": "TSMG",
 "first_seen": "2026-09-04",
 "title": "AI/ML Data Contributor - Data Labeling - Content Evaluation"
-},
-"99fcf5a1-1347-44be-9d63-7e03612f082b": {
-"company": "Devon Energy",
-"first_seen": "2026-08-20",
-"title": "Technology Intern - Data Engineering"
 },
 "99fd2453-9c39-447d-bb66-a0aebc0473e5": {
 "company": "Nationwide",
@@ -22279,6 +22319,11 @@
 "first_seen": "2026-09-12",
 "title": "Residential Energy Product Strategy Intern"
 },
+"9f472a68-b131-41db-abf0-48a1bbdcff63": {
+"company": "Deloitte",
+"first_seen": "2026-10-05",
+"title": "Delivery Analyst - Discovery Solutions - Government & Public Services"
+},
 "9f477186-5000-4fe3-8151-4971b1c4abfb": {
 "company": "RTX",
 "first_seen": "2026-09-17",
@@ -22407,7 +22452,7 @@
 "_headers": {
 "bachelors": "2026-10-05",
 "grad": "2026-10-04",
-"newgrad": "2026-10-02"
+"newgrad": "2026-10-05"
 },
 "a0079226-724a-4f71-b591-c3dd2275afbf": {
 "company": "Prairie View A&M University",
@@ -22723,6 +22768,11 @@
 "company": "CSL",
 "first_seen": "2026-08-25",
 "title": "Data Engineering Co-op"
+},
+"a1fc9732-fe78-4aa6-9f1b-3d40fb62d956": {
+"company": "Autodesk",
+"first_seen": "2026-10-05",
+"title": "Multimodal AI for Human Experience Intern"
 },
 "a201939d-a1a1-491e-a0dc-18779905da32": {
 "company": "Odys Aviation",
@@ -26359,6 +26409,11 @@
 "first_seen": "2026-09-12",
 "title": "Business Analytics Intern"
 },
+"bb153fdc-6998-4d29-9e79-01b24c0db807": {
+"company": "Sikich",
+"first_seen": "2026-10-05",
+"title": "Intelligence Transformation Intern"
+},
 "bb16cddc-770c-4910-a803-c4c215a3a996": {
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-09-16",
@@ -26928,6 +26983,11 @@
 "company": "TikTok",
 "first_seen": "2026-09-05",
 "title": "Applied Scientist Intern - Monetization GenAI - Global Frontier Tech Recruitment Program - 2027 Start - PhD"
+},
+"bec0bfec-8232-4a08-b412-7acf9ff7b4fc": {
+"company": "ZS",
+"first_seen": "2026-10-05",
+"title": "Business Technology Solutions Intern - North America - University Students"
 },
 "bec41fe0-ae4c-44d3-bddd-15ca4a245c18": {
 "company": "Goldman Sachs",
@@ -31469,6 +31529,11 @@
 "first_seen": "2026-09-01",
 "title": "Senior Machine Learning Engineer - Economist"
 },
+"df162dd7-e1d9-4487-bdbb-f394807a974d": {
+"company": "Jobs for Humanity",
+"first_seen": "2026-10-05",
+"title": "AI Safety & Policy Associate"
+},
 "df3d7f78-b1f7-4efe-99d5-136648cb5d84": {
 "company": "Microchip Technology",
 "first_seen": "2026-09-30",
@@ -31528,6 +31593,11 @@
 "company": "Watts Water",
 "first_seen": "2026-09-22",
 "title": "B2C E-Commerce Analytics & Website Intern - Summer 2027"
+},
+"dfd7743c-b0f2-4e6e-b632-d83d62d785d4": {
+"company": "RTX",
+"first_seen": "2026-10-05",
+"title": "Software/Developer Engineer 1"
 },
 "dffa3f5f-d496-43e5-90e0-105b940da03c": {
 "company": "Motorola",
@@ -33033,6 +33103,11 @@
 "company": "Encore Capital Group",
 "first_seen": "2026-09-06",
 "title": "Business Analyst"
+},
+"ea6fc297-3ea1-4919-a564-a3b6c294af60": {
+"company": "Autodesk",
+"first_seen": "2026-10-05",
+"title": "PhD Researcher Intern - Machine Learning for Construction"
 },
 "ea89eb5d-1ce4-4b97-855e-ecb9edab70ab": {
 "company": "Myriad Genetics",
