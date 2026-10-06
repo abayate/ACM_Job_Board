@@ -1044,6 +1044,11 @@
 "first_seen": "2026-09-12",
 "title": "Product Management Intern"
 },
+"0785ad50-7898-48f1-965a-7734495a7598": {
+"company": "Nokia",
+"first_seen": "2026-10-06",
+"title": "AI Engineering Co-op"
+},
 "078b686b-ef5b-4803-a291-b3762d2b81b9": {
 "company": "Kodiak Robotics",
 "first_seen": "2026-08-25",
@@ -1063,6 +1068,11 @@
 "company": "Amgen",
 "first_seen": "2026-09-12",
 "title": "Software Engineer Intern - Technology & Medical Organizations"
+},
+"079c49ad-86ee-4d90-80de-5d7ec4d99c4a": {
+"company": "VTG",
+"first_seen": "2026-10-06",
+"title": "Intelligence Analyst 1"
 },
 "07a9c26b-bccd-44eb-8314-fee1a7513235": {
 "company": "TikTok",
@@ -1299,6 +1309,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Software Development Engineer"
 },
+"09599528-f7de-41ed-bd57-0f77cd04778a": {
+"company": "GE Vernova",
+"first_seen": "2026-10-06",
+"title": "Systems Architecture Intern"
+},
 "096a18f4-fb51-429e-84ee-32108e1403dd": {
 "company": "Tesla",
 "first_seen": "2026-09-05",
@@ -1453,6 +1468,11 @@
 "company": "RTX",
 "first_seen": "2026-09-15",
 "title": "Software Engineer Intern"
+},
+"0aa13f57-2b33-4f07-8032-f57ecc2104a3": {
+"company": "Nokia",
+"first_seen": "2026-10-06",
+"title": "AI Engineering Co-op"
 },
 "0aa38a85-7be2-4d60-8ec3-0002a9643512": {
 "company": "Sage",
@@ -1653,6 +1673,11 @@
 "company": "RTX",
 "first_seen": "2026-09-12",
 "title": "Software Engineering Intern"
+},
+"0ca44806-3f27-4cf1-b462-145f7d506a3d": {
+"company": "Affirm",
+"first_seen": "2026-10-06",
+"title": "Software Engineer 1 New Grad"
 },
 "0ca6b8af-c098-4160-b624-7ee0eca4a249": {
 "company": "WME Express",
@@ -2128,11 +2153,6 @@
 "company": "The Walt Disney Company",
 "first_seen": "2026-08-24",
 "title": "Show Control Hardware Intern"
-},
-"0f83da46-16ec-46ca-9e0d-17c88d922fdc": {
-"company": "Pattern Data",
-"first_seen": "2026-08-15",
-"title": "Software Engineer - Entry"
 },
 "0f859524-1a98-4f39-91e1-d4f12cb9af12": {
 "company": "Cirrus Logic",
@@ -4303,6 +4323,11 @@
 "company": "Direct Supply",
 "first_seen": "2026-09-12",
 "title": "AI Engineer Intern"
+},
+"1ea2f99c-d735-498b-8521-7ed2e8609313": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-10-06",
+"title": "Senior Associate, Product Management"
 },
 "1ea3eee5-9e41-4423-bc32-566742b27aea": {
 "company": "Allen Control Systems",
@@ -7214,6 +7239,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - Recommendation"
 },
+"32e9a5dd-56e3-416f-88e2-951668084aba": {
+"company": "Dryft",
+"first_seen": "2026-10-06",
+"title": "Member of Technical Staff Intern"
+},
 "32f14a18-130e-4911-a7f1-80e6010eba5e": {
 "company": "RELX",
 "first_seen": "2026-09-12",
@@ -7879,6 +7909,11 @@
 "first_seen": "2026-08-29",
 "title": "Geographic Information Systems Co-op"
 },
+"38aad2e0-df0c-4ff7-8ee9-1367c3cbd453": {
+"company": "Nokia",
+"first_seen": "2026-10-06",
+"title": "AI Engineering Co-op"
+},
 "38b3ffd6-c574-43b6-b9ec-d1c477d2bfac": {
 "company": "KLA Corporation",
 "first_seen": "2026-09-02",
@@ -8173,6 +8208,11 @@
 "company": "AMD",
 "first_seen": "2026-09-16",
 "title": "AI Model Optimization & Software Engineer Intern/Co-op"
+},
+"3a93ce9b-b375-4f91-a7b3-4841cd8b84da": {
+"company": "D'Addario",
+"first_seen": "2026-10-06",
+"title": "Junior Full Stack Engineer"
 },
 "3aaa017a-6262-4f8b-bce9-760c9d609335": {
 "company": "Entegris",
@@ -9429,11 +9469,6 @@
 "first_seen": "2026-10-02",
 "title": "AI R&D Engineer Co-op"
 },
-"435c2fcd-ac89-454c-8594-e00acf0c463c": {
-"company": "Cummins",
-"first_seen": "2026-08-15",
-"title": "Software Engineer 1"
-},
 "435e0215-a8e0-4e2c-957e-de0c0e4be7ec": {
 "company": "Pennsylvania State University",
 "first_seen": "2026-08-15",
@@ -9658,6 +9693,11 @@
 "company": "Amazon",
 "first_seen": "2026-09-12",
 "title": "Robotics System Development Engineer"
+},
+"44e8257d-f41b-4baa-baa5-5db7f9abd0d2": {
+"company": "RoadRunner",
+"first_seen": "2026-10-06",
+"title": "Forward Deployed Engineer New Grad"
 },
 "44f6dccc-a71b-4d91-a0ad-e30134365802": {
 "company": "McKesson",
@@ -9913,6 +9953,11 @@
 "company": "Amazon",
 "first_seen": "2026-09-06",
 "title": "Software Development Engineer Apprentice - Military Veterans"
+},
+"476ebb5a-f574-486f-be24-b89fb51a1040": {
+"company": "Philips",
+"first_seen": "2026-10-06",
+"title": "Software Engineer Co-op - R&D"
 },
 "4770a4e3-28be-40d7-b5a2-700c0307960d": {
 "company": "Jane Street",
@@ -10414,6 +10459,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Product Manager"
 },
+"4b5d7971-e929-4b44-978d-0c232abefc17": {
+"company": "Dealer Tire",
+"first_seen": "2026-10-06",
+"title": "Associate Data Scientist"
+},
 "4b6066cd-8c05-4586-80d1-c1500ceb094b": {
 "company": "PricewaterhouseCoopers (PwC)",
 "first_seen": "2026-09-12",
@@ -10508,6 +10558,11 @@
 "company": "Auto-Owners Insurance",
 "first_seen": "2026-08-26",
 "title": "Analytics Web Systems Developer Intern"
+},
+"4bed7671-153b-4cbc-84ad-30fbb5e3f1f1": {
+"company": "Pure Storage",
+"first_seen": "2026-10-06",
+"title": "Software Engineer Intern"
 },
 "4bfa4cd6-fbd4-4d12-a70b-e839ea0925e8": {
 "company": "Aurelian",
@@ -10814,6 +10869,11 @@
 "first_seen": "2026-09-18",
 "title": "Gen AI Engineering Analyst"
 },
+"4df173b6-3228-4a6b-a3eb-3b7769e8f380": {
+"company": "Lyft",
+"first_seen": "2026-10-06",
+"title": "PhD Machine Learning Software Engineer Intern"
+},
 "4df4e697-881e-4e96-93e4-a32b0b57b588": {
 "company": "AAR",
 "first_seen": "2026-09-10",
@@ -10863,6 +10923,11 @@
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-09-15",
 "title": "Computer Engineer Intern - Shipboard Systems Group"
+},
+"4e64cdd2-076a-4cc8-9b19-76a36026ca2a": {
+"company": "Space Dynamics Laboratory",
+"first_seen": "2026-10-06",
+"title": "Computer Vision Engineer Intern"
 },
 "4e730bff-671e-4665-bb89-14302229b2ea": {
 "company": "Bosch Home Comfort",
@@ -11013,6 +11078,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Visual Generation & Multimodal Evaluation Machine Learning Engineer Intern - AML-ARK"
+},
+"4f847646-e06d-4c5b-ae9c-e0697e6d3d7c": {
+"company": "University of Rochester",
+"first_seen": "2026-10-06",
+"title": "Data Entry Coordinator 2"
 },
 "4f84b4e2-87a7-4187-8d00-c27db2bdea0a": {
 "company": "Lawrence Livermore National Laboratory (LLNL)",
@@ -12919,6 +12989,11 @@
 "first_seen": "2026-09-24",
 "title": "Data Engineer - Platform Innovation and Engineering"
 },
+"5c6be41f-80e3-44af-86bc-77aa2568dd4d": {
+"company": "Affirm",
+"first_seen": "2026-10-06",
+"title": "Software Engineer 1 New Grad"
+},
 "5c721084-2430-498d-ae4c-d36aeaee8fac": {
 "company": "General Motors",
 "first_seen": "2026-10-02",
@@ -13473,6 +13548,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-18",
 "title": "Software Engineer Intern - TikTok Search Data Infrastructure"
+},
+"5ff0125a-88d7-4029-9ba8-57b94f426ff8": {
+"company": "Booz Allen",
+"first_seen": "2026-10-06",
+"title": "Software Engineer"
 },
 "5ff47594-f8ae-48a8-887c-851badf01102": {
 "company": "State of North Carolina",
@@ -15974,6 +16054,11 @@
 "first_seen": "2026-10-01",
 "title": "Software Engineer 1/2"
 },
+"73731d4d-42e1-4c5c-a688-d6e0f81c0fa3": {
+"company": "Provectus",
+"first_seen": "2026-10-06",
+"title": "Associate Forward Deployed Engineer"
+},
 "7378026f-0707-48bb-8570-ac926d5ca53f": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -16373,6 +16458,11 @@
 "company": "Omnicom Group",
 "first_seen": "2026-09-12",
 "title": "Experience Design Engineer Intern Consultant - Design Engineering"
+},
+"75eae133-33cf-40a0-80fd-3aabdf37a56f": {
+"company": "Nokia",
+"first_seen": "2026-10-06",
+"title": "AI Engineer Co-op"
 },
 "75efacf7-58e1-468e-9621-e23a1444acdf": {
 "company": "ICF International",
@@ -17609,6 +17699,11 @@
 "first_seen": "2026-09-06",
 "title": "Business Analyst - Data and Analytics"
 },
+"7f1252c2-2dd8-4334-9c9c-8ace10b21273": {
+"company": "Meta",
+"first_seen": "2026-10-06",
+"title": "Data Scientist Intern - Product Analytics"
+},
 "7f191783-2ab3-4626-a830-2072091a9f5a": {
 "company": "Dandy",
 "first_seen": "2026-10-01",
@@ -18198,6 +18293,11 @@
 "company": "Pennsylvania State University",
 "first_seen": "2026-09-05",
 "title": "Research Engineering Intern - Strategic Systems Operations Division - Applied Research Laboratory"
+},
+"834fe4c4-f68e-4dbc-bf7d-5c3c22356240": {
+"company": "The Federal Reserve System",
+"first_seen": "2026-10-06",
+"title": "AI Solutions Engineer Associate"
 },
 "8360c3f7-a472-4bfa-9c03-ec28915f1cef": {
 "company": "Gecko Robotics",
@@ -19594,6 +19694,11 @@
 "first_seen": "2026-10-04",
 "title": "Associate Product Engineer"
 },
+"8cd75c44-b1ed-4f61-9dae-69008c533d35": {
+"company": "Nokia",
+"first_seen": "2026-10-06",
+"title": "AI Engineer Co-op"
+},
 "8ce351e6-944c-4e61-8422-e151a5a7baf2": {
 "company": "Deloitte",
 "first_seen": "2026-10-02",
@@ -19713,6 +19818,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Artificial Intelligence Engineer Intern - Client Architecture"
+},
+"8db764f7-caf2-46e5-88d8-976776e63ec3": {
+"company": "Niantic Spatial",
+"first_seen": "2026-10-06",
+"title": "Software Engineer Intern"
 },
 "8dc13916-c56a-400b-969b-302ccc73e591": {
 "company": "KLA",
@@ -20159,6 +20269,11 @@
 "first_seen": "2026-09-09",
 "title": "Radar Systems Engineering Student Co-op"
 },
+"913185e4-c0b8-46bb-add7-d4de9eb77339": {
+"company": "Meta",
+"first_seen": "2026-10-06",
+"title": "Software Engineer Intern"
+},
 "913f0929-685a-45d5-9d4e-c0c89eba651e": {
 "company": "Arcadis",
 "first_seen": "2026-08-15",
@@ -20249,6 +20364,11 @@
 "first_seen": "2026-10-01",
 "title": "AI Intern \u2013 Enterprise Agent Development"
 },
+"91c48195-3456-45d0-a2d6-3cb71c6efa03": {
+"company": "TRUCKING PEOPLE",
+"first_seen": "2026-10-06",
+"title": "Data Capture Technician"
+},
 "91cb2b7b-aa32-4e7d-82f1-4d95b00718d3": {
 "company": "The Home Depot",
 "first_seen": "2026-09-12",
@@ -20258,11 +20378,6 @@
 "company": "Commerce Bank",
 "first_seen": "2026-08-30",
 "title": "IT Intern - Summer 2027"
-},
-"91e63edf-634a-438a-8645-8b316d48cfcf": {
-"company": "Figure",
-"first_seen": "2026-08-15",
-"title": "Data Creator"
 },
 "91fe4ef6-7fad-433c-a695-2bdf396f20ff": {
 "company": "AMAROK Security",
@@ -20719,6 +20834,11 @@
 "first_seen": "2026-09-12",
 "title": "Corporate Analytics Intern"
 },
+"94b5e8f1-5530-443f-948b-40d1d6d16a60": {
+"company": "Nokia",
+"first_seen": "2026-10-06",
+"title": "AI Engineering Co-op"
+},
 "94b7b55f-edd1-4611-a96d-e2e602c33ad5": {
 "company": "Marvell",
 "first_seen": "2026-08-29",
@@ -20904,6 +21024,11 @@
 "first_seen": "2026-09-12",
 "title": "Digital & IT Intern - Manufacturing AI/ML"
 },
+"966f0f0e-d5c7-48c6-ac8f-b3f2ca30d81a": {
+"company": "Meta",
+"first_seen": "2026-10-06",
+"title": "Software Engineer Intern - Systems and Infrastructure - PhD"
+},
 "968d9575-5896-484e-aa2e-3de0d3cabfa2": {
 "company": "SingleStore",
 "first_seen": "2026-09-22",
@@ -21069,6 +21194,11 @@
 "first_seen": "2026-09-12",
 "title": "Data Scientist Intern"
 },
+"978a06db-60f9-4e14-8508-fd5a6dc1b731": {
+"company": "Electronic Arts",
+"first_seen": "2026-10-06",
+"title": "Software Engineer Intern"
+},
 "979ac96d-8d31-44b0-b0ce-b26b281568e9": {
 "company": "KBR",
 "first_seen": "2026-09-17",
@@ -21088,6 +21218,11 @@
 "company": "Fidelity Investments",
 "first_seen": "2026-08-15",
 "title": "Leap Software Engineer"
+},
+"97ae44fe-896a-4ac9-903d-dd00769e963b": {
+"company": "Nokia",
+"first_seen": "2026-10-06",
+"title": "AI Engineer Co-op"
 },
 "97b19795-4fdd-4a30-8b4d-fd78592f4793": {
 "company": "Bosch Home Comfort",
@@ -21408,6 +21543,11 @@
 "company": "Nationwide",
 "first_seen": "2026-09-12",
 "title": "Generative AI Intern"
+},
+"99fee0ad-92bd-4ac6-99a0-d812ab1776d0": {
+"company": "Pure Storage",
+"first_seen": "2026-10-06",
+"title": "Software Engineer New Grad"
 },
 "9a01359d-4d56-45ec-a90a-9d2f1d40cf52": {
 "company": "Duolingo",
@@ -23504,6 +23644,11 @@
 "first_seen": "2026-09-18",
 "title": "Data Visualization Analyst Intern"
 },
+"a924f061-f446-486c-b946-947964caeac9": {
+"company": "Capital One",
+"first_seen": "2026-10-06",
+"title": "Manager \u2013 Product Management - Customer Core & Identity"
+},
 "a926f904-498b-4c0d-9a9c-e81a111745ce": {
 "company": "Polar Semiconductor",
 "first_seen": "2026-09-12",
@@ -24914,6 +25059,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Graduate - E-Commerce Recommendation Foundation - PhD"
 },
+"b2350562-d38a-4b24-ad67-edf1158b6fb1": {
+"company": "Microsoft",
+"first_seen": "2026-10-06",
+"title": "Applied Scientist PhD Intern"
+},
 "b2627976-395e-42cd-8612-f81fe8d44b30": {
 "company": "Adobe",
 "first_seen": "2026-09-23",
@@ -25499,6 +25649,11 @@
 "first_seen": "2026-09-16",
 "title": "AI Feature Development Intern - NCSG"
 },
+"b6b8cf0c-a8a7-4903-8545-78efcd157fc0": {
+"company": "Whoop",
+"first_seen": "2026-10-06",
+"title": "Software Engineer 1 (Frontend) - AI Platform"
+},
 "b6cb7794-c736-4019-b882-94ec5758132d": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -25963,6 +26118,11 @@
 "company": "University of Arkansas",
 "first_seen": "2026-08-27",
 "title": "Graduate Assistant - Information Science"
+},
+"b9bdca50-ae88-4f73-91a3-70ff75e7309d": {
+"company": "HeartFlow",
+"first_seen": "2026-10-06",
+"title": "Product Manager"
 },
 "b9ca24ba-2e7c-4a91-9c5e-af511017a2e2": {
 "company": "OCC",
@@ -27434,6 +27594,11 @@
 "first_seen": "2026-09-21",
 "title": "Software Developer Intern"
 },
+"c3e62dce-3096-481b-97f4-55b95eb49b14": {
+"company": "Arcfield",
+"first_seen": "2026-10-06",
+"title": "Software Engineer-On Call Intern"
+},
 "c3e8d33d-4958-4563-9af0-270e22a2c81c": {
 "company": "Nasdaq",
 "first_seen": "2026-09-25",
@@ -27888,6 +28053,11 @@
 "company": "Nakupuna Companies",
 "first_seen": "2026-09-07",
 "title": "Junior Knowledge Management Analyst"
+},
+"c7379420-477b-4d1f-a015-7304f3461e25": {
+"company": "KQED",
+"first_seen": "2026-10-06",
+"title": "Audience Intelligence Intern"
 },
 "c744244f-670e-496a-a8e7-3f470887a7dd": {
 "company": "Booz Allen",
@@ -29869,6 +30039,11 @@
 "first_seen": "2026-09-19",
 "title": "Software Engineer Intern"
 },
+"d5b7d966-e703-4f27-ac8a-2d39fe89c0ff": {
+"company": "Deloitte",
+"first_seen": "2026-10-06",
+"title": "Data Scientist - AI and Data Science Engineer 1"
+},
 "d5b824b3-f478-49bb-8b20-9c1b283518f4": {
 "company": "RF-SMART",
 "first_seen": "2026-09-12",
@@ -30724,6 +30899,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineering Intern"
 },
+"db3b158c-84ec-404d-90d6-59ebaa00b6d2": {
+"company": "Jerry",
+"first_seen": "2026-10-06",
+"title": "Product Manager-in-Training"
+},
 "db477b31-3358-44a9-85b7-9c1740e035fe": {
 "company": "GlobalFoundries",
 "first_seen": "2026-09-11",
@@ -31404,6 +31584,11 @@
 "first_seen": "2026-09-12",
 "title": "Software Engineer Intern - Automotive OEM"
 },
+"e0b3cbee-7fd0-464e-a195-d3e925f3e990": {
+"company": "Electronic Arts",
+"first_seen": "2026-10-06",
+"title": "Product Management Intern"
+},
 "e0c8a83a-ab36-4f9d-8587-275d4d7007db": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -31753,6 +31938,11 @@
 "company": "TikTok",
 "first_seen": "2026-09-05",
 "title": "Product Management Project Intern - TikTok Shop-Operations"
+},
+"e35da0a7-0eb2-4f33-b579-b29556550e27": {
+"company": "Rhoda AI",
+"first_seen": "2026-10-06",
+"title": "Associate Engineering Product Manager-Robot Data Systems"
 },
 "e378868f-b3aa-4e52-bb5c-b35ece9f0d2f": {
 "company": "LP Analyst",
@@ -33004,6 +33194,11 @@
 "first_seen": "2026-08-15",
 "title": "Entry Level Business Analyst / Data Analyst"
 },
+"ebecfe1f-3890-4cf8-8663-d7b118197e24": {
+"company": "Goldman Sachs",
+"first_seen": "2026-10-06",
+"title": "New Analyst - Engineering"
+},
 "ebee222c-1071-46b0-848a-7f57af5a18e1": {
 "company": "SOCOTEC UK & Ireland",
 "first_seen": "2026-09-01",
@@ -33919,6 +34114,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer Intern - Global Payment Infra and SRE"
 },
+"f28161fe-bd49-4abe-9430-703600ec69d6": {
+"company": "Shield AI",
+"first_seen": "2026-10-06",
+"title": "Software Development Engineer New Grad"
+},
 "f282c4b5-c8ee-45ef-b00b-51a18a7a5db6": {
 "company": "Jones Lang LaSalle",
 "first_seen": "2026-09-12",
@@ -34258,6 +34458,11 @@
 "company": "Dollar General",
 "first_seen": "2026-09-12",
 "title": "Lead Sales Associate"
+},
+"f4c1cbda-bcc6-4e43-ab84-01f468e54479": {
+"company": "First Citizens BancShares",
+"first_seen": "2026-10-06",
+"title": "Summer Intern - Card Product Management - Business to Business Payments"
 },
 "f4db16dc-9fd7-499a-b809-554855fcb08f": {
 "company": "IAT Insurance Group",
@@ -35223,6 +35428,11 @@
 "company": "Dutch Bros",
 "first_seen": "2026-09-18",
 "title": "Broista"
+},
+"fc0a55fe-5e4d-4951-a501-161bed0f3d41": {
+"company": "Sigma Design",
+"first_seen": "2026-10-06",
+"title": "Robot Operator"
 },
 "fc36587f-acf4-428e-a61f-aab42b07540c": {
 "company": "Ambarella",
