@@ -1424,11 +1424,6 @@
 "first_seen": "2026-09-12",
 "title": "Software Engineer Intern - Aviation Web Development"
 },
-"09e061cd-a5e8-4059-bb6d-a0672a475328": {
-"company": "Fannie Mae",
-"first_seen": "2026-08-20",
-"title": "Data Science Intern - Analytics & Modeling Program"
-},
 "09e1c7ef-5308-4aa4-b767-2020b75e4811": {
 "company": "Genworth Financial",
 "first_seen": "2026-09-12",
@@ -2658,11 +2653,6 @@
 "company": "American Century Investments",
 "first_seen": "2026-09-26",
 "title": "Enterprise Data Intern"
-},
-"127ee490-e7ce-4819-9c41-39ae978cbcc6": {
-"company": "Amentum",
-"first_seen": "2026-08-19",
-"title": "Software Developer/Database Management Specialist-GIS Analyst"
 },
 "128ee1a3-4234-414f-bf0e-253945bdc241": {
 "company": "BGE",
@@ -8114,6 +8104,11 @@
 "first_seen": "2026-10-01",
 "title": "Business Technology Solutions Associate"
 },
+"38c7776b-a885-4f1e-af66-2816ed57ba66": {
+"company": "Gordon Food Service",
+"first_seen": "2026-10-08",
+"title": "Software Engineer Intern - Transportation Routing"
+},
 "38db92f9-6338-4caa-b797-e738cda127b9": {
 "company": "ByteDance",
 "first_seen": "2026-08-15",
@@ -8403,11 +8398,6 @@
 "company": "Entegris",
 "first_seen": "2026-09-12",
 "title": "AI Continuous Improvement Co-op"
-},
-"3ab26bfe-972a-4b2f-8014-7b6add4f83d3": {
-"company": "ASM International",
-"first_seen": "2026-08-15",
-"title": "Software Engineering Intern"
 },
 "3ab9013f-6052-4487-a363-3bc028b58b16": {
 "company": "EquipmentShare",
@@ -10224,6 +10214,11 @@
 "first_seen": "2026-09-01",
 "title": "Data Analyst Intern"
 },
+"47b95dc3-a50e-4956-855b-b8163f839175": {
+"company": "American University",
+"first_seen": "2026-10-08",
+"title": "Geospatial Research Lab Assistant"
+},
 "47d46841-c65e-4407-8aea-0d09d3f38312": {
 "company": "Lawrence Livermore National Laboratory (LLNL)",
 "first_seen": "2026-09-12",
@@ -10403,6 +10398,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Software Engineer/Mobile Engineer New Grad - Ads Core Demonstration"
+},
+"4939e8a4-f378-418b-bf25-abaebfdf3b33": {
+"company": "Amentum",
+"first_seen": "2026-10-08",
+"title": "Software Engineer 1"
 },
 "494e793d-3f7c-4255-a337-58dcd284382e": {
 "company": "Qorvo",
@@ -14554,6 +14554,11 @@
 "first_seen": "2026-09-22",
 "title": "Technology Development Program Associate"
 },
+"64ffe791-24fc-4b7a-b06b-90a8bc63b978": {
+"company": "Badger Meter",
+"first_seen": "2026-10-08",
+"title": "Software Engineering Intern"
+},
 "64fff9f9-a727-4e4a-8276-7c86d2eff96d": {
 "company": "Dow Jones",
 "first_seen": "2026-10-08",
@@ -15763,6 +15768,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Graduate - Video-on-Demand Algorithm"
+},
+"6ef197b4-1ae6-4a42-a81e-80e6283959fd": {
+"company": "Lowe's",
+"first_seen": "2026-10-08",
+"title": "PRO Services Reporting Intern"
 },
 "6f0ac1d2-020c-4403-bbe7-85b5e31d912d": {
 "company": "Constellation Energy",
@@ -19339,11 +19349,6 @@
 "first_seen": "2026-09-24",
 "title": "Software Engineer New Grad"
 },
-"883f115b-b0ad-4eae-8a80-2bbf523964d4": {
-"company": "Micron Technology",
-"first_seen": "2026-08-15",
-"title": "AI Innovation Research Engineer New Grad"
-},
 "885b2281-cca9-4d35-a38f-2b727bb14848": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-08-26",
@@ -20923,6 +20928,11 @@
 "company": "SiFive",
 "first_seen": "2026-09-07",
 "title": "Design Verification Infrastructure Intern - Platform"
+},
+"92b36766-febe-474d-941e-0bf16bc2ecc0": {
+"company": "Leidos",
+"first_seen": "2026-10-08",
+"title": "Systems Integration and Software Engineer Intern"
 },
 "92c17c27-5c49-4dde-bb76-5e664bf0a422": {
 "company": "General Dynamics Mission Systems",
@@ -32188,6 +32198,11 @@
 "company": "DellFor Technologies",
 "first_seen": "2026-08-15",
 "title": "Entry Level .Net Developer"
+},
+"dfc7a1cd-bf8f-4cd5-8d69-b87cf833ec72": {
+"company": "Cox",
+"first_seen": "2026-10-08",
+"title": "Data Scientist Co-op"
 },
 "dfd0d59f-a419-45ea-ada0-92b1316ddcbe": {
 "company": "Applied Materials",
