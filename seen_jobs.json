@@ -8399,6 +8399,11 @@
 "first_seen": "2026-09-12",
 "title": "AI Engineer 1 - Enterprise Technology Services"
 },
+"3bcb752a-418d-4efe-88b2-389292a7eed0": {
+"company": "Workday",
+"first_seen": "2026-10-10",
+"title": "Product Manager Intern"
+},
 "3bde4886-9568-4579-8754-68e8e2f44ca1": {
 "company": "American Express",
 "first_seen": "2026-08-18",
@@ -11824,6 +11829,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - Data Search Search Quality"
 },
+"5494c5a6-9c5b-48aa-9cdf-859763fa973a": {
+"company": "Gartner",
+"first_seen": "2026-10-10",
+"title": "Associate Data Analyst - Insights and Product Analytics"
+},
 "54abb8d5-92e1-4497-97fb-7102f105b7e4": {
 "company": "AMD",
 "first_seen": "2026-09-19",
@@ -12923,6 +12933,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Data Science Intern - Advertisement Team"
+},
+"5c436bc1-72a2-4053-b21c-fed118fb02c9": {
+"company": "Gartner",
+"first_seen": "2026-10-10",
+"title": "Associate Data Scientist"
 },
 "5c47dfa0-2340-4231-a8bc-20e900f594c7": {
 "company": "NXP Semiconductors",
@@ -15453,6 +15468,11 @@
 "company": "NewsBreak",
 "first_seen": "2026-09-12",
 "title": "AI Intern - Engineering Track"
+},
+"6f1a27e9-3515-4a43-a644-80dbddacc4bb": {
+"company": "Arizona State University",
+"first_seen": "2026-10-10",
+"title": "Student Web Developer & Content Specialist Intern"
 },
 "6f239ca5-3a1c-4b71-81f2-cf8851243dc4": {
 "company": "Cyvl",
@@ -31009,6 +31029,11 @@
 "first_seen": "2026-09-22",
 "title": "Strategic Operations Analyst Intern"
 },
+"dc98760f-d794-4d68-be4d-5639d2bcf3f3": {
+"company": "Tesla",
+"first_seen": "2026-10-10",
+"title": "Cell Engineering Intern - Cell Qualification"
+},
 "dca5d2f4-fa28-471c-9c4a-8b7568c510bc": {
 "company": "hhaexchange",
 "first_seen": "2026-08-15",
@@ -32118,11 +32143,6 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "LLM/AI Operations Development Engineer Graduate - Data Center Networking"
-},
-"e4f4a19a-0777-4687-9441-b8f377f86167": {
-"company": "University of Arkansas",
-"first_seen": "2026-08-15",
-"title": "Graduate Research Assistant Intern"
 },
 "e4f74430-6399-401d-97ca-da938138aeb3": {
 "company": "ABEC",
