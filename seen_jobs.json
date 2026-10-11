@@ -22315,7 +22315,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-10-09",
+"bachelors": "2026-10-10",
 "grad": "2026-10-09",
 "newgrad": "2026-10-10"
 },
@@ -28703,6 +28703,11 @@
 "company": "iManage",
 "first_seen": "2026-09-24",
 "title": "Applied AI Engineer New Grad"
+},
+"cc5558b2-1bda-49b9-a95f-0a93489f72e2": {
+"company": "Johns Hopkins Applied Physics Laboratory",
+"first_seen": "2026-10-11",
+"title": "Data Science & Autonomous Systems Intern - Data Science & Autonomous Systems - Critical Infrastructure Protection"
 },
 "cc58fac9-b0fa-47d6-8d76-5a9b5e373147": {
 "company": "Marquee Brands",
