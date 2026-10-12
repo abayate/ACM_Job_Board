@@ -9159,6 +9159,11 @@
 "first_seen": "2026-10-07",
 "title": "Data Analyst Intern"
 },
+"425cf488-0ee5-4bff-a865-9b760232a73e": {
+"company": "Pearson",
+"first_seen": "2026-10-12",
+"title": "Data Analyst - Measurement"
+},
 "427e5639-9196-46f8-9b37-0db2b945bf29": {
 "company": "Tokyo Electron",
 "first_seen": "2026-09-12",
@@ -18669,6 +18674,11 @@
 "first_seen": "2026-08-29",
 "title": "Software Engineer - Implementation"
 },
+"8944e3f6-18d2-4e20-b86a-23223ceba88f": {
+"company": "NVIDIA",
+"first_seen": "2026-10-12",
+"title": "Software Engineer New Grad - DL Kernel Libraries"
+},
 "89458fa4-671a-4f16-80d0-b17bfb3af74d": {
 "company": "Auto-Owners Insurance",
 "first_seen": "2026-08-31",
@@ -21922,7 +21932,7 @@
 "_headers": {
 "bachelors": "2026-10-10",
 "grad": "2026-10-09",
-"newgrad": "2026-10-10"
+"newgrad": "2026-10-11"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
 "company": "Panasonic Holdings",
