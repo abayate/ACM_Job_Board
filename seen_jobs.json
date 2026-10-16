@@ -6424,11 +6424,6 @@
 "first_seen": "2026-08-15",
 "title": "Software Engineer New Grad"
 },
-"2ddddf54-3c3b-4af6-b8c2-5b755d594dc1": {
-"company": "Capital Health",
-"first_seen": "2026-08-15",
-"title": "Product Engineer 1"
-},
 "2deb4c4d-48a6-4b30-8445-41e253c752f2": {
 "company": "Crown Innovations",
 "first_seen": "2026-10-12",
@@ -9383,6 +9378,11 @@
 "company": "The Brattle Group",
 "first_seen": "2026-09-19",
 "title": "Energy Analyst Intern - Economics"
+},
+"43929c26-d19b-4057-9543-bf087c4bbf62": {
+"company": "Medtronic",
+"first_seen": "2026-10-16",
+"title": "Software Engineer Intern"
 },
 "43a5374e-0e70-4dc9-82b0-687b54e8c5da": {
 "company": "Goldman Sachs",
@@ -12419,6 +12419,11 @@
 "first_seen": "2026-09-01",
 "title": "AI, Data & Technology Associate"
 },
+"59893888-211a-4a3c-9b02-8095e93f2051": {
+"company": "Hilb Group",
+"first_seen": "2026-10-16",
+"title": "Benefits Analytics Intern"
+},
 "5993eb6e-3414-429f-86b9-dd467b9ddd1d": {
 "company": "Harvey",
 "first_seen": "2026-10-02",
@@ -12508,11 +12513,6 @@
 "company": "Dutch Bros",
 "first_seen": "2026-09-12",
 "title": "Broista"
-},
-"5a24ffd7-21dd-4446-9322-8b43eab99a97": {
-"company": "Freddie Mac",
-"first_seen": "2026-08-24",
-"title": "Software Developer Intern - Single-Family"
 },
 "5a26da4a-19ad-4f1c-9fe1-b44593866407": {
 "company": "ABB",
@@ -13573,11 +13573,6 @@
 "company": "Tesla",
 "first_seen": "2026-09-01",
 "title": "Software Engineer Intern - Information Security - Spring 2027"
-},
-"615e673e-d151-4378-ac1e-15cefa2b366d": {
-"company": "Freddie Mac",
-"first_seen": "2026-08-15",
-"title": "Single Family Data Analyst"
 },
 "6162982e-4ddb-4316-b2dc-5ab2cb383340": {
 "company": "RTX",
@@ -17519,6 +17514,11 @@
 "first_seen": "2026-08-26",
 "title": "AI Engineer Graduate Level"
 },
+"7eb2dc1e-a2d8-4cd8-a3cf-70178e3bc5d2": {
+"company": "American Bankers Association",
+"first_seen": "2026-10-16",
+"title": "Banking Policy and Economic Research Intern"
+},
 "7ebfe14e-9cc5-4d58-a36d-60f66838f248": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -17783,6 +17783,11 @@
 "company": "McKesson",
 "first_seen": "2026-10-08",
 "title": "Software Engineer Intern"
+},
+"80ec84ab-f0da-4549-85fb-07466041ed4a": {
+"company": "J.M. Smucker",
+"first_seen": "2026-10-16",
+"title": "Finance Technology Intern"
 },
 "80fb1054-5f89-41bf-9c32-1132bd4aad16": {
 "company": "West Bend Insurance",
@@ -22180,7 +22185,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-10-15",
+"bachelors": "2026-10-16",
 "grad": "2026-10-15",
 "newgrad": "2026-10-15"
 },
@@ -26079,6 +26084,11 @@
 "first_seen": "2026-08-15",
 "title": "Librarian 3DEXPERIENCE PLM Platform - Automotive"
 },
+"baa00ee8-4fec-4f3e-9df3-703c01b4b803": {
+"company": "Visa",
+"first_seen": "2026-10-16",
+"title": "Software Engineer"
+},
 "baa23a3b-d414-4373-9c07-e1c15ba9f262": {
 "company": "Wellington Management",
 "first_seen": "2026-09-12",
@@ -26713,6 +26723,11 @@
 "company": "TikTok",
 "first_seen": "2026-09-05",
 "title": "Applied Scientist Intern - Monetization GenAI - Global Frontier Tech Recruitment Program - 2027 Start - PhD"
+},
+"beae5fed-5dcf-4894-bb75-645072927b79": {
+"company": "Tesla",
+"first_seen": "2026-10-16",
+"title": "Data Collection Operator - Optimus"
 },
 "bec0bfec-8232-4a08-b412-7acf9ff7b4fc": {
 "company": "ZS",
@@ -29019,6 +29034,11 @@
 "first_seen": "2026-09-12",
 "title": "Ground Software Intern - Spring or Summer 2027"
 },
+"d07a4719-9a08-4ec6-850e-09bf29679246": {
+"company": "Johnson & Johnson",
+"first_seen": "2026-10-16",
+"title": "Summer Intern - Digital Signal/ Imaging AI"
+},
 "d0810d61-6cb0-4d20-af9e-d0029df899fa": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -29728,11 +29748,6 @@
 "company": "CarMax",
 "first_seen": "2026-09-22",
 "title": "Strategy Analyst"
-},
-"d55095b6-b7dc-4c2a-b7dd-9f93cb9358fb": {
-"company": "Freddie Mac",
-"first_seen": "2026-08-24",
-"title": "Single-Family Data Intern"
 },
 "d55e2c80-cc43-4f0d-b77b-2bb8884e57b0": {
 "company": "TikTok",
@@ -34109,6 +34124,11 @@
 "first_seen": "2026-08-15",
 "title": "Engineering Intern"
 },
+"f351f3ac-9b5b-4f88-b7bf-8c3cce1a1df0": {
+"company": "Nutanix",
+"first_seen": "2026-10-16",
+"title": "Support Analytics & Operations Intern"
+},
 "f35300a5-06d4-4289-a277-30b4a8d300c8": {
 "company": "CoStar Group",
 "first_seen": "2026-10-02",
@@ -35383,11 +35403,6 @@
 "company": "International",
 "first_seen": "2026-09-30",
 "title": "Entry-Level Vehicle Powertrain Integration Engineer"
-},
-"fc4f2880-dfbe-4370-a129-24ea58c9a173": {
-"company": "Freddie Mac",
-"first_seen": "2026-08-15",
-"title": "Software Developer Analyst"
 },
 "fc4f4841-d5c6-4987-bf32-d4cb867a8b34": {
 "company": "Hoffman Construction",
