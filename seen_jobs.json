@@ -9384,11 +9384,6 @@
 "first_seen": "2026-09-19",
 "title": "Energy Analyst Intern - Economics"
 },
-"43929c26-d19b-4057-9543-bf087c4bbf62": {
-"company": "Medtronic",
-"first_seen": "2026-08-15",
-"title": "Software Engineer Intern"
-},
 "43a5374e-0e70-4dc9-82b0-687b54e8c5da": {
 "company": "Goldman Sachs",
 "first_seen": "2026-10-07",
@@ -10993,6 +10988,11 @@
 "company": "Pegatron Technologies LLC",
 "first_seen": "2026-09-07",
 "title": "Electronic Engineer - Multiple Teams"
+},
+"4fa11d47-e066-4706-be18-9b9b784bcd1a": {
+"company": "Periodic Labs",
+"first_seen": "2026-10-16",
+"title": "Research Scientist - Scaling RL"
 },
 "4fa5508b-be5b-43c6-8651-fcb4753d6e99": {
 "company": "Microsoft",
@@ -17509,6 +17509,11 @@
 "first_seen": "2026-09-12",
 "title": "Software Engineering Specialist - BUILD Leadership Program"
 },
+"7ea8d45a-67d3-43f9-ba9e-9166c90992d9": {
+"company": "Evercore",
+"first_seen": "2026-10-16",
+"title": "Summer Analyst: Global Technology Intern"
+},
 "7eb1feaf-2674-4186-8e2b-9988a4887949": {
 "company": "NewRocket",
 "first_seen": "2026-08-26",
@@ -21294,6 +21299,11 @@
 "first_seen": "2026-09-12",
 "title": "Analytics Intern - Summer 2027"
 },
+"99625c56-8f56-42c3-a5d9-6eb33cfa33fa": {
+"company": "Hewlett Packard Enterprise",
+"first_seen": "2026-10-16",
+"title": "AI & HPC Performance Engineering Intern"
+},
 "99872d41-8d7d-4845-8b43-a77762576429": {
 "company": "Retell AI",
 "first_seen": "2026-09-12",
@@ -21493,6 +21503,11 @@
 "company": "Wells Fargo",
 "first_seen": "2026-09-30",
 "title": "Engineering Associate - CIB Operations Technology"
+},
+"9ab5126a-5ff7-4eaa-9a53-cb901dc3185c": {
+"company": "Axon",
+"first_seen": "2026-10-16",
+"title": "Software Engineer"
 },
 "9ac6c58a-1914-4f2e-94b7-1da1ef0eb239": {
 "company": "Mill",
@@ -27178,6 +27193,11 @@
 "company": "Emerson Electric",
 "first_seen": "2026-09-16",
 "title": "Software Engineer Intern - ADG System R&D"
+},
+"c2b83547-72d8-4dc5-8cc9-ea1825ebf4e6": {
+"company": "Tesla",
+"first_seen": "2026-10-16",
+"title": "Software Engineer Intern - SI Data Infrastructure"
 },
 "c2cb4e52-0a06-45a3-beff-da2436315c4d": {
 "company": "Assurant",
