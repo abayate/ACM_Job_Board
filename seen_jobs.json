@@ -599,11 +599,6 @@
 "first_seen": "2026-10-04",
 "title": "Full Stack Software Engineer"
 },
-"0483a44f-f140-427e-a301-9d87c2344515": {
-"company": "InterImage",
-"first_seen": "2026-08-15",
-"title": "Software Engineer"
-},
 "049ae851-e54d-45cd-8180-1c82261e09cd": {
 "company": "Centerstone",
 "first_seen": "2026-10-01",
@@ -1508,6 +1503,11 @@
 "company": "Latitude AI",
 "first_seen": "2026-09-02",
 "title": "Triage Associate 1 - Platform Triage"
+},
+"0a82dc54-725b-4222-9f22-2a0b904f79f8": {
+"company": "The Allen Institute for AI",
+"first_seen": "2026-10-17",
+"title": "Predoctoral Young Investigator - Open Ecosystem"
 },
 "0a8485fb-d1dc-4372-aabb-6bc7c3980fb9": {
 "company": "The Aerospace Corporation",
@@ -4234,6 +4234,11 @@
 "first_seen": "2026-08-15",
 "title": "Software Developer"
 },
+"1e71a3ad-b0cf-4e53-a601-f6e1b737e2a6": {
+"company": "Scientific Systems",
+"first_seen": "2026-10-17",
+"title": "Autonomy Software Engineer 1"
+},
 "1e734b13-8e70-47ad-8aa1-599b2c43392f": {
 "company": "United Parcel Service",
 "first_seen": "2026-09-12",
@@ -4403,6 +4408,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Backend Software Engineer Intern"
+},
+"1f95d992-0d39-478e-ad42-348e38ab6484": {
+"company": "CloudFactory",
+"first_seen": "2026-10-17",
+"title": "Video Data Capture for AI in Construction"
 },
 "1fa0cf6c-b41d-4a3e-bd89-e3efc8a41a1f": {
 "company": "Google",
@@ -8208,11 +8218,6 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Data Science Intern - TikTok Product"
-},
-"3b770c4c-dd8c-43b4-9025-9b6df53c193c": {
-"company": "CloudFactory",
-"first_seen": "2026-08-15",
-"title": "Data Capture Technician - Construction"
 },
 "3b795f89-6464-4dce-bc94-f55a4821c04f": {
 "company": "BIP Ventures",
@@ -13119,6 +13124,11 @@
 "first_seen": "2026-09-15",
 "title": "Technology Intern - Summer 2027"
 },
+"5e801b15-781c-4f79-8630-11096eed5278": {
+"company": "CVector",
+"first_seen": "2026-10-17",
+"title": "Full Stack Software Engineer 1 or 2"
+},
 "5e87f1f8-136a-428f-8aa1-393a88973479": {
 "company": "Johns Hopkins Applied Physics Laboratory",
 "first_seen": "2026-09-12",
@@ -16724,6 +16734,11 @@
 "first_seen": "2026-10-16",
 "title": "Software Development Engineer"
 },
+"78eb2dca-9b33-4b7e-a27e-6ac21fe1b6ff": {
+"company": "Flexcompute",
+"first_seen": "2026-10-17",
+"title": "Software Engineer - Infrastructure"
+},
 "78f040d4-9950-46c8-93de-a0a189144450": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -17234,6 +17249,11 @@
 "first_seen": "2026-09-12",
 "title": "Product Manager Intern"
 },
+"7ca735aa-9419-4bb3-aee2-59ff92b695e6": {
+"company": "Avalore",
+"first_seen": "2026-10-17",
+"title": "Innovation Engineer"
+},
 "7caf712d-6377-4f92-ae37-3a18b2ea14c6": {
 "company": "GE Vernova",
 "first_seen": "2026-09-10",
@@ -17498,6 +17518,11 @@
 "company": "CACI",
 "first_seen": "2026-10-16",
 "title": "Junior Dashboard Administrator"
+},
+"7eff9698-571b-40ca-9bf2-60dd1a68e0a8": {
+"company": "Red Rabbit Robotics",
+"first_seen": "2026-10-17",
+"title": "Mechatronics Engineer Intern"
 },
 "7f093b2f-6a53-4d35-b5f2-b8abc4cf3abe": {
 "company": "Invesco",
@@ -20179,11 +20204,6 @@
 "first_seen": "2026-09-12",
 "title": "Monitoring & Utilization Intern"
 },
-"9214f3c7-4f3c-4ef4-928e-dc33ef5431a3": {
-"company": "Lovingly",
-"first_seen": "2026-08-15",
-"title": "AI-First Multipotentialite"
-},
 "92154dd4-75de-4b54-b71e-74c5d9d5e54e": {
 "company": "Fireworks AI",
 "first_seen": "2026-10-06",
@@ -20613,6 +20633,11 @@
 "company": "GuideStone",
 "first_seen": "2026-09-16",
 "title": "Associate Software Developer"
+},
+"949230dd-d208-43ca-89c6-2f0fca003a69": {
+"company": "CloudFactory",
+"first_seen": "2026-10-17",
+"title": "Construction Reality Capture Technician"
 },
 "9492fbb5-6ba8-4a99-98aa-2aa3b23f3c52": {
 "company": "MSA Safety",
@@ -21353,6 +21378,11 @@
 "company": "Duolingo",
 "first_seen": "2026-09-16",
 "title": "Software Engineer Intern - Thrive"
+},
+"9a019136-13e7-4685-8187-00ec9d7fd140": {
+"company": "Avalore",
+"first_seen": "2026-10-17",
+"title": "Systems Engineer"
 },
 "9a1debfd-f76d-40d2-8f54-b93031f11a1c": {
 "company": "Brevium",
@@ -22743,11 +22773,6 @@
 "company": "Vertex Pharmaceuticals",
 "first_seen": "2026-10-09",
 "title": "People Research and Analytics Co-op - People Research and Analytics - Human Resources"
-},
-"a449ff56-af7b-46d9-9c1b-73ccb36515e8": {
-"company": "Tesla",
-"first_seen": "2026-08-15",
-"title": "Data Collection Operator - Optimus"
 },
 "a457a2b0-7767-4949-b5a3-823af49cefb2": {
 "company": "RTX",
@@ -29904,11 +29929,6 @@
 "first_seen": "2026-09-18",
 "title": "Robot Learning Intern"
 },
-"d70d2957-012d-4805-b794-0d5527276f27": {
-"company": "Avalore",
-"first_seen": "2026-08-15",
-"title": "Software Engineer"
-},
 "d7120b72-0c14-449e-a095-53e75c52eb34": {
 "company": "Quantinuum",
 "first_seen": "2026-09-12",
@@ -30713,6 +30733,11 @@
 "company": "CoStar Group",
 "first_seen": "2026-10-14",
 "title": "Product Intern"
+},
+"dc1736a5-1d63-4f9d-b1cb-88598e3fa554": {
+"company": "Galatea Associates",
+"first_seen": "2026-10-17",
+"title": "Entry-Level Financial Software Consultant"
 },
 "dc2aebf1-8c3c-4139-937e-f31dfd69950e": {
 "company": "Amgen",
