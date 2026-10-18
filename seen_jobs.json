@@ -5254,6 +5254,11 @@
 "first_seen": "2026-09-01",
 "title": "Product Analyst Intern"
 },
+"25fc66da-f7d2-4a82-b918-c0645c1eb9db": {
+"company": "Chainlink Labs",
+"first_seen": "2026-10-18",
+"title": "Research Intern"
+},
 "260ebea6-b3a6-4e5e-8824-71490c13d10f": {
 "company": "Goldman Sachs",
 "first_seen": "2026-09-09",
@@ -6838,11 +6843,6 @@
 "company": "Westinghouse Electric Company",
 "first_seen": "2026-08-15",
 "title": "Nuclear Analysis Tech C / Engineering Techs / Physics Techs"
-},
-"3163c14a-7b55-40a3-b21d-2696e2c37cd5": {
-"company": "Normal Computing",
-"first_seen": "2026-08-19",
-"title": "AI Research Resident"
 },
 "319f5acd-d41e-4a2d-ba38-489c86ff3b27": {
 "company": "Great American Insurance Company",
@@ -20119,6 +20119,11 @@
 "first_seen": "2026-09-12",
 "title": "Data Science Intern - Strategy, Execution, & Analytics - Platform"
 },
+"931408fb-5cb7-4179-8c33-35a242bbc266": {
+"company": "Tesla",
+"first_seen": "2026-10-18",
+"title": "Advanced Automation Engineer Intern - Cell Engineering - Winter/Spring 2027"
+},
 "9315a5c7-3baf-4ea9-8603-12edf167d918": {
 "company": "The Campbell's Company",
 "first_seen": "2026-09-05",
@@ -21915,7 +21920,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-10-16",
+"bachelors": "2026-10-18",
 "grad": "2026-10-16",
 "newgrad": "2026-10-16"
 },
