@@ -4774,6 +4774,11 @@
 "first_seen": "2026-09-12",
 "title": "Digital R&D Intern"
 },
+"22a0a05d-ff1a-4abe-a1be-ef55d7b01fa9": {
+"company": "VTG",
+"first_seen": "2026-10-18",
+"title": "Junior Software Engineer"
+},
 "22a10269-db51-459d-b8ce-872e7a7ac070": {
 "company": "Hardin Design",
 "first_seen": "2026-09-16",
@@ -21921,8 +21926,8 @@
 },
 "_headers": {
 "bachelors": "2026-10-18",
-"grad": "2026-10-16",
-"newgrad": "2026-10-16"
+"grad": "2026-10-18",
+"newgrad": "2026-10-18"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
 "company": "Panasonic Holdings",
@@ -23778,6 +23783,11 @@
 "company": "Qualified Health",
 "first_seen": "2026-09-11",
 "title": "Clinical AI Evaluation Intern"
+},
+"ad12d14f-fd8d-4560-a8bb-97f556cdad85": {
+"company": "DiDi Global",
+"first_seen": "2026-10-18",
+"title": "Research Intern - Scene Understanding and Planning"
 },
 "ad1c8b99-9626-439c-9dc1-2dc9026e7b36": {
 "company": "Cummins",
