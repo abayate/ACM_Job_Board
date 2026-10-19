@@ -129,6 +129,11 @@
 "first_seen": "2026-08-15",
 "title": "Search Safety Operations Intern - Platform Responsibility - Search"
 },
+"01715d82-9e8f-436e-956d-164b5e0aceb2": {
+"company": "GM financial",
+"first_seen": "2026-10-19",
+"title": "Portfolio Analytics Intern"
+},
 "0173534b-1a00-43bf-8929-2a7c5bfa842d": {
 "company": "LexisNexis Risk Solutions",
 "first_seen": "2026-10-06",
@@ -1468,6 +1473,11 @@
 "company": "Booz Allen",
 "first_seen": "2026-09-22",
 "title": "Software Developer Intern - University"
+},
+"0a4cd2e5-65b4-4298-ab71-d0c7705a376c": {
+"company": "Citizens Financial Group",
+"first_seen": "2026-10-19",
+"title": "Software Engineer 1"
 },
 "0a703703-0be7-4f89-89c2-56b288638eef": {
 "company": "Interstates",
@@ -4324,6 +4334,11 @@
 "first_seen": "2026-09-12",
 "title": "Developer Intern"
 },
+"1fe3e540-8e80-409c-b103-5cac44e6b76f": {
+"company": "OU Health",
+"first_seen": "2026-10-19",
+"title": "Business Intelligence Developer 1-3"
+},
 "1ff35b3f-f93c-4589-8ba9-d96ddc2265fd": {
 "company": "West Monroe",
 "first_seen": "2026-10-06",
@@ -4688,6 +4703,11 @@
 "company": "TSMG",
 "first_seen": "2026-09-04",
 "title": "AI/ML Data Contributor - Data Labeling - Content Evaluation"
+},
+"226b2e00-45e3-4969-ae52-9edd0338ac22": {
+"company": "Marvell",
+"first_seen": "2026-10-19",
+"title": "AI Data Science Intern"
 },
 "2271cd83-5514-4430-a1fb-de0e010e1cdc": {
 "company": "Marvell",
@@ -7868,6 +7888,11 @@
 "company": "NASCO",
 "first_seen": "2026-09-24",
 "title": "Software Engineer Intern"
+},
+"3a44b244-cc3e-47ea-9428-137c843acca3": {
+"company": "Excellus BCBS",
+"first_seen": "2026-10-19",
+"title": "College Operations Analyst Intern"
 },
 "3a465fc5-1275-40a2-9356-56a834952bce": {
 "company": "Capital Group",
@@ -11254,6 +11279,11 @@
 "first_seen": "2026-10-04",
 "title": "Software Engineer - Metrology Systems"
 },
+"5360208a-9885-42bb-a092-21121b730e84": {
+"company": "Bracebridge Capital",
+"first_seen": "2026-10-19",
+"title": "Software Engineer Co-op - Application Development"
+},
 "536242db-62cc-4f97-b8e4-d38cd8088500": {
 "company": "Liquid",
 "first_seen": "2026-08-15",
@@ -14529,6 +14559,11 @@
 "first_seen": "2026-10-19",
 "title": "AI/ML Engineer"
 },
+"6bd9b720-b688-4436-b0fe-a96710105de2": {
+"company": "Sallie Mae",
+"first_seen": "2026-10-19",
+"title": "Engineer 1"
+},
 "6bda3b7e-e573-454c-a89e-e40b16ecac2c": {
 "company": "ABB",
 "first_seen": "2026-10-04",
@@ -16923,6 +16958,11 @@
 "company": "Anduril",
 "first_seen": "2026-09-29",
 "title": "Data Analyst - Quality"
+},
+"7da86929-8396-4214-8250-79bcaeaa609d": {
+"company": "Mariana Minerals",
+"first_seen": "2026-10-19",
+"title": "Analytical Lab Chemist"
 },
 "7db598e3-bc08-420a-a69f-e39447549d49": {
 "company": "Edison International",
@@ -21605,7 +21645,7 @@
 "title": "Product Quality Engineer"
 },
 "_headers": {
-"bachelors": "2026-10-18",
+"bachelors": "2026-10-19",
 "grad": "2026-10-19",
 "newgrad": "2026-10-19"
 },
@@ -24679,6 +24719,11 @@
 "first_seen": "2026-10-14",
 "title": "Software Developer Graduate - AI Proficient"
 },
+"b5bb6e1a-1206-4c9a-aea9-5df782a0e67c": {
+"company": "Robert Bosch Venture Capital",
+"first_seen": "2026-10-19",
+"title": "AI Research Intern: Wireless Foundation Models"
+},
 "b5bd0081-1033-4882-b221-b3f4cc06d1ec": {
 "company": "TikTok",
 "first_seen": "2026-10-09",
@@ -25258,6 +25303,11 @@
 "company": "OCC",
 "first_seen": "2026-09-18",
 "title": "AI Research & Engineering Intern"
+},
+"b9d84998-3a7f-4698-a344-64d97d9d9381": {
+"company": "Bracebridge Capital",
+"first_seen": "2026-10-19",
+"title": "Software Engineer: Business Intelligence Co-op"
 },
 "b9e02195-e8aa-4296-8ba7-766a14912486": {
 "company": "Corgan",
@@ -26548,6 +26598,11 @@
 "company": "Businessolver",
 "first_seen": "2026-10-14",
 "title": "Business Intelligence Analyst Intern - Innovation & Data Science"
+},
+"c35aada5-ad17-4000-baae-c7099528eabb": {
+"company": "Marvell",
+"first_seen": "2026-10-19",
+"title": "AI Data Science Intern"
 },
 "c35fa7e0-84f9-47b5-b3b2-bcf8c4b35214": {
 "company": "Enact Mortgage Insurance",
@@ -28278,6 +28333,11 @@
 "company": "Invesco",
 "first_seen": "2026-09-30",
 "title": "Early Career Intern - Digital Asset Product"
+},
+"d0a36b27-0b6f-4956-9ecb-4952e191ed55": {
+"company": "BorgWarner",
+"first_seen": "2026-10-19",
+"title": "EPMO Support Intern"
 },
 "d0a7e5d4-0029-4c15-aec8-ea347fe6067b": {
 "company": "ByteDance",
@@ -30043,11 +30103,6 @@
 "company": "Tesla",
 "first_seen": "2026-10-10",
 "title": "Cell Engineering Intern - Cell Qualification"
-},
-"dca5d2f4-fa28-471c-9c4a-8b7568c510bc": {
-"company": "hhaexchange",
-"first_seen": "2026-08-15",
-"title": "Full Stack Engineer"
 },
 "dcab0a63-0790-4990-ad6c-517c42b6436b": {
 "company": "TikTok",
@@ -33488,11 +33543,6 @@
 "company": "CenturyLink",
 "first_seen": "2026-10-16",
 "title": "Data Internship - Analytics & Decision Science"
-},
-"f51e5542-ea5b-4d42-ad6a-c67d116afbbe": {
-"company": "CACI",
-"first_seen": "2026-08-18",
-"title": "Data Scientist - Science"
 },
 "f522d234-9179-47e4-930b-94c0cba1d410": {
 "company": "Navy Federal",
