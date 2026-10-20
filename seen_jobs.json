@@ -2204,6 +2204,11 @@
 "first_seen": "2026-10-14",
 "title": "Machine Learning Engineer Intern"
 },
+"10497907-6a16-498a-a06a-e40113931577": {
+"company": "Space Dynamics Laboratory",
+"first_seen": "2026-10-20",
+"title": "AI-Enabled Requirements Engineering Intern"
+},
 "104e4b61-da7f-4737-816a-1d7e3f074bfc": {
 "company": "Texas Instruments",
 "first_seen": "2026-09-10",
@@ -2744,6 +2749,11 @@
 "first_seen": "2026-09-24",
 "title": "Software Developer - Multiple Levels - Cleared"
 },
+"14af9b4a-6b3e-473b-844f-542a89afb184": {
+"company": "TikTok",
+"first_seen": "2026-10-20",
+"title": "Recommendation Product Manager Intern - Content Ecosystem"
+},
 "14b34521-b2aa-4971-b19f-4fbc2cc1efea": {
 "company": "Entergy",
 "first_seen": "2026-10-14",
@@ -2908,6 +2918,11 @@
 "company": "NewYork-Presbyterian",
 "first_seen": "2026-10-07",
 "title": "Finance Intern"
+},
+"1583766b-60b6-44e5-b135-0ebadcdcaee0": {
+"company": "CVS Health",
+"first_seen": "2026-10-20",
+"title": "Full-Stack Engineer Training Program"
 },
 "15944838-ed3a-4423-8644-e0a8ada22a49": {
 "company": "Lennox International",
@@ -4164,6 +4179,11 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Scientist New Grad - Recommendation"
 },
+"1e99ce76-876f-4aad-ac27-ba16227e5aaf": {
+"company": "Texas A&M University System",
+"first_seen": "2026-10-20",
+"title": "Programmer 1"
+},
 "1e9bfb18-fe9d-4d19-82ab-a87461ef3ff7": {
 "company": "Direct Supply",
 "first_seen": "2026-09-12",
@@ -4268,11 +4288,6 @@
 "company": "Palantir",
 "first_seen": "2026-08-15",
 "title": "Forward Deployed Software Engineer New Grad"
-},
-"1f7345cd-0fc4-4a7a-9d82-bff23f6eba2a": {
-"company": "Applied Materials",
-"first_seen": "2026-08-15",
-"title": "AI Research Scientist - Generative Models for Scientific Discovery"
 },
 "1f76312f-1032-4bed-9c8d-8dec5f268526": {
 "company": "Perr&Knight",
@@ -6343,6 +6358,11 @@
 "company": "Space Dynamics Laboratory",
 "first_seen": "2026-10-06",
 "title": "Software Engineer Intern - AI Enabled Software Development"
+},
+"2e5e07c1-0b7d-4211-bca8-0ac7c3663a1a": {
+"company": "Texas Instruments",
+"first_seen": "2026-10-20",
+"title": "Software Engineer Intern - Compiler"
 },
 "2e670f26-fa85-4586-a044-ad138d073cf3": {
 "company": "KLA",
@@ -11363,6 +11383,11 @@
 "company": "Eurofins",
 "first_seen": "2026-10-07",
 "title": "Laboratory Software Specialist"
+},
+"54259fd2-233d-466f-894e-f3c91ea9159e": {
+"company": "Leidos",
+"first_seen": "2026-10-20",
+"title": "Research Scientist"
 },
 "542ac711-82de-42c9-8876-dc0553d0a585": {
 "company": "ByteDance",
@@ -17589,6 +17614,11 @@
 "first_seen": "2026-09-21",
 "title": "Systems Engineer Intern - Summer Games"
 },
+"82aec07a-0fa9-4cd0-8404-4c493e5561c9": {
+"company": "Constellation Brands",
+"first_seen": "2026-10-20",
+"title": "AI Enablement Intern"
+},
 "82b0f083-f346-4f10-91bf-8d21a2b88675": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -21662,7 +21692,7 @@
 "_headers": {
 "bachelors": "2026-10-20",
 "grad": "2026-10-20",
-"newgrad": "2026-10-19"
+"newgrad": "2026-10-20"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
 "company": "Panasonic Holdings",
@@ -22399,6 +22429,11 @@
 "first_seen": "2026-10-04",
 "title": "Software Developer - Full time"
 },
+"a5702f5f-906d-4b1f-8b18-e4034368a2cb": {
+"company": "RTX",
+"first_seen": "2026-10-20",
+"title": "Software Engineer Co-op"
+},
 "a57d347e-4ce0-4590-bf80-9368dd106660": {
 "company": "Intuit",
 "first_seen": "2026-09-14",
@@ -22824,6 +22859,11 @@
 "first_seen": "2026-09-16",
 "title": "Factory Firmware Integration Intern - Energy Engineering"
 },
+"a864bebf-e087-4574-860e-29229283a0fd": {
+"company": "Magna",
+"first_seen": "2026-10-20",
+"title": "Junior AI Engineer"
+},
 "a8655c72-8299-4087-b0ad-d93807cef979": {
 "company": "Illinois Tool Works",
 "first_seen": "2026-10-08",
@@ -23188,6 +23228,11 @@
 "company": "CROSSMARK",
 "first_seen": "2026-09-10",
 "title": "Events Specialist"
+},
+"aaac9d8b-db6b-4050-ad94-8cb5584c0bbd": {
+"company": "Cigna Group",
+"first_seen": "2026-10-20",
+"title": "Business Analytics Intern"
 },
 "aabe0633-3798-4110-b7e7-349827a02b98": {
 "company": "Veryable",
@@ -23928,11 +23973,6 @@
 "company": "Medpace",
 "first_seen": "2026-09-05",
 "title": "Feasibility Informatics Internship/Co-op"
-},
-"b013d54d-e343-4859-badb-79f7e0e59c09": {
-"company": "Uare.ai",
-"first_seen": "2026-08-15",
-"title": "Software Engineer \u2013 Early Career"
 },
 "b02141a2-8d29-4f0b-b7a7-280a77592468": {
 "company": "GuideWell Mutual",
@@ -26944,11 +26984,6 @@
 "first_seen": "2026-09-10",
 "title": "Electrical Engineer Intern - Fall 2026"
 },
-"c5e3ece8-669f-4ff8-9bb7-45dba1374d0f": {
-"company": "WEC Energy Group",
-"first_seen": "2026-08-18",
-"title": "Energy Analytics Intern"
-},
 "c5ee8357-17ae-4b7a-92ed-187f1d3bdb76": {
 "company": "Kitware",
 "first_seen": "2026-09-16",
@@ -27073,6 +27108,11 @@
 "company": "Mayo Clinic",
 "first_seen": "2026-10-06",
 "title": "Research Fellow - Radiation Oncology - Waddle lab"
+},
+"c6a828f1-5ffe-4585-929f-87f96db8518b": {
+"company": "Vertex Pharmaceuticals",
+"first_seen": "2026-10-20",
+"title": "Commercial Analytics Co-op - Commercial Analytics"
 },
 "c6ad75c6-e86c-4602-8344-eb52b14bb37e": {
 "company": "Epic Games",
@@ -29233,6 +29273,11 @@
 "company": "Medpace",
 "first_seen": "2026-08-24",
 "title": "Python Intern - Summer 2027"
+},
+"d6b959d0-3774-41d6-bc89-d62b84ca38bf": {
+"company": "RTX",
+"first_seen": "2026-10-20",
+"title": "Software Engineer Co-op"
 },
 "d6c24595-0dd3-449f-b0ae-d13e256fc740": {
 "company": "Tyler Technologies",
@@ -31864,6 +31909,11 @@
 "first_seen": "2026-09-10",
 "title": "Field Reliability Engineer - Autopilot Hardware"
 },
+"e912cad0-0531-489d-9c62-88dae5a40170": {
+"company": "Funnel Leasing",
+"first_seen": "2026-10-20",
+"title": "Software Engineer Entry to Mid-Level"
+},
 "e9282391-e76d-43c0-99fe-824b03704b2c": {
 "company": "Waymo",
 "first_seen": "2026-09-23",
@@ -33228,6 +33278,11 @@
 "company": "SOSi",
 "first_seen": "2026-08-15",
 "title": "PeopleSoft Software Developer"
+},
+"f2c4d7fa-fb4e-4a8a-8c49-31f4d2cc9e03": {
+"company": "PopStroke Holdings LLC",
+"first_seen": "2026-10-20",
+"title": "Business Analyst"
 },
 "f2c7b220-251b-4305-b73e-48f206c8203a": {
 "company": "Saronic",
