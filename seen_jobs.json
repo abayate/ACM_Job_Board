@@ -1899,6 +1899,11 @@
 "first_seen": "2026-09-19",
 "title": "Research Intern - Inference"
 },
+"0e335514-6e0b-4932-bba0-5e2e0d8c9375": {
+"company": "Mach9",
+"first_seen": "2026-10-21",
+"title": "Software Engineer - 3D Graphics"
+},
 "0e371048-09e7-4111-8768-bae91b1a2437": {
 "company": "Amplify",
 "first_seen": "2026-10-20",
@@ -2523,6 +2528,11 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Student Researcher - Vision Foundation Model"
+},
+"12d5d73d-0f5a-459e-aede-1f15093ed6ed": {
+"company": "NVIDIA",
+"first_seen": "2026-10-21",
+"title": "Applied Research Intern - Integrated Sensing and Communications"
 },
 "12e13643-ecc8-42a5-b20c-2c17fd0c17a0": {
 "company": "Principal Financial Group",
@@ -4543,6 +4553,11 @@
 "company": "Qorvo",
 "first_seen": "2026-09-12",
 "title": "Product Management Engineer Intern - High Performance Analog"
+},
+"21891d00-3597-4abe-b856-02cb924e0f6c": {
+"company": "Cincinnati Children\u2019s Hospital and Medical Center",
+"first_seen": "2026-10-21",
+"title": "Software Developer 1 - Psychiatry"
 },
 "218ed5a9-b0c2-4de1-a692-7c2c9a16e0fb": {
 "company": "CACI",
@@ -7694,6 +7709,11 @@
 "first_seen": "2026-08-15",
 "title": "Developer - Wealth Planning Tools - Wealth Forecasting System"
 },
+"38f6c73a-c860-438a-b2f5-f67b9e0e1d53": {
+"company": "Rhoda AI",
+"first_seen": "2026-10-21",
+"title": "Software Engineer - Rhoda Platform"
+},
 "38fae6be-6506-41ef-8d75-b015d786c0a7": {
 "company": "Albedo",
 "first_seen": "2026-09-10",
@@ -8453,6 +8473,11 @@
 "company": "Clerkie",
 "first_seen": "2026-10-20",
 "title": "Associate Product Manager"
+},
+"3e95934a-d25a-49d5-af4b-1a2eeb4b3eef": {
+"company": "Robert Bosch Venture Capital",
+"first_seen": "2026-10-21",
+"title": "Calibration Process Optimization Intern"
 },
 "3e987eca-2504-4d6a-9d3c-ad762da4a132": {
 "company": "Stafford Gray",
@@ -13794,6 +13819,11 @@
 "first_seen": "2026-10-14",
 "title": "Associate Software Engineer - Intelligence Systems"
 },
+"66380619-8481-4fe4-947a-26176558c345": {
+"company": "NVIDIA",
+"first_seen": "2026-10-21",
+"title": "Systems Software Intern - Aerial PHY"
+},
 "664f484e-e080-4fb3-be9b-ace5f9872240": {
 "company": "NVIDIA",
 "first_seen": "2026-10-14",
@@ -14813,6 +14843,11 @@
 "company": "Metropolitan Transportation Authority",
 "first_seen": "2026-09-11",
 "title": "Technology Support Intern - Emerging Talent"
+},
+"6e49745f-bd43-4f9c-86b7-ac3cd8172873": {
+"company": "Hewlett Packard Enterprise",
+"first_seen": "2026-10-21",
+"title": "Embedded Software Engineer Intern"
 },
 "6e4aa2c7-7957-4b8d-b4a1-b19dfa362504": {
 "company": "American Express",
@@ -18629,6 +18664,11 @@
 "first_seen": "2026-09-23",
 "title": "Software Engineer 2 - Digital"
 },
+"8b26c26a-93b7-4702-b463-83420efc11af": {
+"company": "TruStage",
+"first_seen": "2026-10-21",
+"title": "Information Technology Development and Infrastructure Intern"
+},
 "8b2ac290-4592-4349-9f0f-52381aae132f": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -21540,9 +21580,9 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"bachelors": "2026-10-20",
+"bachelors": "2026-10-21",
 "grad": "2026-10-20",
-"newgrad": "2026-10-20"
+"newgrad": "2026-10-21"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
 "company": "Panasonic Holdings",
@@ -23894,6 +23934,11 @@
 "first_seen": "2026-09-05",
 "title": "Research Scientist - Data and State Acceleration - Global Frontier Tech Recruitment Program"
 },
+"b066e806-d56d-4915-a26e-bd7c3461144f": {
+"company": "Storable",
+"first_seen": "2026-10-21",
+"title": "Software Development Engineer"
+},
 "b06a41a5-fd2e-44d7-977b-811778f66053": {
 "company": "Northrop Grumman",
 "first_seen": "2026-10-06",
@@ -24363,6 +24408,11 @@
 "company": "Persona",
 "first_seen": "2026-09-16",
 "title": "Software Engineer Intern"
+},
+"b3c0d835-cfc4-48e9-8841-d656e80fb21c": {
+"company": "Rhoda AI",
+"first_seen": "2026-10-21",
+"title": "Software Engineer Intern - Inference"
 },
 "b3c2da34-6510-4c41-aa40-26d5b8e94c8a": {
 "company": "The Toro Company",
@@ -29419,6 +29469,11 @@
 "first_seen": "2026-09-15",
 "title": "Race Strategy & Analytics Intern - IndyCar"
 },
+"d848615a-0d50-478c-a92e-2dda9489542c": {
+"company": "NVIDIA",
+"first_seen": "2026-10-21",
+"title": "Software Engineer New Grad - Agent Performance Modeling"
+},
 "d84c25e4-c5e3-470f-ad8d-f37b18a2020a": {
 "company": "Cogent Security",
 "first_seen": "2026-08-15",
@@ -31633,6 +31688,11 @@
 "company": "Highgate",
 "first_seen": "2026-09-25",
 "title": "Revenue Management Intern - Summer 2027"
+},
+"e7be217f-fe8f-47ee-a0f5-bb01d5ad5782": {
+"company": "Axos Bank",
+"first_seen": "2026-10-21",
+"title": "Data Engineer"
 },
 "e7dc5edb-b756-476f-8e46-5d2797edfabe": {
 "company": "Truveta",
