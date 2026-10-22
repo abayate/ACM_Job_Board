@@ -1179,11 +1179,6 @@
 "first_seen": "2026-09-12",
 "title": "Digital Experience Information Systems Intern"
 },
-"08205941-f240-469b-8e68-33e220e58b33": {
-"company": "University of Virginia",
-"first_seen": "2026-08-15",
-"title": "Data & Analytics Assistant"
-},
 "08210b31-d7bd-413f-b967-222f2d005c3a": {
 "company": "NVIDIA",
 "first_seen": "2026-09-07",
@@ -2158,6 +2153,11 @@
 "company": "Hive",
 "first_seen": "2026-08-15",
 "title": "Associate Product Manager - Hive Models"
+},
+"0feda082-a3a6-4e55-8793-5ef9cafd6978": {
+"company": "EQT Corporation",
+"first_seen": "2026-10-22",
+"title": "Midstream Services Intern"
 },
 "0ff85d31-6c19-40f4-ad7a-e27a92172e0f": {
 "company": "IDeaS",
@@ -9469,11 +9469,6 @@
 "first_seen": "2026-09-16",
 "title": "Data Engineering Intern - Summer 2027"
 },
-"4600d580-8dad-49ce-93c7-89ae51839461": {
-"company": "McMaster-Carr",
-"first_seen": "2026-08-15",
-"title": "Technology - Development - Design"
-},
 "46147fdd-7fda-4c72-b739-309c869a3093": {
 "company": "TikTok",
 "first_seen": "2026-08-20",
@@ -9789,11 +9784,6 @@
 "first_seen": "2026-09-12",
 "title": "Sales & Marketing Analytics Intern - Paid"
 },
-"49105cce-b020-4594-a4d1-ab0441eea186": {
-"company": "Deluxe",
-"first_seen": "2026-08-15",
-"title": "Data Scientist 1"
-},
 "4920ac37-e5f4-49cc-894d-2b302bf15619": {
 "company": "Arconic",
 "first_seen": "2026-09-12",
@@ -9998,11 +9988,6 @@
 "company": "Deluxe",
 "first_seen": "2026-09-12",
 "title": "Data Driven Marketing Analyst - Performance Optimization"
-},
-"4ade01ff-90f7-40e7-88aa-1756bc4d6de1": {
-"company": "Compeer Financial",
-"first_seen": "2026-08-25",
-"title": "Engineering Intern"
 },
 "4ae93ef5-d293-43c9-8bb7-53f4c2e97749": {
 "company": "ByteDance",
@@ -13424,6 +13409,11 @@
 "first_seen": "2026-09-24",
 "title": "Assurance Intern - Data and Intelligence Delivery"
 },
+"636691a8-a377-4b9f-9540-af9a315361cc": {
+"company": "R1 RCM",
+"first_seen": "2026-10-22",
+"title": "Machine Learning Engineer"
+},
 "6372d8e1-142c-4d6e-871a-b4f1c44e6df8": {
 "company": "Xcel Energy",
 "first_seen": "2026-09-12",
@@ -16069,6 +16059,11 @@
 "first_seen": "2026-09-25",
 "title": "Revenue Management Intern - Summer 2027"
 },
+"770d0c2e-5cd5-4716-b307-3db3d3f8e1ce": {
+"company": "Meta",
+"first_seen": "2026-10-22",
+"title": "Research Scientist Intern - Central Applied Science"
+},
 "77126d0e-4cb6-4a91-a879-83b75744b445": {
 "company": "American Family Insurance Group",
 "first_seen": "2026-10-16",
@@ -17608,6 +17603,11 @@
 "company": "Wash U",
 "first_seen": "2026-09-29",
 "title": "Neuroimaging Engineer - Neurology"
+},
+"82f904be-26cf-4cbf-9612-5a99c8771fd0": {
+"company": "International Rescue Committee",
+"first_seen": "2026-10-22",
+"title": "Development Data and Research Intern"
 },
 "82fb089b-e0cb-414d-9953-9f5d35538486": {
 "company": "NVIDIA",
@@ -19404,6 +19404,11 @@
 "first_seen": "2026-10-07",
 "title": "Enterprise Sustainability & Impact Intern - Modeling & Analytics"
 },
+"90126943-996a-4235-bb88-26c2405d1cde": {
+"company": "N1 Health",
+"first_seen": "2026-10-22",
+"title": "Associate Data Ops Engineer"
+},
 "9019bee1-e862-4a98-8ce2-db27dfc5283a": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -20238,6 +20243,11 @@
 "company": "MUFG",
 "first_seen": "2026-10-01",
 "title": "Product Analyst - Enterprise Data Catalog"
+},
+"95d0fbdb-14f6-4eaf-a46b-3f06591a562b": {
+"company": "L3Harris Technologies",
+"first_seen": "2026-10-22",
+"title": "Image Processing Engineer Intern"
 },
 "95e5f16d-fae2-4f7a-bc08-2ca87b063e11": {
 "company": "Hewlett Packard Enterprise",
@@ -21595,7 +21605,7 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"bachelors": "2026-10-21",
+"bachelors": "2026-10-22",
 "grad": "2026-10-21",
 "newgrad": "2026-10-22"
 },
@@ -22893,6 +22903,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Data Engineer Graduate - Monetization Data"
+},
+"a9482eaf-0940-4198-b8c8-e65d2e136819": {
+"company": "FedEx Freight",
+"first_seen": "2026-10-22",
+"title": "Media & Web Development Intern - Marketing"
 },
 "a9532db8-4444-455d-91ae-5c168366dab3": {
 "company": "Collaborative Robotics",
@@ -27104,11 +27119,6 @@
 "first_seen": "2026-10-06",
 "title": "Software Engineer Consulting Intern - AI Concentration"
 },
-"c7a6ce05-131f-4bb4-acbc-7a68ccd537b7": {
-"company": "AeroVect",
-"first_seen": "2026-08-15",
-"title": "Mapping Engineer"
-},
 "c7b1d381-c5d1-4080-8d2b-531342e2c8a8": {
 "company": "Adobe",
 "first_seen": "2026-09-12",
@@ -27989,6 +27999,11 @@
 "first_seen": "2026-10-16",
 "title": "Data & Analytics Engineering Intern"
 },
+"ce026bae-c60a-419e-8307-847eafa898fd": {
+"company": "RTX",
+"first_seen": "2026-10-22",
+"title": "Software Engineer Intern"
+},
 "ce0bcfce-b781-4159-9056-ce13e88cee79": {
 "company": "Revenue Analytics",
 "first_seen": "2026-08-15",
@@ -28073,6 +28088,11 @@
 "company": "Composio",
 "first_seen": "2026-08-15",
 "title": "Fullstack Engineer New Grad - Product Team"
+},
+"ceafe55a-b038-4f84-97a8-40d747032438": {
+"company": "Draper",
+"first_seen": "2026-10-22",
+"title": "Software Machine Learning Engineer - GNSS - Software Defined Radio"
 },
 "cec36906-9fef-4814-9cda-ebc1501ab28e": {
 "company": "RTX",
@@ -28168,6 +28188,11 @@
 "company": "Meta",
 "first_seen": "2026-10-22",
 "title": "Research Scientist Intern - Foundational Models for Robotics Research"
+},
+"cfb5c410-4f53-4c7d-ac5a-eafa72cfbe58": {
+"company": "Leidos",
+"first_seen": "2026-10-22",
+"title": "Electronic Warfare Software Engineer"
 },
 "cfb9fca3-22b5-49d5-aa22-bdb43af80cbb": {
 "company": "Vanasse Hangen Brustlin",
@@ -32819,6 +32844,11 @@
 "first_seen": "2026-09-16",
 "title": "AI Researcher - Artificial Intelligence and Complex Systems"
 },
+"f09f0a56-4999-4d19-afb4-894ea819d401": {
+"company": "GE Healthcare",
+"first_seen": "2026-10-22",
+"title": "Engineering Development Program Intern - Software"
+},
 "f0a9da60-9895-4079-b9cd-4026709afb56": {
 "company": "Montgomery Investment Technology, Inc.",
 "first_seen": "2026-08-15",
@@ -33533,6 +33563,11 @@
 "company": "TRM Labs",
 "first_seen": "2026-08-15",
 "title": "Product Engineer"
+},
+"f584c833-524b-45c1-916a-90515c42559c": {
+"company": "Mayo Clinic",
+"first_seen": "2026-10-22",
+"title": "Associate Data Science Analyst"
 },
 "f587f567-7076-4901-8b22-2476f0e17fdd": {
 "company": "Graphcore",
