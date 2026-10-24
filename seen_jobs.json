@@ -5329,6 +5329,11 @@
 "first_seen": "2026-10-20",
 "title": "Research Scientist Intern - Multimodal LLM and Speech-to-Speech Translation - PhD"
 },
+"25f0ff56-0ef3-4cea-8a0f-ae88483a537f": {
+"company": "UCSF",
+"first_seen": "2026-10-24",
+"title": "Research Data Analyst 1"
+},
 "25f1d732-78f0-476f-9d25-b0f357ab023f": {
 "company": "Merck",
 "first_seen": "2026-09-23",
@@ -6633,11 +6638,6 @@
 "company": "ByteDance",
 "first_seen": "2026-08-15",
 "title": "Data Lake Infrastructure & Data Analytics Research Engineer Graduate - Applied Machine Learning Ark"
-},
-"2ee71f7d-72b1-4059-8bac-ab051417fc0f": {
-"company": "Sajix",
-"first_seen": "2026-08-15",
-"title": "Data Scientist"
 },
 "2eea2913-d313-47dd-b1f9-3e560bcf7780": {
 "company": "Acxiom",
@@ -14099,11 +14099,6 @@
 "first_seen": "2026-09-12",
 "title": "Data Engineer Intern - Technology & Medical Organizations"
 },
-"65ccd1b8-214b-4942-a9c7-6247cea6feb2": {
-"company": "Sajix",
-"first_seen": "2026-08-15",
-"title": "Data Analyst"
-},
 "65d5f968-db70-4ced-968a-605604c841f5": {
 "company": "Capstone Investment Advisors",
 "first_seen": "2026-10-09",
@@ -15043,6 +15038,11 @@
 "company": "Ancestry",
 "first_seen": "2026-09-12",
 "title": "Applied AI Science Co-op - Embedding models - Personalization"
+},
+"6d12bdd4-f0e3-4ced-9e3d-481bc829fb72": {
+"company": "COUNTRY Financial",
+"first_seen": "2026-10-24",
+"title": "Consumer Insights Intern"
 },
 "6d1fe89e-0f46-49f6-adba-af9ae668e3cc": {
 "company": "Upbound Group",
@@ -16353,11 +16353,6 @@
 "company": "TikTok",
 "first_seen": "2026-08-26",
 "title": "AI Infrastructure Engineer Intern - Recommendation & LLM"
-},
-"76576561-4ea2-4ced-8208-659e9c8d5c16": {
-"company": "Sajix",
-"first_seen": "2026-08-15",
-"title": "Business Intelligence Analyst"
 },
 "765bb91e-34d7-4746-8e11-8598e700e845": {
 "company": "Goldman Sachs",
@@ -18933,11 +18928,6 @@
 "company": "RTX",
 "first_seen": "2026-10-12",
 "title": "Software Engineer Intern"
-},
-"89b5d725-a59f-4eb3-9e08-476905ff182c": {
-"company": "Sajix",
-"first_seen": "2026-08-15",
-"title": "Machine Learning Engineer Trainee"
 },
 "89c5e157-f2f0-4797-8fad-377cf5478e3d": {
 "company": "Gordon Food Service",
@@ -23079,6 +23069,11 @@
 "first_seen": "2026-09-12",
 "title": "Data Analyst - Speed to Customer"
 },
+"a6a45fbf-b6a2-4f6b-8387-744c60b29d18": {
+"company": "Microsoft",
+"first_seen": "2026-10-24",
+"title": "Research Intern - Extended Perception, Interaction & Cognition"
+},
 "a6a5ed46-6265-445b-abcd-f0a3316ee4ec": {
 "company": "Waymo",
 "first_seen": "2026-10-07",
@@ -25109,6 +25104,11 @@
 "first_seen": "2026-10-13",
 "title": "Digital Services Development Support and Operations Internship"
 },
+"b45ea2d4-167c-47bc-bce8-92927650a1bc": {
+"company": "The Federal Reserve System",
+"first_seen": "2026-10-24",
+"title": "Policy & Analysis Intern"
+},
 "b462559b-c917-4db0-a92b-9bd0c90f0f33": {
 "company": "Google",
 "first_seen": "2026-08-24",
@@ -26699,6 +26699,11 @@
 "first_seen": "2026-09-01",
 "title": "Associate Software Engineer"
 },
+"bf3a1bd0-0f1c-4719-af15-7f67b32b2590": {
+"company": "Leidos",
+"first_seen": "2026-10-24",
+"title": "Business Systems AI Intern"
+},
 "bf48dd2b-e7b1-4338-a911-cb29771f7cce": {
 "company": "W.R. Berkley",
 "first_seen": "2026-09-18",
@@ -27033,6 +27038,11 @@
 "company": "CACI",
 "first_seen": "2026-10-02",
 "title": "Software Development Intern"
+},
+"c2582b57-89c6-4642-a9f2-b5a0b7e3678a": {
+"company": "Micron Technology",
+"first_seen": "2026-10-24",
+"title": "New College Grad - Product Yield Enhancement Engineer - High Bandwidth Memory"
 },
 "c2641502-2d28-4f06-943d-4eff5c330d06": {
 "company": "Oshkosh",
@@ -30913,11 +30923,6 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Research Scientist Intern - Recommendation"
-},
-"ddf53d2b-54a9-409e-a0c4-16b535b95685": {
-"company": "Sajix",
-"first_seen": "2026-08-15",
-"title": "Python Developer"
 },
 "ddf6cf13-0a0b-4f97-93eb-c88083de5316": {
 "company": "National Information Solutions Cooperative",
