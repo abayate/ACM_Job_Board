@@ -19399,6 +19399,11 @@
 "first_seen": "2026-10-06",
 "title": "Software Engineer Intern"
 },
+"8ea7dfa9-2c59-482d-9584-d63a1fd13505": {
+"company": "ConnectPrep",
+"first_seen": "2026-10-25",
+"title": "Data Analyst Intern"
+},
 "8ea8fa3a-2934-4575-8fc0-11bc13157037": {
 "company": "Clearwater Analytics",
 "first_seen": "2026-09-19",
@@ -21755,7 +21760,7 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"bachelors": "2026-10-23",
+"bachelors": "2026-10-25",
 "grad": "2026-10-25",
 "newgrad": "2026-10-23"
 },
