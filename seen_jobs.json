@@ -12489,11 +12489,6 @@
 "first_seen": "2026-09-15",
 "title": "Product Intern"
 },
-"5bdec003-2a02-42a4-a602-467541840552": {
-"company": "Goldman Sachs",
-"first_seen": "2026-09-09",
-"title": "Summer Analyst Intern - Americas - Engineering"
-},
 "5be6e9be-acd4-4423-808a-2a2d038375e4": {
 "company": "Uline",
 "first_seen": "2026-10-21",
@@ -16438,11 +16433,6 @@
 "company": "Domino Data Lab",
 "first_seen": "2026-09-12",
 "title": "Software Engineer New Grad"
-},
-"792220f4-3ba1-4cf8-843e-e23208ba8d24": {
-"company": "Goldman Sachs",
-"first_seen": "2026-09-09",
-"title": "Summer Analyst Intern - Engineering"
 },
 "792f87e9-1d41-4264-903e-c5bb92833f87": {
 "company": "Clorox",
@@ -21761,7 +21751,7 @@
 },
 "_headers": {
 "bachelors": "2026-10-23",
-"grad": "2026-10-23",
+"grad": "2026-10-25",
 "newgrad": "2026-10-23"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
@@ -23533,6 +23523,11 @@
 "company": "HumanSignal",
 "first_seen": "2026-09-26",
 "title": "Field Data Collection Specialist"
+},
+"ac0eeab5-5595-4d4b-978c-2ca02dc6caa7": {
+"company": "Dell Technologies",
+"first_seen": "2026-10-25",
+"title": "Data Science Intern"
 },
 "ac16b37b-d5ee-4a02-8d77-305bc1ab5168": {
 "company": "Stryker",
