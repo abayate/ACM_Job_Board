@@ -3149,6 +3149,11 @@
 "first_seen": "2026-08-19",
 "title": "Machine Learning Engineer Graduate - E-Commerce Risk Control"
 },
+"173e402a-974c-4a05-a0d5-6cc9c6324a6f": {
+"company": "Booz Allen",
+"first_seen": "2026-10-26",
+"title": "Junior Data Scientist"
+},
 "17482259-9e95-4558-adef-daf45ff85e78": {
 "company": "Netflix",
 "first_seen": "2026-08-29",
@@ -6954,11 +6959,6 @@
 "first_seen": "2026-10-06",
 "title": "Sales Analytics Intern"
 },
-"326959cb-4de4-4551-9cd0-496854f51f13": {
-"company": "Internet Brands",
-"first_seen": "2026-08-25",
-"title": "Associate AI Software Engineer"
-},
 "326c806c-b963-4965-966a-eab3c03c37fe": {
 "company": "Regeneron Pharmaceuticals",
 "first_seen": "2026-10-09",
@@ -10074,6 +10074,11 @@
 "first_seen": "2026-09-12",
 "title": "Software Development Engineer 1 - Early Career - 2027 Starts"
 },
+"4bc89fb6-aa1c-4885-baa5-14d7ba2a7849": {
+"company": "CVS Health",
+"first_seen": "2026-10-26",
+"title": "Innovation & Technology Intern - Data Engineering"
+},
 "4bc949a8-4e60-4c6b-90c8-fb7077b8a2b2": {
 "company": "Acuity",
 "first_seen": "2026-09-30",
@@ -11964,11 +11969,6 @@
 "first_seen": "2026-09-16",
 "title": "Software Engineer Intern"
 },
-"5923eddf-da98-4ec1-aef1-4c3f140b6338": {
-"company": "Deloitte",
-"first_seen": "2026-08-27",
-"title": "Cyber Analytics Analyst - Government & Public Services - Cyber Analytics"
-},
 "594fe194-950e-4dfc-b848-752e02801eb6": {
 "company": "Quiktrak",
 "first_seen": "2026-09-12",
@@ -12773,11 +12773,6 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Graduate - Ads Delivery"
-},
-"5eda8352-de1b-4b91-8545-ba8e7fa26458": {
-"company": "Caesars Entertainment",
-"first_seen": "2026-08-25",
-"title": "Digital Analyst 1"
 },
 "5ee0c221-6808-401f-9d4e-a8e71f60785b": {
 "company": "ByteDance",
@@ -16879,6 +16874,11 @@
 "first_seen": "2026-09-17",
 "title": "Software Engineer New Grad"
 },
+"7e450fbd-9292-460d-988b-8583bf42ae43": {
+"company": "Wells Fargo",
+"first_seen": "2026-10-26",
+"title": "Technology Intern - Early Careers - Data Engineering"
+},
 "7e502eb4-3d9c-4f91-8e83-a471504d8a4b": {
 "company": "Tesla",
 "first_seen": "2026-08-21",
@@ -17143,6 +17143,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-22",
 "title": "AI Product Manager Intern - Product Social"
+},
+"8005e595-614b-4b9a-9c29-cb113c52566a": {
+"company": "PTC",
+"first_seen": "2026-10-26",
+"title": "Software Engineer Intern"
 },
 "800e06ea-4a8a-4db5-a93a-7aae82cfac49": {
 "company": "Virtu Financial",
@@ -18413,6 +18418,11 @@
 "company": "RTX",
 "first_seen": "2026-10-12",
 "title": "Software Engineer Intern"
+},
+"89b3498d-d513-460c-aae2-950c5bfec033": {
+"company": "Pattern",
+"first_seen": "2026-10-26",
+"title": "Revenue Operations Data Analyst Intern"
 },
 "89c5e157-f2f0-4797-8fad-377cf5478e3d": {
 "company": "Gordon Food Service",
@@ -21501,7 +21511,7 @@
 },
 "_headers": {
 "bachelors": "2026-10-26",
-"grad": "2026-10-25",
+"grad": "2026-10-26",
 "newgrad": "2026-10-26"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
@@ -25279,6 +25289,11 @@
 "first_seen": "2026-09-24",
 "title": "Promotions Analyst Intern"
 },
+"ba211b91-4ac7-47b6-8a54-e9a920a475d7": {
+"company": "Meta",
+"first_seen": "2026-10-26",
+"title": "Research Intern - Embedded AI on Wearables - PhD"
+},
 "ba21bc92-2d44-433d-a0dc-0d5c254061c5": {
 "company": "L3Harris Technologies",
 "first_seen": "2026-09-30",
@@ -26224,6 +26239,11 @@
 "first_seen": "2026-10-06",
 "title": "Graduate Engineer/Physicist/Computer Scientist - Weapon Control"
 },
+"c0ef6333-a128-4753-99d7-a0f5f50ff3da": {
+"company": "Interface",
+"first_seen": "2026-10-26",
+"title": "Data Coordinator"
+},
 "c0f389e5-99cf-4fb0-a67e-06d06d9a36b2": {
 "company": "American Family Insurance Group",
 "first_seen": "2026-10-06",
@@ -26803,6 +26823,11 @@
 "company": "Uncountable",
 "first_seen": "2026-08-15",
 "title": "Full-Stack Intern"
+},
+"c5e57b36-c4df-4c41-8f7b-3710a0fa455f": {
+"company": "Welo Global",
+"first_seen": "2026-10-26",
+"title": "Robotics Teleoperator"
 },
 "c5ee8357-17ae-4b7a-92ed-187f1d3bdb76": {
 "company": "Kitware",
@@ -28518,11 +28543,6 @@
 "company": "Brain Co.",
 "first_seen": "2026-10-14",
 "title": "AI Product Engineer Co-op Intern"
-},
-"d314e733-083a-4e1a-84c6-ca380eafd2f8": {
-"company": "Deloitte",
-"first_seen": "2026-09-08",
-"title": "Delivery Analyst - Government & Public Services - Business Analytics Solutions"
 },
 "d314f5f4-0dfc-4dcd-9b4a-b27f1694d1b9": {
 "company": "Bluestaq",
