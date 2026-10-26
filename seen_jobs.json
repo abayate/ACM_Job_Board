@@ -7904,11 +7904,6 @@
 "first_seen": "2026-08-15",
 "title": "Machine Learning Engineer Intern - Trust and Safety"
 },
-"3a60192e-943e-4660-ab0f-76da14e6542b": {
-"company": "Simile",
-"first_seen": "2026-08-15",
-"title": "Evaluations - Member of Technical Staff"
-},
 "3a695283-1988-4be5-a28c-867068149b17": {
 "company": "Valency",
 "first_seen": "2026-09-19",
@@ -9533,6 +9528,11 @@
 "company": "Sierra Nevada Corporation",
 "first_seen": "2026-10-23",
 "title": "Software Engineer Fellow"
+},
+"4712ce89-b48c-4c1c-9db2-5b03917f8bb2": {
+"company": "Vigil Labs",
+"first_seen": "2026-10-26",
+"title": "Software Engineer Intern"
 },
 "4729eba5-e1eb-4217-b99e-a1b22123e876": {
 "company": "Truist Bank",
@@ -12388,6 +12388,11 @@
 "company": "Peraton",
 "first_seen": "2026-10-09",
 "title": "Software Development Intern"
+},
+"5c53901d-0c0e-4372-b4d5-891e090adcf1": {
+"company": "Internet Brands",
+"first_seen": "2026-10-26",
+"title": "Associate AI Research & Operations Analyst"
 },
 "5c544a3c-f3fe-4f7d-961c-7405d57bacad": {
 "company": "UL Solutions",
@@ -17094,6 +17099,11 @@
 "first_seen": "2026-10-22",
 "title": "Software Engineering Associate - Software Development Associate"
 },
+"7fb4df11-724b-4388-80ba-7b185189f957": {
+"company": "Evolent",
+"first_seen": "2026-10-26",
+"title": "Associate Software Engineer"
+},
 "7fddf309-a7b0-4fa9-a915-bc9fcfebaf62": {
 "company": "Acxiom",
 "first_seen": "2026-09-17",
@@ -21490,9 +21500,9 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"bachelors": "2026-10-25",
+"bachelors": "2026-10-26",
 "grad": "2026-10-25",
-"newgrad": "2026-10-23"
+"newgrad": "2026-10-26"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
 "company": "Panasonic Holdings",
@@ -22138,6 +22148,11 @@
 "company": "Vertex Pharmaceuticals",
 "first_seen": "2026-10-09",
 "title": "People Research and Analytics Co-op - People Research and Analytics - Human Resources"
+},
+"a449ff56-af7b-46d9-9c1b-73ccb36515e8": {
+"company": "Tesla",
+"first_seen": "2026-10-26",
+"title": "Data Collection Operator - Optimus"
 },
 "a457a2b0-7767-4949-b5a3-823af49cefb2": {
 "company": "RTX",
@@ -25358,11 +25373,6 @@
 "company": "CVS Health",
 "first_seen": "2026-10-07",
 "title": "Associate Software Development Engineer - Conversion"
-},
-"bab5e7a0-14de-449f-9a6a-6d5801e38490": {
-"company": "Field AI",
-"first_seen": "2026-09-08",
-"title": "Embedded Systems Engineer - Robotics Hardware"
 },
 "babf8103-ce88-446d-ae83-d600bf03ebdc": {
 "company": "Meta",
@@ -29003,6 +29013,11 @@
 "company": "Meta",
 "first_seen": "2026-10-14",
 "title": "Research Scientist Intern - 3D World Modeling - Robotics and Generative AI"
+},
+"d6a611ad-6577-4727-bad6-a4aa05ad24ec": {
+"company": "TikTok",
+"first_seen": "2026-10-26",
+"title": "Product Manager New Grad - Platform Trust and Ecosystem"
 },
 "d6a7bc72-5c75-4e08-9542-07c8f3d61e6f": {
 "company": "American Electric Power",
@@ -33308,6 +33323,11 @@
 "company": "True Anomaly",
 "first_seen": "2026-10-04",
 "title": "Platform Engineer - AI"
+},
+"f4b511b1-6685-48f6-b83f-a24aa441a213": {
+"company": "Hewlett Packard Enterprise",
+"first_seen": "2026-10-26",
+"title": "AI/ML Developer Intern"
 },
 "f4b6208a-2701-4f97-bf10-b54704e67c32": {
 "company": "Appian",
