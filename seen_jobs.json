@@ -5544,6 +5544,11 @@
 "first_seen": "2026-10-13",
 "title": "Defense Agencies Intern - AI/ML"
 },
+"27ce0059-c008-45e2-93c4-f9e612b9f8e8": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
+},
 "27d62306-3b52-4374-a800-705bb429b036": {
 "company": "Viridien",
 "first_seen": "2026-08-15",
@@ -7784,6 +7789,11 @@
 "first_seen": "2026-10-04",
 "title": "AI Research Intern"
 },
+"394fd625-992b-45aa-9d72-e2ae53a17bf3": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
+},
 "3957ba6a-2e15-4316-9555-093683e2831e": {
 "company": "DocuSign",
 "first_seen": "2026-10-08",
@@ -9694,11 +9704,6 @@
 "first_seen": "2026-09-24",
 "title": "Robotics Intern - Multiple Teams"
 },
-"47fb79bc-9f49-407b-bb0c-52352eba40be": {
-"company": "Audax Group",
-"first_seen": "2026-08-24",
-"title": "Data Analyst Co-op - Business Solutions"
-},
 "480ae3f9-38c5-4aef-b095-69ec5142f818": {
 "company": "Applied Materials",
 "first_seen": "2026-09-12",
@@ -11604,11 +11609,6 @@
 "first_seen": "2026-09-23",
 "title": "College Intern - Mobile Software Engineering Team"
 },
-"56196707-1bc1-44de-9e0e-a32456792771": {
-"company": "Melius",
-"first_seen": "2026-08-15",
-"title": "Software Engineer Intern"
-},
 "562a1131-7b05-4ca4-ba15-e968eb30a31a": {
 "company": "Fidelity Investments",
 "first_seen": "2026-09-12",
@@ -11978,6 +11978,11 @@
 "company": "Nissan Global",
 "first_seen": "2026-10-15",
 "title": "People Analytics Intern"
+},
+"58b2fdc7-432f-48f0-80a9-5e970ba2b3e0": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Sophomore Program Software Engineer Intern"
 },
 "58b31cf1-a146-494d-b944-3f9f3698ea79": {
 "company": "Peraton",
@@ -12884,6 +12889,11 @@
 "first_seen": "2026-09-12",
 "title": "Medical Data Scientist Intern"
 },
+"5f0aa1ea-dfb4-4cfb-8224-5f3d9fd07cf0": {
+"company": "The Federal Reserve System",
+"first_seen": "2026-10-27",
+"title": "REIN Data Intern"
+},
 "5f0b34c1-fcc7-46c2-9772-8e8ce4bd4f5f": {
 "company": "Oshkosh",
 "first_seen": "2026-09-12",
@@ -13754,6 +13764,11 @@
 "first_seen": "2026-10-23",
 "title": "Software Engineer \u2013 Early Career - AI"
 },
+"6575060e-aaff-40ad-933f-71de9e71e926": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
+},
 "65762873-a3b8-496c-bce2-a06d3c31cb6c": {
 "company": "Inmar Intelligence",
 "first_seen": "2026-10-21",
@@ -14609,6 +14624,11 @@
 "first_seen": "2026-09-12",
 "title": "Lead Sales Associate"
 },
+"6c29c238-5adb-4065-abd8-c8c9179900b5": {
+"company": "RTX",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
+},
 "6c2a8e09-efa3-4608-9f96-7b3845760fee": {
 "company": "PerkinElmer",
 "first_seen": "2026-09-16",
@@ -14918,6 +14938,11 @@
 "company": "Amgen",
 "first_seen": "2026-09-12",
 "title": "Digital Product Intern"
+},
+"6e5c3139-4a80-4c65-9018-d5bd9e544a9e": {
+"company": "RTX",
+"first_seen": "2026-10-27",
+"title": "Software Engineer 2"
 },
 "6e669047-2f20-4e25-a45b-351e66602800": {
 "company": "KLA",
@@ -16249,6 +16274,11 @@
 "first_seen": "2026-10-09",
 "title": "Associate Software Development Engineer - Conversion"
 },
+"78503d4f-7c6f-45bb-bad9-1bd6eadd974b": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
+},
 "78691202-f306-42da-9b0e-d9c0e191b452": {
 "company": "KLA",
 "first_seen": "2026-10-14",
@@ -16288,6 +16318,11 @@
 "company": "L3Harris Technologies",
 "first_seen": "2026-10-02",
 "title": "Artificial Intelligence Intern"
+},
+"78b657c3-9149-493f-b46d-abe43d480e0a": {
+"company": "Dominion Energy",
+"first_seen": "2026-10-27",
+"title": "Power Systems Time-Series Analytics Intern"
 },
 "78be02f0-f685-4c52-be58-2170c2d99779": {
 "company": "Circle K",
@@ -21514,6 +21549,11 @@
 "first_seen": "2026-09-23",
 "title": "Software Engineer Intern"
 },
+"9ec1752c-1474-4db2-b945-15fdc3102303": {
+"company": "Lila Sciences",
+"first_seen": "2026-10-27",
+"title": "Robot Perception & State Estimation Co-op"
+},
 "9ecb4578-6a8a-4f73-ac53-0651cbbd7167": {
 "company": "Amazon",
 "first_seen": "2026-08-25",
@@ -21701,7 +21741,7 @@
 },
 "_headers": {
 "bachelors": "2026-10-27",
-"grad": "2026-10-26",
+"grad": "2026-10-27",
 "newgrad": "2026-10-27"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
@@ -23844,6 +23884,11 @@
 "first_seen": "2026-09-12",
 "title": "Data Engineer Intern"
 },
+"aecfefcb-c6a4-4161-ac54-0464570e82a9": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
+},
 "aed4b7d7-c810-420f-9a53-30e21fd841f6": {
 "company": "Signet Jewelers",
 "first_seen": "2026-09-18",
@@ -24519,11 +24564,6 @@
 "first_seen": "2026-09-12",
 "title": "Business Intelligence Intern - Summer 2027"
 },
-"b36d77b3-8f2d-43d7-bf82-ad49189efa02": {
-"company": "John Deere",
-"first_seen": "2026-08-25",
-"title": "Robotics Engineer Part-Time Student - Product Engineering"
-},
 "b36db06e-f66e-4697-a44b-032cd14a252b": {
 "company": "Welo Global",
 "first_seen": "2026-10-22",
@@ -25018,6 +25058,11 @@
 "company": "MFS",
 "first_seen": "2026-09-30",
 "title": "Investment Data Engineer Co-op"
+},
+"b6f3c11d-afce-4ebd-b16f-8f3bfb75b164": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
 },
 "b6fbadb5-7e07-4805-9726-58f9d3db88ef": {
 "company": "Kled AI",
@@ -25563,6 +25608,11 @@
 "company": "Frontier Technology",
 "first_seen": "2026-10-01",
 "title": "Early Career Associate Data Scientist"
+},
+"ba6baa73-28e0-4b0f-b45d-543363c573e1": {
+"company": "Nissan",
+"first_seen": "2026-10-27",
+"title": "AI Intern"
 },
 "ba7ed36a-7da0-4b9e-bed8-8f369041684d": {
 "company": "Bosch Home Comfort",
@@ -33714,6 +33764,11 @@
 "first_seen": "2026-10-21",
 "title": "AI Consulting Associate Program Brokerage Intern"
 },
+"f5506af0-7205-497f-8afc-70c81179f25a": {
+"company": "Visa",
+"first_seen": "2026-10-27",
+"title": "Software Engineer Intern"
+},
 "f555debe-b0d3-424f-b231-329a6d2df96a": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -35123,11 +35178,6 @@
 "company": "Motorola Solutions",
 "first_seen": "2026-10-24",
 "title": "Android Applications Developer"
-},
-"ff60bcb1-d7a6-4ee7-a471-cc9df5ae0dbb": {
-"company": "Kodiak Robotics",
-"first_seen": "2026-08-25",
-"title": "Planning Intern - Mission Planning"
 },
 "ff669f83-a6e2-46a9-90ca-5d3dfbad37ae": {
 "company": "Johns Hopkins Applied Physics Laboratory",
