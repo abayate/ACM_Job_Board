@@ -309,6 +309,11 @@
 "first_seen": "2026-09-15",
 "title": "Associate Software Engineer"
 },
+"02ac8a2d-f366-4013-9348-467a4d1a5e6a": {
+"company": "xAI",
+"first_seen": "2026-10-30",
+"title": "AI Tutor \u2013 Estonian"
+},
 "02b1a0de-a038-4729-9f05-bf985321a918": {
 "company": "Cadence Design Systems",
 "first_seen": "2026-09-12",
@@ -1183,11 +1188,6 @@
 "company": "Makai Labs",
 "first_seen": "2026-10-04",
 "title": "Forward Deployed AI Analyst"
-},
-"097e5358-9e45-41e0-86bc-5289976e1828": {
-"company": "Booz Allen",
-"first_seen": "2026-09-12",
-"title": "Systems Engineer Intern - Summer Games"
 },
 "098cf2c0-cd84-4afd-9bfe-1d053e3c08ae": {
 "company": "Aevex Aerospace",
@@ -2513,11 +2513,6 @@
 "company": "American Express",
 "first_seen": "2026-08-15",
 "title": "Product Development Intern - US Consumer Services"
-},
-"14c0df8f-b9c8-4236-bca9-4a50f9f5f256": {
-"company": "Alation",
-"first_seen": "2026-09-12",
-"title": "UX Software Engineer 1 - Contractor"
 },
 "14c4e2a5-5770-4049-a3a3-c771ff4b31f4": {
 "company": "TikTok",
@@ -8549,11 +8544,6 @@
 "first_seen": "2026-09-16",
 "title": "Data Science Analyst - Engineering"
 },
-"43fc9d48-8060-4be6-a811-17fa6c4fa615": {
-"company": "Ontic",
-"first_seen": "2026-08-30",
-"title": "Associate Software Engineer - Full Stack"
-},
 "44076521-67dd-416f-8928-86fbe0b496b9": {
 "company": "BNY",
 "first_seen": "2026-08-24",
@@ -9563,11 +9553,6 @@
 "company": "Waymo",
 "first_seen": "2026-09-15",
 "title": "Software Engineering Intern - Commercialization"
-},
-"4d3acee9-3b15-433a-a4c9-4ca461058f7a": {
-"company": "TikTok",
-"first_seen": "2026-08-20",
-"title": "Research Scientist/Software Engineer - Neural Graphics and World Models"
 },
 "4d3b608b-7d50-4226-ab3c-d8e8033c794c": {
 "company": "CACI",
@@ -18624,11 +18609,6 @@
 "first_seen": "2026-10-28",
 "title": "Research Engineer"
 },
-"9377f3dd-8421-4a2c-8af8-4be42ec6b607": {
-"company": "Rover",
-"first_seen": "2026-09-12",
-"title": "Software Engineer - Recommendations"
-},
 "937873c5-2449-4915-8de1-10fd40d285df": {
 "company": "CSX",
 "first_seen": "2026-10-23",
@@ -19293,11 +19273,6 @@
 "company": "onsemi",
 "first_seen": "2026-10-27",
 "title": "Customer Operations Data Analyst Intern"
-},
-"98621c93-f516-46e0-8eda-22230c879010": {
-"company": "Qorvo",
-"first_seen": "2026-09-12",
-"title": "Product Engineer Intern"
 },
 "98635871-6276-41e4-ad95-172485704a2c": {
 "company": "JP Morgan Chase",
@@ -22168,11 +22143,6 @@
 "company": "Hewlett Packard Enterprise",
 "first_seen": "2026-10-06",
 "title": "Data Science Graduate"
-},
-"af103bac-eb95-46b7-94e6-06439a9bd98c": {
-"company": "Ragle Inc",
-"first_seen": "2026-09-12",
-"title": "Data Engineering Intern"
 },
 "af1c8d02-38a6-434d-9011-8739541c301c": {
 "company": "Motorola Solutions",
