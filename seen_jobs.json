@@ -1804,6 +1804,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Machine Learning Engineer"
 },
+"0e9101fd-5e85-4911-b076-604e6c2fc6ef": {
+"company": "Bristol Myers Squibb",
+"first_seen": "2026-10-31",
+"title": "Associate Engineer - Analytical AI Engineering"
+},
 "0e951ce4-39c4-46ef-ab06-3c7ed19fd9af": {
 "company": "Accenture",
 "first_seen": "2026-08-15",
@@ -6788,6 +6793,11 @@
 "company": "Stanley Black & Decker",
 "first_seen": "2026-09-16",
 "title": "Associate Product Manager - Combo Kits - Craftsman"
+},
+"34df1999-e2c7-47d7-9f70-25ad8625af57": {
+"company": "Dow Jones",
+"first_seen": "2026-10-31",
+"title": "Subscription Experimentation Intern"
 },
 "34e8252a-5780-4198-ae6b-5c5a32bab687": {
 "company": "Tesla",
@@ -15373,11 +15383,6 @@
 "company": "Danaher",
 "first_seen": "2026-09-23",
 "title": "IT Data Analyst Intern"
-},
-"7a2e4e2c-b2bc-4342-8cb2-9340dfc4d25b": {
-"company": "Johnson & Johnson",
-"first_seen": "2026-09-14",
-"title": "Technology and Digital Quality Co-op"
 },
 "7a3479e6-fa2c-40d9-b917-c42922bfeaf1": {
 "company": "ByteDance",
@@ -24184,11 +24189,6 @@
 "first_seen": "2026-09-12",
 "title": "AI Engineer Intern"
 },
-"bdf64a90-7dac-4a0b-acaf-b7fd5756ef83": {
-"company": "GE Vernova",
-"first_seen": "2026-08-25",
-"title": "Controls Product Management Intern - Summer 2027"
-},
 "bdfbfca1-ffec-468f-a042-b1fac1c61036": {
 "company": "Northrop Grumman",
 "first_seen": "2026-09-16",
@@ -28099,6 +28099,11 @@
 "first_seen": "2026-08-19",
 "title": "Machine Learning Engineer Graduate - E-Commerce Risk Control"
 },
+"dc6e6af1-c573-4952-aef5-9791f94fcd44": {
+"company": "Northrop Grumman",
+"first_seen": "2026-10-31",
+"title": "Associate Software Engineer"
+},
 "dc799011-53dd-40eb-a0b4-033ea01b7cb4": {
 "company": "NVIDIA",
 "first_seen": "2026-10-31",
@@ -29803,6 +29808,11 @@
 "company": "TikTok",
 "first_seen": "2026-10-15",
 "title": "Machine Learning Engineer Intern - E-Commerce Recommendation Live"
+},
+"e8f323c9-7a0d-4a50-9915-19d7661ecb06": {
+"company": "Northrop Grumman",
+"first_seen": "2026-10-31",
+"title": "Data Scientist Intern - Product Support"
 },
 "e8fd7d7b-8da0-4843-887d-84dd52a59847": {
 "company": "Textron",
