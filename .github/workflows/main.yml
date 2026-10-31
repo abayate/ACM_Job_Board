@@ -87,7 +87,7 @@ jobs:
           # mention a degree at all, so it is off. See job_bot.py.
           DEGREE_LOOKUP: "0"
           MAX_DEGREE_LOOKUPS: "40" # per-run HTTP budget, if ever re-enabled
-          EMPLOYER_LOOKUP: "1" # verify Meta's original title and qualifications
+          EMPLOYER_LOOKUP: "1" # verify original employer titles and qualifications
           MAX_EMPLOYER_LOOKUPS: "40" # bounded, cached public-page requests
 
           # --- Presentation ------------------------------------------------

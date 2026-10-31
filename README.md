@@ -58,8 +58,8 @@ for the full-time roles they qualify for.
 
 Degree level is resolved from the best available evidence:
 
-1. **Meta employer verification** (enabled by default): read the original
-   public job page's structured title and qualifications. This takes precedence
+1. **Employer verification** (enabled by default): read the original
+   job title and qualifications through public ATS APIs or employer pages. This takes precedence
    over incomplete or conflicting feed tags. Explicit undergraduate eligibility
    remains eligible for internships; a merely preferred PhD is not a requirement.
 2. **Explicit PhD/doctoral feed titles**, excluding mixed undergraduate/graduate
@@ -78,10 +78,26 @@ A missing feed degree does **not** mean the employer omitted it. Meta job
 but explicitly requires a PhD on the original employer page. Historical
 measurements against other ATS sites do not establish Meta coverage.
 
-`EMPLOYER_LOOKUP=1` verifies Meta listings selected for posting, even when feed
-labels exist. The bot reads public HTML/JSON-LD using Python's standard library;
-no API key or paid service is required. The original verified employer title is
-used in Discord. Generic research titles alone never establish a degree.
+`EMPLOYER_LOOKUP=1` verifies listings selected for posting across employers,
+even when feed labels exist. A shared classifier reads original titles,
+explicit degree requirements, and minimum/preferred qualification sections:
+
+| Source | Retrieval |
+|---|---|
+| Greenhouse | Public job JSON, including the original HTML description |
+| Lever | Public posting JSON, preserving qualification section headings |
+| Ashby | Public job-board JSON, selecting the exact requested job ID |
+| SmartRecruiters | Public posting JSON and qualification sections |
+| Workday | Public job-detail JSON |
+| Other employer websites, including Meta | Original HTML, JobPosting JSON-LD, original title metadata and qualification sections |
+
+There is no company allowlist. Public HTTPS employer URLs use the shared path;
+provider adapters handle different response formats. Unsafe/local destinations
+and redirects are rejected, and response size and request time are bounded.
+Python's standard library is sufficient; no API key or paid service is required.
+The original verified employer title is used in Discord. Generic research titles
+alone never establish a degree. Preferred or optional degrees and explicit
+experience alternatives do not establish graduate-only eligibility.
 
 Requests are limited by `MAX_EMPLOYER_LOOKUPS` (default 40 per run). Results in
 `degree_cache.json` record the source URL, employer title, evidence, status,
@@ -90,10 +106,13 @@ day, and fetch failures one hour. Expired results retry **when the listing is
 next evaluated**; this does not automatically revisit already-posted jobs.
 Legacy `unknown` cache entries cannot suppress employer verification.
 
-Meta is the first supported employer adapter. Other unsupported sites, blocked
-pages and exhausted request budgets still use the fallback rules above. A large
-backfill may need a higher lookup budget. This change does not guarantee that
-all graduate-only roles are excluded and does not move existing Discord posts.
+Every selected listing gets an employer-verification attempt, subject to the
+shared request budget and cache. JavaScript-only pages, blocked or expired
+postings, pages with no usable evidence, non-HTTPS URLs, and exhausted request
+budgets still use the fallback rules above. They remain explicitly unverified;
+an attempted lookup is not a confirmed degree. A large backfill may need a
+higher lookup budget. This change does not guarantee that all graduate-only
+roles are excluded and does not move existing Discord posts.
 
 ## How it avoids going stale
 
@@ -176,7 +195,7 @@ Tuning knobs live in `env:` in [`.github/workflows/main.yml`](.github/workflows/
 | `TIMEZONE` | `America/New_York` | Which local day a job falls under |
 | `PRUNE_AFTER_DAYS` | `45` | Forget closed jobs to bound state-file growth |
 | `DEGREE_LOOKUP` | `0` | Legacy Greenhouse/Ashby/Lever description lookups |
-| `EMPLOYER_LOOKUP` | `1` | Verify original Meta titles and qualifications |
+| `EMPLOYER_LOOKUP` | `1` | Verify original employer titles and qualifications across the feed |
 | `MAX_EMPLOYER_LOOKUPS` | `40` | Maximum fresh employer-page requests per run |
 | `MAX_DEGREE_LOOKUPS` | `40` | Per-run HTTP budget for tier 3 |
 | `ONLY_CHANNELS` | *(empty)* | Post to these channels only, e.g. `grad`. For backfilling a new channel |
@@ -239,4 +258,4 @@ category, instead of flooding the channel with thousands of old listings.
 | Runs far less often than the cron | Normal. GitHub throttles scheduled workflows on public repos; the freshness floor is what makes this harmless. |
 | Everything posts twice | Two workflow files, or `seen_jobs.json` failing to commit. Check the *Save seen-jobs state* step. |
 | Grad channel empty | Expected at ~9/day. Run a backfill with `only_channels: grad` to populate it. |
-| A role is in the wrong channel | Check the title and `🎓 Degree` field. Meta employer evidence overrides feed tags. "Degree requirement unverified" means the bot could not confirm eligibility; the employer may still state a requirement. Existing Discord messages are not moved by routing changes. |
+| A role is in the wrong channel | Check the title and `🎓 Degree` field. Verified employer evidence overrides feed tags. "Degree requirement unverified" means the bot could not confirm eligibility; the employer may still state a requirement. Existing Discord messages are not moved by routing changes. |

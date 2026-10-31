@@ -194,12 +194,12 @@ ONLY_CHANNELS = {
 #
 # The legacy generic description classifier remains OFF by default. Historical
 # ATS sampling did not cover Meta: missing feed tags do NOT mean an employer
-# omitted the requirement. EMPLOYER_LOOKUP independently verifies Meta evidence.
+# omitted the requirement. EMPLOYER_LOOKUP verifies original employer evidence.
 DEGREE_LOOKUP = _env_flag("DEGREE_LOOKUP", "0")
 # Per-run budget, so a backfill can't fire thousands of HTTP requests.
 MAX_DEGREE_LOOKUPS = _env_int("MAX_DEGREE_LOOKUPS", 40)
 
-# Verify Meta's original title/qualifications even when feed tags are present.
+# Verify original employer titles/qualifications even when feed tags are present.
 # Independent of the legacy ATS description classifier, which stays disabled.
 EMPLOYER_LOOKUP = _env_flag("EMPLOYER_LOOKUP", "1")
 MAX_EMPLOYER_LOOKUPS = _env_int("MAX_EMPLOYER_LOOKUPS", 40)
@@ -252,15 +252,6 @@ GRAD_DEGREES = {"Master's", "PhD", "MBA", "JD", "MD", "PharmD", "DO"}
 _STATE_SUFFIX = re.compile(r",\s*([A-Z]{2})\s*$")
 _TERM_RE = re.compile(r"(Spring|Summer|Fall|Winter)\s+(\d{4})", re.I)
 _TERM_START = {"spring": (1, 15), "summer": (5, 15), "fall": (8, 15), "winter": (12, 1)}
-
-# Explicit PhD/doctoral titles take priority over inconsistent feed tags.
-# Mixed-degree and pre-doctoral titles do not imply graduate-only eligibility.
-# Broader signals ("research scientist", ML terms) are deliberately not used.
-_PHD_TITLE = re.compile(r"\bph\.?\s?d\.?\b|\bdoctoral\b", re.I)
-_UNDERGRAD_TITLE = re.compile(
-    r"\b(?:bachelor(?:['’]?s)?|undergrad(?:uate)?|b\.?\s?[as]\.?|b\.?sc\.?)\b", re.I
-)
-_PREDOC_TITLE = re.compile(r"\bpre[-\s]?doctoral\b", re.I)
 
 # Degree words only count inside a sentence that is actually stating a
 # requirement. Without this guard, "MS" matches inside "LLMs" and boilerplate
@@ -468,10 +459,7 @@ def degree_from_feed(job: dict):
 
 def degree_from_title(job: dict):
     """Recognize explicit graduate titles without hiding mixed-degree roles."""
-    title = job["title"]
-    if _UNDERGRAD_TITLE.search(title) or _PREDOC_TITLE.search(title):
-        return None
-    return "grad" if _PHD_TITLE.search(title) else None
+    return "grad" if employer_degree.title_degree(job["title"]) == "grad" else None
 
 
 def ats_endpoint(url: str):
@@ -559,7 +547,7 @@ def resolve_degrees(jobs, cache: dict) -> dict:
     employer_statuses = {}
     for j in jobs:
         verified = employer_degree.lookup(
-            j["url"], cache, http_text, allow_fetch=employer_budget > 0
+            j["url"], cache, allow_fetch=employer_budget > 0
         ) if EMPLOYER_LOOKUP else None
         if verified:
             employer_budget -= int(verified["fetched"])

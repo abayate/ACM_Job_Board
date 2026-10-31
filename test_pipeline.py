@@ -20,6 +20,7 @@ class PipelineTests(unittest.TestCase):
         self.addCleanup(self.stack.close)
         self.stack.enter_context(contextlib.redirect_stdout(io.StringIO()))
         self.stack.enter_context(patch.object(bot.time, "sleep"))
+        self.stack.enter_context(patch.object(bot, "EMPLOYER_LOOKUP", False))
 
     def test_source_filters_keep_only_current_relevant_us_jobs(self):
         base = dict(id="ok", url="https://example.com", title="Intern", company_name="Example",
@@ -143,7 +144,7 @@ class PipelineTests(unittest.TestCase):
                     EMPLOYER_LOOKUP=True, MAX_EMPLOYER_LOOKUPS=40, DEGREE_LOOKUP=False, MAX_POSTS_PER_RUN=40))
                 stack.enter_context(patch.object(bot, "discover_internship_repo", return_value="test"))
                 stack.enter_context(patch.object(bot, "fetch_source", side_effect=[[job], []]))
-                stack.enter_context(patch.object(bot, "http_text", return_value=page("Research Scientist Intern (PhD)")))
+                stack.enter_context(patch.object(bot.employer_degree, "fetch_public_text", return_value=page("Research Scientist Intern (PhD)")))
                 post = stack.enter_context(patch.object(bot, "post_to_webhook"))
                 self.assertEqual(bot.main(), 0)
                 if mode=="dry_run":

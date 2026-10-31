@@ -1,5 +1,6 @@
 import contextlib
 import io
+import json
 import tempfile
 import time
 import unittest
@@ -20,15 +21,61 @@ def listing(title, degrees, kind="internship", job_id="job"):
 
 
 class DegreeRoutingTests(unittest.TestCase):
+    def setUp(self):
+        patcher = patch.object(bot.employer_degree, "fetch_public_text", return_value="")
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def test_meta_employer_evidence_overrides_missing_or_wrong_feed(self):
         markup = '<script type="application/ld+json">{"@type":"JobPosting","title":"Research Scientist Intern, Computer Vision - Video Intelligence (PhD)"}</script>'
         for degrees in ([], ["Bachelor's"]):
-            with self.subTest(degrees=degrees), patch.object(bot, "http_text", return_value=markup):
+            with self.subTest(degrees=degrees), patch.object(bot.employer_degree, "fetch_public_text", return_value=markup):
                 job = listing("Research Scientist Intern - Computer Vision - Video Intelligence", degrees)
                 job["url"] = "https://www.metacareers.com/jobs/1126899676481179"
                 job = self.resolve(job, {"job": "unknown"})
                 self.assertEqual(bot.route(job), "grad")
                 self.assertEqual(job["degree_src"], "employer")
+
+    def test_shared_employer_verification_changes_non_meta_routing(self):
+        cases = [
+            ("https://careers.example.org/job/research", '<h1>Research Intern (PhD)</h1>', [], "grad"),
+            ("https://boards.greenhouse.io/example/jobs/123", '{"title":"Research Intern", "content":"<h2>Requirements</h2><p>PhD in computing</p>"}', ["Bachelor's"], "grad"),
+            ("https://careers.example.org/job/software", '<h1>Software Intern</h1><h2>Requirements</h2><p>Bachelors degree</p><h2>Preferred Qualifications</h2><p>PhD</p>', [], "bachelors"),
+        ]
+        for url, body, degrees, expected in cases:
+            with self.subTest(url=url), patch.object(bot.employer_degree, 'fetch_public_text', return_value=body):
+                job = listing('Intern', degrees)
+                job['url'] = url
+                job = self.resolve(job, {'job':'unknown'})
+                self.assertEqual(bot.route(job), expected)
+                self.assertEqual(job['degree_src'], 'employer')
+
+    def test_lookup_budget_is_shared_across_employers(self):
+        jobs = [listing('Research Intern', [], job_id=str(i)) for i in range(2)]
+        jobs[0]['url'] = 'https://careers.one.org/job/1'
+        jobs[1]['url'] = 'https://careers.two.org/job/2'
+        with patch.object(bot, 'MAX_EMPLOYER_LOOKUPS', 1), patch.object(bot.employer_degree, 'fetch_public_text', return_value='<h1>Research Intern (PhD)</h1>') as fetch, contextlib.redirect_stdout(io.StringIO()):
+            bot.resolve_degrees(jobs, {})
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(bot.route(jobs[0]), 'grad')
+        self.assertEqual(jobs[1]['degree_evidence']['status'], 'deferred')
+        self.assertIsNone(jobs[1]['degree'])
+
+    def test_feed_title_fallback_does_not_turn_preference_into_requirement(self):
+        for title in ('Research Intern - PhD preferred', 'Research Intern - PhD not required', 'Research Intern - PhD desired'):
+            with self.subTest(title=title):
+                job = self.resolve(listing(title, []))
+                self.assertIsNone(job['degree'])
+                self.assertEqual(bot.route(job), 'bachelors')
+
+    def test_recorded_toyota_posting_overrides_incorrect_bachelors_tag(self):
+        fixture = json.loads((Path(__file__).parent / 'tests/fixtures/toyota_lever.json').read_text())
+        job = listing('Accelerated Science Intern - Representation Learning for Molecules and Materials', ["Bachelor's"])
+        job['url'] = fixture['source_url']
+        with patch.object(bot.employer_degree, 'fetch_public_text', return_value=json.dumps(fixture['response'])):
+            job = self.resolve(job)
+        self.assertEqual(bot.route(job), 'grad')
+        self.assertIn('doctoral program', job['degree_evidence']['evidence'])
 
     def resolve(self, job, cache=None):
         with patch.object(bot, "DEGREE_LOOKUP", False), contextlib.redirect_stdout(io.StringIO()):

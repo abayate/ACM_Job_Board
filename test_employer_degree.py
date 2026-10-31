@@ -1,7 +1,9 @@
 import json
 import unittest
+import io
+import urllib.error
 from pathlib import Path
-from unittest.mock import Mock
+from unittest.mock import Mock, MagicMock, patch
 
 import employer_degree as employer
 
@@ -61,12 +63,90 @@ class EmployerDegreeTests(unittest.TestCase):
 
     def test_unsupported_and_invalid_urls_are_not_fetched(self):
         fetch = Mock()
-        for url in ("https://example.com/jobs/1", "https://metacareers.com.evil.test/jobs/1",
-                    "http://metacareers.com/jobs/1", "https://metacareers.com/jobs/search",
+        for url in ("https://localhost/jobs/1", "https://127.0.0.1/jobs/1",
+                    "http://metacareers.com/jobs/1", "https://[::1]/jobs/1",
                     "https://metacareers.com:444/jobs/1", "https://user@metacareers.com/jobs/1"):
             with self.subTest(url=url):
                 self.assertIsNone(employer.lookup(url, {}, fetch, now=100))
         fetch.assert_not_called()
+
+    def test_any_public_employer_can_supply_structured_job_evidence(self):
+        for url in ("https://careers.example.org/jobs/1", "https://jobs.another-company.org/opening/abc"):
+            with self.subTest(url=url):
+                result = employer.lookup(url, {}, Mock(return_value=page("Research Intern (PhD)")), now=100)
+                self.assertEqual(result["degree"], "grad")
+
+    def test_description_sections_separate_required_and_preferred_degrees(self):
+        cases = [
+            ('<h2>Minimum Qualifications</h2><ul><li>PhD in computer science</li></ul>', 'grad'),
+            ('<h2>Requirements</h2><p>Bachelor’s degree in computing</p><h2>Preferred Qualifications</h2><p>PhD in AI</p>', 'bach'),
+            ('<h2>Preferred Qualifications</h2><p>PhD in AI</p>', None),
+            ('<h2>Requirements</h2><p>Currently pursuing a BS, MS or PhD in computing</p>', 'bach'),
+            ('<h2>Minimum Qualifications</h2><p>PhD or equivalent practical experience</p>', None),
+        ]
+        for description, expected in cases:
+            with self.subTest(description=description):
+                result = employer.lookup('https://careers.example.org/job/1', {}, Mock(return_value=page('Research Intern', description=description)), now=100)
+                self.assertEqual(result['degree'], expected)
+
+    def test_common_ats_providers_use_original_titles_and_requirements(self):
+        cases = [
+            ('https://job-boards.greenhouse.io/example/jobs/123',
+             {'title':'Research Intern', 'content':'<h2>Requirements</h2><p>PhD in computing</p>'}),
+            ('https://jobs.lever.co/example/abc',
+             {'text':'Research Intern', 'lists':[{'text':'Requirements', 'content':'<li>PhD in computing</li>'}]}),
+            ('https://jobs.ashbyhq.com/example/abc/application',
+             {'jobs':[{'id':'unrelated','title':'BS intern'}, {'id':'abc','title':'Research Intern (PhD)', 'descriptionHtml':''}]}),
+            ('https://jobs.smartrecruiters.com/Example/123-research-intern',
+             {'name':'Research Intern', 'jobAd':{'sections':{'qualifications':{'title':'Qualifications','text':'<p>PhD in computing</p>'}}}}),
+            ('https://example.wd5.myworkdayjobs.com/en-US/Careers/job/US/Intern_123',
+             {'jobPostingInfo':{'title':'Research Intern (PhD)', 'jobDescription':''}}),
+        ]
+        for url, record in cases:
+            with self.subTest(url=url):
+                fetch = Mock(return_value=json.dumps(record))
+                result = employer.lookup(url, {}, fetch, now=100)
+                self.assertEqual(result['degree'], 'grad')
+
+    def test_ambiguous_multiple_job_records_do_not_choose_a_random_degree(self):
+        records = [{'@type':'JobPosting','title':'Research Intern (PhD)'},
+                   {'@type':'JobPosting','title':'Undergraduate Intern'}]
+        markup = '<script type="application/ld+json">' + json.dumps(records) + '</script>'
+        result = employer.lookup('https://careers.example.org/job/1', {}, Mock(return_value=markup), now=100)
+        self.assertIsNone(result['degree'])
+
+    def test_public_fetch_retries_and_limits_response_size(self):
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = b'original posting'
+        opener = Mock()
+        opener.open.side_effect = [TimeoutError(), response]
+        with patch.object(employer, '_check_public_destination'), patch.object(employer.urllib.request, 'build_opener', return_value=opener), patch.object(employer.time, 'sleep'):
+            self.assertEqual(employer.fetch_public_text('https://example.org/job/1'), 'original posting')
+            self.assertEqual(opener.open.call_count, 2)
+            response.__enter__.return_value.read.return_value = b'x' * (4 * 1024 * 1024 + 1)
+            opener.open.side_effect = None
+            opener.open.return_value = response
+            with self.assertRaises(ValueError):
+                employer.fetch_public_text('https://example.org/job/1')
+            opener.open.side_effect = urllib.error.HTTPError('https://example.org', 404, 'gone', {}, io.BytesIO())
+            with self.assertRaises(urllib.error.HTTPError):
+                employer.fetch_public_text('https://example.org/job/1')
+
+    def test_private_dns_and_redirects_are_rejected(self):
+        with patch.object(employer.socket, 'getaddrinfo', return_value=[(2,1,6,'',('127.0.0.1',443))]):
+            with self.assertRaises(ValueError):
+                employer._check_public_destination('https://careers.example.org/job/1')
+        with patch.object(employer.socket, 'getaddrinfo', return_value=[(2,1,6,'',('8.8.8.8',443))]):
+            employer._check_public_destination('https://careers.example.org/job/1')
+        request = employer.urllib.request.Request('https://careers.example.org/job/1')
+        with self.assertRaises(ValueError):
+            employer._PublicRedirect().redirect_request(request, None, 302, 'redirect', {}, 'http://127.0.0.1/admin')
+
+    def test_qualification_sections_do_not_leak_into_other_sections(self):
+        markup = '<h1>Software Intern</h1><nav>Must have PhD</nav><h2>Requirements</h2><p>Bachelor’s degree</p><h2>About our team</h2><p>Our colleagues have PhDs.</p><footer>PhD required</footer>'
+        self.assertEqual(employer.parse_page(markup)[1], 'bach')
+        graph = '<script type="application/ld+json">{"@graph":[{"@type":["Thing","JobPosting"],"title":"Intern","educationRequirements":"PhD degree"}]}</script>'
+        self.assertEqual(employer.parse_page(graph)[1], 'grad')
 
     def test_success_is_cached_and_expires(self):
         cache = {}
