@@ -40,7 +40,8 @@ Of ~6,700 open listings nationwide, roughly **3,900 (~100/day)** survive filteri
 
 **There is no degree filter** — PhD and Master's roles are posted too, since
 plenty of members are headed to grad school. They are *routed* to their own
-channel rather than dropped.
+channel. If the graduate webhook is not configured, graduate-only roles are
+skipped rather than sent to internships or new-grad opportunities.
 
 ## Channels and degree routing
 
@@ -55,47 +56,73 @@ for the full-time roles they qualify for.
 > day. **Put this in the grad channel's topic**, or grad students will treat it
 > as their whole feed and miss the ~1,000 roles they're eligible for.
 
-Degree level is resolved in tiers, most confident first:
+Degree level is resolved from the best available evidence:
 
-| Tier | Source | Coverage | Confidence |
-|---|---|---|---|
-| 1 | Simplify's `degrees` field | ~84% | authoritative |
-| 2 | `phd`/`doctoral` in the title | ~10% of the rest | 100% precision on 1,731 held-out roles |
-| 3 | *(disabled)* read the posting via free Greenhouse/Ashby/Lever JSON | ~0% | see below |
-| 4 | **Abstain** → bachelors/newgrad, embed reads *"Not listed"* | ~16% of all listings | makes no claim |
+1. **Employer verification** (enabled by default): read the original
+   job title and qualifications through public ATS APIs or employer pages. This takes precedence
+   over incomplete or conflicting feed tags. Explicit undergraduate eligibility
+   remains eligible for internships; a merely preferred PhD is not a requirement.
+   A completed bachelor's prerequisite plus mandatory graduate enrollment is
+   graduate-only. Explicit undergraduate and graduate application pathways are
+   alternatives, rather than requirements every applicant must meet.
+2. **Explicit PhD/doctoral feed titles**, excluding mixed undergraduate/graduate
+   titles and pre-doctoral fellowships.
+3. **Simplify degree tags**, including mixed degrees that accept Bachelor's.
+4. **Legacy ATS lookup/cache**, with new Greenhouse/Ashby/Lever description
+   lookups still disabled by default (`DEGREE_LOOKUP=0`).
+5. **Unverified**: retain the existing internships/new-grad fallback, labeled
+   “Degree requirement unverified — check the posting.” Unknown is not proof
+   of undergraduate eligibility.
 
-**Tier 4 is the point.** Title-only classifiers measure ~70% precision — wrong
-3 times in 10 — because 108 distinct titles appear in the data as *both*
-grad-required and bachelor's-ok. "Software engineer intern" is literally both.
-No amount of cleverness recovers information that isn't there, so the bot says
-"not listed" instead of guessing.
+### Employer verification and limitations
 
-### Why tier 3 is off (a useful negative result)
+A missing feed degree does **not** mean the employer omitted it. Meta job
+`1126899676481179`, for example, has no degree tags or PhD marker in the feed
+but explicitly requires a PhD on the original employer page. Historical
+measurements against other ATS sites do not establish Meta coverage.
 
-Reading the job description to settle the degree sounds obviously right, and it
-validated beautifully: **27/27 correct** on real postings.
+`EMPLOYER_LOOKUP=1` verifies listings selected for posting across employers,
+even when feed labels exist. A shared classifier reads original titles,
+explicit degree requirements, and minimum/preferred qualification sections:
 
-That validation was measured on the wrong population. Those were listings that
-*have* a `degrees` field — which are, by construction, postings that state a
-degree. The jobs tier 3 would actually run against are the ones with **no**
-`degrees` field, and Simplify's field is empty *precisely because the posting
-never said*. Measured on that population: **only 2 of 45 descriptions mention a
-degree at all.** Real resolution rate ≈ 0–4%.
+| Source | Retrieval |
+|---|---|
+| Greenhouse | Public job JSON, including the original HTML description |
+| Lever | Public posting JSON, preserving qualification section headings |
+| Ashby | Public job-board JSON, selecting the exact requested job ID |
+| SmartRecruiters | Public posting JSON and qualification sections |
+| Workday | Public job-detail JSON |
+| Other employer websites, including Meta | Original HTML, JobPosting JSON-LD, original title metadata and qualification sections |
 
-So it is off by default (`DEGREE_LOOKUP=0`) and the bot makes zero HTTP calls
-for degrees. The code is kept and tested in case upstream coverage changes.
+There is no company allowlist. Public HTTPS employer URLs use the shared path;
+provider adapters handle different response formats. Unsafe/local destinations
+and redirects are rejected, and response size and request time are bounded.
+Python's standard library is sufficient; no API key or paid service is required.
+The original verified employer title is used in Discord. Generic research titles
+alone never establish a degree. Preferred or optional degrees and explicit
+experience alternatives do not establish graduate-only eligibility.
+An explicit “PhD or equivalent experience” result overrides conflicting feed
+tags and displays “Graduate degree or equivalent experience — check the posting.”
+It does not claim that a bachelor's degree alone qualifies. Seniority and the
+amount of equivalent experience are outside this degree-routing classifier.
 
-*If you add a classifier here, validate it on listings with no `degrees` field
-— not on the labelled ones.*
+Requests are limited by `MAX_EMPLOYER_LOOKUPS` (default 40 per run). Results in
+`degree_cache.json` record the source URL, employer title, evidence, status,
+check time and expiry. Verified results last seven days, unverified results one
+day, and fetch failures one hour. Expired results retry **when the listing is
+next evaluated**; this does not automatically revisit already-posted jobs.
+Legacy `unknown` cache entries cannot suppress employer verification.
+This release uses the `employer:v3:` cache namespace for both employer and
+legacy classification. Earlier parser decisions are ignored and re-evaluated
+when a listing is selected; deleting the state files is unnecessary.
 
-The two failure modes aren't symmetric, which is why abstaining defaults to the
-bachelor's channel: a grad-only role appearing there costs one wasted click,
-while a bachelor's-eligible role hidden in the grad channel is never seen at
-all.
-
-Tier 3 lookups are budgeted per run (`MAX_DEGREE_LOOKUPS`) and cached in
-`degree_cache.json`, so this costs roughly **6 HTTP calls a day and no API
-key**.
+Every selected listing gets an employer-verification attempt, subject to the
+shared request budget and cache. JavaScript-only pages, blocked or expired
+postings, pages with no usable evidence, non-HTTPS URLs, and exhausted request
+budgets still use the fallback rules above. They remain explicitly unverified;
+an attempted lookup is not a confirmed degree. A large backfill may need a
+higher lookup budget. This change does not guarantee that all graduate-only
+roles are excluded and does not move existing Discord posts.
 
 ## How it avoids going stale
 
@@ -149,11 +176,14 @@ Set the channels to view-only for members (deny *Send Messages* for
 | Secret | Purpose |
 |---|---|
 | `DISCORD_WEBHOOK_INTERNSHIPS` | Bachelor's internships channel |
-| `DISCORD_WEBHOOK_GRAD` | MS/PhD-required channel. **Optional** — if unset, those roles stay in the other two channels |
+| `DISCORD_WEBHOOK_GRAD` | MS/PhD-required channel. **Optional** — if unset, graduate-only roles are skipped and marked seen |
 | `DISCORD_WEBHOOK_NEWGRAD` | New-grad full-time channel |
 | `DISCORD_WEBHOOK_URL` | Optional fallback used for internships + new-grad if those two are unset |
 
 That's the entire required setup. Everything else has a working default.
+
+After adding a previously missing graduate webhook, use a backfill with
+`only_channels: grad` to recover skipped roles within the selected date window.
 
 ## Configuration
 
@@ -174,7 +204,9 @@ Tuning knobs live in `env:` in [`.github/workflows/main.yml`](.github/workflows/
 | `DATE_HEADERS` | `1` | Big 📅 banner at each day boundary |
 | `TIMEZONE` | `America/New_York` | Which local day a job falls under |
 | `PRUNE_AFTER_DAYS` | `45` | Forget closed jobs to bound state-file growth |
-| `DEGREE_LOOKUP` | `1` | Read postings to settle degree level. `0` = tiers 1–2 only |
+| `DEGREE_LOOKUP` | `0` | Legacy Greenhouse/Ashby/Lever description lookups |
+| `EMPLOYER_LOOKUP` | `1` | Verify original employer titles and qualifications across the feed |
+| `MAX_EMPLOYER_LOOKUPS` | `40` | Maximum fresh employer-page requests per run |
 | `MAX_DEGREE_LOOKUPS` | `40` | Per-run HTTP budget for tier 3 |
 | `ONLY_CHANNELS` | *(empty)* | Post to these channels only, e.g. `grad`. For backfilling a new channel |
 | `BOOTSTRAP_POST_COUNT` | `5` | Posts per category on a first-ever run |
@@ -195,11 +227,31 @@ as dated sections. Budget ~2 seconds per 5 jobs (~10 min for 1,500).
 ### Testing locally
 
 ```bash
+python3 -m unittest -v                            # offline regression/integration tests
 DRY_RUN=1 python3 job_bot.py                        # what would post right now
 DRY_RUN=1 BACKFILL_SINCE=2026-08-30 python3 job_bot.py
 ```
 
-Stdlib only, Python 3.9+. No `pip install` required.
+The bot is stdlib only, Python 3.9+. Tests also run without dependencies.
+To measure statement and branch coverage, install the development-only
+`coverage` package and run:
+
+```bash
+python3 -m coverage run --branch --source=job_bot,employer_degree -m unittest -v
+python3 -m coverage report --fail-under=90
+python3 scripts/replay_routing_audit.py             # frozen, offline audit replay
+```
+
+CI tests Python 3.9, 3.11 and 3.13 and enforces at least 90% combined statement
+and branch coverage. The posting workflow uses Python 3.11 and runs the offline
+suite before it can post. If tests fail, posting and the state-commit step are
+skipped. Offline tests mock network delivery; live employer retrieval and live
+Discord acceptance must be reported separately.
+
+The suite includes all 120 recorded audit cases, with 119 clear references
+scored and one ambiguous case excluded. This sample guided development, so a
+perfect replay is a regression result, **not overall real-world accuracy**.
+See [RELEASE.md](RELEASE.md) for deployment and recovery instructions.
 
 ## State
 
@@ -207,10 +259,16 @@ Stdlib only, Python 3.9+. No `pip install` required.
 run. It maps job ID → `{company, title, first_seen}`, plus a `_headers` key
 tracking the last date header announced per channel.
 
-Jobs are marked seen **as each Discord message succeeds**, and state is saved
-in a `finally` block. A crash mid-batch therefore can't duplicate posts — the
-undelivered jobs simply go out on the next run. Closed jobs are pruned after
-`PRUNE_AFTER_DAYS` so the file doesn't grow without bound.
+Jobs enter seen state **as each Discord message succeeds**, and state is saved
+in a `finally` block if a later delivery raises. First runs and backfills no
+longer pre-mark selected, unseen jobs as delivered. Recent unsent jobs remain
+available to a later normal run; older jobs still obey the freshness floor.
+Closed jobs are pruned after `PRUNE_AFTER_DAYS`.
+
+An abrupt process kill, failure to save/push state, or a Discord response lost
+after accepting a message can still cause duplicates. Delivery is not exactly
+once. A backfill deliberately re-posts already-seen jobs, so retrying the same
+backfill may repeat successful messages from that window.
 
 To force a clean slate, delete `seen_jobs.json` — the next run bootstraps:
 seeds everything as seen and posts only the freshest `BOOTSTRAP_POST_COUNT` per
@@ -225,4 +283,4 @@ category, instead of flooding the channel with thousands of old listings.
 | Runs far less often than the cron | Normal. GitHub throttles scheduled workflows on public repos; the freshness floor is what makes this harmless. |
 | Everything posts twice | Two workflow files, or `seen_jobs.json` failing to commit. Check the *Save seen-jobs state* step. |
 | Grad channel empty | Expected at ~9/day. Run a backfill with `only_channels: grad` to populate it. |
-| A role is in the wrong channel | Check the `🎓 Degree` field. "Not listed" means the posting never stated one — the bot abstained rather than guessed. |
+| A role is in the wrong channel | Check the title and `🎓 Degree` field. Verified employer evidence overrides feed tags. "Degree requirement unverified" means the bot could not confirm eligibility; the employer may still state a requirement. Existing Discord messages are not moved by routing changes. |
