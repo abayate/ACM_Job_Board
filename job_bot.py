@@ -71,6 +71,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import employer_degree
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlparse
 
@@ -191,18 +192,17 @@ ONLY_CHANNELS = {
 # Tier 3: read the posting itself from Greenhouse/Ashby/Lever public JSON
 # endpoints (free, no API key) when the feed omits the degree.
 #
-# OFF BY DEFAULT, because measurement says it does not work *on the jobs it
-# would run against*. Validating it against listings that HAVE a degrees field
-# gave 27/27 correct - but those are, by construction, postings that state a
-# degree. On the actual target population (listings with NO degrees field)
-# only 2 of 45 descriptions mention a degree at all: Simplify's field is empty
-# precisely because the posting never said. Real resolution rate ~0-4%.
-#
-# The code is kept and tested in case upstream coverage changes; flip this to
-# 1 to re-enable. Tiers 1, 2 and 4 do the real work.
+# The legacy generic description classifier remains OFF by default. Historical
+# ATS sampling did not cover Meta: missing feed tags do NOT mean an employer
+# omitted the requirement. EMPLOYER_LOOKUP independently verifies Meta evidence.
 DEGREE_LOOKUP = _env_flag("DEGREE_LOOKUP", "0")
 # Per-run budget, so a backfill can't fire thousands of HTTP requests.
 MAX_DEGREE_LOOKUPS = _env_int("MAX_DEGREE_LOOKUPS", 40)
+
+# Verify Meta's original title/qualifications even when feed tags are present.
+# Independent of the legacy ATS description classifier, which stays disabled.
+EMPLOYER_LOOKUP = _env_flag("EMPLOYER_LOOKUP", "1")
+MAX_EMPLOYER_LOOKUPS = _env_int("MAX_EMPLOYER_LOOKUPS", 40)
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "").strip()
 
@@ -258,7 +258,7 @@ _TERM_START = {"spring": (1, 15), "summer": (5, 15), "fall": (8, 15), "winter": 
 # Broader signals ("research scientist", ML terms) are deliberately not used.
 _PHD_TITLE = re.compile(r"\bph\.?\s?d\.?\b|\bdoctoral\b", re.I)
 _UNDERGRAD_TITLE = re.compile(
-    r"\b(?:bachelor(?:['’]s)?|undergrad(?:uate)?|b\.?\s?[as]\.?|b\.?sc\.?)\b", re.I
+    r"\b(?:bachelor(?:['’]?s)?|undergrad(?:uate)?|b\.?\s?[as]\.?|b\.?sc\.?)\b", re.I
 )
 _PREDOC_TITLE = re.compile(r"\bpre[-\s]?doctoral\b", re.I)
 
@@ -552,11 +552,22 @@ def degree_from_description(text: str):
 
 def resolve_degrees(jobs, cache: dict) -> dict:
     """Attach job["degree"] ("grad" | "bach" | None) and job["degree_src"]."""
-    counts = {"feed": 0, "title": 0, "posting": 0, "cached": 0, "unknown": 0}
+    counts = {"feed": 0, "title": 0, "posting": 0, "cached": 0, "unknown": 0, "employer": 0}
     boards: dict = {}
     budget = MAX_DEGREE_LOOKUPS if DEGREE_LOOKUP else 0
+    employer_budget = MAX_EMPLOYER_LOOKUPS if EMPLOYER_LOOKUP else 0
+    employer_statuses = {}
     for j in jobs:
-        lvl, src = degree_from_title(j), "title"
+        verified = employer_degree.lookup(
+            j["url"], cache, http_text, allow_fetch=employer_budget > 0
+        ) if EMPLOYER_LOOKUP else None
+        if verified:
+            employer_budget -= int(verified["fetched"])
+            employer_statuses[verified["status"]] = employer_statuses.get(verified["status"], 0) + 1
+            j["degree_evidence"] = verified
+        lvl, src = (verified["degree"] if verified else None), "employer"
+        if lvl is None:
+            lvl, src = degree_from_title(j), "title"
         if lvl is None:
             lvl, src = degree_from_feed(j), "feed"
         if lvl is None and j["id"] in cache:
@@ -575,10 +586,12 @@ def resolve_degrees(jobs, cache: dict) -> dict:
         counts[src] = counts.get(src, 0) + 1
     used = MAX_DEGREE_LOOKUPS - budget if DEGREE_LOOKUP else 0
     print(
-        f"[degree] feed={counts['feed']} title={counts['title']} "
+        f"[degree] employer={counts['employer']} feed={counts['feed']} title={counts['title']} "
         f"posting={counts['posting']} cached={counts['cached']} "
         f"not-listed={counts['unknown']} ({used} lookups)"
     )
+    if employer_statuses:
+        print(f"[employer] {employer_statuses} ({MAX_EMPLOYER_LOOKUPS - employer_budget} fetches)")
     return counts
 
 
@@ -677,7 +690,7 @@ def degree_display(job: dict) -> str:
         return "MS/PhD required"
     if job["degree"] == "bach":
         return "Bachelor's OK"
-    return "Not listed — check the posting"
+    return "Degree requirement unverified — check the posting"
 
 
 def make_embed(job: dict, channel: str) -> dict:
@@ -706,8 +719,9 @@ def make_embed(job: dict, channel: str) -> dict:
     if channel == "grad":
         footer = ("Internship" if job["kind"] == "internship" else "Full-time") + " · " + footer
 
+    employer_title = job.get("degree_evidence", {}).get("title") if job.get("degree_src") == "employer" else None
     embed = {
-        "title": f"{marker}{job['company']} — {job['title']}"[:256],
+        "title": f"{marker}{job['company']} — {employer_title or job['title']}"[:256],
         "url": job["url"],
         "color": LOCAL_COLOR if job["is_local"] else CHANNELS[channel]["color"],
         "fields": fields,

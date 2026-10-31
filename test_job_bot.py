@@ -20,6 +20,16 @@ def listing(title, degrees, kind="internship", job_id="job"):
 
 
 class DegreeRoutingTests(unittest.TestCase):
+    def test_meta_employer_evidence_overrides_missing_or_wrong_feed(self):
+        markup = '<script type="application/ld+json">{"@type":"JobPosting","title":"Research Scientist Intern, Computer Vision - Video Intelligence (PhD)"}</script>'
+        for degrees in ([], ["Bachelor's"]):
+            with self.subTest(degrees=degrees), patch.object(bot, "http_text", return_value=markup):
+                job = listing("Research Scientist Intern - Computer Vision - Video Intelligence", degrees)
+                job["url"] = "https://www.metacareers.com/jobs/1126899676481179"
+                job = self.resolve(job, {"job": "unknown"})
+                self.assertEqual(bot.route(job), "grad")
+                self.assertEqual(job["degree_src"], "employer")
+
     def resolve(self, job, cache=None):
         with patch.object(bot, "DEGREE_LOOKUP", False), contextlib.redirect_stdout(io.StringIO()):
             bot.resolve_degrees([job], cache or {})
