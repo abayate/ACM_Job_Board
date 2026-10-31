@@ -82,7 +82,7 @@ class EmployerDegreeTests(unittest.TestCase):
             ('<h2>Requirements</h2><p>Bachelor’s degree in computing</p><h2>Preferred Qualifications</h2><p>PhD in AI</p>', 'bach'),
             ('<h2>Preferred Qualifications</h2><p>PhD in AI</p>', None),
             ('<h2>Requirements</h2><p>Currently pursuing a BS, MS or PhD in computing</p>', 'bach'),
-            ('<h2>Minimum Qualifications</h2><p>PhD or equivalent practical experience</p>', None),
+            ('<h2>Minimum Qualifications</h2><p>PhD or equivalent practical experience</p>', 'equivalent'),
         ]
         for description, expected in cases:
             with self.subTest(description=description):

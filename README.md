@@ -62,6 +62,9 @@ Degree level is resolved from the best available evidence:
    job title and qualifications through public ATS APIs or employer pages. This takes precedence
    over incomplete or conflicting feed tags. Explicit undergraduate eligibility
    remains eligible for internships; a merely preferred PhD is not a requirement.
+   A completed bachelor's prerequisite plus mandatory graduate enrollment is
+   graduate-only. Explicit undergraduate and graduate application pathways are
+   alternatives, rather than requirements every applicant must meet.
 2. **Explicit PhD/doctoral feed titles**, excluding mixed undergraduate/graduate
    titles and pre-doctoral fellowships.
 3. **Simplify degree tags**, including mixed degrees that accept Bachelor's.
@@ -98,6 +101,10 @@ Python's standard library is sufficient; no API key or paid service is required.
 The original verified employer title is used in Discord. Generic research titles
 alone never establish a degree. Preferred or optional degrees and explicit
 experience alternatives do not establish graduate-only eligibility.
+An explicit “PhD or equivalent experience” result overrides conflicting feed
+tags and displays “Graduate degree or equivalent experience — check the posting.”
+It does not claim that a bachelor's degree alone qualifies. Seniority and the
+amount of equivalent experience are outside this degree-routing classifier.
 
 Requests are limited by `MAX_EMPLOYER_LOOKUPS` (default 40 per run). Results in
 `degree_cache.json` record the source URL, employer title, evidence, status,
@@ -105,6 +112,9 @@ check time and expiry. Verified results last seven days, unverified results one
 day, and fetch failures one hour. Expired results retry **when the listing is
 next evaluated**; this does not automatically revisit already-posted jobs.
 Legacy `unknown` cache entries cannot suppress employer verification.
+This release uses the `employer:v3:` cache namespace for both employer and
+legacy classification. Earlier parser decisions are ignored and re-evaluated
+when a listing is selected; deleting the state files is unnecessary.
 
 Every selected listing gets an employer-verification attempt, subject to the
 shared request budget and cache. JavaScript-only pages, blocked or expired
@@ -228,11 +238,20 @@ To measure statement and branch coverage, install the development-only
 
 ```bash
 python3 -m coverage run --branch --source=job_bot,employer_degree -m unittest -v
-python3 -m coverage report --fail-under=80
+python3 -m coverage report --fail-under=90
+python3 scripts/replay_routing_audit.py             # frozen, offline audit replay
 ```
 
-CI enforces at least 80% combined coverage. Offline tests mock network delivery;
-live employer retrieval and live Discord acceptance must be reported separately.
+CI tests Python 3.9, 3.11 and 3.13 and enforces at least 90% combined statement
+and branch coverage. The posting workflow uses Python 3.11 and runs the offline
+suite before it can post. If tests fail, posting and the state-commit step are
+skipped. Offline tests mock network delivery; live employer retrieval and live
+Discord acceptance must be reported separately.
+
+The suite includes all 120 recorded audit cases, with 119 clear references
+scored and one ambiguous case excluded. This sample guided development, so a
+perfect replay is a regression result, **not overall real-world accuracy**.
+See [RELEASE.md](RELEASE.md) for deployment and recovery instructions.
 
 ## State
 
@@ -240,10 +259,16 @@ live employer retrieval and live Discord acceptance must be reported separately.
 run. It maps job ID → `{company, title, first_seen}`, plus a `_headers` key
 tracking the last date header announced per channel.
 
-Jobs are marked seen **as each Discord message succeeds**, and state is saved
-in a `finally` block. A crash mid-batch therefore can't duplicate posts — the
-undelivered jobs simply go out on the next run. Closed jobs are pruned after
-`PRUNE_AFTER_DAYS` so the file doesn't grow without bound.
+Jobs enter seen state **as each Discord message succeeds**, and state is saved
+in a `finally` block if a later delivery raises. First runs and backfills no
+longer pre-mark selected, unseen jobs as delivered. Recent unsent jobs remain
+available to a later normal run; older jobs still obey the freshness floor.
+Closed jobs are pruned after `PRUNE_AFTER_DAYS`.
+
+An abrupt process kill, failure to save/push state, or a Discord response lost
+after accepting a message can still cause duplicates. Delivery is not exactly
+once. A backfill deliberately re-posts already-seen jobs, so retrying the same
+backfill may repeat successful messages from that window.
 
 To force a clean slate, delete `seen_jobs.json` — the next run bootstraps:
 seeds everything as seen and posts only the freshest `BOOTSTRAP_POST_COUNT` per

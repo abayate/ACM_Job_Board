@@ -44,7 +44,16 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v5
 
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Test before posting
+        run: python -m unittest -v
+
       - name: Run job bot
+        id: run-bot
         env:
           DISCORD_WEBHOOK_INTERNSHIPS: ${{ secrets.DISCORD_WEBHOOK_INTERNSHIPS }}
           DISCORD_WEBHOOK_NEWGRAD: ${{ secrets.DISCORD_WEBHOOK_NEWGRAD }}
@@ -81,10 +90,10 @@ jobs:
           # Explicit PhD-only titles override conflicting degree tags, but
           # mixed titles such as BS/MS/PhD keep the normal degree checks.
           #
-          # When the feed omits the degree the bot says "Not listed" rather
-          # than guessing. DEGREE_LOOKUP would read the posting itself to try
-          # to settle it, but measurement showed only 2 of 45 such postings
-          # mention a degree at all, so it is off. See job_bot.py.
+          # Original employer evidence is checked even when feed tags exist.
+          # Required and preferred degrees, alternative pathways, and equivalent
+          # experience share one classifier. Unknown evidence stays labeled
+          # unverified; legacy ATS lookup remains off.
           DEGREE_LOOKUP: "0"
           MAX_DEGREE_LOOKUPS: "40" # per-run HTTP budget, if ever re-enabled
           EMPLOYER_LOOKUP: "1" # verify original employer titles and qualifications
@@ -100,10 +109,11 @@ jobs:
           # opt-in, self-assignable role - otherwise this pings ~100x/day.
           SILENT: "1"
           PING_ROLE_ID: ${{ vars.PING_ROLE_ID }}
-        run: python3 job_bot.py
+        run: python job_bot.py
 
       - name: Save seen-jobs state
-        if: always() # state is written even if posting failed partway
+        # Preserve partial delivery state, but never commit after a failed test gate.
+        if: ${{ always() && (steps.run-bot.outcome == 'success' || steps.run-bot.outcome == 'failure') }}
         run: |
           git config user.name "acm-job-radar[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

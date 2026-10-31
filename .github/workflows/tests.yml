@@ -11,11 +11,15 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.9', '3.11', '3.13']
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
-          python-version: '3.9'
+          python-version: ${{ matrix.python-version }}
       - run: python -m pip install 'coverage>=7,<8'
       - run: python -m coverage run --branch --source=job_bot,employer_degree -m unittest -v
-      - run: python -m coverage report --fail-under=80
+      - run: python -m coverage report --fail-under=90

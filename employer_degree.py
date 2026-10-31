@@ -5,6 +5,7 @@ Shared HTML/JSON-LD parsing and public ATS adapters use the same classifier.
 """
 
 import html
+import http.client
 import ipaddress
 import json
 import re
@@ -18,15 +19,36 @@ from urllib.parse import quote, unquote, urlparse, urlunsplit
 VERIFIED_TTL = 7 * 86400
 RETRY_TTL = 3600
 UNVERIFIED_TTL = 86400
-_PHD = re.compile(r"\bph\.?\s?d\.?\b|\bdoctoral\b", re.I)
+_PHD = re.compile(r"\bph\.?\s?d\.?\b|\bdoctor(?:al|ate)\b", re.I)
 _BACH = re.compile(r"\b(?:bachelor(?:['’]?s)?|undergrad(?:uate)?|b\.?\s?[as]\.?|b\.?sc\.?)\b", re.I)
-_GRAD = re.compile(r"\b(?:ph\.?\s?d\.?|doctoral|master['’]?s?|msc)\b", re.I)
+_GRAD = re.compile(
+    r"\b(?:ph\.?\s?d\.?|doctor(?:al|ate)|master(?:['’]s|s|(?=\s+(?:degree|program|of\s+(?:science|arts|engineering|business)\b)))|msc|mba|"
+    r"m\.?\s?[as]\.?(?=\s*(?:degree|program|in\b|/|or\b|and\b)|$)|"
+    r"graduate\s+(?:degree|program|school|student|studies))(?!\w)", re.I)
 _PREFERRED = re.compile(r"\b(?:preferred|preference|desired|desirable|bonus|nice.to.have)\b", re.I)
-_OPTIONAL = re.compile(r"\b(?:not required|not necessary|optional|must not|do not need|no\s+[^.;\n]{0,50}\s+required)\b", re.I)
+_OPTIONAL = re.compile(r"\b(?:not required|not necessary|not mandatory|not essential|optional|must not|do not need|no\s+[^.;\n]{0,50}\s+required)\b", re.I)
 _REQUIRED = re.compile(r"\b(?:required|must|pursuing|enrolled|obtaining|working toward)\b", re.I)
-_EXPERIENCE_ALTERNATIVE = re.compile(r"\b(?:or|and/or)\s+(?:equivalent\s+)?(?:practical\s+|professional\s+|relevant\s+|work\s+)?experience\b", re.I)
-_REQUIRED_HEADING = re.compile(r"^(?:(?:minimum|basic|required|essential)\s+)?(?:qualifications|requirements|education(?: and experience)?|what you bring|what you(?:'|’)ll need)\s*:?$", re.I)
-_PREFERRED_HEADING = re.compile(r"^(?:(?:preferred|desired|additional|bonus)\s+(?:qualifications|requirements|skills)|nice.to.have)\s*:?$", re.I)
+_EXPERIENCE_ALTERNATIVE = re.compile(
+    r"\b(?:or|and/or)\s+(?:an?\s+)?(?:equivalent\s+)?"
+    r"(?:(?:practical|professional|relevant|work|research)\s+)*experience\b|"
+    r"\bor\s+(?:an?\s+)?equivalent\s+(?:record|track record|combination|background)\b|"
+    r"\bequivalent\s+(?:(?:practical|professional|relevant|work|research)\s+)*experience\s+or\b", re.I)
+_REQUIRED_HEADING = re.compile(
+    r"^(?:(?:(?:minimum|basic|required|essential|additional required)\s+)?"
+    r"(?:qualifications|requirements|education(?:\s+and(?:/or)?\s+experience)?)|"
+    r"what you bring|what you(?:'|’)ll need|who you are(?:\s*\(basic qualifications\))?)\s*:?$", re.I)
+_PREFERRED_HEADING = re.compile(
+    r"^(?:(?:preferred|desired|additional|bonus)\s+"
+    r"(?:qualifications|requirements|skills|education(?:\s+and(?:/or)?\s+experience)?)|"
+    r"nice.to.have|what will put you ahead)\s*:?$", re.I)
+_PATHWAY = re.compile(r"^(?:post[- ]?)?(undergraduate|graduate)(?:\s*\+\s*ph\.?d\.?)?\s*:", re.I)
+_CONDITIONAL_GRADUATE = re.compile(
+    r"\b(?:applicants|candidates|students|those)\s+who\s+(?:have\s+)?graduat|"
+    r"\b(?:if|when)\s+(?:you|they|applicants|candidates|students)\s+"
+    r"(?:have\s+already\s+|have\s+|already\s+)?graduat", re.I)
+
+# Classification changes must not reuse decisions made by an older parser.
+CACHE_VERSION = "employer:v3:"
 
 
 def canonical_url(url):
@@ -79,7 +101,7 @@ def fetch_public_text(url, timeout=15, retries=2):
                 if len(data) > 4 * 1024 * 1024:
                     raise ValueError("employer response exceeds size limit")
                 return data.decode("utf-8", "replace")
-        except (OSError, urllib.error.URLError) as error:
+        except (OSError, urllib.error.URLError, http.client.HTTPException) as error:
             if isinstance(error, urllib.error.HTTPError) and error.code != 429 and error.code < 500:
                 raise
             if attempt + 1 == retries:
@@ -175,8 +197,11 @@ def _clauses(markup, *, qualification_field=False):
     text = "".join(parser.parts)
     result = []
     section = None
-    for line in re.split(r"\n|\u00a0", text):
-        line = line.strip()
+    for line in text.splitlines():
+        # NBSP is an inline space, often between degree alternatives in Word
+        # exports. Splitting on it changes “bachelor's or master's” into two
+        # contradictory requirements.
+        line = re.sub(r"[^\S\n]+", " ", line).strip()
         if not line:
             continue
         if _PREFERRED_HEADING.fullmatch(line):
@@ -189,11 +214,19 @@ def _clauses(markup, *, qualification_field=False):
         if re.fullmatch(r"(?:about .+|responsibilities|benefits|what you(?:'|’)ll do|compensation|equal employment opportunity)\s*:?", line, re.I):
             section = None
             continue
-        for clause in re.split(r";|(?<=[.!?])\s+(?=[A-Z])", line):
-            if _PREFERRED.search(clause) or _OPTIONAL.search(clause) or section == "preferred":
-                continue
-            if section == "required" or _REQUIRED.search(clause) or qualification_field:
-                result.append(clause.strip())
+        for sentence in re.split(r";|(?<=[.!?])\s+(?=[A-Z])", line):
+            parts = re.split(r"\s+(?:and|but|while)\s+|,\s*", sentence, flags=re.I)
+            # A preference for one skill must not erase a separate explicit
+            # requirement: “PhD required and Python preferred”. Only split
+            # when a fragment has its own affirmative requirement wording;
+            # “math and computer science preferred” is still all preferred.
+            mixed = any(_PREFERRED.search(p) or _OPTIONAL.search(p) for p in parts)
+            mandatory = any(_REQUIRED.search(p) and not (_PREFERRED.search(p) or _OPTIONAL.search(p)) for p in parts)
+            for clause in parts if mixed and mandatory else [sentence]:
+                if _PREFERRED.search(clause) or _OPTIONAL.search(clause) or section == "preferred":
+                    continue
+                if clause.strip() and (section == "required" or _REQUIRED.search(clause) or qualification_field):
+                    result.append(clause.strip())
     return result
 
 
@@ -232,15 +265,47 @@ def parse_page(markup):
 
 
 def _classify(title, required):
-    bachelor_clauses = [c for c in required if _BACH.search(c)]
-    graduate_clauses = [c for c in required if _GRAD.search(c) and not _BACH.search(c)
-                       and not _EXPERIENCE_ALTERNATIVE.search(c)]
+    # Required bullets are conjunctive unless the employer explicitly labels
+    # alternative applicant pathways. A completed bachelor's prerequisite does
+    # not cancel a separate mandatory graduate-enrollment requirement.
+    undergraduate_path = any(_PATHWAY.match(c) and _PATHWAY.match(c)[1].lower() == "undergraduate"
+                             and _BACH.search(c) for c in required)
+    bachelor_clauses, graduate_clauses, alternatives = [], [], []
+    for clause in required:
+        bach, grad = _BACH.search(clause), _GRAD.search(clause)
+        # Terminal MA/MS can be a US state. A bare abbreviation needs nearby
+        # education wording; “must work in Boston, MA” is not a master's rule.
+        if grad and re.fullmatch(r"m\.?\s?[as]\.?", grad[0], re.I):
+            if not clause[grad.end():].strip(" .") and not re.search(
+                    r"\b(?:degree|education|pursu\w*|enroll\w*|obtain\w*|hold\w*|earn\w*)\b",
+                    clause[:grad.start()], re.I):
+                grad = None
+        if bach:
+            bachelor_clauses.append(clause)
+        if not grad or _CONDITIONAL_GRADUATE.search(clause):
+            continue
+        if _EXPERIENCE_ALTERNATIVE.search(clause):
+            alternatives.append(clause)
+            continue
+        pathway = _PATHWAY.match(clause)
+        if undergraduate_path and pathway and pathway[1].lower() == "graduate":
+            continue
+        if bach:
+            # Degree lists joined by “or” accept a bachelor's. “Bachelor's
+            # AND enrollment in a master's” is a pair of mandatory conditions.
+            between = clause[min(bach.end(), grad.end()):max(bach.start(), grad.start())]
+            degree_join = re.sub(r"\bor\s+(?:a\s+)?related\s+(?:field|discipline)\b", "", between, flags=re.I)
+            if re.search(r"\bor\b|/", degree_join, re.I):
+                continue
+            if not re.search(r"\b(?:and|plus)\b|enroll|pursu|admission", between, re.I):
+                continue
+        graduate_clauses.append(clause)
     if graduate_clauses:
         return title, "grad", graduate_clauses[0].strip()[:600]
     if bachelor_clauses:
         return title, "bach", bachelor_clauses[0].strip()[:600]
-    if any(_GRAD.search(c) and _EXPERIENCE_ALTERNATIVE.search(c) for c in required):
-        return title, None, "graduate degree has an experience alternative"
+    if alternatives:
+        return title, "equivalent", alternatives[0].strip()[:600]
     level = title_degree(title)
     if level:
         return title, level, "employer title explicitly specifies " + ("undergraduate eligibility" if level == "bach" else "PhD/doctoral")
@@ -292,7 +357,7 @@ def lookup(url, cache, fetch_text=None, *, now=None, allow_fetch=True):
     if not canonical:
         return None
     now = time.time() if now is None else now
-    key = "employer:v2:" + canonical
+    key = CACHE_VERSION + canonical
     cached = cache.get(key)
     if isinstance(cached, dict) and cached.get("expires_at", 0) > now:
         return {**cached, "fetched": False}
@@ -307,7 +372,7 @@ def lookup(url, cache, fetch_text=None, *, now=None, allow_fetch=True):
         result.update(title=title, degree=degree, evidence=evidence,
                       status="verified" if degree else "unverified", provider=kind)
         ttl = VERIFIED_TTL if degree else UNVERIFIED_TTL
-    except (OSError, ValueError, TypeError, AttributeError, KeyError):
+    except (OSError, ValueError, TypeError, AttributeError, KeyError, http.client.HTTPException):
         result.update(status="fetch_failed", evidence="employer page could not be read")
         ttl = RETRY_TTL
     result["expires_at"] = now + ttl

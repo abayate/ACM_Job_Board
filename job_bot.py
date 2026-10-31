@@ -44,13 +44,10 @@ Design notes worth knowing before you change anything:
     muted or left. Only a configured PING_ROLE_ID mention may be loud, and it
     is intentionally left unset.
 
-  * NEVER GUESS A DEGREE. Degree level is resolved in tiers, and when nothing
-    is confident the job is routed to the bachelors/newgrad channel and the
-    embed says "not listed" rather than implying a level we did not verify.
-    Measured on held-out data: title-only classifiers top out around 70%
-    precision, i.e. wrong 3 times in 10, which is worse than saying nothing.
-    ~16% of listings end up "not listed"; that is the honest answer, not a gap
-    to be filled with a guess. See resolve_degrees().
+  * DEGREE EVIDENCE. Original employer requirements override feed metadata.
+    If no evidence establishes a degree, the job keeps the existing source
+    channel with an explicit "Degree requirement unverified" label. This is
+    not proof of undergraduate eligibility. See resolve_degrees().
 
 Backfill mode: set BACKFILL_DAYS to a number (or "all"), or BACKFILL_SINCE to
 a YYYY-MM-DD date, to post every currently-open listing in that window even if
@@ -62,6 +59,7 @@ Stdlib only - no pip installs, no API keys. Python 3.9+.
 from __future__ import annotations
 
 import html
+import http.client
 import itertools
 import json
 import math
@@ -253,19 +251,6 @@ _STATE_SUFFIX = re.compile(r",\s*([A-Z]{2})\s*$")
 _TERM_RE = re.compile(r"(Spring|Summer|Fall|Winter)\s+(\d{4})", re.I)
 _TERM_START = {"spring": (1, 15), "summer": (5, 15), "fall": (8, 15), "winter": (12, 1)}
 
-# Degree words only count inside a sentence that is actually stating a
-# requirement. Without this guard, "MS" matches inside "LLMs" and boilerplate
-# HTML, which is what dragged a naive version down to 59% accuracy.
-_DEGREE_CTX = re.compile(
-    r"\b(pursu\w+|enrolled|degree|candidate|qualif\w+|require\w*|seeking"
-    r"|working toward|studying|graduat\w+|fit with)\b",
-    re.I,
-)
-_BACH_RE = re.compile(
-    r"\b(bachelor'?s?|undergraduate degree|b\.s\.|bs/ms|associate'?s degree)\b", re.I
-)
-_GRAD_RE = re.compile(r"\b(ph\.?d\.?|doctoral|master'?s|m\.s\.|msc)\b", re.I)
-
 # ---------------------------------------------------------------------------
 # HTTP helpers (stdlib only)
 # ---------------------------------------------------------------------------
@@ -292,7 +277,7 @@ def http_text(url: str, headers: dict | None = None, timeout: int = 30, retries:
             wait = 2 ** attempt
             print(f"[http] HTTP {e.code} - retry {attempt + 1}/{retries - 1} in {wait}s")
             time.sleep(wait)
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException) as e:
             # GitHub's raw CDN resets connections fairly often; a bare retry
             # fixes it. Previously this crashed the whole run.
             last_err = e
@@ -484,14 +469,8 @@ def ats_endpoint(url: str):
     return None
 
 
-def _strip(text: str) -> str:
-    for _ in range(3):  # these feeds are double-escaped surprisingly often
-        text = html.unescape(text)
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text))
-
-
 def fetch_description(url: str, boards: dict):
-    """Return plain-text job description, or None. Never raises."""
+    """Return job-description markup, preserving qualification sections."""
     ep = ats_endpoint(url)
     if not ep:
         return None
@@ -501,51 +480,33 @@ def fetch_description(url: str, boards: dict):
             if api not in boards:  # one fetch serves every role at that company
                 boards[api] = http_json(api, timeout=20, retries=2)
             hit = [x for x in boards[api].get("jobs", []) if x.get("id") == token]
-            return _strip(hit[0].get("descriptionPlain", "")) if hit else None
+            return (hit[0].get("descriptionHtml") or hit[0].get("descriptionPlain", "")) if hit else None
         d = http_json(api, timeout=20, retries=2)
         if kind == "lever":
-            return _strip((d.get("descriptionPlain") or d.get("description") or "")
-                          + " " + json.dumps(d.get("lists", [])))
-        return _strip(d.get("content", ""))
+            sections = "".join("<h2>" + html.escape(item.get("text", "")) + "</h2>" + item.get("content", "")
+                               for item in d.get("lists", []))
+            return (d.get("description") or d.get("descriptionPlain") or "") + sections
+        return d.get("content", "")
     except Exception:
         return None  # dead posting, 404, schema drift - abstain
 
 
 def degree_from_description(text: str):
-    """Tier 3: read the posting itself. Abstains unless it is confident.
-
-    Only sentences that both mention a degree AND read like a requirement are
-    considered. If any of them allow a bachelor's, the role is undergrad-open;
-    if they only ever name graduate degrees, it is grad-required; otherwise we
-    return None and the caller falls back to 'not listed'.
-    """
+    """Legacy retrieval uses the same requirement classifier as employer lookup."""
     if not text or len(text) < 200:
         return None
-    # Deliberately NOT splitting on ":" - "Required qualifications: PhD in ML"
-    # must stay one chunk, or the requirement word and the degree word land in
-    # different pieces and the whole thing abstains.
-    sents = [s for s in re.split(r"(?<=[.;])\s+|\n|•", text) if len(s) < 400]
-    ctx = [
-        s for s in sents
-        if _DEGREE_CTX.search(s) and (_BACH_RE.search(s) or _GRAD_RE.search(s))
-    ]
-    if not ctx:
-        return None
-    if any(_BACH_RE.search(s) for s in ctx):
-        return "bach"
-    if any(_GRAD_RE.search(s) for s in ctx):
-        return "grad"
-    return None
+    return employer_degree.parse_page(text)[1]
 
 
 def resolve_degrees(jobs, cache: dict) -> dict:
-    """Attach job["degree"] ("grad" | "bach" | None) and job["degree_src"]."""
+    """Attach degree (grad/bach/equivalent/unknown) and its evidence source."""
     counts = {"feed": 0, "title": 0, "posting": 0, "cached": 0, "unknown": 0, "employer": 0}
     boards: dict = {}
     budget = MAX_DEGREE_LOOKUPS if DEGREE_LOOKUP else 0
     employer_budget = MAX_EMPLOYER_LOOKUPS if EMPLOYER_LOOKUP else 0
     employer_statuses = {}
     for j in jobs:
+        legacy_key = employer_degree.CACHE_VERSION + "legacy:" + j["id"]
         verified = employer_degree.lookup(
             j["url"], cache, allow_fetch=employer_budget > 0
         ) if EMPLOYER_LOOKUP else None
@@ -558,15 +519,15 @@ def resolve_degrees(jobs, cache: dict) -> dict:
             lvl, src = degree_from_title(j), "title"
         if lvl is None:
             lvl, src = degree_from_feed(j), "feed"
-        if lvl is None and j["id"] in cache:
-            v = cache[j["id"]]
+        if lvl is None and legacy_key in cache:
+            v = cache[legacy_key]
             lvl, src = (v if v != "unknown" else None), "cached"
         elif lvl is None and budget > 0 and ats_endpoint(j["url"]):
             # Check reachability BEFORE spending budget - otherwise most of it
             # is burned on Workday/SmartRecruiters URLs we can never read.
             budget -= 1
             lvl = degree_from_description(fetch_description(j["url"], boards))
-            cache[j["id"]] = lvl or "unknown"
+            cache[legacy_key] = lvl or "unknown"
             src = "posting"
         if lvl is None:
             src = "unknown"
@@ -678,6 +639,8 @@ def degree_display(job: dict) -> str:
         return "MS/PhD required"
     if job["degree"] == "bach":
         return "Bachelor's OK"
+    if job["degree"] == "equivalent":
+        return "Graduate degree or equivalent experience — check the posting"
     return "Degree requirement unverified — check the posting"
 
 
@@ -767,8 +730,9 @@ def send_jobs(channel: str, jobs, seen: dict, headers_state: dict, backfill: boo
     """Post a batch to one channel, oldest first, with a big date header above
     the first postings of each new day.
 
-    Jobs are marked seen as each message lands, so a crash mid-batch can never
-    cause duplicates on the next run.
+    Successful batches enter seen state immediately; main saves that state in
+    its finally block if a later delivery raises. An abrupt process kill or a
+    lost Discord acknowledgement can still cause duplicate delivery.
     """
     if not jobs:
         return
@@ -948,8 +912,6 @@ def main() -> int:
 
     if backfill_cutoff is not None:
         to_post = [j for j in all_jobs if j["date_posted"] >= backfill_cutoff]
-        for j in all_jobs:
-            seen.setdefault(j["id"], seen_entry(j))
         est = math.ceil(len(to_post) / EMBEDS_PER_MESSAGE) * SLEEP_BETWEEN_MESSAGES / 60
         print(
             f"[backfill] window={BACKFILL_SINCE or BACKFILL_DAYS} -> posting "
@@ -957,8 +919,6 @@ def main() -> int:
         )
     elif bootstrap:
         print(f"[bootstrap] first run - seeding {len(all_jobs)} listings as seen")
-        for j in all_jobs:
-            seen[j["id"]] = seen_entry(j)
         to_post = []
         for kind in ("internship", "new_grad"):
             to_post.extend(
@@ -982,6 +942,14 @@ def main() -> int:
         if held:
             print(f"[queue] {held} held for next run (cap {MAX_POSTS_PER_RUN})")
         print(f"[run] {len(new_jobs)} new, posting {len(to_post)}")
+
+    if bootstrap or backfill_cutoff is not None:
+        selected_ids = {j["id"] for j in to_post}
+        # Selected, previously unseen roles remain retryable if delivery fails.
+        # Seed only the rest of the inventory; send_jobs records successful sends.
+        for j in all_jobs:
+            if j["id"] not in selected_ids:
+                seen.setdefault(j["id"], seen_entry(j))
 
     # Degree is resolved only for what we're about to post, which keeps the
     # HTTP lookups to a handful per run instead of thousands.
