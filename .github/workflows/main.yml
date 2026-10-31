@@ -64,7 +64,7 @@ jobs:
           CATEGORY_ALLOWLIST: "Software,AI/ML/Data,Product"
           US_ONLY: "1" # drop London / Toronto / Bangalore postings
           DROP_EXPIRED_TERMS: "1" # no "Summer 2026" listings in September 2026
-          # No degree filter: PhD and Master's roles are posted too.
+          # Graduate-only roles go to GRAD; skipped if its webhook is unset.
 
           # --- Pacing ------------------------------------------------------
           # Inflow is ~100 relevant listings/day. A 40/run cap over even a
@@ -78,6 +78,8 @@ jobs:
           # PhD is REQUIRED, not merely accepted - ~1,000 roles take either,
           # and those stay in the bachelors/newgrad channels rather than being
           # posted twice.
+          # Explicit PhD-only titles override conflicting degree tags, but
+          # mixed titles such as BS/MS/PhD keep the normal degree checks.
           #
           # When the feed omits the degree the bot says "Not listed" rather
           # than guessing. DEGREE_LOOKUP would read the posting itself to try

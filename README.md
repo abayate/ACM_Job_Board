@@ -40,7 +40,8 @@ Of ~6,700 open listings nationwide, roughly **3,900 (~100/day)** survive filteri
 
 **There is no degree filter** — PhD and Master's roles are posted too, since
 plenty of members are headed to grad school. They are *routed* to their own
-channel rather than dropped.
+channel. If the graduate webhook is not configured, graduate-only roles are
+skipped rather than sent to internships or new-grad opportunities.
 
 ## Channels and degree routing
 
@@ -55,12 +56,16 @@ for the full-time roles they qualify for.
 > day. **Put this in the grad channel's topic**, or grad students will treat it
 > as their whole feed and miss the ~1,000 roles they're eligible for.
 
-Degree level is resolved in tiers, most confident first:
+Degree level is resolved in tiers. An explicit graduate-only title takes
+priority over conflicting source tags (for example, an `MS/PhD` internship
+incorrectly tagged as accepting Bachelor's). Titles that explicitly include
+undergraduate degrees, such as `BS/MS/PhD`, and pre-doctoral fellowships do not
+trigger that override; they continue through the normal degree checks.
 
 | Tier | Source | Coverage | Confidence |
 |---|---|---|---|
-| 1 | Simplify's `degrees` field | ~84% | authoritative |
-| 2 | `phd`/`doctoral` in the title | ~10% of the rest | 100% precision on 1,731 held-out roles |
+| 1 | Explicit `phd`/`doctoral` title, excluding mixed undergraduate/graduate and pre-doctoral titles | Title-dependent | Overrides conflicting degree tags |
+| 2 | Simplify's `degrees` field | ~84% have tags | Used when no graduate-only title applies |
 | 3 | *(disabled)* read the posting via free Greenhouse/Ashby/Lever JSON | ~0% | see below |
 | 4 | **Abstain** → bachelors/newgrad, embed reads *"Not listed"* | ~16% of all listings | makes no claim |
 
@@ -149,11 +154,14 @@ Set the channels to view-only for members (deny *Send Messages* for
 | Secret | Purpose |
 |---|---|
 | `DISCORD_WEBHOOK_INTERNSHIPS` | Bachelor's internships channel |
-| `DISCORD_WEBHOOK_GRAD` | MS/PhD-required channel. **Optional** — if unset, those roles stay in the other two channels |
+| `DISCORD_WEBHOOK_GRAD` | MS/PhD-required channel. **Optional** — if unset, graduate-only roles are skipped and marked seen |
 | `DISCORD_WEBHOOK_NEWGRAD` | New-grad full-time channel |
 | `DISCORD_WEBHOOK_URL` | Optional fallback used for internships + new-grad if those two are unset |
 
 That's the entire required setup. Everything else has a working default.
+
+After adding a previously missing graduate webhook, use a backfill with
+`only_channels: grad` to recover skipped roles within the selected date window.
 
 ## Configuration
 
@@ -195,6 +203,7 @@ as dated sections. Budget ~2 seconds per 5 jobs (~10 min for 1,500).
 ### Testing locally
 
 ```bash
+python3 -m unittest -v                            # offline routing regression tests
 DRY_RUN=1 python3 job_bot.py                        # what would post right now
 DRY_RUN=1 BACKFILL_SINCE=2026-08-30 python3 job_bot.py
 ```
@@ -225,4 +234,4 @@ category, instead of flooding the channel with thousands of old listings.
 | Runs far less often than the cron | Normal. GitHub throttles scheduled workflows on public repos; the freshness floor is what makes this harmless. |
 | Everything posts twice | Two workflow files, or `seen_jobs.json` failing to commit. Check the *Save seen-jobs state* step. |
 | Grad channel empty | Expected at ~9/day. Run a backfill with `only_channels: grad` to populate it. |
-| A role is in the wrong channel | Check the `🎓 Degree` field. "Not listed" means the posting never stated one — the bot abstained rather than guessed. |
+| A role is in the wrong channel | Check the title and `🎓 Degree` field. Explicit graduate-only PhD titles override conflicting feed tags. "Not listed" means no degree could be resolved. Existing Discord messages are not moved by routing changes. |

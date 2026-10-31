@@ -109,7 +109,7 @@ def _env_int(name: str, default: int) -> int:
 
 _ONE = os.environ.get("DISCORD_WEBHOOK_URL")
 
-# Three channels. A missing grad webhook is fine - see route().
+# Three channels. Without a grad webhook, graduate-only roles are skipped.
 WEBHOOKS = {
     "bachelors": os.environ.get("DISCORD_WEBHOOK_INTERNSHIPS") or _ONE,
     "grad": os.environ.get("DISCORD_WEBHOOK_GRAD") or None,
@@ -253,10 +253,14 @@ _STATE_SUFFIX = re.compile(r",\s*([A-Z]{2})\s*$")
 _TERM_RE = re.compile(r"(Spring|Summer|Fall|Winter)\s+(\d{4})", re.I)
 _TERM_START = {"spring": (1, 15), "summer": (5, 15), "fall": (8, 15), "winter": (12, 1)}
 
-# "PhD" in a title is the one title signal that is never wrong: measured at
-# 100% precision on 1,731 held-out labelled roles. Everything wordier ("research
-# scientist", ML terms) drops below 75% and is deliberately not used.
+# Explicit PhD/doctoral titles take priority over inconsistent feed tags.
+# Mixed-degree and pre-doctoral titles do not imply graduate-only eligibility.
+# Broader signals ("research scientist", ML terms) are deliberately not used.
 _PHD_TITLE = re.compile(r"\bph\.?\s?d\.?\b|\bdoctoral\b", re.I)
+_UNDERGRAD_TITLE = re.compile(
+    r"\b(?:bachelor(?:['’]s)?|undergrad(?:uate)?|b\.?\s?[as]\.?|b\.?sc\.?)\b", re.I
+)
+_PREDOC_TITLE = re.compile(r"\bpre[-\s]?doctoral\b", re.I)
 
 # Degree words only count inside a sentence that is actually stating a
 # requirement. Without this guard, "MS" matches inside "LLMs" and boilerplate
@@ -451,7 +455,7 @@ def fetch_source(kind: str, repo: str, today: date, stats: dict):
 
 
 def degree_from_feed(job: dict):
-    """Tier 1: Simplify's own degrees list. Authoritative when present."""
+    """Use Simplify's degrees list unless an explicit graduate title conflicts."""
     dg = set(job.get("degrees") or [])
     if not dg:
         return None
@@ -463,8 +467,11 @@ def degree_from_feed(job: dict):
 
 
 def degree_from_title(job: dict):
-    """Tier 2: only the PhD signal, which measured 100% precision."""
-    return "grad" if _PHD_TITLE.search(job["title"]) else None
+    """Recognize explicit graduate titles without hiding mixed-degree roles."""
+    title = job["title"]
+    if _UNDERGRAD_TITLE.search(title) or _PREDOC_TITLE.search(title):
+        return None
+    return "grad" if _PHD_TITLE.search(title) else None
 
 
 def ats_endpoint(url: str):
@@ -549,9 +556,9 @@ def resolve_degrees(jobs, cache: dict) -> dict:
     boards: dict = {}
     budget = MAX_DEGREE_LOOKUPS if DEGREE_LOOKUP else 0
     for j in jobs:
-        lvl, src = degree_from_feed(j), "feed"
+        lvl, src = degree_from_title(j), "title"
         if lvl is None:
-            lvl, src = degree_from_title(j), "title"
+            lvl, src = degree_from_feed(j), "feed"
         if lvl is None and j["id"] in cache:
             v = cache[j["id"]]
             lvl, src = (v if v != "unknown" else None), "cached"
@@ -578,10 +585,10 @@ def resolve_degrees(jobs, cache: dict) -> dict:
 def route(job: dict) -> str:
     """Pick a channel. Degree wins over internship-vs-full-time.
 
-    Falls back to the two-channel layout when no grad webhook is configured,
-    so adding the third channel is a pure config change.
+    Routing is independent of webhook availability: graduate-only roles must
+    never spill into undergraduate channels when their webhook is missing.
     """
-    if job["degree"] == "grad" and WEBHOOKS.get("grad"):
+    if job["degree"] == "grad":
         return "grad"
     return "bachelors" if job["kind"] == "internship" else "newgrad"
 
@@ -879,7 +886,7 @@ def select_to_post(new_jobs, cap: int):
 
 
 def main() -> int:
-    required = ["bachelors", "newgrad"]  # grad is optional; route() falls back
+    required = ["bachelors", "newgrad"]  # grad is optional; those roles are skipped
     missing = [k for k in required if not WEBHOOKS.get(k)]
     if missing and not DRY_RUN:
         print(
@@ -889,7 +896,7 @@ def main() -> int:
         )
         return 1
     if not WEBHOOKS.get("grad"):
-        print("[config] no DISCORD_WEBHOOK_GRAD - MS/PhD roles stay in the other channels")
+        print("[config] no DISCORD_WEBHOOK_GRAD - graduate-only roles will be skipped")
 
     today = datetime.now(tz=LOCAL_TZ).date()
 
@@ -987,9 +994,16 @@ def main() -> int:
 
     try:
         for channel in CHANNELS:
-            if not WEBHOOKS.get(channel):
-                continue
             if ONLY_CHANNELS and channel not in ONLY_CHANNELS:
+                continue
+            if not WEBHOOKS.get(channel):
+                skipped = [j for j in to_post if j["channel"] == channel]
+                if skipped:
+                    print(f"[route] skipped {len(skipped)} {channel} roles: no webhook configured")
+                    # Do not let undeliverable roles consume the cap every run.
+                    # A grad-only backfill can recover them after configuration.
+                    for j in skipped:
+                        seen[j["id"]] = seen_entry(j)
                 continue
             send_jobs(
                 channel,
