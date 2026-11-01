@@ -1,9 +1,4 @@
 {
-"00026218-6b9b-420f-a490-b3b29742cf17": {
-"company": "APEX Analytix",
-"first_seen": "2026-09-16",
-"title": "Data Analyst Intern - Summer 2027"
-},
 "000e1d44-e8bb-4c3a-82f2-c413e25e95cc": {
 "company": "Rockwell Automation",
 "first_seen": "2026-10-14",
@@ -7879,6 +7874,11 @@
 "first_seen": "2026-08-15",
 "title": "Graduate Leadership Program - Data Analytics"
 },
+"406b0816-39b7-4e44-bdd9-17030f08c8f2": {
+"company": "TRG",
+"first_seen": "2026-11-01",
+"title": "Full Stack Application Developer Intern"
+},
 "40788700-c5a9-4875-9193-d098f17dbbd8": {
 "company": "Hive Financial Systems",
 "first_seen": "2026-10-26",
@@ -15664,11 +15664,6 @@
 "first_seen": "2026-09-17",
 "title": "Field Researcher"
 },
-"7ff44f5f-836a-4ac9-b33c-935e0b4281ae": {
-"company": "American Express",
-"first_seen": "2026-09-12",
-"title": "Software Engineer 1 - Enterprise Technology Services"
-},
 "7ff50704-0421-4973-9c19-514b5d2664ef": {
 "company": "OCC",
 "first_seen": "2026-09-18",
@@ -17168,6 +17163,11 @@
 "company": "Tesla",
 "first_seen": "2026-09-02",
 "title": "Backend Engineer Intern - Infrastructure Engineering"
+},
+"8b78e2f8-35f6-4abc-bada-954fe7cc7779": {
+"company": "SAIC",
+"first_seen": "2026-11-01",
+"title": "Geographic Information Systems Analyst"
 },
 "8b7eafbe-423b-46f9-8bf5-ef164bb2b9bc": {
 "company": "Snowflake",
@@ -19700,7 +19700,7 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"bachelors": "2026-10-30",
+"bachelors": "2026-11-01",
 "grad": "2026-10-30",
 "newgrad": "2026-11-01"
 },
@@ -20708,6 +20708,11 @@
 "company": "1Password",
 "first_seen": "2026-10-22",
 "title": "Developer Intern - Front-End Platform"
+},
+"a860c217-2741-42a5-99a3-bf7b86bc03d5": {
+"company": "Tesla",
+"first_seen": "2026-11-01",
+"title": "Factory Firmware Integration Intern - Energy Engineering"
 },
 "a864bebf-e087-4574-860e-29229283a0fd": {
 "company": "Magna",
