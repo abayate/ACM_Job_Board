@@ -3,6 +3,7 @@
 Unknown and failed lookups remain distinct from undergraduate eligibility.
 Shared HTML/JSON-LD parsing and public ATS adapters use the same classifier.
 """
+from __future__ import annotations
 
 import html
 import http.client
@@ -46,9 +47,12 @@ _CONDITIONAL_GRADUATE = re.compile(
     r"\b(?:applicants|candidates|students|those)\s+who\s+(?:have\s+)?graduat|"
     r"\b(?:if|when)\s+(?:you|they|applicants|candidates|students)\s+"
     r"(?:have\s+already\s+|have\s+|already\s+)?graduat", re.I)
+_EXCLUSIVE = re.compile(r"\b(?:only|all|every)\b", re.I)
+_CURRENT_STUDY = re.compile(r"\b(?:working towards?|pursu\w*|enroll\w*|obtaining)\b", re.I)
+_COORDINATION = re.compile(r",\s*(?:(?:and|but|while)\s+)?|\s+(?:and|but|while|plus)\s+", re.I)
 
 # Classification changes must not reuse decisions made by an older parser.
-CACHE_VERSION = "employer:v3:"
+CACHE_VERSION = "employer:v4:"
 
 
 def canonical_url(url):
@@ -189,6 +193,101 @@ class _Text(HTMLParser):
             self.parts.append(data)
 
 
+def _degree_list_continues(left: str, right: str, separator: str) -> bool:
+    """Commas within a degree list do not introduce separate requirements."""
+    if re.match(r"or\b", right, re.I):
+        return True
+    if not separator.startswith(","):
+        return False
+    # A postfix obligation ends the previous item: “BS required, PhD preferred”.
+    degrees = list(_BACH.finditer(left)) + list(_GRAD.finditer(left))
+    if degrees:
+        tail = left[max(m.end() for m in degrees):]
+        if _REQUIRED.search(tail) or _PREFERRED.search(tail) or _OPTIONAL.search(tail):
+            return False
+    return bool(degrees and re.match(r"(?:an?\s+)?(?:" + _BACH.pattern + "|" + _GRAD.pattern + r")", right, re.I))
+
+
+def _field_continues(left: str, right: str, separator: str) -> bool:
+    """Keep “PhD in math and computer science” within one education scope."""
+    if separator.startswith(","):
+        return False
+    degrees = list(_BACH.finditer(left)) + list(_GRAD.finditer(left))
+    if not degrees:
+        return False
+    tail = left[max(m.end() for m in degrees):]
+    # A trailing OR-experience option belongs to the whole education phrase,
+    # including its coordinated fields. Inspect the subject before that option.
+    right = _COORDINATION.split(right, maxsplit=1)[0]
+    alternative = _EXPERIENCE_ALTERNATIVE.search(right)
+    if alternative:
+        right = right[:alternative.start()]
+    new_subject = re.match(r"(?:an?|the|current(?:ly)?|enrollment|admission)\b", right, re.I)
+    new_requirement = (_BACH.search(right) or _GRAD.search(right) or _REQUIRED.search(tail)
+                       or re.search(r"\b(?:certification|experience|skills|ability)\b", right, re.I))
+    return bool(re.search(r"\bin\b", tail, re.I) and not (new_subject or new_requirement))
+
+
+def _first_modality(text: str) -> str | None:
+    markers = [(match.start(), kind) for pattern, kind in (
+        (_OPTIONAL, "optional"), (_PREFERRED, "optional"), (_REQUIRED, "required"))
+        if (match := pattern.search(text))]
+    return min(markers)[1] if markers else None
+
+
+def _modality_scopes(sentence: str) -> list[str]:
+    """Split opposing required/preferred scopes while preserving degree lists."""
+    if not (_PREFERRED.search(sentence) or _OPTIONAL.search(sentence)) or not _REQUIRED.search(sentence):
+        return [sentence]
+    result, start = [], 0
+    for boundary in _COORDINATION.finditer(sentence):
+        left, right = sentence[start:boundary.start()].strip(), sentence[boundary.end():].strip()
+        # Look only as far as the next coordination when checking a list item.
+        item = _COORDINATION.split(right, maxsplit=1)[0]
+        if _degree_list_continues(left, item, boundary[0]) or _field_continues(left, right, boundary[0]):
+            continue
+        left_optional = bool(_PREFERRED.search(left) or _OPTIONAL.search(left))
+        # The next marker controls the next scope. A later preference cannot
+        # hide “PhD required” between two preferred skills.
+        next_modality = _first_modality(right)
+        if ((left_optional and next_modality == "required")
+                or (next_modality == "optional" and _REQUIRED.search(left) and not left_optional)):
+            result.append(left)
+            start = boundary.end()
+    return result + [sentence[start:].strip()]
+
+
+def _degree_conjuncts(clause: str) -> list[str]:
+    """Alternatives apply within a coordinated requirement, never across it."""
+    result, start = [], 0
+    boundaries = list(_COORDINATION.finditer(clause))
+    for index, boundary in enumerate(boundaries):
+        end = boundaries[index + 1].start() if index + 1 < len(boundaries) else len(clause)
+        left, item = clause[start:boundary.start()].strip(), clause[boundary.end():end].strip()
+        if _degree_list_continues(left, item, boundary[0]) or _field_continues(left, item, boundary[0]):
+            continue
+        if boundary[0].startswith(","):
+            # Field/degree lists commonly contain commas. A comma starts a
+            # new requirement only with an explicit, independently scoped
+            # obligation; it must not cut “PhD in X, Y, or equivalent record”.
+            degrees = list(_BACH.finditer(left)) + list(_GRAD.finditer(left))
+            tail = left[max(m.end() for m in degrees):] if degrees else left
+            if not (_REQUIRED.search(tail) or _REQUIRED.search(item)):
+                continue
+        result.append(left)
+        start = boundary.end()
+    return result + [clause[start:].strip()]
+
+
+def _population_scopes(clause: str) -> list[str]:
+    """A new universal applicant subject ends a previous subgroup condition."""
+    starts = [boundary.end() for boundary in _COORDINATION.finditer(clause)
+              if re.match(r"(?:(?:all|every|each)\s+)?(?:applicants?|candidates?|students?)\s+must\b",
+                          clause[boundary.end():], re.I)]
+    edges = [0] + starts + [len(clause)]
+    return [clause[left:right].strip() for left, right in zip(edges, edges[1:])]
+
+
 def _clauses(markup, *, qualification_field=False):
     if not isinstance(markup, str):
         return []
@@ -215,14 +314,7 @@ def _clauses(markup, *, qualification_field=False):
             section = None
             continue
         for sentence in re.split(r";|(?<=[.!?])\s+(?=[A-Z])", line):
-            parts = re.split(r"\s+(?:and|but|while)\s+|,\s*", sentence, flags=re.I)
-            # A preference for one skill must not erase a separate explicit
-            # requirement: “PhD required and Python preferred”. Only split
-            # when a fragment has its own affirmative requirement wording;
-            # “math and computer science preferred” is still all preferred.
-            mixed = any(_PREFERRED.search(p) or _OPTIONAL.search(p) for p in parts)
-            mandatory = any(_REQUIRED.search(p) and not (_PREFERRED.search(p) or _OPTIONAL.search(p)) for p in parts)
-            for clause in parts if mixed and mandatory else [sentence]:
+            for clause in _modality_scopes(sentence):
                 if _PREFERRED.search(clause) or _OPTIONAL.search(clause) or section == "preferred":
                     continue
                 if clause.strip() and (section == "required" or _REQUIRED.search(clause) or qualification_field):
@@ -268,38 +360,29 @@ def _classify(title, required):
     # Required bullets are conjunctive unless the employer explicitly labels
     # alternative applicant pathways. A completed bachelor's prerequisite does
     # not cancel a separate mandatory graduate-enrollment requirement.
-    undergraduate_path = any(_PATHWAY.match(c) and _PATHWAY.match(c)[1].lower() == "undergraduate"
+    undergraduate_path = any((pathway := _PATHWAY.match(c)) is not None
+                             and pathway[1].lower() == "undergraduate"
                              and _BACH.search(c) for c in required)
+    # A graduated subgroup is optional only when a separate current-undergrad
+    # pathway is actually present. A completed BS prerequisite is insufficient.
+    current_undergraduate = any(_BACH.search(c) and _conjunct_degree(c) == "bach"
+                                and _CURRENT_STUDY.search(c) for c in required)
     bachelor_clauses, graduate_clauses, alternatives = [], [], []
-    for clause in required:
-        bach, grad = _BACH.search(clause), _GRAD.search(clause)
-        # Terminal MA/MS can be a US state. A bare abbreviation needs nearby
-        # education wording; “must work in Boston, MA” is not a master's rule.
-        if grad and re.fullmatch(r"m\.?\s?[as]\.?", grad[0], re.I):
-            if not clause[grad.end():].strip(" .") and not re.search(
-                    r"\b(?:degree|education|pursu\w*|enroll\w*|obtain\w*|hold\w*|earn\w*)\b",
-                    clause[:grad.start()], re.I):
-                grad = None
-        if bach:
-            bachelor_clauses.append(clause)
-        if not grad or _CONDITIONAL_GRADUATE.search(clause):
-            continue
-        if _EXPERIENCE_ALTERNATIVE.search(clause):
-            alternatives.append(clause)
+    for clause in (scope for requirement in required for scope in _population_scopes(requirement)):
+        conditional = _CONDITIONAL_GRADUATE.search(clause)
+        if conditional and current_undergraduate and not _EXCLUSIVE.search(clause[:conditional.start()]):
             continue
         pathway = _PATHWAY.match(clause)
         if undergraduate_path and pathway and pathway[1].lower() == "graduate":
             continue
-        if bach:
-            # Degree lists joined by “or” accept a bachelor's. “Bachelor's
-            # AND enrollment in a master's” is a pair of mandatory conditions.
-            between = clause[min(bach.end(), grad.end()):max(bach.start(), grad.start())]
-            degree_join = re.sub(r"\bor\s+(?:a\s+)?related\s+(?:field|discipline)\b", "", between, flags=re.I)
-            if re.search(r"\bor\b|/", degree_join, re.I):
-                continue
-            if not re.search(r"\b(?:and|plus)\b|enroll|pursu|admission", between, re.I):
-                continue
-        graduate_clauses.append(clause)
+        for conjunct in _degree_conjuncts(clause):
+            level = _conjunct_degree(conjunct)
+            if level == "grad":
+                graduate_clauses.append(clause)
+            elif level == "bach":
+                bachelor_clauses.append(clause)
+            elif level == "equivalent":
+                alternatives.append(clause)
     if graduate_clauses:
         return title, "grad", graduate_clauses[0].strip()[:600]
     if bachelor_clauses:
@@ -310,6 +393,32 @@ def _classify(title, required):
     if level:
         return title, level, "employer title explicitly specifies " + ("undergraduate eligibility" if level == "bach" else "PhD/doctoral")
     return title, None, "no explicit degree requirement verified"
+
+
+def _conjunct_degree(clause: str) -> str | None:
+    """Classify one requirement after unrelated conjuncts have been separated."""
+    bach, grad = _BACH.search(clause), _GRAD.search(clause)
+    # Terminal MA/MS can be a US state. A bare abbreviation needs nearby
+    # education wording; “must work in Boston, MA” is not a master's rule.
+    if grad and re.fullmatch(r"m\.?\s?[as]\.?", grad[0], re.I):
+        if not clause[grad.end():].strip(" .") and not re.search(
+                r"\b(?:degree|education|pursu\w*|enroll\w*|obtain\w*|hold\w*|earn\w*)\b",
+                clause[:grad.start()], re.I):
+            grad = None
+    if not grad:
+        return "bach" if bach else None
+    if _EXPERIENCE_ALTERNATIVE.search(clause):
+        return "bach" if bach else "equivalent"
+    if bach:
+        # Degree lists joined by “or” accept a bachelor's. “Bachelor's
+        # AND enrollment in a master's” is a pair of mandatory conditions.
+        between = clause[min(bach.end(), grad.end()):max(bach.start(), grad.start())]
+        degree_join = re.sub(r"\bor\s+(?:a\s+)?related\s+(?:field|discipline)\b", "", between, flags=re.I)
+        if re.search(r"\bor\b|/", degree_join, re.I):
+            return "bach"
+        if not re.search(r"\b(?:and|plus)\b|enroll|pursu|admission", between, re.I):
+            return "bach"
+    return "grad"
 
 
 def title_degree(title):

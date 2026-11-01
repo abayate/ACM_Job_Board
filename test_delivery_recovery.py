@@ -5,8 +5,10 @@ import io
 import json
 import tempfile
 import unittest
+from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
+from zoneinfo import ZoneInfo
 
 import job_bot as bot
 from test_job_bot import listing
@@ -19,6 +21,18 @@ class DeliveryRecoveryTests(unittest.TestCase):
         self.temp = Path(self.stack.enter_context(tempfile.TemporaryDirectory()))
         self.seen = self.temp / "seen.json"
         self.cache = self.temp / "cache.json"
+        # Both the source fixture and pipeline use one fixed clock. Same-day
+        # batching tests must not change meaning when CI starts near midnight.
+        self.now = datetime(2026, 10, 30, 12, tzinfo=ZoneInfo("America/New_York")).timestamp()
+        case = self
+
+        class FixtureDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return datetime.fromtimestamp(case.now, tz=tz)
+
+        self.stack.enter_context(patch.object(bot, "datetime", FixtureDateTime))
+        self.stack.enter_context(patch.object(bot.time, "time", side_effect=lambda: self.now))
         self.stack.enter_context(contextlib.redirect_stdout(io.StringIO()))
         self.stack.enter_context(patch("socket.socket", side_effect=AssertionError("Tests must stay offline")))
         self.stack.enter_context(patch.object(bot.time, "sleep"))
@@ -30,12 +44,13 @@ class DeliveryRecoveryTests(unittest.TestCase):
             ONLY_CHANNELS=set(), EMPLOYER_LOOKUP=True, MAX_EMPLOYER_LOOKUPS=40,
             DEGREE_LOOKUP=False, BOOTSTRAP_POST_COUNT=7, MAX_POSTS_PER_RUN=40,
             MAX_JOB_AGE_DAYS=7, EMBEDS_PER_MESSAGE=5,
+            LOCAL_TZ=ZoneInfo("America/New_York"), DATE_HEADERS=True,
         ))
         self.stack.enter_context(patch.object(bot.employer_degree, "fetch_public_text", return_value="<h1>Intern</h1><h2>Requirements</h2><p>Bachelor's degree</p>"))
         self.jobs = [listing("Intern " + str(i), ["PhD"], job_id=str(i)) for i in range(9)]
-        for i, job in enumerate(self.jobs):
-            job["date_posted"] -= 60 * (9 - i)
-            job["url"] = "https://careers.example.org/jobs/" + str(i)
+        self.jobs = [{**job, "date_posted": self.now - 60 * (9 - i),
+                      "url": "https://careers.example.org/jobs/" + str(i)}
+                     for i, job in enumerate(self.jobs)]
 
     def run_bot(self, delivery):
         # Fresh input objects on each run, as with real source downloads.
@@ -92,6 +107,57 @@ class DeliveryRecoveryTests(unittest.TestCase):
         post.assert_not_called()
         self.assertEqual(self.seen.read_bytes(), before_seen)
         self.assertEqual(self.cache.read_bytes(), before_cache)
+
+    def test_midnight_batches_save_only_delivered_jobs_and_retry_the_rest(self):
+        self.now = datetime(2026, 10, 31, 0, 6, tzinfo=bot.LOCAL_TZ).timestamp()
+        self.jobs = [{**job, "date_posted": self.now - 60 * (9 - i)}
+                     for i, job in enumerate(self.jobs)]
+        for mode in ("normal", "bootstrap", "backfill", "since", "days"):
+            for successful_batches in (1, 2):
+                with self.subTest(mode=mode, successful_batches=successful_batches):
+                    self.check_midnight_recovery(mode, successful_batches)
+
+    def check_midnight_recovery(self, mode, successful_batches):
+        self.seen.unlink(missing_ok=True)
+        self.cache.unlink(missing_ok=True)
+        if mode != "bootstrap":
+            self.seen.write_text("{}")
+        selected = self.jobs[2:] if mode == "bootstrap" else self.jobs
+        seeded = self.jobs[:2] if mode == "bootstrap" else []
+        first_count = 1 if mode == "bootstrap" else 3
+        batches = [selected[:first_count], selected[first_count:first_count + 5], selected[first_count + 5:]]
+        delivered = [job for batch in batches[:successful_batches] for job in batch]
+        config = {"BACKFILL_DAYS": "all" if mode == "backfill" else "7" if mode == "days" else "",
+                  "BACKFILL_SINCE": "2026-10-30" if mode == "since" else ""}
+        attempted = []
+
+        def fail_next_batch(url, payload):
+            self.assertEqual(url, "https://example.org/bachelors")
+            batch = batches[len(attempted)]
+            attempted.append(payload)
+            self.assertEqual([embed["url"] for embed in payload["embeds"]], [job["url"] for job in batch])
+            if len(attempted) > successful_batches:
+                raise RuntimeError("Discord unavailable")
+
+        with patch.multiple(bot, **config):
+            with self.assertRaisesRegex(RuntimeError, "Discord unavailable"):
+                self.run_bot(fail_next_batch)
+        state = json.loads(self.seen.read_text())
+        self.assertEqual(set(state) - {"_headers"}, {j["id"] for j in delivered + seeded})
+        last_day = "2026-10-30" if successful_batches == 1 else "2026-10-31"
+        self.assertEqual(state["_headers"]["bachelors"], last_day)
+        remaining = [j["url"] for batch in batches[successful_batches:] for j in batch]
+        result, post = self.run_bot(None)
+        self.assertEqual(result, 0)
+        resent = [embed["url"] for call in post.call_args_list for embed in call.args[1]["embeds"]]
+        self.assertEqual(resent, remaining)
+        next_header = bot.header_text(datetime(2026, 10, 31).date())
+        self.assertEqual(sum(next_header in call.args[1].get("content", "") for call in post.call_args_list),
+                         int(successful_batches == 1))
+        self.assertEqual(set(json.loads(self.seen.read_text())) - {"_headers"}, {j["id"] for j in self.jobs})
+        result, post = self.run_bot(None)
+        self.assertEqual(result, 0)
+        post.assert_not_called()
 
     def test_dry_run_first_run_creates_no_state_files(self):
         with patch.object(bot, "DRY_RUN", True):

@@ -112,7 +112,7 @@ check time and expiry. Verified results last seven days, unverified results one
 day, and fetch failures one hour. Expired results retry **when the listing is
 next evaluated**; this does not automatically revisit already-posted jobs.
 Legacy `unknown` cache entries cannot suppress employer verification.
-This release uses the `employer:v3:` cache namespace for both employer and
+This release uses the `employer:v4:` cache namespace for both employer and
 legacy classification. Earlier parser decisions are ignored and re-evaluated
 when a listing is selected; deleting the state files is unnecessary.
 

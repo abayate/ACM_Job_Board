@@ -1,14 +1,24 @@
 # Degree-routing release
 
 This release fixes the seven known routing failures in the October 30, 2026
-audit and adds an offline test gate before scheduled posting. Employer pages,
+audit, the subsequent review findings, and a clock-dependent recovery test.
+It adds an offline test gate before scheduled posting. Employer pages,
 public ATS responses and legacy description lookup use the same classifier.
 There are no company-specific degree exceptions.
 
 Required versus preferred qualifications, separate mandatory conditions,
 alternative applicant pathways, equivalent experience and inline spacing are
-covered by regression tests. Old parser caches are invalidated through a new
-namespace. Interrupted employer/source downloads retry, and failed employer
+covered by regression tests. Degree alternatives stay together when an
+unrelated skill is preferred. Experience alternatives apply to their own
+requirement; they cannot cancel a separate mandatory graduate degree.
+Conditional rules for already-graduated applicants need an explicit current
+undergraduate pathway, and cannot erase an exclusive or universal PhD rule.
+Coordinated field lists retain their experience alternatives. Long lists use
+iterative parsing so they cannot exhaust Python's call stack.
+
+Old parser decisions, including the reviewed v3 results, are invalidated
+through the `employer:v4:` cache namespace for both lookup paths. Interrupted
+employer/source downloads retry, and failed employer
 reads stay visible as `fetch_failed`. Failed first-run/backfill delivery does
 not silently mark selected, previously unseen jobs as sent.
 
@@ -32,6 +42,14 @@ python -m coverage report --fail-under=90
 The runtime and regular tests require only the standard library. CI tests
 Python 3.9, 3.11 and 3.13. The posting workflow pins Python 3.11 and refuses
 to post or commit state if the preceding test step fails.
+
+The suite has 64 test methods. Its scope contracts cover 28 qualification
+examples through generic HTML, structured job data and five public ATS
+adapters. Delivery tests use a fixed clock and explicitly cross midnight in
+normal, bootstrap, backfill, since-date and recent-days modes. They check
+failed batches, saved job/date-header state, and retries without resending
+confirmed deliveries. The original review counterexamples also run through
+the real degree resolver and channel router.
 
 The frozen audit retains all 120 sampled listings and their original reference
 labels, endpoint provenance and response hashes. One ambiguous reference is

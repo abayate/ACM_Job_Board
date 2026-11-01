@@ -107,16 +107,16 @@ class ReleaseBoundaryTests(unittest.TestCase):
     def test_previous_parser_cache_cannot_override_current_evidence(self):
         url = "https://careers.example.org/job/123"
         old = {"degree": "grad", "status": "verified", "expires_at": 99999999}
-        cache = {"employer:v2:" + url: old}
+        cache = {"employer:v3:" + url: old}
         fetch = Mock(return_value="<h1>Intern</h1><h2>Requirements</h2><p>Bachelor's degree</p>")
         result = employer.lookup(url, cache, fetch, now=100)
         self.assertEqual(result["degree"], "bach")
         fetch.assert_called_once()
-        self.assertEqual(cache["employer:v2:" + url], old)
+        self.assertEqual(cache["employer:v3:" + url], old)
 
     def test_old_legacy_cache_is_ignored(self):
         job = listing("Intern", [])
-        cache = {job["id"]: "grad"}
+        cache = {job["id"]: "grad", "employer:v3:legacy:" + job["id"]: "grad"}
         with patch.multiple(bot, EMPLOYER_LOOKUP=False, DEGREE_LOOKUP=False), contextlib.redirect_stdout(io.StringIO()):
             bot.resolve_degrees([job], cache)
         self.assertIsNone(job["degree"])
