@@ -1,0 +1,489 @@
+"""Verify degree eligibility from original employer postings; stdlib only.
+
+Unknown and failed lookups remain distinct from undergraduate eligibility.
+Shared HTML/JSON-LD parsing and public ATS adapters use the same classifier.
+"""
+from __future__ import annotations
+
+import html
+import http.client
+import ipaddress
+import json
+import re
+import socket
+import time
+import urllib.error
+import urllib.request
+from html.parser import HTMLParser
+from urllib.parse import quote, unquote, urlparse, urlunsplit
+
+VERIFIED_TTL = 7 * 86400
+RETRY_TTL = 3600
+UNVERIFIED_TTL = 86400
+_PHD = re.compile(r"\bph\.?\s?d\.?\b|\bdoctor(?:al|ate)\b", re.I)
+_BACH = re.compile(r"\b(?:bachelor(?:['’]?s)?|undergrad(?:uate)?|b\.?\s?[as]\.?|b\.?sc\.?)\b", re.I)
+_GRAD = re.compile(
+    r"\b(?:ph\.?\s?d\.?|doctor(?:al|ate)|master(?:['’]s|s|(?=\s+(?:degree|program|of\s+(?:science|arts|engineering|business)\b)))|msc|mba|"
+    r"m\.?\s?[as]\.?(?=\s*(?:degree|program|in\b|/|or\b|and\b)|$)|"
+    r"graduate\s+(?:degree|program|school|student|studies))(?!\w)", re.I)
+_PREFERRED = re.compile(r"\b(?:preferred|preference|desired|desirable|bonus|nice.to.have)\b", re.I)
+_OPTIONAL = re.compile(r"\b(?:not required|not necessary|not mandatory|not essential|optional|must not|do not need|no\s+[^.;\n]{0,50}\s+required)\b", re.I)
+_REQUIRED = re.compile(r"\b(?:required|must|pursuing|enrolled|obtaining|working toward)\b", re.I)
+_EXPERIENCE_ALTERNATIVE = re.compile(
+    r"\b(?:or|and/or)\s+(?:an?\s+)?(?:equivalent\s+)?"
+    r"(?:(?:practical|professional|relevant|work|research)\s+)*experience\b|"
+    r"\bor\s+(?:an?\s+)?equivalent\s+(?:record|track record|combination|background)\b|"
+    r"\bequivalent\s+(?:(?:practical|professional|relevant|work|research)\s+)*experience\s+or\b", re.I)
+_REQUIRED_HEADING = re.compile(
+    r"^(?:(?:(?:minimum|basic|required|essential|additional required)\s+)?"
+    r"(?:qualifications|requirements|education(?:\s+and(?:/or)?\s+experience)?)|"
+    r"what you bring|what you(?:'|’)ll need|who you are(?:\s*\(basic qualifications\))?)\s*:?$", re.I)
+_PREFERRED_HEADING = re.compile(
+    r"^(?:(?:preferred|desired|additional|bonus)\s+"
+    r"(?:qualifications|requirements|skills|education(?:\s+and(?:/or)?\s+experience)?)|"
+    r"nice.to.have|what will put you ahead)\s*:?$", re.I)
+_PATHWAY = re.compile(r"^(?:post[- ]?)?(undergraduate|graduate)(?:\s*\+\s*ph\.?d\.?)?\s*:", re.I)
+_CONDITIONAL_GRADUATE = re.compile(
+    r"\b(?:applicants|candidates|students|those)\s+who\s+(?:have\s+)?graduat|"
+    r"\b(?:if|when)\s+(?:you|they|applicants|candidates|students)\s+"
+    r"(?:have\s+already\s+|have\s+|already\s+)?graduat", re.I)
+_EXCLUSIVE = re.compile(r"\b(?:only|all|every)\b", re.I)
+_CURRENT_STUDY = re.compile(r"\b(?:working towards?|pursu\w*|enroll\w*|obtaining)\b", re.I)
+_COORDINATION = re.compile(r",\s*(?:(?:and|but|while)\s+)?|\s+(?:and|but|while|plus)\s+", re.I)
+
+# Classification changes must not reuse decisions made by an older parser.
+CACHE_VERSION = "employer:v4:"
+
+
+def canonical_url(url):
+    """Normalize public HTTPS job URLs without discarding meaningful queries."""
+    try:
+        parsed = urlparse(url)
+        host = (parsed.hostname or "").lower()
+        if parsed.scheme != "https" or parsed.username or parsed.password or parsed.port not in (None, 443):
+            return None
+        if not host or "." not in host or host.endswith((".local", ".localhost", ".internal")):
+            return None
+        try:
+            if not ipaddress.ip_address(host).is_global:
+                return None
+        except ValueError:
+            pass
+        match = re.fullmatch(r"/(?:jobs|profile/job_details)/(\d+)/?", parsed.path)
+        if host in {"metacareers.com", "www.metacareers.com"} and match:
+            return f"https://www.metacareers.com/profile/job_details/{match[1]}/"
+        return urlunsplit(("https", host, parsed.path or "/", parsed.query, ""))
+    except ValueError:
+        pass
+    return None
+
+
+def _check_public_destination(url):
+    canonical = canonical_url(url)
+    if not canonical:
+        raise ValueError("not a public HTTPS destination")
+    addresses = socket.getaddrinfo(urlparse(canonical).hostname, 443, type=socket.SOCK_STREAM)
+    if not addresses or any(not ipaddress.ip_address(item[4][0]).is_global for item in addresses):
+        raise ValueError("destination does not resolve to public addresses")
+
+
+class _PublicRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        _check_public_destination(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+def fetch_public_text(url, timeout=15, retries=2):
+    """Bounded public-page reads; validate redirects as well as initial URLs."""
+    _check_public_destination(url)
+    opener = urllib.request.build_opener(_PublicRedirect())
+    request = urllib.request.Request(url, headers={"User-Agent": "acm-job-radar", "Accept": "application/json,text/html"})
+    for attempt in range(retries):
+        try:
+            with opener.open(request, timeout=timeout) as response:
+                data = response.read(4 * 1024 * 1024 + 1)
+                if len(data) > 4 * 1024 * 1024:
+                    raise ValueError("employer response exceeds size limit")
+                return data.decode("utf-8", "replace")
+        except (OSError, urllib.error.URLError, http.client.HTTPException) as error:
+            if isinstance(error, urllib.error.HTTPError) and error.code != 429 and error.code < 500:
+                raise
+            if attempt + 1 == retries:
+                raise
+            time.sleep(1)
+
+
+def source_request(url):
+    """Select a public ATS endpoint, or the original HTML page for any employer."""
+    parsed = urlparse(url)
+    host = parsed.hostname
+    parts = [quote(unquote(p), safe="") for p in parsed.path.split("/") if p]
+    if host in {"boards.greenhouse.io", "job-boards.greenhouse.io", "boards.eu.greenhouse.io", "job-boards.eu.greenhouse.io"} and len(parts) >= 3 and parts[1] == "jobs":
+        return "greenhouse", f"https://boards-api.greenhouse.io/v1/boards/{parts[0]}/jobs/{parts[2]}", None
+    if host in {"jobs.lever.co", "jobs.eu.lever.co"} and len(parts) >= 2:
+        api = "api.eu.lever.co" if host == "jobs.eu.lever.co" else "api.lever.co"
+        return "lever", f"https://{api}/v0/postings/{parts[0]}/{parts[1]}", None
+    if host == "jobs.ashbyhq.com" and len(parts) >= 2:
+        return "ashby", f"https://api.ashbyhq.com/posting-api/job-board/{parts[0]}", parts[1]
+    if host == "jobs.smartrecruiters.com" and len(parts) >= 2:
+        job_id = re.match(r"\d+", parts[1])
+        if job_id:
+            return "smartrecruiters", f"https://api.smartrecruiters.com/v1/companies/{parts[0]}/postings/{job_id[0]}", None
+    if host and host.endswith(".myworkdayjobs.com") and "job" in parts:
+        index = parts.index("job")
+        if index >= 1 and len(parts) > index + 1:
+            tenant = host.split(".")[0]
+            return "workday", f"https://{host}/wday/cxs/{tenant}/{parts[index-1]}/job/" + "/".join(parts[index+1:]), None
+    return "html", url, None
+
+
+class _JobPage(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.title = ""
+        self.scripts = []
+        self.current = None
+        self.h1 = []
+        self.in_h1 = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "meta" and attrs.get("property") == "og:title":
+            self.title = attrs.get("content", "")
+        if tag == "script" and attrs.get("type") == "application/ld+json":
+            self.current = []
+        if tag == "h1":
+            self.in_h1 = True
+
+    def handle_data(self, data):
+        if self.current is not None:
+            self.current.append(data)
+        if self.in_h1:
+            self.h1.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "script" and self.current is not None:
+            self.scripts.append("".join(self.current))
+            self.current = None
+        if tag == "h1":
+            self.in_h1 = False
+
+
+class _Text(HTMLParser):
+    """Preserve section and list boundaries while ignoring scripts/navigation."""
+    def __init__(self):
+        super().__init__()
+        self.parts = []
+        self.hidden = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in {"script", "style", "nav", "footer"}:
+            self.hidden += 1
+        if not self.hidden and tag in {"p", "li", "br", "div", "h1", "h2", "h3", "h4", "h5", "h6"}:
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style", "nav", "footer"}:
+            self.hidden = max(0, self.hidden - 1)
+        if not self.hidden and tag in {"p", "li", "div", "h1", "h2", "h3", "h4", "h5", "h6"}:
+            self.parts.append("\n")
+
+    def handle_data(self, data):
+        if not self.hidden:
+            self.parts.append(data)
+
+
+def _degree_list_continues(left: str, right: str, separator: str) -> bool:
+    """Commas within a degree list do not introduce separate requirements."""
+    if re.match(r"or\b", right, re.I):
+        return True
+    if not separator.startswith(","):
+        return False
+    # A postfix obligation ends the previous item: “BS required, PhD preferred”.
+    degrees = list(_BACH.finditer(left)) + list(_GRAD.finditer(left))
+    if degrees:
+        tail = left[max(m.end() for m in degrees):]
+        if _REQUIRED.search(tail) or _PREFERRED.search(tail) or _OPTIONAL.search(tail):
+            return False
+    return bool(degrees and re.match(r"(?:an?\s+)?(?:" + _BACH.pattern + "|" + _GRAD.pattern + r")", right, re.I))
+
+
+def _field_continues(left: str, right: str, separator: str) -> bool:
+    """Keep “PhD in math and computer science” within one education scope."""
+    if separator.startswith(","):
+        return False
+    degrees = list(_BACH.finditer(left)) + list(_GRAD.finditer(left))
+    if not degrees:
+        return False
+    tail = left[max(m.end() for m in degrees):]
+    # A trailing OR-experience option belongs to the whole education phrase,
+    # including its coordinated fields. Inspect the subject before that option.
+    right = _COORDINATION.split(right, maxsplit=1)[0]
+    alternative = _EXPERIENCE_ALTERNATIVE.search(right)
+    if alternative:
+        right = right[:alternative.start()]
+    new_subject = re.match(r"(?:an?|the|current(?:ly)?|enrollment|admission)\b", right, re.I)
+    new_requirement = (_BACH.search(right) or _GRAD.search(right) or _REQUIRED.search(tail)
+                       or re.search(r"\b(?:certification|experience|skills|ability)\b", right, re.I))
+    return bool(re.search(r"\bin\b", tail, re.I) and not (new_subject or new_requirement))
+
+
+def _first_modality(text: str) -> str | None:
+    markers = [(match.start(), kind) for pattern, kind in (
+        (_OPTIONAL, "optional"), (_PREFERRED, "optional"), (_REQUIRED, "required"))
+        if (match := pattern.search(text))]
+    return min(markers)[1] if markers else None
+
+
+def _modality_scopes(sentence: str) -> list[str]:
+    """Split opposing required/preferred scopes while preserving degree lists."""
+    if not (_PREFERRED.search(sentence) or _OPTIONAL.search(sentence)) or not _REQUIRED.search(sentence):
+        return [sentence]
+    result, start = [], 0
+    for boundary in _COORDINATION.finditer(sentence):
+        left, right = sentence[start:boundary.start()].strip(), sentence[boundary.end():].strip()
+        # Look only as far as the next coordination when checking a list item.
+        item = _COORDINATION.split(right, maxsplit=1)[0]
+        if _degree_list_continues(left, item, boundary[0]) or _field_continues(left, right, boundary[0]):
+            continue
+        left_optional = bool(_PREFERRED.search(left) or _OPTIONAL.search(left))
+        # The next marker controls the next scope. A later preference cannot
+        # hide “PhD required” between two preferred skills.
+        next_modality = _first_modality(right)
+        if ((left_optional and next_modality == "required")
+                or (next_modality == "optional" and _REQUIRED.search(left) and not left_optional)):
+            result.append(left)
+            start = boundary.end()
+    return result + [sentence[start:].strip()]
+
+
+def _degree_conjuncts(clause: str) -> list[str]:
+    """Alternatives apply within a coordinated requirement, never across it."""
+    result, start = [], 0
+    boundaries = list(_COORDINATION.finditer(clause))
+    for index, boundary in enumerate(boundaries):
+        end = boundaries[index + 1].start() if index + 1 < len(boundaries) else len(clause)
+        left, item = clause[start:boundary.start()].strip(), clause[boundary.end():end].strip()
+        if _degree_list_continues(left, item, boundary[0]) or _field_continues(left, item, boundary[0]):
+            continue
+        if boundary[0].startswith(","):
+            # Field/degree lists commonly contain commas. A comma starts a
+            # new requirement only with an explicit, independently scoped
+            # obligation; it must not cut “PhD in X, Y, or equivalent record”.
+            degrees = list(_BACH.finditer(left)) + list(_GRAD.finditer(left))
+            tail = left[max(m.end() for m in degrees):] if degrees else left
+            if not (_REQUIRED.search(tail) or _REQUIRED.search(item)):
+                continue
+        result.append(left)
+        start = boundary.end()
+    return result + [clause[start:].strip()]
+
+
+def _population_scopes(clause: str) -> list[str]:
+    """A new universal applicant subject ends a previous subgroup condition."""
+    starts = [boundary.end() for boundary in _COORDINATION.finditer(clause)
+              if re.match(r"(?:(?:all|every|each)\s+)?(?:applicants?|candidates?|students?)\s+must\b",
+                          clause[boundary.end():], re.I)]
+    edges = [0] + starts + [len(clause)]
+    return [clause[left:right].strip() for left, right in zip(edges, edges[1:])]
+
+
+def _clauses(markup, *, qualification_field=False):
+    if not isinstance(markup, str):
+        return []
+    parser = _Text()
+    parser.feed(html.unescape(markup))
+    text = "".join(parser.parts)
+    result = []
+    section = None
+    for line in text.splitlines():
+        # NBSP is an inline space, often between degree alternatives in Word
+        # exports. Splitting on it changes “bachelor's or master's” into two
+        # contradictory requirements.
+        line = re.sub(r"[^\S\n]+", " ", line).strip()
+        if not line:
+            continue
+        if _PREFERRED_HEADING.fullmatch(line):
+            section = "preferred"
+            continue
+        if _REQUIRED_HEADING.fullmatch(line):
+            section = "required"
+            continue
+        # Explicit non-qualification headings end a requirement section.
+        if re.fullmatch(r"(?:about .+|responsibilities|benefits|what you(?:'|’)ll do|compensation|equal employment opportunity)\s*:?", line, re.I):
+            section = None
+            continue
+        for sentence in re.split(r";|(?<=[.!?])\s+(?=[A-Z])", line):
+            for clause in _modality_scopes(sentence):
+                if _PREFERRED.search(clause) or _OPTIONAL.search(clause) or section == "preferred":
+                    continue
+                if clause.strip() and (section == "required" or _REQUIRED.search(clause) or qualification_field):
+                    result.append(clause.strip())
+    return result
+
+
+def _records(value):
+    if isinstance(value, list):
+        for item in value:
+            yield from _records(item)
+    elif isinstance(value, dict):
+        types = value.get("@type", [])
+        if types == "JobPosting" or isinstance(types, list) and "JobPosting" in types:
+            yield value
+        yield from _records(value.get("@graph", []))
+
+
+def parse_page(markup):
+    parser = _JobPage()
+    parser.feed(markup)
+    records = []
+    for script in parser.scripts:
+        try:
+            records.extend(_records(json.loads(script)))
+        except (ValueError, TypeError):
+            continue
+    record = records[0] if len(records) == 1 else {}
+    title = record.get("title") or parser.title or "".join(parser.h1)
+    if not isinstance(title, str):
+        title = ""
+    if len(records) > 1:
+        return "", None, "multiple job records; cannot identify the requested posting"
+    # Structured qualifications and HTML minimum/preferred sections share rules.
+    # Explicit requirement wording is still needed outside a recognized section.
+    required = _clauses(record.get("qualifications", ""))
+    required += _clauses(record.get("educationRequirements", ""), qualification_field=True)
+    required += _clauses(record.get("description", "") or markup)
+    return _classify(title, required)
+
+
+def _classify(title, required):
+    # Required bullets are conjunctive unless the employer explicitly labels
+    # alternative applicant pathways. A completed bachelor's prerequisite does
+    # not cancel a separate mandatory graduate-enrollment requirement.
+    undergraduate_path = any((pathway := _PATHWAY.match(c)) is not None
+                             and pathway[1].lower() == "undergraduate"
+                             and _BACH.search(c) for c in required)
+    # A graduated subgroup is optional only when a separate current-undergrad
+    # pathway is actually present. A completed BS prerequisite is insufficient.
+    current_undergraduate = any(_BACH.search(c) and _conjunct_degree(c) == "bach"
+                                and _CURRENT_STUDY.search(c) for c in required)
+    bachelor_clauses, graduate_clauses, alternatives = [], [], []
+    for clause in (scope for requirement in required for scope in _population_scopes(requirement)):
+        conditional = _CONDITIONAL_GRADUATE.search(clause)
+        if conditional and current_undergraduate and not _EXCLUSIVE.search(clause[:conditional.start()]):
+            continue
+        pathway = _PATHWAY.match(clause)
+        if undergraduate_path and pathway and pathway[1].lower() == "graduate":
+            continue
+        for conjunct in _degree_conjuncts(clause):
+            level = _conjunct_degree(conjunct)
+            if level == "grad":
+                graduate_clauses.append(clause)
+            elif level == "bach":
+                bachelor_clauses.append(clause)
+            elif level == "equivalent":
+                alternatives.append(clause)
+    if graduate_clauses:
+        return title, "grad", graduate_clauses[0].strip()[:600]
+    if bachelor_clauses:
+        return title, "bach", bachelor_clauses[0].strip()[:600]
+    if alternatives:
+        return title, "equivalent", alternatives[0].strip()[:600]
+    level = title_degree(title)
+    if level:
+        return title, level, "employer title explicitly specifies " + ("undergraduate eligibility" if level == "bach" else "PhD/doctoral")
+    return title, None, "no explicit degree requirement verified"
+
+
+def _conjunct_degree(clause: str) -> str | None:
+    """Classify one requirement after unrelated conjuncts have been separated."""
+    bach, grad = _BACH.search(clause), _GRAD.search(clause)
+    # Terminal MA/MS can be a US state. A bare abbreviation needs nearby
+    # education wording; “must work in Boston, MA” is not a master's rule.
+    if grad and re.fullmatch(r"m\.?\s?[as]\.?", grad[0], re.I):
+        if not clause[grad.end():].strip(" .") and not re.search(
+                r"\b(?:degree|education|pursu\w*|enroll\w*|obtain\w*|hold\w*|earn\w*)\b",
+                clause[:grad.start()], re.I):
+            grad = None
+    if not grad:
+        return "bach" if bach else None
+    if _EXPERIENCE_ALTERNATIVE.search(clause):
+        return "bach" if bach else "equivalent"
+    if bach:
+        # Degree lists joined by “or” accept a bachelor's. “Bachelor's
+        # AND enrollment in a master's” is a pair of mandatory conditions.
+        between = clause[min(bach.end(), grad.end()):max(bach.start(), grad.start())]
+        degree_join = re.sub(r"\bor\s+(?:a\s+)?related\s+(?:field|discipline)\b", "", between, flags=re.I)
+        if re.search(r"\bor\b|/", degree_join, re.I):
+            return "bach"
+        if not re.search(r"\b(?:and|plus)\b|enroll|pursu|admission", between, re.I):
+            return "bach"
+    return "grad"
+
+
+def title_degree(title):
+    """Only explicit eligibility markers count, including on fallback feed titles."""
+    if _PREFERRED.search(title) or _OPTIONAL.search(title):
+        return None
+    if _BACH.search(title):
+        return "bach"
+    if _PHD.search(title) and not re.search(r"\bpre[-\s]?doctoral\b", title, re.I):
+        return "grad"
+    return None
+
+
+def parse_response(kind, raw, token=None):
+    if kind == "html":
+        return parse_page(raw)
+    data = json.loads(raw)
+    if kind == "greenhouse":
+        title, description = data.get("title", ""), data.get("content", "")
+    elif kind == "lever":
+        title = data.get("text", "")
+        sections = "".join("<h2>" + html.escape(item.get("text", "")) + "</h2>" + item.get("content", "")
+                           for item in data.get("lists", []))
+        description = (data.get("description", "") or data.get("descriptionPlain", "")) + sections
+    elif kind == "ashby":
+        hits = [job for job in data.get("jobs", []) if job.get("id") == token]
+        data = hits[0] if len(hits) == 1 else {}
+        title = data.get("title", "")
+        description = data.get("descriptionHtml", "") or data.get("descriptionPlain", "")
+    elif kind == "smartrecruiters":
+        title = data.get("name", "")
+        sections = data.get("jobAd", {}).get("sections", {})
+        description = "".join("<h2>" + html.escape(section.get("title", "")) + "</h2>" + section.get("text", "")
+                              for section in sections.values() if isinstance(section, dict))
+    elif kind == "workday":
+        data = data.get("jobPostingInfo", {})
+        title, description = data.get("title", ""), data.get("jobDescription", "")
+    else:
+        raise ValueError("unsupported response format")
+    return _classify(title, _clauses(description))
+
+
+def lookup(url, cache, fetch_text=None, *, now=None, allow_fetch=True):
+    canonical = canonical_url(url)
+    if not canonical:
+        return None
+    now = time.time() if now is None else now
+    key = CACHE_VERSION + canonical
+    cached = cache.get(key)
+    if isinstance(cached, dict) and cached.get("expires_at", 0) > now:
+        return {**cached, "fetched": False}
+    result = {"degree": None, "status": "deferred", "title": "", "url": canonical,
+              "checked_at": now, "evidence": "lookup budget exhausted"}
+    if not allow_fetch:
+        return {**result, "fetched": False}
+    try:
+        kind, endpoint, token = source_request(canonical)
+        fetch_text = fetch_text or fetch_public_text
+        title, degree, evidence = parse_response(kind, fetch_text(endpoint, timeout=15, retries=2), token)
+        result.update(title=title, degree=degree, evidence=evidence,
+                      status="verified" if degree else "unverified", provider=kind)
+        ttl = VERIFIED_TTL if degree else UNVERIFIED_TTL
+    except (OSError, ValueError, TypeError, AttributeError, KeyError, http.client.HTTPException):
+        result.update(status="fetch_failed", evidence="employer page could not be read")
+        ttl = RETRY_TTL
+    result["expires_at"] = now + ttl
+    cache[key] = result
+    return {**result, "fetched": True}

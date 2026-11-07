@@ -1,0 +1,19 @@
+{
+  "source_url": "https://jobs.lever.co/tri/9c851b9d-169d-4bb3-b164-828098e077e7/apply",
+  "retrieved_date": "2026-10-30",
+  "expected_degree": "grad",
+  "provider": "lever",
+  "response": {
+    "text": "Accelerated Science Intern, Representation Learning for Molecules and Materials",
+    "lists": [
+      {
+        "text": "Responsibilities",
+        "content": "<div>\n\n<li>\n<p>Implement and evaluate machine learning models for molecules and materials using reproducible training and analysis workflows.</p>\n</li>\n<li>\n<p>Design controlled experiments to study how learned representations vary across training runs, model architectures, and learning objectives.</p>\n</li>\n<li>\n<p>Investigate the geometry and information content of learned representations and their relationship to physical quantities.</p>\n</li>\n<li>\n<p>Develop evaluation methods to distinguish meaningful shared structure from similarities introduced by model parameterization or analysis choices.</p>\n</li>\n<li>\n<p>Contribute high-quality, well-documented code to an internal codebase and help translate results into internal reports, publications, and/or patent disclosures (as appropriate).</p>\n</li>\n\n</div>"
+      },
+      {
+        "text": "Qualifications",
+        "content": "<div>\n\n<li>\n<p>Currently enrolled in a doctoral program in materials science, computer science, statistics, applied math, machine learning, physics, or a related discipline.</p>\n</li>\n<li>\n<p>Strong foundations in machine learning, linear algebra, probability, and optimization, with demonstrated experience training models on real datasets.</p>\n</li>\n<li>\n<p>Familiarity with representation learning or scientific machine learning; experience studying model convergence, learning dynamics, symmetries, or identifiability is a plus.</p>\n</li>\n<li>\n<p>Proficiency in Python and modern ML tooling (e.g., PyTorch, experiment tracking, reproducibility best practices).</p>\n</li>\n<li>\n<p>Ability to work collaboratively across disciplines and to translate research ideas into working code.</p>\n</li>\n\n</div>"
+      }
+    ]
+  }
+}
