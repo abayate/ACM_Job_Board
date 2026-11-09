@@ -1044,6 +1044,11 @@
 "first_seen": "2026-09-12",
 "title": "Sensor Systems/Data Analytics New Grad"
 },
+"07edd5c1-ff46-4123-aaab-3b21723aefff": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Engineer 2 New Grad - Multiple Teams"
+},
 "080ae983-f3c6-404a-9df2-ba7e7c54506e": {
 "company": "Tesla",
 "first_seen": "2026-10-01",
@@ -1143,6 +1148,11 @@
 "company": "Oak View Group",
 "first_seen": "2026-11-05",
 "title": "Game Night Statistician"
+},
+"09189c3a-8701-428c-a334-fc2353eed8e3": {
+"company": "M&T Bank",
+"first_seen": "2026-11-09",
+"title": "Technology Development Program - Software Engineering - Data & API Engineering"
 },
 "09245a39-078b-476f-a779-34881b444f91": {
 "company": "Zoox",
@@ -5293,6 +5303,11 @@
 "company": "ByteDance",
 "first_seen": "2026-09-08",
 "title": "Research Scientist"
+},
+"2a02aac8-141d-448e-bdf4-a6842f1f372e": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Engineer 1 New Grad - Software - Perception"
 },
 "2a0ab709-6ba1-48eb-93d7-a75ce0912c24": {
 "company": "Emerson Electric",
@@ -9709,6 +9724,11 @@
 "first_seen": "2026-09-25",
 "title": "Mobile Software Engineer Intern"
 },
+"4ec3d85d-62a9-4b10-8936-7508a8f35bac": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Engineer 1 New Grad - Software - Perception"
+},
 "4ec8e592-f297-479a-ab56-d80abf24fa27": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -10503,6 +10523,11 @@
 "company": "Radiance Technologies",
 "first_seen": "2026-09-25",
 "title": "Software Engineer Intern"
+},
+"5443fedc-d890-4929-9ace-e2ce40d1b5a6": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Engineer 1 New Grad - Software - Autonomous Pilot Integration"
 },
 "5446e738-df78-4160-98ab-eb05d3f23d8f": {
 "company": "C3.ai",
@@ -19109,6 +19134,11 @@
 "first_seen": "2026-10-06",
 "title": "Software Engineer Intern"
 },
+"978b9780-aeb1-4efa-a91f-a2184ed0d0d9": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Engineer 1 New Grad - Software - Autonomous Pilot Integration"
+},
 "979ac96d-8d31-44b0-b0ce-b26b281568e9": {
 "company": "KBR",
 "first_seen": "2026-09-17",
@@ -20125,9 +20155,9 @@
 "title": "Product Management Internship"
 },
 "_headers": {
-"bachelors": "2026-11-07",
+"bachelors": "2026-11-08",
 "grad": "2026-11-06",
-"newgrad": "2026-11-06"
+"newgrad": "2026-11-08"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
 "company": "Panasonic Holdings",
@@ -20858,6 +20888,11 @@
 "company": "Booz Allen",
 "first_seen": "2026-09-12",
 "title": "Software Developer Intern - University"
+},
+"a62bfe3c-827f-4d3c-b91c-b3a6768bd499": {
+"company": "M&T Bank",
+"first_seen": "2026-11-09",
+"title": "Technology Development Program - Software Engineering - Enterprise & Wealth Application Development"
 },
 "a62e77a9-988b-42c6-abf2-5885839a948c": {
 "company": "Caterpillar",
@@ -24154,6 +24189,11 @@
 "first_seen": "2026-10-23",
 "title": "Entry-Level Environmental Statistician"
 },
+"bead51fa-aa91-421e-9b22-bc3e451072b1": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Engineer 2 New Grad - Multiple Teams"
+},
 "beae5fed-5dcf-4894-bb75-645072927b79": {
 "company": "Tesla",
 "first_seen": "2026-10-16",
@@ -25744,6 +25784,11 @@
 "first_seen": "2026-08-15",
 "title": "Research Assistant"
 },
+"cb9057c1-ead7-42d2-8535-e6ee376a8005": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Software Engineer 1 New Grad - Software - Autonomy Capabilities"
+},
 "cb963062-e51b-4ae6-999e-695c504dfd52": {
 "company": "Stripe",
 "first_seen": "2026-10-01",
@@ -25773,6 +25818,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Software Engineer Graduate - Recommendation"
+},
+"cbd9ea2f-0c98-4c65-b81a-72290dca5c9c": {
+"company": "Shield AI",
+"first_seen": "2026-11-09",
+"title": "Engineer 1 New Grad - Software - Autonomy Capabilities"
 },
 "cbe8cba9-03c9-4878-b4a8-473573b61e21": {
 "company": "RTX",
