@@ -44,13 +44,10 @@ Design notes worth knowing before you change anything:
     muted or left. Only a configured PING_ROLE_ID mention may be loud, and it
     is intentionally left unset.
 
-  * NEVER GUESS A DEGREE. Degree level is resolved in tiers, and when nothing
-    is confident the job is routed to the bachelors/newgrad channel and the
-    embed says "not listed" rather than implying a level we did not verify.
-    Measured on held-out data: title-only classifiers top out around 70%
-    precision, i.e. wrong 3 times in 10, which is worse than saying nothing.
-    ~16% of listings end up "not listed"; that is the honest answer, not a gap
-    to be filled with a guess. See resolve_degrees().
+  * DEGREE EVIDENCE. Original employer requirements override feed metadata.
+    If no evidence establishes a degree, the job keeps the existing source
+    channel with an explicit "Degree requirement unverified" label. This is
+    not proof of undergraduate eligibility. See resolve_degrees().
 
 Backfill mode: set BACKFILL_DAYS to a number (or "all"), or BACKFILL_SINCE to
 a YYYY-MM-DD date, to post every currently-open listing in that window even if
@@ -62,6 +59,7 @@ Stdlib only - no pip installs, no API keys. Python 3.9+.
 from __future__ import annotations
 
 import html
+import http.client
 import itertools
 import json
 import math
@@ -71,6 +69,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import employer_degree
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlparse
 
@@ -109,7 +108,7 @@ def _env_int(name: str, default: int) -> int:
 
 _ONE = os.environ.get("DISCORD_WEBHOOK_URL")
 
-# Three channels. A missing grad webhook is fine - see route().
+# Three channels. Without a grad webhook, graduate-only roles are skipped.
 WEBHOOKS = {
     "bachelors": os.environ.get("DISCORD_WEBHOOK_INTERNSHIPS") or _ONE,
     "grad": os.environ.get("DISCORD_WEBHOOK_GRAD") or None,
@@ -191,18 +190,17 @@ ONLY_CHANNELS = {
 # Tier 3: read the posting itself from Greenhouse/Ashby/Lever public JSON
 # endpoints (free, no API key) when the feed omits the degree.
 #
-# OFF BY DEFAULT, because measurement says it does not work *on the jobs it
-# would run against*. Validating it against listings that HAVE a degrees field
-# gave 27/27 correct - but those are, by construction, postings that state a
-# degree. On the actual target population (listings with NO degrees field)
-# only 2 of 45 descriptions mention a degree at all: Simplify's field is empty
-# precisely because the posting never said. Real resolution rate ~0-4%.
-#
-# The code is kept and tested in case upstream coverage changes; flip this to
-# 1 to re-enable. Tiers 1, 2 and 4 do the real work.
+# The legacy generic description classifier remains OFF by default. Historical
+# ATS sampling did not cover Meta: missing feed tags do NOT mean an employer
+# omitted the requirement. EMPLOYER_LOOKUP verifies original employer evidence.
 DEGREE_LOOKUP = _env_flag("DEGREE_LOOKUP", "0")
 # Per-run budget, so a backfill can't fire thousands of HTTP requests.
 MAX_DEGREE_LOOKUPS = _env_int("MAX_DEGREE_LOOKUPS", 40)
+
+# Verify original employer titles/qualifications even when feed tags are present.
+# Independent of the legacy ATS description classifier, which stays disabled.
+EMPLOYER_LOOKUP = _env_flag("EMPLOYER_LOOKUP", "1")
+MAX_EMPLOYER_LOOKUPS = _env_int("MAX_EMPLOYER_LOOKUPS", 40)
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "").strip()
 
@@ -253,24 +251,6 @@ _STATE_SUFFIX = re.compile(r",\s*([A-Z]{2})\s*$")
 _TERM_RE = re.compile(r"(Spring|Summer|Fall|Winter)\s+(\d{4})", re.I)
 _TERM_START = {"spring": (1, 15), "summer": (5, 15), "fall": (8, 15), "winter": (12, 1)}
 
-# "PhD" in a title is the one title signal that is never wrong: measured at
-# 100% precision on 1,731 held-out labelled roles. Everything wordier ("research
-# scientist", ML terms) drops below 75% and is deliberately not used.
-_PHD_TITLE = re.compile(r"\bph\.?\s?d\.?\b|\bdoctoral\b", re.I)
-
-# Degree words only count inside a sentence that is actually stating a
-# requirement. Without this guard, "MS" matches inside "LLMs" and boilerplate
-# HTML, which is what dragged a naive version down to 59% accuracy.
-_DEGREE_CTX = re.compile(
-    r"\b(pursu\w+|enrolled|degree|candidate|qualif\w+|require\w*|seeking"
-    r"|working toward|studying|graduat\w+|fit with)\b",
-    re.I,
-)
-_BACH_RE = re.compile(
-    r"\b(bachelor'?s?|undergraduate degree|b\.s\.|bs/ms|associate'?s degree)\b", re.I
-)
-_GRAD_RE = re.compile(r"\b(ph\.?d\.?|doctoral|master'?s|m\.s\.|msc)\b", re.I)
-
 # ---------------------------------------------------------------------------
 # HTTP helpers (stdlib only)
 # ---------------------------------------------------------------------------
@@ -297,7 +277,7 @@ def http_text(url: str, headers: dict | None = None, timeout: int = 30, retries:
             wait = 2 ** attempt
             print(f"[http] HTTP {e.code} - retry {attempt + 1}/{retries - 1} in {wait}s")
             time.sleep(wait)
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException) as e:
             # GitHub's raw CDN resets connections fairly often; a bare retry
             # fixes it. Previously this crashed the whole run.
             last_err = e
@@ -451,7 +431,7 @@ def fetch_source(kind: str, repo: str, today: date, stats: dict):
 
 
 def degree_from_feed(job: dict):
-    """Tier 1: Simplify's own degrees list. Authoritative when present."""
+    """Use Simplify's degrees list unless an explicit graduate title conflicts."""
     dg = set(job.get("degrees") or [])
     if not dg:
         return None
@@ -463,8 +443,8 @@ def degree_from_feed(job: dict):
 
 
 def degree_from_title(job: dict):
-    """Tier 2: only the PhD signal, which measured 100% precision."""
-    return "grad" if _PHD_TITLE.search(job["title"]) else None
+    """Recognize explicit graduate titles without hiding mixed-degree roles."""
+    return "grad" if employer_degree.title_degree(job["title"]) == "grad" else None
 
 
 def ats_endpoint(url: str):
@@ -489,14 +469,8 @@ def ats_endpoint(url: str):
     return None
 
 
-def _strip(text: str) -> str:
-    for _ in range(3):  # these feeds are double-escaped surprisingly often
-        text = html.unescape(text)
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text))
-
-
 def fetch_description(url: str, boards: dict):
-    """Return plain-text job description, or None. Never raises."""
+    """Return job-description markup, preserving qualification sections."""
     ep = ats_endpoint(url)
     if not ep:
         return None
@@ -506,61 +480,54 @@ def fetch_description(url: str, boards: dict):
             if api not in boards:  # one fetch serves every role at that company
                 boards[api] = http_json(api, timeout=20, retries=2)
             hit = [x for x in boards[api].get("jobs", []) if x.get("id") == token]
-            return _strip(hit[0].get("descriptionPlain", "")) if hit else None
+            return (hit[0].get("descriptionHtml") or hit[0].get("descriptionPlain", "")) if hit else None
         d = http_json(api, timeout=20, retries=2)
         if kind == "lever":
-            return _strip((d.get("descriptionPlain") or d.get("description") or "")
-                          + " " + json.dumps(d.get("lists", [])))
-        return _strip(d.get("content", ""))
+            sections = "".join("<h2>" + html.escape(item.get("text", "")) + "</h2>" + item.get("content", "")
+                               for item in d.get("lists", []))
+            return (d.get("description") or d.get("descriptionPlain") or "") + sections
+        return d.get("content", "")
     except Exception:
         return None  # dead posting, 404, schema drift - abstain
 
 
 def degree_from_description(text: str):
-    """Tier 3: read the posting itself. Abstains unless it is confident.
-
-    Only sentences that both mention a degree AND read like a requirement are
-    considered. If any of them allow a bachelor's, the role is undergrad-open;
-    if they only ever name graduate degrees, it is grad-required; otherwise we
-    return None and the caller falls back to 'not listed'.
-    """
+    """Legacy retrieval uses the same requirement classifier as employer lookup."""
     if not text or len(text) < 200:
         return None
-    # Deliberately NOT splitting on ":" - "Required qualifications: PhD in ML"
-    # must stay one chunk, or the requirement word and the degree word land in
-    # different pieces and the whole thing abstains.
-    sents = [s for s in re.split(r"(?<=[.;])\s+|\n|•", text) if len(s) < 400]
-    ctx = [
-        s for s in sents
-        if _DEGREE_CTX.search(s) and (_BACH_RE.search(s) or _GRAD_RE.search(s))
-    ]
-    if not ctx:
-        return None
-    if any(_BACH_RE.search(s) for s in ctx):
-        return "bach"
-    if any(_GRAD_RE.search(s) for s in ctx):
-        return "grad"
-    return None
+    return employer_degree.parse_page(text)[1]
 
 
 def resolve_degrees(jobs, cache: dict) -> dict:
-    """Attach job["degree"] ("grad" | "bach" | None) and job["degree_src"]."""
-    counts = {"feed": 0, "title": 0, "posting": 0, "cached": 0, "unknown": 0}
+    """Attach degree (grad/bach/equivalent/unknown) and its evidence source."""
+    counts = {"feed": 0, "title": 0, "posting": 0, "cached": 0, "unknown": 0, "employer": 0}
     boards: dict = {}
     budget = MAX_DEGREE_LOOKUPS if DEGREE_LOOKUP else 0
+    employer_budget = MAX_EMPLOYER_LOOKUPS if EMPLOYER_LOOKUP else 0
+    employer_statuses = {}
     for j in jobs:
-        lvl, src = degree_from_feed(j), "feed"
+        legacy_key = employer_degree.CACHE_VERSION + "legacy:" + j["id"]
+        verified = employer_degree.lookup(
+            j["url"], cache, allow_fetch=employer_budget > 0
+        ) if EMPLOYER_LOOKUP else None
+        if verified:
+            employer_budget -= int(verified["fetched"])
+            employer_statuses[verified["status"]] = employer_statuses.get(verified["status"], 0) + 1
+            j["degree_evidence"] = verified
+        lvl, src = (verified["degree"] if verified else None), "employer"
         if lvl is None:
             lvl, src = degree_from_title(j), "title"
-        if lvl is None and j["id"] in cache:
-            v = cache[j["id"]]
+        if lvl is None:
+            lvl, src = degree_from_feed(j), "feed"
+        if lvl is None and legacy_key in cache:
+            v = cache[legacy_key]
             lvl, src = (v if v != "unknown" else None), "cached"
         elif lvl is None and budget > 0 and ats_endpoint(j["url"]):
             # Check reachability BEFORE spending budget - otherwise most of it
             # is burned on Workday/SmartRecruiters URLs we can never read.
             budget -= 1
             lvl = degree_from_description(fetch_description(j["url"], boards))
-            cache[j["id"]] = lvl or "unknown"
+            cache[legacy_key] = lvl or "unknown"
             src = "posting"
         if lvl is None:
             src = "unknown"
@@ -568,20 +535,22 @@ def resolve_degrees(jobs, cache: dict) -> dict:
         counts[src] = counts.get(src, 0) + 1
     used = MAX_DEGREE_LOOKUPS - budget if DEGREE_LOOKUP else 0
     print(
-        f"[degree] feed={counts['feed']} title={counts['title']} "
+        f"[degree] employer={counts['employer']} feed={counts['feed']} title={counts['title']} "
         f"posting={counts['posting']} cached={counts['cached']} "
         f"not-listed={counts['unknown']} ({used} lookups)"
     )
+    if employer_statuses:
+        print(f"[employer] {employer_statuses} ({MAX_EMPLOYER_LOOKUPS - employer_budget} fetches)")
     return counts
 
 
 def route(job: dict) -> str:
     """Pick a channel. Degree wins over internship-vs-full-time.
 
-    Falls back to the two-channel layout when no grad webhook is configured,
-    so adding the third channel is a pure config change.
+    Routing is independent of webhook availability: graduate-only roles must
+    never spill into undergraduate channels when their webhook is missing.
     """
-    if job["degree"] == "grad" and WEBHOOKS.get("grad"):
+    if job["degree"] == "grad":
         return "grad"
     return "bachelors" if job["kind"] == "internship" else "newgrad"
 
@@ -670,7 +639,9 @@ def degree_display(job: dict) -> str:
         return "MS/PhD required"
     if job["degree"] == "bach":
         return "Bachelor's OK"
-    return "Not listed — check the posting"
+    if job["degree"] == "equivalent":
+        return "Graduate degree or equivalent experience — check the posting"
+    return "Degree requirement unverified — check the posting"
 
 
 def make_embed(job: dict, channel: str) -> dict:
@@ -699,8 +670,9 @@ def make_embed(job: dict, channel: str) -> dict:
     if channel == "grad":
         footer = ("Internship" if job["kind"] == "internship" else "Full-time") + " · " + footer
 
+    employer_title = job.get("degree_evidence", {}).get("title") if job.get("degree_src") == "employer" else None
     embed = {
-        "title": f"{marker}{job['company']} — {job['title']}"[:256],
+        "title": f"{marker}{job['company']} — {employer_title or job['title']}"[:256],
         "url": job["url"],
         "color": LOCAL_COLOR if job["is_local"] else CHANNELS[channel]["color"],
         "fields": fields,
@@ -758,8 +730,9 @@ def send_jobs(channel: str, jobs, seen: dict, headers_state: dict, backfill: boo
     """Post a batch to one channel, oldest first, with a big date header above
     the first postings of each new day.
 
-    Jobs are marked seen as each message lands, so a crash mid-batch can never
-    cause duplicates on the next run.
+    Successful batches enter seen state immediately; main saves that state in
+    its finally block if a later delivery raises. An abrupt process kill or a
+    lost Discord acknowledgement can still cause duplicate delivery.
     """
     if not jobs:
         return
@@ -879,7 +852,7 @@ def select_to_post(new_jobs, cap: int):
 
 
 def main() -> int:
-    required = ["bachelors", "newgrad"]  # grad is optional; route() falls back
+    required = ["bachelors", "newgrad"]  # grad is optional; those roles are skipped
     missing = [k for k in required if not WEBHOOKS.get(k)]
     if missing and not DRY_RUN:
         print(
@@ -889,7 +862,7 @@ def main() -> int:
         )
         return 1
     if not WEBHOOKS.get("grad"):
-        print("[config] no DISCORD_WEBHOOK_GRAD - MS/PhD roles stay in the other channels")
+        print("[config] no DISCORD_WEBHOOK_GRAD - graduate-only roles will be skipped")
 
     today = datetime.now(tz=LOCAL_TZ).date()
 
@@ -939,8 +912,6 @@ def main() -> int:
 
     if backfill_cutoff is not None:
         to_post = [j for j in all_jobs if j["date_posted"] >= backfill_cutoff]
-        for j in all_jobs:
-            seen.setdefault(j["id"], seen_entry(j))
         est = math.ceil(len(to_post) / EMBEDS_PER_MESSAGE) * SLEEP_BETWEEN_MESSAGES / 60
         print(
             f"[backfill] window={BACKFILL_SINCE or BACKFILL_DAYS} -> posting "
@@ -948,8 +919,6 @@ def main() -> int:
         )
     elif bootstrap:
         print(f"[bootstrap] first run - seeding {len(all_jobs)} listings as seen")
-        for j in all_jobs:
-            seen[j["id"]] = seen_entry(j)
         to_post = []
         for kind in ("internship", "new_grad"):
             to_post.extend(
@@ -974,6 +943,14 @@ def main() -> int:
             print(f"[queue] {held} held for next run (cap {MAX_POSTS_PER_RUN})")
         print(f"[run] {len(new_jobs)} new, posting {len(to_post)}")
 
+    if bootstrap or backfill_cutoff is not None:
+        selected_ids = {j["id"] for j in to_post}
+        # Selected, previously unseen roles remain retryable if delivery fails.
+        # Seed only the rest of the inventory; send_jobs records successful sends.
+        for j in all_jobs:
+            if j["id"] not in selected_ids:
+                seen.setdefault(j["id"], seen_entry(j))
+
     # Degree is resolved only for what we're about to post, which keeps the
     # HTTP lookups to a handful per run instead of thousands.
     resolve_degrees(to_post, degree_cache)
@@ -987,9 +964,16 @@ def main() -> int:
 
     try:
         for channel in CHANNELS:
-            if not WEBHOOKS.get(channel):
-                continue
             if ONLY_CHANNELS and channel not in ONLY_CHANNELS:
+                continue
+            if not WEBHOOKS.get(channel):
+                skipped = [j for j in to_post if j["channel"] == channel]
+                if skipped:
+                    print(f"[route] skipped {len(skipped)} {channel} roles: no webhook configured")
+                    # Do not let undeliverable roles consume the cap every run.
+                    # A grad-only backfill can recover them after configuration.
+                    for j in skipped:
+                        seen[j["id"]] = seen_entry(j)
                 continue
             send_jobs(
                 channel,
