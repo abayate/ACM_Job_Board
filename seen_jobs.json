@@ -1879,6 +1879,11 @@
 "first_seen": "2026-09-12",
 "title": "Systems Engineer Intern - University"
 },
+"0e9dcc61-445c-45de-ab79-e854c16a9da2": {
+"company": "Carnegie Mellon University",
+"first_seen": "2026-11-15",
+"title": "Research Assistant - Kenneth C. Griffin School of Computer Science - S3D"
+},
 "0e9e78f5-653e-4e42-bda0-7183bbd7045a": {
 "company": "TikTok",
 "first_seen": "2026-08-15",
@@ -8164,6 +8169,11 @@
 "first_seen": "2026-11-05",
 "title": "Business Analytics AI Co-op"
 },
+"3f22e9be-4b77-4b37-99ef-b1b1e7470c90": {
+"company": "Carnegie Mellon University",
+"first_seen": "2026-11-15",
+"title": "Enabling Mission Capability at Scale Intern"
+},
 "3f2315b2-3a33-4a28-8481-9dfab94b16a8": {
 "company": "Regeneron Pharmaceuticals",
 "first_seen": "2026-10-13",
@@ -8833,11 +8843,6 @@
 "company": "Accenture",
 "first_seen": "2026-08-15",
 "title": "Entry Level SAP Development Associate"
-},
-"443c0a68-63ca-4026-94b7-cf3e555f2d0f": {
-"company": "Goldman Sachs",
-"first_seen": "2026-09-30",
-"title": "Quantitative Strategist Associate Intern - The Core Quantitative Strats"
 },
 "4442183a-a206-4d3f-a9ed-68d6b06b452f": {
 "company": "Figure",
@@ -14564,6 +14569,11 @@
 "first_seen": "2026-09-30",
 "title": "AI-Native Development Platform Engineer Intern"
 },
+"6f68ae24-002f-4c1a-9481-237226b8224a": {
+"company": "Fanatics",
+"first_seen": "2026-11-15",
+"title": "Product Intern"
+},
 "6f6a9970-97e7-411f-a68b-a4c6c747fbae": {
 "company": "Clearwater Analytics",
 "first_seen": "2026-09-19",
@@ -14908,6 +14918,11 @@
 "company": "Loram",
 "first_seen": "2026-10-10",
 "title": "Machine Learning / Artificial Intelligence Intern - AI"
+},
+"71ef84ba-69f2-4413-9b83-712ab2b91299": {
+"company": "Fanatics",
+"first_seen": "2026-11-15",
+"title": "People Intelligence Intern"
 },
 "720070f8-5056-4d8c-91ef-204cccb506d9": {
 "company": "Horizon3.ai",
@@ -16528,6 +16543,11 @@
 "company": "Garmin",
 "first_seen": "2026-09-12",
 "title": "Software Engineer 1 - Android"
+},
+"7dcaed62-38da-41f4-9f67-549f034babfe": {
+"company": "Fanatics",
+"first_seen": "2026-11-15",
+"title": "Product Intern - Physical Trading Cards"
 },
 "7ddc7aa1-3dff-410d-99d2-fc276ae93037": {
 "company": "VTG",
@@ -21110,7 +21130,7 @@
 "title": "Digital Manufacturing Technology Intern"
 },
 "_headers": {
-"bachelors": "2026-11-13",
+"bachelors": "2026-11-15",
 "grad": "2026-11-13",
 "newgrad": "2026-11-13"
 },
@@ -22499,6 +22519,11 @@
 "first_seen": "2026-11-07",
 "title": "Agentic AI PhD Intern - Autonomous AI Agent"
 },
+"aabe0127-a865-419b-ad95-ec112ec672e9": {
+"company": "Carnegie Mellon University",
+"first_seen": "2026-11-15",
+"title": "Cyber AI Engineering Intern"
+},
 "aabe0633-3798-4110-b7e7-349827a02b98": {
 "company": "Veryable",
 "first_seen": "2026-10-09",
@@ -23833,6 +23858,11 @@
 "company": "Emerson Electric",
 "first_seen": "2026-09-15",
 "title": "Analytics Engineering Intern"
+},
+"b415eac7-ec25-4ef5-81f2-d6d982e79b2a": {
+"company": "Carnegie Mellon University",
+"first_seen": "2026-11-15",
+"title": "Full-Stack Software Development Intern"
 },
 "b41aacae-898e-465a-8545-99f3f8ec54ec": {
 "company": "Autostore",
@@ -33008,6 +33038,11 @@
 "company": "Symbotic",
 "first_seen": "2026-10-23",
 "title": "Machine Learning Ops Co-op"
+},
+"f7c4221f-6c64-4799-8157-8a32799d7e85": {
+"company": "Fanatics",
+"first_seen": "2026-11-15",
+"title": "Product Management Intern"
 },
 "f7d94cc4-15c3-4072-a1c9-9e8a2413fd5a": {
 "company": "Cincinnati Children\u2019s Hospital and Medical Center",
