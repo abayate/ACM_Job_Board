@@ -8844,6 +8844,11 @@
 "first_seen": "2026-08-15",
 "title": "Entry Level SAP Development Associate"
 },
+"443c0a68-63ca-4026-94b7-cf3e555f2d0f": {
+"company": "Goldman Sachs",
+"first_seen": "2026-11-16",
+"title": "Quantitative Strategist Associate Intern - The Core Quantitative Strats"
+},
 "4442183a-a206-4d3f-a9ed-68d6b06b452f": {
 "company": "Figure",
 "first_seen": "2026-10-07",
@@ -10978,6 +10983,11 @@
 "company": "C3.ai",
 "first_seen": "2026-10-02",
 "title": "AI Product Manager Intern - Summer 2027"
+},
+"5489b48c-6f03-4de1-a0f8-57d1516bc247": {
+"company": "Inspire Brands",
+"first_seen": "2026-11-16",
+"title": "Digital Experience Performance Intern"
 },
 "5489cdce-696e-4c2f-b1ae-e937cff71c6c": {
 "company": "Textron",
@@ -21131,7 +21141,7 @@
 },
 "_headers": {
 "bachelors": "2026-11-15",
-"grad": "2026-11-13",
+"grad": "2026-11-14",
 "newgrad": "2026-11-13"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
@@ -21763,11 +21773,6 @@
 "company": "Mayo Clinic",
 "first_seen": "2026-10-06",
 "title": "Research Fellow-Neurosurgery"
-},
-"a4f1f1ef-5c02-4610-b206-1791f99b714e": {
-"company": "Cybernetic Labs",
-"first_seen": "2026-08-15",
-"title": "Software Engineer New Grad - Agent Platform"
 },
 "a509cc99-b862-4bd9-8c30-49393b371170": {
 "company": "Mercury",
@@ -25809,11 +25814,6 @@
 "first_seen": "2026-09-30",
 "title": "Data and AI Intern"
 },
-"c2e6377c-2c49-47ed-a0e6-12520a2d17a4": {
-"company": "Ingredion",
-"first_seen": "2026-09-12",
-"title": "Digital Innovation Intern"
-},
 "c3014c87-ec26-4022-be89-770beb5f1b96": {
 "company": "Hewlett Packard Enterprise",
 "first_seen": "2026-11-12",
@@ -26993,6 +26993,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-25",
 "title": "Client Solutions Intern"
+},
+"cb801eef-3df8-4694-8f76-f34099190836": {
+"company": "Philips",
+"first_seen": "2026-11-16",
+"title": "Upstream Product Management Intern"
 },
 "cb848a3c-9a28-4557-91ee-9c5c4a3029c2": {
 "company": "FieldPulse",
