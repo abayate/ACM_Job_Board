@@ -3214,6 +3214,11 @@
 "first_seen": "2026-11-12",
 "title": "Global Tech Infrastructure & Operations Intern"
 },
+"198dcbe5-882a-40bd-9dc2-ea376522a837": {
+"company": "JP Morgan Chase",
+"first_seen": "2026-11-16",
+"title": "Consumer & Community Banking Intern"
+},
 "1993c458-75cd-45ce-b37e-7ce3a800bdab": {
 "company": "RTX",
 "first_seen": "2026-10-30",
@@ -5694,6 +5699,11 @@
 "first_seen": "2026-08-15",
 "title": "Student Researcher - LLM Post Training - Agent & Reinforcement Learning"
 },
+"2c3c2dfb-3211-41b2-90ef-c2472e6b2742": {
+"company": "Unique",
+"first_seen": "2026-11-16",
+"title": "Data Scientist - Wealth Graph"
+},
 "2c3f5dd7-36fd-40f7-a178-66ba6ac4ffea": {
 "company": "Barry-Wehmiller",
 "first_seen": "2026-10-09",
@@ -7659,6 +7669,11 @@
 "first_seen": "2026-10-29",
 "title": "Research Resident"
 },
+"3bf15637-dfa2-4883-80f9-32381f68a8d4": {
+"company": "Altice USA",
+"first_seen": "2026-11-16",
+"title": "Data Analyst Intern - Modernization Program BSS/OSS Migration"
+},
 "3bf3d7c6-3d8d-41c3-98eb-a48df978d6e4": {
 "company": "Two Sigma",
 "first_seen": "2026-09-12",
@@ -7993,6 +8008,11 @@
 "company": "Raydar",
 "first_seen": "2026-10-30",
 "title": "Backend Software Engineer"
+},
+"3ea65aaa-0297-4b8f-9378-51e35478fb95": {
+"company": "Octaura",
+"first_seen": "2026-11-16",
+"title": "Data Engineer Intern"
 },
 "3ea8b1a1-169c-46c3-8ed1-4ac1d1cca2f6": {
 "company": "MissionOne Media",
@@ -10674,6 +10694,11 @@
 "first_seen": "2026-10-02",
 "title": "Advanced Analytics Intern"
 },
+"531a491d-17f0-414b-bc44-c2fa4f3f8f09": {
+"company": "Addepar",
+"first_seen": "2026-11-16",
+"title": "Technical Product Management Intern - ADX"
+},
 "532045a4-58bc-4fef-8105-cae7f1bdcccc": {
 "company": "Boston Scientific",
 "first_seen": "2026-10-06",
@@ -12079,6 +12104,11 @@
 "first_seen": "2026-11-03",
 "title": "Production Business Intelligence Intern"
 },
+"5d8b5a71-c3cc-4f5f-b6ca-c6784175532c": {
+"company": "Robert Bosch Venture Capital",
+"first_seen": "2026-11-16",
+"title": "Research Intern: Multimodal Foundation Models for Healthcare"
+},
 "5d914152-b9b5-4947-beba-e7d6c0cced5e": {
 "company": "Electronic Arts",
 "first_seen": "2026-10-20",
@@ -13038,6 +13068,11 @@
 "company": "Waymo",
 "first_seen": "2026-10-20",
 "title": "Machine Learning Intern - Simulation & Closed-Loop Training"
+},
+"64a7d794-0649-4452-b5a6-a8339cd35893": {
+"company": "Edwards Health Care Services",
+"first_seen": "2026-11-16",
+"title": "Programmer Analyst 3"
 },
 "64ae06b6-64fe-47e8-bae2-98b8c700c590": {
 "company": "GlobalFoundries",
@@ -15394,6 +15429,11 @@
 "first_seen": "2026-11-06",
 "title": "Healthcare Operations & Reporting Coordinator"
 },
+"76493083-8144-4671-8730-436be1cbd186": {
+"company": "Robert Bosch Venture Capital",
+"first_seen": "2026-11-16",
+"title": "Research Intern: Multimodal Sensor Foundation Models"
+},
 "7654bad4-ebff-466a-bd2d-63a5d167ba11": {
 "company": "Brain Co.",
 "first_seen": "2026-10-21",
@@ -15578,6 +15618,11 @@
 "company": "West Monroe",
 "first_seen": "2026-10-06",
 "title": "Software Engineer Consulting Intern - AI Concentration"
+},
+"7773a702-7d45-44c7-b86b-0b8ad53a257b": {
+"company": "Toyota Research Institute",
+"first_seen": "2026-11-16",
+"title": "Research Intern - Spatial Intelligence for Robotics"
 },
 "7787c1ea-7ca3-47f9-913d-8d035d331bd9": {
 "company": "Ascension",
@@ -19329,6 +19374,11 @@
 "first_seen": "2026-10-03",
 "title": "Engineering Intern"
 },
+"93a09d2c-4c6c-48b4-b6d9-ab0a27a3951d": {
+"company": "Altice USA",
+"first_seen": "2026-11-16",
+"title": "Software Developer Intern"
+},
 "93ae3a0d-e1e0-4d7a-ad67-4adba9311b49": {
 "company": "Rippling",
 "first_seen": "2026-09-23",
@@ -20885,8 +20935,8 @@
 "title": "Digital Manufacturing Technology Intern"
 },
 "_headers": {
-"bachelors": "2026-11-15",
-"grad": "2026-11-14",
+"bachelors": "2026-11-16",
+"grad": "2026-11-16",
 "newgrad": "2026-11-15"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
@@ -21663,6 +21713,11 @@
 "company": "Boeing",
 "first_seen": "2026-11-14",
 "title": "Design and Analysis Engineer Entry Level or Associate"
+},
+"a694b265-26fe-4fce-bd73-fc51114ffeb2": {
+"company": "Quanta Services",
+"first_seen": "2026-11-16",
+"title": "Business Analyst"
 },
 "a698dd4a-2fd0-4d86-950a-9943757dc891": {
 "company": "Uline",
@@ -24369,6 +24424,11 @@
 "first_seen": "2026-09-10",
 "title": "Data Collector"
 },
+"ba118afe-7991-4a5a-87c7-f68325d9f99d": {
+"company": "Boston Scientific",
+"first_seen": "2026-11-16",
+"title": "AI Engineer Intern - Generative & Agentic AI"
+},
 "ba118ced-217b-406f-8885-fb001cb6f2ee": {
 "company": "Navy Federal",
 "first_seen": "2026-09-12",
@@ -26199,6 +26259,11 @@
 "first_seen": "2026-11-10",
 "title": "Data Analytics & Business Intelligence Intern"
 },
+"c8718487-1c23-48cb-9c04-3d4d44bc977b": {
+"company": "Shopify",
+"first_seen": "2026-11-16",
+"title": "Data Intern"
+},
 "c87514d0-01b1-4240-8fcd-9e9a605d96e1": {
 "company": "Waymo",
 "first_seen": "2026-10-04",
@@ -27743,6 +27808,11 @@
 "company": "Paccar",
 "first_seen": "2026-11-03",
 "title": "Warranty Business Intern"
+},
+"d48bdf87-b0ff-4edc-a9a5-5f5ecca2154c": {
+"company": "Boston Scientific",
+"first_seen": "2026-11-16",
+"title": "AI Acceleration Intern"
 },
 "d4918514-6348-4f6f-8642-5a2c01ff7162": {
 "company": "Great American Insurance Company",
