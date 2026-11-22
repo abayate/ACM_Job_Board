@@ -1189,6 +1189,11 @@
 "first_seen": "2026-11-12",
 "title": "Software Engineer Intern - Audio"
 },
+"090826fc-fc8c-443f-8302-02afa9826799": {
+"company": "AMD",
+"first_seen": "2026-11-22",
+"title": "BIOS Engineering Co-op"
+},
 "090d1f5b-7376-4c02-ad5b-5a150f99bc70": {
 "company": "66 Degrees",
 "first_seen": "2026-10-09",
@@ -2948,11 +2953,6 @@
 "company": "RTX",
 "first_seen": "2026-10-24",
 "title": "Software Engineer Intern"
-},
-"1736ee29-1f1e-4421-8616-9c616abc3f8e": {
-"company": "Rhoda AI",
-"first_seen": "2026-09-29",
-"title": "Robot Software Engineer Intern"
 },
 "173a8b63-ed46-4aa4-be9f-9519b5d3ebe2": {
 "company": "ByteDance",
@@ -7574,6 +7574,11 @@
 "first_seen": "2026-10-13",
 "title": "Research Intern - Agentic Graph Learning"
 },
+"3bddb066-3054-4a0c-9cc7-b0ba4e388c00": {
+"company": "Constellation Brands",
+"first_seen": "2026-11-22",
+"title": "Data and AI Enablement Intern"
+},
 "3bde4886-9568-4579-8754-68e8e2f44ca1": {
 "company": "American Express",
 "first_seen": "2026-08-18",
@@ -10608,6 +10613,11 @@
 "company": "Staples",
 "first_seen": "2026-11-04",
 "title": "Software Engineer Intern - SDS e-Commerce Team"
+},
+"540890f4-99dd-4745-8713-4eba3390050d": {
+"company": "PopStroke Holdings LLC",
+"first_seen": "2026-11-22",
+"title": "Associate Business Analyst"
 },
 "540fffcc-1cee-4834-9b92-ebc48f062b36": {
 "company": "Public Service Enterprise Group",
@@ -16264,6 +16274,11 @@
 "first_seen": "2026-09-14",
 "title": "Forward Deployed AI Engineer Intern"
 },
+"7f616cc7-7a1e-4ab1-bf9e-a9473d79d170": {
+"company": "Capgemini",
+"first_seen": "2026-11-22",
+"title": "Associate Application Consultant"
+},
 "7f656994-e4f3-4bff-a6cf-de5cf50cf204": {
 "company": "T-Mobile",
 "first_seen": "2026-10-29",
@@ -20356,7 +20371,7 @@
 },
 "_headers": {
 "bachelors": "2026-11-21",
-"grad": "2026-11-20",
+"grad": "2026-11-22",
 "newgrad": "2026-11-20"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
@@ -24679,6 +24694,11 @@
 "first_seen": "2026-11-07",
 "title": "Autonomous Processing Research & Development Intern"
 },
+"c19ddb09-a366-491b-8f74-c4e088f343a8": {
+"company": "First Bank & Trust",
+"first_seen": "2026-11-22",
+"title": "Data Analyst Intern"
+},
 "c19ee2fa-0e58-4623-b3ce-9f2afa6f2b21": {
 "company": "ABEC",
 "first_seen": "2026-09-14",
@@ -26023,6 +26043,11 @@
 "company": "Tesla",
 "first_seen": "2026-09-12",
 "title": "Vehicle Software Engineer Intern - Diagnostic User Interface"
+},
+"cbbfc481-5c2f-4875-a3ae-53fd2183c75f": {
+"company": "Western Governors University",
+"first_seen": "2026-11-22",
+"title": "Technical Intern"
 },
 "cbc4b614-1795-4a4a-9755-43d6c1a86cb9": {
 "company": "Garmin",
@@ -29229,6 +29254,11 @@
 "first_seen": "2026-08-15",
 "title": "LLM/AI Operations Development Engineer Graduate - Data Center Networking"
 },
+"e4edff5e-f411-4f18-af6c-d380593b8540": {
+"company": "Johns Manville",
+"first_seen": "2026-11-22",
+"title": "Business Analytics & Strategy Intern"
+},
 "e4f05acb-267f-4e89-a2e9-9ab46db0ddab": {
 "company": "Assurant",
 "first_seen": "2026-10-14",
@@ -30718,6 +30748,11 @@
 "company": "onsemi",
 "first_seen": "2026-10-23",
 "title": "AI & Data Engineering Intern"
+},
+"ef8562a4-25a5-4d0e-9199-0322e26692b1": {
+"company": "Constellation Brands",
+"first_seen": "2026-11-22",
+"title": "Data Science Intern"
 },
 "ef8bdc0e-a54e-411a-9367-999007481d55": {
 "company": "Invesco",
