@@ -289,6 +289,11 @@
 "first_seen": "2026-08-15",
 "title": "Student Researcher - Speech Foundation Model"
 },
+"021f015b-b917-463c-b8e2-3be7537190e8": {
+"company": "DraftKings",
+"first_seen": "2026-11-23",
+"title": "Associate Data Engineer"
+},
 "022b45e8-7491-4038-b4cc-3e24f1d040a4": {
 "company": "Flagship Pioneering",
 "first_seen": "2026-11-03",
@@ -11594,6 +11599,11 @@
 "first_seen": "2026-11-21",
 "title": "Junior AI Engineer"
 },
+"5bae4845-5184-45f3-9b22-7b63401aa678": {
+"company": "Carnegie Mellon University",
+"first_seen": "2026-11-23",
+"title": "AI Engineer Intern - Mission Innovation Lab"
+},
 "5baf30f8-02d7-4767-bb77-4d65c2960a3f": {
 "company": "Howmet Aerospace",
 "first_seen": "2026-09-21",
@@ -11863,6 +11873,11 @@
 "company": "Electronic Arts",
 "first_seen": "2026-10-20",
 "title": "Software Engineer 1"
+},
+"5d9cf1d9-cbae-4dab-b874-4482a9c1b0af": {
+"company": "Draper",
+"first_seen": "2026-11-23",
+"title": "Operational Analysis Intern - Summer 2027"
 },
 "5d9f6eaa-a78b-4ea6-adcb-8168b145206f": {
 "company": "Lawrence Livermore National Laboratory (LLNL)",
@@ -13653,6 +13668,11 @@
 "company": "General Dynamics Information Technology",
 "first_seen": "2026-10-13",
 "title": "Software Development Intern"
+},
+"6b7dbdc7-9456-4fb9-990c-5fd958e3464f": {
+"company": "Samsung",
+"first_seen": "2026-11-23",
+"title": "Business Operations & Data Analytics Intern"
 },
 "6b8e3394-dd09-4734-be54-025c5d544c77": {
 "company": "Bask Health",
@@ -19584,6 +19604,11 @@
 "first_seen": "2026-11-04",
 "title": "AI Implementation Intern"
 },
+"997560e4-6959-458f-b916-d03dfd783ff3": {
+"company": "Megger",
+"first_seen": "2026-11-23",
+"title": "Product Manager Intern"
+},
 "9984868b-8b2f-4184-b0d6-97a792f99699": {
 "company": "Anthropic",
 "first_seen": "2026-11-07",
@@ -20382,7 +20407,7 @@
 "_headers": {
 "bachelors": "2026-11-21",
 "grad": "2026-11-22",
-"newgrad": "2026-11-20"
+"newgrad": "2026-11-22"
 },
 "a0015321-3910-49d2-a77a-ad553c7aa760": {
 "company": "Panasonic Holdings",
@@ -20608,11 +20633,6 @@
 "company": "Stand Together",
 "first_seen": "2026-10-02",
 "title": "Analytics Intern"
-},
-"a1bc5739-2d47-4f6c-8627-5b11e873e160": {
-"company": "10a Labs",
-"first_seen": "2026-08-15",
-"title": "Engineering Fellow"
 },
 "a1c4c9f3-d62d-413d-937e-97b35075c9c6": {
 "company": "RTX",
@@ -21083,6 +21103,11 @@
 "company": "Brain Co.",
 "first_seen": "2026-10-31",
 "title": "Machine Learning Engineer \u2013 Applied AI Intern"
+},
+"a64de37c-5495-494f-b664-ea86288f3242": {
+"company": "Sallie Mae",
+"first_seen": "2026-11-23",
+"title": "Software Engineer Intern"
 },
 "a65bf6c0-bbcb-43b9-9473-31db7f392231": {
 "company": "S&P Global",
@@ -31073,6 +31098,11 @@
 "company": "TikTok",
 "first_seen": "2026-08-15",
 "title": "Backend Software Engineer Intern"
+},
+"f1ba0289-d24f-4662-94ca-892ed2c86b56": {
+"company": "Calyx Containers",
+"first_seen": "2026-11-23",
+"title": "Junior Software Developer - Print & Packaging"
 },
 "f1bd9787-bca7-4017-b40a-3934450d9bd0": {
 "company": "Argonne National Laboratory",
