@@ -574,11 +574,6 @@
 "first_seen": "2026-10-27",
 "title": "Full Stack Engineer Intern"
 },
-"04a97aa9-6df1-4408-aba8-a02b60712121": {
-"company": "Sinclair",
-"first_seen": "2026-08-15",
-"title": "Contract Associate Engineer - Software Development"
-},
 "04af52ae-d053-4a93-8927-e281a49801e6": {
 "company": "Newrez",
 "first_seen": "2026-09-12",
@@ -773,6 +768,11 @@
 "company": "Toyota Research Institute",
 "first_seen": "2026-10-26",
 "title": "Robotics Intern - World Foundation Models"
+},
+"061af54f-dfd8-4cd1-a5a0-ebc1f12eb635": {
+"company": "Lila Sciences",
+"first_seen": "2026-11-25",
+"title": "ML Scientist - Retrieval & RAG for Scientific Literature"
 },
 "061b12f4-c554-4c79-a788-b4d8f4ba0880": {
 "company": "Zoox",
@@ -4978,6 +4978,11 @@
 "company": "Entegris",
 "first_seen": "2026-11-13",
 "title": "Data Engineering Intern"
+},
+"26ee6493-02d8-49da-a580-97b2be904636": {
+"company": "Noblis",
+"first_seen": "2026-11-25",
+"title": "AI/ML Research Intern"
 },
 "26f3c78f-dda8-42c5-95af-0b4294303214": {
 "company": "InterImage",
@@ -10499,6 +10504,11 @@
 "first_seen": "2026-11-22",
 "title": "Associate Business Analyst"
 },
+"540a8cd1-224d-43b7-bcd1-e081d9e57ed7": {
+"company": "Waters",
+"first_seen": "2026-11-25",
+"title": "IT Digital Intern"
+},
 "540fffcc-1cee-4834-9b92-ebc48f062b36": {
 "company": "Public Service Enterprise Group",
 "first_seen": "2026-11-06",
@@ -12804,11 +12814,6 @@
 "first_seen": "2026-11-10",
 "title": "Forward-Deployed Engineer - Strategic Accounts"
 },
-"65631f60-2928-47c7-a3b3-2c66d4748283": {
-"company": "Rivian",
-"first_seen": "2026-10-01",
-"title": "Attributes Method Engineer"
-},
 "65650b49-1680-440d-8f63-1cc74d0ba188": {
 "company": "Notion",
 "first_seen": "2026-10-23",
@@ -13233,11 +13238,6 @@
 "company": "Duke University",
 "first_seen": "2026-11-24",
 "title": "Analytics Engineer - Department of Pharmacy"
-},
-"69225149-308a-4cc5-84fa-f22b334b94b9": {
-"company": "Marmon Holdings",
-"first_seen": "2026-08-15",
-"title": "Data Engineering Intern/Co-op"
 },
 "69271ed8-2aca-42a9-88ae-860250a656f9": {
 "company": "Rochester Regional Health",
@@ -18779,6 +18779,11 @@
 "first_seen": "2026-10-28",
 "title": "Data Science Intern"
 },
+"94a655c9-6eae-422b-b1d9-3c513c0b99d4": {
+"company": "Endeavor Air",
+"first_seen": "2026-11-25",
+"title": "Data Analyst - Operations Analysis & Performance"
+},
 "94a72a59-20ae-4fcc-a654-f08453eb1a00": {
 "company": "Illinois Tool Works",
 "first_seen": "2026-11-24",
@@ -20165,8 +20170,8 @@
 "title": "IT Back Office Co-op"
 },
 "_headers": {
-"bachelors": "2026-11-24",
-"grad": "2026-11-24",
+"bachelors": "2026-11-25",
+"grad": "2026-11-25",
 "newgrad": "2026-11-25"
 },
 "a007a1cd-613c-4053-8d3c-dcd4805d2bbc": {
@@ -28349,11 +28354,6 @@
 "first_seen": "2026-10-20",
 "title": "AI & Internal Tools Software Engineer Intern"
 },
-"e0a1bb59-1fb6-4c2b-bd8e-8bd8ec2bc007": {
-"company": "Garmin",
-"first_seen": "2026-09-12",
-"title": "Software Engineer Intern - Automotive OEM"
-},
 "e0a98377-2ab5-44f4-a19a-bb11a98699a1": {
 "company": "Visa",
 "first_seen": "2026-10-27",
@@ -29253,6 +29253,11 @@
 "company": "Navy Federal",
 "first_seen": "2026-09-12",
 "title": "Business Intelligence Analyst Intern"
+},
+"e7ea3145-19cf-49b6-bc9f-cb292a69e0c9": {
+"company": "Artefact",
+"first_seen": "2026-11-25",
+"title": "AI Builder Intern"
 },
 "e7eb4939-757c-4048-9541-a82f2b2ba9d5": {
 "company": "Piedmont Airlines",
@@ -31749,6 +31754,11 @@
 "first_seen": "2026-09-12",
 "title": "Software Engineer Intern - Summer 2027"
 },
+"fa1ceab1-caea-4ea3-9d07-2e5efa622f5a": {
+"company": "Artefact",
+"first_seen": "2026-11-25",
+"title": "AI Builder Intern"
+},
 "fa2cd117-f8f4-4f40-bb10-fb0561ef0154": {
 "company": "Smarty",
 "first_seen": "2026-11-18",
@@ -32363,6 +32373,11 @@
 "company": "Shure",
 "first_seen": "2026-11-05",
 "title": "Data-Driven Sustainability Intern"
+},
+"ff12fa07-66e0-4a55-9131-b0323a91a0c3": {
+"company": "University of St. Thomas",
+"first_seen": "2026-11-25",
+"title": "Graduate Assistant for Data Analytics Intern - Center for Well-Being"
 },
 "ff1f9ced-4d6d-400f-a0cf-ac068213a682": {
 "company": "GovCIO",
