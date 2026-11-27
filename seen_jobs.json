@@ -20355,7 +20355,7 @@
 "title": "IT Back Office Co-op"
 },
 "_headers": {
-"bachelors": "2026-11-25",
+"bachelors": "2026-11-26",
 "grad": "2026-11-25",
 "newgrad": "2026-11-26"
 },
@@ -22698,6 +22698,11 @@
 "company": "CAS",
 "first_seen": "2026-11-20",
 "title": "Chemist Intern - Content Operations"
+},
+"b289619b-f028-4230-b7a7-6315b92066ef": {
+"company": "ICONIQ Capital",
+"first_seen": "2026-11-27",
+"title": "AI Engineer Intern"
 },
 "b28c693d-dc9a-4021-9f62-fd2020e5f18f": {
 "company": "impact.com",
@@ -27064,6 +27069,11 @@
 "first_seen": "2026-10-08",
 "title": "Applied Scientist Intern"
 },
+"d4e5b166-f1fd-4172-85ae-9b4ba4ffd6df": {
+"company": "ICONIQ Capital",
+"first_seen": "2026-11-27",
+"title": "Data Science Intern - Science"
+},
 "d4f6b336-d307-427a-a31d-155f8fabb6c0": {
 "company": "Shield AI",
 "first_seen": "2026-11-11",
@@ -27573,11 +27583,6 @@
 "company": "Marketbridge",
 "first_seen": "2026-11-10",
 "title": "Analyst, Marketing Analytics"
-},
-"d8f41f3f-586c-4f20-8868-e9832e690e61": {
-"company": "TikTok",
-"first_seen": "2026-08-15",
-"title": "Machine Learning Engineer New Grad - Search Quality"
 },
 "d8fa9795-d411-430a-b0a9-508801cbcd74": {
 "company": "Milliman",
@@ -28838,6 +28843,11 @@
 "company": "Rhoda AI",
 "first_seen": "2026-10-06",
 "title": "Associate Engineering Product Manager-Robot Data Systems"
+},
+"e36215ee-22f4-4838-820e-3fb56c3da112": {
+"company": "ICONIQ Capital",
+"first_seen": "2026-11-27",
+"title": "Data & Analytics Intern"
 },
 "e36780ca-625f-4558-8501-fa2649791b6c": {
 "company": "Research Innovations",
@@ -31764,6 +31774,11 @@
 "first_seen": "2026-09-12",
 "title": "Artificial Intelligence Engineer"
 },
+"f8b9290a-c40c-41ac-8a11-71628a1c4e5e": {
+"company": "ICONIQ Capital",
+"first_seen": "2026-11-27",
+"title": "Engineering Intern"
+},
 "f8d027b7-dcfb-4dc2-8c62-0b33b8491181": {
 "company": "Mytra",
 "first_seen": "2026-11-19",
@@ -32274,6 +32289,11 @@
 "first_seen": "2026-10-07",
 "title": "AI Engineering Intern - Business Systems"
 },
+"fc6955f6-8ff8-4433-b4eb-739c55ab20e0": {
+"company": "Atoms",
+"first_seen": "2026-11-27",
+"title": "Software Engineer Intern"
+},
 "fc70ea6e-e47c-4d60-a90e-b27b036faf17": {
 "company": "Ralliant",
 "first_seen": "2026-11-21",
@@ -32288,6 +32308,11 @@
 "company": "1Password",
 "first_seen": "2026-10-23",
 "title": "Product Management Intern - End User Experience"
+},
+"fc96342b-9d7c-4f3f-a93e-70d935ac86b4": {
+"company": "Synectic Solutions",
+"first_seen": "2026-11-27",
+"title": "Software Engineer 1"
 },
 "fc981e80-41c7-4e4e-841c-86dc7bd2a313": {
 "company": "Toshiba Global Commerce Solutions",
