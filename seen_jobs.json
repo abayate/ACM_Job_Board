@@ -6349,11 +6349,6 @@
 "first_seen": "2026-10-24",
 "title": "Summer Intern - Multiple Teams"
 },
-"3238daa0-03ad-4e44-a14b-4d25ad9d4fa0": {
-"company": "Citizens Financial Group",
-"first_seen": "2026-09-12",
-"title": "Data Engineer Intern - Enterprise Technology & Security"
-},
 "3248cc32-d514-472b-9277-9ee00783420d": {
 "company": "Adobe",
 "first_seen": "2026-09-24",
@@ -12489,6 +12484,11 @@
 "first_seen": "2026-11-05",
 "title": "Product and Operations Intern"
 },
+"62efb85f-02c0-4ff5-b78b-81de93931067": {
+"company": "Intetics",
+"first_seen": "2026-11-27",
+"title": "Field Researcher"
+},
 "62f43e0f-64f7-40aa-9082-4aca354c9f93": {
 "company": "Avis Budget Group",
 "first_seen": "2026-10-14",
@@ -13868,11 +13868,6 @@
 "company": "Apple",
 "first_seen": "2026-10-16",
 "title": "SoC Machine Learning Software Engineer Intern"
-},
-"6def32a2-38d9-47cf-8a10-2e7a23785b01": {
-"company": "Robert Bosch Venture Capital",
-"first_seen": "2026-09-12",
-"title": "Calibration Process Data Science Intern - 8 months/40 hours per week"
 },
 "6df5e739-1248-4b50-b721-fd0c87a900e0": {
 "company": "Hewlett Packard Enterprise",
@@ -20312,7 +20307,7 @@
 "_headers": {
 "bachelors": "2026-11-26",
 "grad": "2026-11-25",
-"newgrad": "2026-11-26"
+"newgrad": "2026-11-27"
 },
 "a007a1cd-613c-4053-8d3c-dcd4805d2bbc": {
 "company": "IDeaS",
@@ -28348,11 +28343,6 @@
 "company": "Newrez",
 "first_seen": "2026-09-12",
 "title": "Software Developer Intern"
-},
-"df13ab5f-9eb4-4357-86df-afc457026297": {
-"company": "Citizens Financial Group",
-"first_seen": "2026-09-12",
-"title": "Software Engineer Intern"
 },
 "df205fc7-2157-4a1a-9eca-2a3688e11b2a": {
 "company": "General Dynamics Mission Systems",
